@@ -1,0 +1,57 @@
+@import '../semantic-ui/site/globals/site.variables';
+
+.raw-material-details {
+  padding: 2em 0;
+  position: relative;
+
+  @media only screen and (min-width: @smallMonitorBreakpoint) {
+    padding: 4em 0;
+    display: flex;
+  }
+
+  .raw-material-details-image {
+    width:100%;
+    
+    @media only screen and (min-width: @smallMonitorBreakpoint) {
+      padding: 0 1em 0 0;
+      width: 80%;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .raw-material-details-description {
+    padding: 2em;
+    width: 100%;
+    background: @primaryColor;
+    color: white;
+    z-index: 2;
+
+    @media only screen and (min-width: @smallMonitorBreakpoint) {
+      position: relative;
+      right: 0;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      margin: 6em 0 0 -9em;
+    }
+
+    .ui.header {
+      font-size: 2em;
+      color: white;
+    }
+
+    button {
+      margin: 2em 0 0;
+
+      @media only screen and (min-width: @smallMonitorBreakpoint) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}

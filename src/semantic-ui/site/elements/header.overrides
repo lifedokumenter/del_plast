@@ -1,0 +1,13 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.header {
+  font-family: 'Italian Plate No2';
+  font-weight: 800;
+  font-style: italic;
+}
+
+.ui.header.huge {
+  font-size: 5em;
+}

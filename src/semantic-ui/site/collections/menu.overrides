@@ -1,0 +1,15 @@
+
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.menu .item,
+.ui.menu a.item{
+  transition: all .3s;
+
+  &.active,
+  &:hover {
+    background: @primaryColor;
+    color: @white;
+  }
+}

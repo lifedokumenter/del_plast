@@ -1,0 +1,26 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/* colors (from LIFE Designguide) */
+@blue: #003877;
+@green: #00AA78;
+@yellow: #FFF47C;
+@gray: #DCDCDC;
+@back: #000000;
+@red: #EE404A;
+@teal: #00C8FF;
+
+@primaryColor: #003877;
+@secondaryColor: @teal;
+
+@pageBackground: #ffffff;
+
+@defaultBorderRadius: 0em;
+
+@tabletBreakpoint: 768px;
+@smallMonitorBreakpoint: 992px;
+
+/* fonts */
+@importGoogleFonts: false;
+@fontName: 'Italian Plate No2 Expanded', 'Arial Regular';

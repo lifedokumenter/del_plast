@@ -1,0 +1,9 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+
+.ui.button {
+  border-radius: 25px;
+  font-size: 1.14em;
+}

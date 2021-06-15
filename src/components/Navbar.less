@@ -1,0 +1,24 @@
+@import '../semantic-ui/site/globals/site.variables';
+
+.navbar {
+  height: 105px;
+  z-index:2;
+  position: relative;
+  
+  .ui.menu {
+    height: 100%;
+    background: @primaryColor;
+  
+    .item:first-child {
+      padding-left: 0;
+    }
+
+    .item:before {
+      background: none; 
+    }
+
+    .item > img:not(.ui) {
+      width: 12em;
+    }
+  }
+}

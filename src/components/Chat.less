@@ -1,0 +1,85 @@
+@import '../semantic-ui/site/globals/site.variables';
+
+.chat {
+
+  @media only screen and (min-width: @tabletBreakpoint) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 0;
+    height: 100vh;
+    z-index:1;
+    width: 25%;
+  }
+
+  .segment {
+    height: 100%;
+  }
+
+  .chat-wrapper.ui.segment {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .chat-messages {
+    padding: 1em 1em;
+
+    @media only screen and (min-width: @tabletBreakpoint) {
+      margin-top: 105px;
+    }
+
+    .chat-messages-user,
+    .chat-messages-message {
+      margin-right: 4em;
+      display: flex;
+      margin-bottom: 1em;
+      float: left;
+      margin-left: 0.5em;
+
+      i {
+        margin-top: 0.8em;
+        margin-right:  0.8em;
+      }
+
+      p {
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        padding: 0.8em 1em;
+        text-align: left;
+      }
+    }
+
+    .chat-messages-user {
+      margin-right:0;
+      margin-left: 4em;
+      float: right;
+
+      p {
+        background: @primaryColor;
+        color: white;
+      }
+    }
+
+  }
+
+  form.ui.form {
+    padding: 1em 1em;
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid lightgray;
+
+    @media only screen and (min-width: @tabletBreakpoint) {
+      position: fixed;
+      bottom: 0;
+      background: white;
+      width: 25%;
+    }
+
+    textarea {
+      margin-right: 1em;
+      resize: none;
+    }
+  }
+}
