@@ -1,3 +1,7 @@
+@import './semantic-ui/site/globals/site.variables';
+
+@materialTypeWidth: 150px;
+
 .App {
   text-align: center;
   width: 100%;
@@ -16,6 +20,51 @@
           max-width: 1020px;
           width: 100%;
           position: relative;
+
+          &-header {
+            text-align: center;
+            width: 100%;
+
+            &-type {
+              text-align: center;
+              @media only screen and (min-width: @tabletBreakpoint) {
+                width: calc(100% - @materialTypeWidth);
+              }
+            }
+          }
+
+          @media only screen and (min-width: @tabletBreakpoint) {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          .raw-material-selector {
+            width: 100%;
+          }
+
+          .raw-material-selector:nth-child(2) {
+            @media only screen and (min-width: @tabletBreakpoint) {
+              max-width: @materialTypeWidth;
+            }
+
+            .ui.menu {
+              width: 100%;
+            }
+          }
+
+          .progress-bars {
+            @media only screen and (min-width: @tabletBreakpoint) {
+              width: calc(100% - @materialTypeWidth);
+              padding: 2em 0 2em 2em;
+            }
+          }
+
+          &-frontpage-img {
+            @media only screen and (min-width: @tabletBreakpoint) {
+              margin-top: 1em;
+            }
+            
+          }
         }
       }
     }

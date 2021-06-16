@@ -5,10 +5,11 @@ interface Props {
   buttonText: string,
   choice: string,
   header?: string,
-  feedback?: string
+  feedback?: string,
+  enableSelect?: boolean
 }
 
-function ToDirectorModal({buttonText, choice, header, feedback}: Props) {
+function ToDirectorModal({buttonText, choice, header, feedback, enableSelect}: Props) {
   const [open, setOpen] = React.useState(false);
   const [sent, setSent] = React.useState(false)
 
@@ -17,7 +18,7 @@ function ToDirectorModal({buttonText, choice, header, feedback}: Props) {
       onClose={() => {setOpen(false); setSent(false);}}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button secondary>{buttonText}</Button>}
+      trigger={<Button disabled={enableSelect===false} secondary>{buttonText}</Button>}
     >
       <Modal.Content>
         <Modal.Description>

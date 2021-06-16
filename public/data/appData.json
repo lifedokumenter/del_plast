@@ -11,6 +11,22 @@
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af ",
     "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!"
   },
+  "frontPageImage": "/images/Sannes udkast livscyklus.jpg",
+  "chatMessage": "Vi tænker at bruge olieplas til vores covers. Hvad tænker i?",
+  "chatAnswers": [
+    {
+      "initials": "AS",
+      "message": "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!"
+    },
+    {
+      "initials": "TH",
+      "message": "Vi har et ansvar, når vi bruger olie til at lave plast af. Kan vi overveje om vi kan tænke genanvendelse ind i vores produktion?"
+    },
+    {
+      "initials": "KT",
+      "message": "Olieplast er billigt og nemt at producere. Jeg har ingen indvendinger."
+    }
+  ],
   "materials": [
     {
       "id":"olieplast",
@@ -26,12 +42,7 @@
             "bioScore": 25,
             "economyScore":65
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatAnswers": [
-            "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!",
-            "Vi har et ansvar, når vi bruger olie til at lave plast af. Kan vi overveje om vi kan tænke genanvendelse ind i vores produktion?",
-            "Olieplast er billigt og nemt at producere. Jeg har ingen indvendinger."
-          ]
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
         },
         {
           "id": "olieplast_haardplast",
@@ -65,12 +76,7 @@
             "bioScore": 25,
             "economyScore":65
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatAnswers": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
-            "Lorem ipsum dolor sit amet"
-          ]
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
         },
         {
           "id": "planteplast_sugar",
@@ -81,12 +87,7 @@
             "bioScore": 76,
             "economyScore":24
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg", 
-          "chatAnswers": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
-            "Lorem ipsum dolor sit amet"
-          ]
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
         }
       ]
     }

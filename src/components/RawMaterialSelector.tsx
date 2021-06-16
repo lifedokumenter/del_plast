@@ -1,17 +1,14 @@
 import './RawMaterialSelector.less';
-import React, {useState} from 'react';
-import { Header, Menu } from 'semantic-ui-react';
+import React from 'react';
+import { Menu } from 'semantic-ui-react';
 
 import { RawMaterial } from '../interfaces/RawMaterial'; 
 
 interface RawMaterialsProps { 
   materials: RawMaterial[],
   onSelect: (material: any)=>void,
-  onSubSelect: (material: any)=>void,
   selected?: any | null,
-  header?: string,
-  subHeader1?: string,
-  subHeader2?: string
+  vertical?: boolean
 }
 
 interface MenuItem {
@@ -21,55 +18,26 @@ interface MenuItem {
   onClick?: ()=>void
 }
 
-const RawMaterialsSelector = ({ materials, onSelect, selected, onSubSelect, header = 'Header', subHeader1 = 'Sub header', subHeader2  = 'Sub Header 2'}:RawMaterialsProps) => {
-
-  const [selectedCategory, setSelectedCategory] = useState<RawMaterial>();
+const RawMaterialsSelector = ({ materials, onSelect, selected, vertical}:RawMaterialsProps) => {
 
   const items:MenuItem[] = [];
-  const subItems:MenuItem[] = [];
   
-  const materialToMenuItem = (material: RawMaterial, category:boolean = false):MenuItem => {
+  const materialToMenuItem = (material: RawMaterial):MenuItem => {
     return {
       key: material.id, 
-      active: material.id === selectedCategory?.id || material.id === selected?.id, 
+      active: material.id === selected?.id, 
       name: material.title,
       onClick: () => {
-        if (category) {
-          setSelectedCategory(material);
-          onSelect(undefined);
-        } else {
-          onSelect(material);
-          onSubSelect(material);
-        }
+        onSelect(material);
       }
     }
   }
 
-  materials.forEach((material: RawMaterial) => items.push(materialToMenuItem(material, true)));
-  
-  if(selectedCategory?.subMaterials?.length){
-    selectedCategory.subMaterials.forEach((material:RawMaterial) => subItems.push(materialToMenuItem(material)));
-  }
+  materials.forEach((material: RawMaterial) => items.push(materialToMenuItem(material)));
 
   return (
     <div className="raw-material-selector">
-      <Header size='huge'>{header}</Header>
-      <Menu className="raw-material-selector-main" items={items} tabular />
-      <div className="raw-material-selector-sub">
-        <>
-          {
-            !subItems.length &&
-            <Header>{subHeader1}</Header>
-          }
-          {
-            !!subItems?.length &&
-            <>  
-              <Header>{subHeader2}</Header>
-              <Menu items={subItems} />
-            </>
-          }
-        </>
-      </div>
+      <Menu items={items} vertical={vertical} tabular/>
     </div>
   )
 }

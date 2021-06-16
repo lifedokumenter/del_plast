@@ -1,11 +1,10 @@
 @import '../semantic-ui/site/globals/site.variables';
 
 .raw-material-details {
-  padding: 2em 0;
+  padding: 0 0 2em;
   position: relative;
 
   @media only screen and (min-width: @smallMonitorBreakpoint) {
-    padding: 4em 0;
     display: flex;
   }
 
@@ -14,7 +13,8 @@
     
     @media only screen and (min-width: @smallMonitorBreakpoint) {
       padding: 0 1em 0 0;
-      width: 80%;
+      width: 60%;
+      margin-left: calc(150px + 2em);
     }
   
     img {
@@ -36,8 +36,8 @@
       text-align: left;
       display: flex;
       flex-direction: column;
-      width: 35%;
-      margin: 6em 0 0 -9em;
+      width: 45%;
+      margin: 6em 0 0 -15em;
     }
 
     .ui.header {

@@ -11,10 +11,11 @@ interface Props {
   description: string,
   imageUrl?: string,
   selectedHeader?: string,
-  feedback?: string
+  feedback?: string,
+  enableSelect?: boolean
 }
 
-const RawMaterialDetails = ({ id, title, description, imageUrl, selectedHeader, feedback}: Props ) => {
+const RawMaterialDetails = ({ id, title, description, imageUrl, selectedHeader, feedback, enableSelect}: Props ) => {
 
   return (
     <div className="raw-material-details">
@@ -29,6 +30,7 @@ const RawMaterialDetails = ({ id, title, description, imageUrl, selectedHeader, 
           choice={title || ''} 
           header={selectedHeader}
           feedback={feedback}
+          enableSelect={enableSelect}
         />
       </div>
     </div>

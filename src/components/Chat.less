@@ -27,7 +27,7 @@
     padding: 1em 1em;
 
     @media only screen and (min-width: @tabletBreakpoint) {
-      margin-top: 105px;
+      margin-top: 70px;
     }
 
     .chat-messages-user,
@@ -62,6 +62,24 @@
       }
     }
 
+    .chat-messages-message-user-icon {
+      border-radius: 100%;
+      background: @gray;
+      height: 2em;
+      width: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.5em;
+
+      p {
+        padding: 0.5em;
+        border: none;
+        margin-top: 0.3em;
+        font-size: 0.9em;
+      }
+    }
+
   }
 
   form.ui.form {
@@ -81,5 +99,45 @@
       margin-right: 1em;
       resize: none;
     }
+
+    button.pulsate {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 300%;
+        height: 300%;
+        box-sizing: border-box;
+        top: -100%;
+        left: -100%;
+        /* transform: translate(-50%, -50%); */
+        border-radius: 100%;
+        background-color: @primaryColor;
+        animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      }
+    }
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(.33);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.8);
   }
 }

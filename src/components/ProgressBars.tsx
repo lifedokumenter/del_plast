@@ -15,13 +15,13 @@ const ProgressBars = ({co2, bio, economy, co2Label='', bioLabel='', economyLabel
 
   return (
     <div className="progress-bars">
-      <Progress percent={co2} color={'red'}>
+      <Progress percent={co2} color={'red'} size={'small'}>
         {co2Label}
       </Progress>
-      <Progress percent={bio} color={'teal'}>
+      <Progress percent={bio} color={'teal'} size={'small'}>
         {bioLabel}
       </Progress>
-      <Progress percent={economy} color={'blue'}>
+      <Progress percent={economy} color={'blue'} size={'small'}>
         {economyLabel}
       </Progress>
     </div>

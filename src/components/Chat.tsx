@@ -4,18 +4,19 @@ import { Segment, Form, TextArea, Button, Icon } from 'semantic-ui-react';
 import './Chat.less';
 
 interface Props {
-  messages: string[]
+  answers?:  any[],
+  message?: string,
+  onSubmitted?: ()=>void,
 }
 
-const Chat = ({messages = []}: Props) => {
+const Chat = ({message= '', answers = [], onSubmitted=()=>{} }: Props) => {
 
+  const [showUserMesssage, setShowUserMessage] = React.useState<boolean>(false);
   const [showMessages, setShowMessages] = React.useState<boolean>(false);
-  const [message, setMessage] = React.useState<string>('');
-  const [messageInput, setMessageInput] = React.useState<string>('');
 
   const submitMessage = () => {
-    setShowMessages(false);
-    setMessage(messageInput);
+    setShowUserMessage(true);
+    onSubmitted();
 
     const timer = setTimeout(() => {
       setShowMessages(true);
@@ -30,28 +31,26 @@ const Chat = ({messages = []}: Props) => {
         <div>
           <div className="chat-messages"> 
             {
-              message && message !== '' &&
+              showUserMesssage && message !== '' &&
               <div className="chat-messages-user">
                 <Icon name="user" size="large"></Icon>
                 <p>{message}</p>
               </div>
             }
             {
-              showMessages && messages.map( (text, idx) => {
+              showMessages && answers.map( (answer, idx) => {
                 return <div key={idx} className="chat-messages-message"> 
-                  <Icon name="user" size="large"></Icon>
-                  <p>{text}</p>
+                  {/* <Icon name="user" size="large"></Icon> */}
+                  <div className="chat-messages-message-user-icon"><p>{answer.initials}</p></div>
+                  <p>{answer.message}</p>
                 </div>
               })
             }
           </div>
         </div>
         <Form>
-          <TextArea 
-            placeholder='Besked...' 
-            onChange={ev => {setMessageInput(ev.target.value)}}
-          />
-          <Button primary icon onClick={() => {submitMessage()}}>
+          <TextArea value={showUserMesssage ? '' : message} disabled placeholder="Besked..."></TextArea>     
+          <Button className={showUserMesssage ? '' : 'pulsate'} primary icon onClick={() => {submitMessage()}}>
             <Icon name='angle right' />
           </Button>
         </Form>

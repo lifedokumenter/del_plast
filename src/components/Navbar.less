@@ -1,14 +1,17 @@
 @import '../semantic-ui/site/globals/site.variables';
 
 .navbar {
-  height: 105px;
+  height: 70px;
   z-index:2;
-  position: relative;
+  position:relative;
+  width: 100vw;
   
   .ui.menu {
     height: 100%;
     background: @primaryColor;
-  
+    width: 100%;
+    justify-content: space-between;
+
     .item:first-child {
       padding-left: 0;
     }
@@ -18,7 +21,29 @@
     }
 
     .item > img:not(.ui) {
-      width: 12em;
+      width: 8em;
+    }
+
+    .navbar-title {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      padding-top: 1.8em;
+
+      &.item:before {
+        content: none;
+      }
+  
+      .ui.header {
+        color: white;
+        
+      }
     }
   }
+
+
 }
