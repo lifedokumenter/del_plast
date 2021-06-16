@@ -1,0 +1,95 @@
+{
+  "pageTitle": "Råstoffer",
+  "chooseMaterialHeader": "Vælg et råstof",
+  "chooseTypeHeader": "Vælg Type",
+  "medatadataHeaders": {
+    "co2": "Co2 udledning",
+    "bio": "Biodiversitet",
+    "economy": "Økonomi"
+  },
+  "emailText": {
+    "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af ",
+    "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!"
+  },
+  "frontPageImage": "/images/Sannes udkast livscyklus.jpg",
+  "chatMessage": "Vi tænker at bruge olieplas til vores covers. Hvad tænker i?",
+  "chatAnswers": [
+    {
+      "initials": "AS",
+      "message": "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!"
+    },
+    {
+      "initials": "TH",
+      "message": "Vi har et ansvar, når vi bruger olie til at lave plast af. Kan vi overveje om vi kan tænke genanvendelse ind i vores produktion?"
+    },
+    {
+      "initials": "KT",
+      "message": "Olieplast er billigt og nemt at producere. Jeg har ingen indvendinger."
+    }
+  ],
+  "materials": [
+    {
+      "id":"olieplast",
+      "title": "Olieplast",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "subMaterials": [
+        {
+          "id": "olieplast_bloedplast",
+          "title": "Blød Plast",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
+        },
+        {
+          "id": "olieplast_haardplast",
+          "title": "Hård Plast",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "metadata":{
+            "co2Score": 34,
+            "bioScore": 76,
+            "economyScore":24
+          }, 
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
+          "chatAnswers": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+            "Lorem ipsum dolor sit amet"
+          ]
+        }
+      ]
+    },
+    {
+      "id":"planteplast",
+      "title": "Planteplast",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "subMaterials": [
+        {
+          "id": "planteplast_corn",
+          "title": "Plast af majskolber",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
+        },
+        {
+          "id": "planteplast_sugar",
+          "title": "Plast af rester fra sukkerrør",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "metadata":{
+            "co2Score": 34,
+            "bioScore": 76,
+            "economyScore":24
+          }, 
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
+        }
+      ]
+    }
+  ]
+}
