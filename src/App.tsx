@@ -15,14 +15,22 @@ function App() {
   const [selectedSubMaterial, setSeletedSubMaterial] = React.useState<RawMaterial | undefined>();
   const [enableMaterialSelect, setEnableMaterialSelect] = React.useState<boolean>(false);
   const [appData, setAppData] = React.useState<any | undefined>();
+  const [chatMessage, setChatMessage] =  React.useState<string>();
+  const [chatAnswers, setChatAnswers] =  React.useState<any[] | undefined>([]);
+  
 
   const onMaterialSelect = (material: RawMaterial | undefined) => {
     setSeletedSubMaterial(undefined);
     setSeletedMaterial(material);
+    setEnableMaterialSelect(false);
+    setDefaultChatMessage(appData);
   }
 
   const onSubMaterialSelect = (material: RawMaterial | undefined) => {
     setSeletedSubMaterial(material);
+    setEnableMaterialSelect(false);
+    setChatMessage(material?.chatMessage);
+    setChatAnswers(material?.chatAnswers);
   }
 
   React.useEffect(()=> {
@@ -30,12 +38,15 @@ function App() {
       .then(res=>res.json())
       .then( data => {
         setAppData(data);
+        setDefaultChatMessage(data);
       }
     );
   }, []);
 
-
-
+  const setDefaultChatMessage = (data: any) => {
+    setChatMessage(data?.chatMessage);
+    setChatAnswers(data?.chatAnswers);
+  }
 
   return (
     <div className="App">
@@ -100,7 +111,7 @@ function App() {
                 </div>        
               </Grid.Column>
               <Grid.Column floated='right' width={4}>
-                <Chat message={appData?.chatMessage} answers={appData?.chatAnswers || []} onSubmitted={() => {setEnableMaterialSelect(true)}} ></Chat>
+                <Chat message={chatMessage} answers={chatAnswers} onSubmitted={() => {setEnableMaterialSelect(true)}} ></Chat>
               </Grid.Column>
             </Grid.Row>
           </Grid>

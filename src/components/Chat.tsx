@@ -14,6 +14,18 @@ const Chat = ({message= '', answers = [], onSubmitted=()=>{} }: Props) => {
   const [showUserMesssage, setShowUserMessage] = React.useState<boolean>(false);
   const [showMessages, setShowMessages] = React.useState<boolean>(false);
 
+  const prevMessagRef = React.useRef('');
+  const prevMessage = prevMessagRef.current;
+
+  React.useEffect(() => {
+    prevMessagRef.current = message;
+    if (message !== prevMessage) {
+      setShowMessages(false);
+      setShowUserMessage(false);
+    }
+  });
+
+
   const submitMessage = () => {
     setShowUserMessage(true);
     onSubmitted();
@@ -22,7 +34,6 @@ const Chat = ({message= '', answers = [], onSubmitted=()=>{} }: Props) => {
       setShowMessages(true);
     }, 1000);
     return () => clearTimeout(timer);
-
   }
 
   return (

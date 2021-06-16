@@ -25,6 +25,8 @@
 
   .chat-messages {
     padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
 
     @media only screen and (min-width: @tabletBreakpoint) {
       margin-top: 70px;
@@ -53,8 +55,7 @@
 
     .chat-messages-user {
       margin-right:0;
-      margin-left: 4em;
-      float: right;
+      margin-left: auto;
 
       p {
         background: @primaryColor;
@@ -72,7 +73,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 0.5em;
+      margin-right: 1em;
       position: relative;
 
       p {

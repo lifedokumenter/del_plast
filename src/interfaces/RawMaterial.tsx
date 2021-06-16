@@ -11,5 +11,6 @@ export interface RawMaterial {
   imageUrl?: string,
   subMaterials?: RawMaterial[],
   metadata?: RawMaterialMetadata,
-  chatAnswers?: string[]
+  chatMessage?: string | undefined,
+  chatAnswers?: any[] | undefined,
 }

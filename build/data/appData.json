@@ -12,19 +12,19 @@
     "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!"
   },
   "frontPageImage": "/images/Sannes udkast livscyklus.jpg",
-  "chatMessage": "Vi tænker at bruge olieplas til vores covers. Hvad tænker i?",
+  "chatMessage": "Lorem ipsum dolor sit amet",
   "chatAnswers": [
     {
       "initials": "AS",
-      "message": "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!"
+      "message": "Hvem er Lorem?"
     },
     {
       "initials": "TH",
-      "message": "Vi har et ansvar, når vi bruger olie til at lave plast af. Kan vi overveje om vi kan tænke genanvendelse ind i vores produktion?"
+      "message": "Og Ipsum?"
     },
     {
       "initials": "KT",
-      "message": "Olieplast er billigt og nemt at producere. Jeg har ingen indvendinger."
+      "message": "Ahva?"
     }
   ],
   "materials": [
@@ -42,7 +42,22 @@
             "bioScore": 25,
             "economyScore":65
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
+          "chatMessage": "Vi tænker at bruge olieplast til vores covers. Hvad tænker i?",
+          "chatAnswers": [
+            {
+              "initials": "AS",
+              "message": "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!"
+            },
+            {
+              "initials": "TH",
+              "message": "Vi har et ansvar, når vi bruger olie til at lave plast af. Kan vi overveje om vi kan tænke genanvendelse ind i vores produktion?"
+            },
+            {
+              "initials": "KT",
+              "message": "Olieplast er billigt og nemt at producere. Jeg har ingen indvendinger."
+            }
+          ]
         },
         {
           "id": "olieplast_haardplast",
@@ -54,10 +69,20 @@
             "economyScore":24
           }, 
           "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
+          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
           "chatAnswers": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
-            "Lorem ipsum dolor sit amet"
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
           ]
         }
       ]
@@ -76,7 +101,22 @@
             "bioScore": 25,
             "economyScore":65
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
+          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          "chatAnswers": [
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
         },
         {
           "id": "planteplast_sugar",
@@ -87,7 +127,22 @@
             "bioScore": 76,
             "economyScore":24
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg"
+          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
+          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+          "chatAnswers": [
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
         }
       ]
     }
