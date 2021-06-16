@@ -15,6 +15,7 @@ interface MenuItem {
   key: string,
   active: boolean,
   name: string,
+  content: string,
   onClick?: ()=>void
 }
 
@@ -27,6 +28,7 @@ const RawMaterialsSelector = ({ materials, onSelect, selected, vertical}:RawMate
       key: material.id, 
       active: material.id === selected?.id, 
       name: material.title,
+      content: material.title,
       onClick: () => {
         onSelect(material);
       }
