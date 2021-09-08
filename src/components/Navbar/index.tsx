@@ -1,8 +1,8 @@
 import React from 'react';
 import { Menu, Header } from 'semantic-ui-react';
-import logo from '../logo.svg';
+import logo from '../../logo.svg';
 
-import './Navbar.less';
+import './index.less';
 
 interface NavbarProps {
   title?: string

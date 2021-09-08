@@ -1,9 +1,8 @@
-import './RawMaterialDetails.less';
-
 import React from 'react';
+import './index.less';
 import { Header, Image } from 'semantic-ui-react';
 
-import ToDirectorModal from './ToDirectorModal';
+import ToDirectorModal from '../ToDirectorModal';
 
 interface Props {
   id: string,

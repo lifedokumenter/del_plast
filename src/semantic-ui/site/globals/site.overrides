@@ -2,6 +2,7 @@
          Site Overrides
 *******************************/
 
+@contentFontSize: 18px;
 
 @font-face {
 	font-family:'Italian Plate No2';

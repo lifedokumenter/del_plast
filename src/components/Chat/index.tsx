@@ -1,11 +1,11 @@
 import React from 'react';
 import { Segment, Form, TextArea, Button, Icon } from 'semantic-ui-react';
 
-import './Chat.less';
+import './index.less';
 
 interface Props {
-  answers?:  any[],
-  message?: string,
+  answers?:  any[] | null,
+  message?: string | null,
   onSubmitted?: ()=>void,
 }
 
@@ -14,7 +14,7 @@ const Chat = ({message= '', answers = [], onSubmitted=()=>{} }: Props) => {
   const [showUserMesssage, setShowUserMessage] = React.useState<boolean>(false);
   const [showMessages, setShowMessages] = React.useState<boolean>(false);
 
-  const prevMessagRef = React.useRef('');
+  const prevMessagRef = React.useRef<string | null>('');
   const prevMessage = prevMessagRef.current;
 
   React.useEffect(() => {
@@ -23,7 +23,7 @@ const Chat = ({message= '', answers = [], onSubmitted=()=>{} }: Props) => {
       setShowMessages(false);
       setShowUserMessage(false);
     }
-  });
+  }, [message, prevMessage]);
 
 
   const submitMessage = () => {
@@ -49,7 +49,7 @@ const Chat = ({message= '', answers = [], onSubmitted=()=>{} }: Props) => {
               </div>
             }
             {
-              showMessages && answers.map( (answer, idx) => {
+              showMessages && answers && answers.map( (answer, idx) => {
                 return <div key={idx} className="chat-messages-message"> 
                   {/* <Icon name="user" size="large"></Icon> */}
                   <div className="chat-messages-message-user-icon"><p>{answer.initials}</p></div>
@@ -60,7 +60,7 @@ const Chat = ({message= '', answers = [], onSubmitted=()=>{} }: Props) => {
           </div>
         </div>
         <Form>
-          <TextArea value={showUserMesssage ? '' : message} disabled placeholder="Besked..."></TextArea>     
+          <TextArea value={showUserMesssage ? '' : message || ''} disabled placeholder="Besked..."></TextArea>     
           <Button className={showUserMesssage ? '' : 'pulsate'} primary icon onClick={() => {submitMessage()}}>
             <Icon name='angle right' />
           </Button>

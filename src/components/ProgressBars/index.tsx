@@ -1,6 +1,6 @@
 import React from 'react';
 import { Progress } from 'semantic-ui-react';
-import './ProgressBars.less';
+import './index.less';
 
 interface ProgressBarsProps {
   co2: number | undefined,
@@ -18,10 +18,10 @@ const ProgressBars = ({co2, bio, economy, co2Label='', bioLabel='', economyLabel
       <Progress percent={co2} color={'red'} size={'small'}>
         {co2Label}
       </Progress>
-      <Progress percent={bio} color={'teal'} size={'small'}>
+      <Progress percent={bio} color={'yellow'} size={'small'}>
         {bioLabel}
       </Progress>
-      <Progress percent={economy} color={'blue'} size={'small'}>
+      <Progress percent={economy} color={'green'} size={'small'}>
         {economyLabel}
       </Progress>
     </div>
