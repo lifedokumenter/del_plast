@@ -43,8 +43,11 @@
             "economyScore":65
           }, 
           "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Vi tænker at bruge olieplast til vores covers. Hvad tænker i?",
-          "chatAnswers": [
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Vi tænker at bruge olieplast til vores covers. Hvad tænker i?"
+            },
             {
               "initials": "AS",
               "message": "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!"
@@ -69,8 +72,11 @@
             "economyScore":24
           }, 
           "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
@@ -102,8 +108,11 @@
             "economyScore":65
           }, 
           "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
@@ -128,8 +137,11 @@
             "economyScore":24
           }, 
           "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
@@ -154,8 +166,11 @@
             "economyScore":24
           }, 
           "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
@@ -187,8 +202,11 @@
             "economyScore":65
           }, 
           "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"

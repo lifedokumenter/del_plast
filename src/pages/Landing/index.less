@@ -3,14 +3,20 @@
 .landing {
   width: 100%;
   position: relative;
-  
+  height: calc(100vh - 315px);
+
   &__header {
     text-align: center;
   }
 
   &__content {
-    display: flex;
-    justify-content: center;
+    height: 100%;
+    &__columns {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      overflow: hidden;
+    }
   }
 
   &-frontpage-img {

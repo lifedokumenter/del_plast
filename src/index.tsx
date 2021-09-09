@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-less/semantic.less';
+import { ChatProvider } from './contexts/chatContext';
+import { PChainChoiceProvider } from './contexts/PChainChoicesContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ChatProvider>
+      <PChainChoiceProvider>
+        <App />
+      </PChainChoiceProvider>
+    </ChatProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
