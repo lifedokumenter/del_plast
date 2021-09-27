@@ -5,7 +5,7 @@
 /* colors (from LIFE Designguide) */
 @blue           : #00C0F3;
 @green          : #046961;
-@darkgGreen     : #033030;
+@darkGreen     : #033030;
 @lightGreen     : #16C774;
 @yellow         : #FBBF2E;
 @gray           : #DBDEDF;
@@ -21,7 +21,7 @@
 @black          : #000000;
 
 @primaryColor: @lightGreen;
-@secondaryColor: @darkgGreen;
+@secondaryColor: @darkGreen;
 
 @pageBackground: #ffffff;
 
@@ -32,6 +32,6 @@
 
 /* fonts */
 @importGoogleFonts: false;
-@fontName: 'Italian Plate No2 Expanded', 'Arial Regular';
+@fontName: 'Corbel', 'Arial Regular';
 @emSize: 18px;
 @relativeBig: 1.5rem;

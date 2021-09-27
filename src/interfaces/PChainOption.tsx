@@ -14,4 +14,5 @@ export interface PChainOption {
   subMaterials?: Array<PChainOption>,
   metadata?: PChainOptionMetadata,
   chatMessages?: Array<ChatMessage>,
+  type: string,
 }

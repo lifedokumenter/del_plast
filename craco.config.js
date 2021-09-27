@@ -20,7 +20,11 @@ module.exports = {
           use: ["css-loader", "less-loader"]
         }),
         test: /\.less$/
-      }
+      }, 
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
     ]
   }
 }

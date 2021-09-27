@@ -10,23 +10,24 @@
   position: relative;
   z-index: 1;
   
-  .ui.progress {
+  &__bar {
     width: 33.3%;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    
+    margin: 0 1.666rem 0 0;
 
-    &:first-child,
-    &:last-child {
-      margin: 0;
+    &:first-child {
+      margin-lefT: 1.666rem;
     }
-    > .label {
-      position: relative;
-      order: -1;
+
+    .ui.header {
       font-weight: normal;
       color: white;
-      font-size: 1.3333rem;
     }
+
+    .ui.progress:last-child {
+      margin-bottom: 0;
+    }
+
   }
 }

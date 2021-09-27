@@ -5,45 +5,20 @@
   z-index:2;
   position:relative;
   width: 100vw;
-  
-  .ui.menu {
-    height: 100%;
-    background: @secondaryColor;
-    width: 100%;
-    justify-content: space-between;
+  background: @secondaryColor;
+  display: flex;
+  align-items: center;
 
-    .item:first-child {
-      padding-left: 0;
-    }
-
-    .item:before {
-      background: none; 
-    }
-
-    .item > img:not(.ui) {
-      width: 8em;
-    }
-
-    .navbar-title {
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      align-items: center;
-      padding-top: 1.8em;
-
-      &.item:before {
-        content: none;
-      }
-  
-      .ui.header {
-        color: white;
-        
-      }
-    }
+  img {
+    width: 2rem;
+    margin: 0 1.11rem 0 0.83rem ; 
+    padding: 0;
   }
 
+  .ui.header {
+    color: white;
+    margin: 0;
+    margin-top: 0.3rem;
+  }
 
 }

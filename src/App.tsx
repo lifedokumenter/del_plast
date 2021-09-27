@@ -24,7 +24,7 @@ function App() {
       {
         appData &&
           <>
-            <Navbar/>
+            <Navbar title={appData.pageTitle}/>
             <Grid columns={2} stackable>
               <Grid.Row>
                 <Grid.Column floated='left' width={12}>

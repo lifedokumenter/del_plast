@@ -1,7 +1,8 @@
 {
-  "pageTitle": "Råstoffer",
+  "pageTitle": "LCA Pro Tool 3.5",
   "chooseMaterialHeader": "Vælg et råstof til Produktion",
   "chooseTypeHeader": "Vælg Type",
+  "chooseMaterialButton": "Vælg Råstof",
   "medatadataHeaders": {
     "co2": "Co2 udledning",
     "bio": "Biodiversitet",

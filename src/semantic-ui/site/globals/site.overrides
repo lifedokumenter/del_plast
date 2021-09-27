@@ -5,51 +5,20 @@
 @contentFontSize: 18px;
 
 @font-face {
-	font-family:'Italian Plate No2';
-	src:	url('./fonts/ItalianPlateNo2-Extrabold.eot');
-	src:	url('./fonts/ItalianPlateNo2-Extrabold.eot?#iefix') format('embedded-opentype'),
-			url('./fonts/ItalianPlateNo2-Extrabold.woff2') format('woff2'),
-			url('./fonts/ItalianPlateNo2-Extrabold.woff') format('woff');
-	font-weight: 800;
+	font-family:'Corbel';
+	src:	url('./fonts/Corbel V2.eot');
+	src:	url('./fonts/Corbel V2.eot?#iefix') format('embedded-opentype'),
+			url('./fonts/Corbel V2.woff2') format('woff2'),
+			url('./fonts/Corbel V2.woff') format('woff');
+	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family:'Italian Plate No2';
-	src:	url('./fonts/ItalianPlateNo2-ExtraboldItalic.eot');
-	src:	url('./fonts/ItalianPlateNo2-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
-			url('./fonts/ItalianPlateNo2-ExtraboldItalic.woff2') format('woff2'),
-			url('./fonts/ItalianPlateNo2-ExtraboldItalic.woff') format('woff');
-	font-weight: 800;
-	font-style: italic;
-}
-
-@font-face {
-	font-family:'Italian Plate No2 Expanded';
-	src:	url('./fonts/ItalianPlateNo2Expanded-Regular.eot');
-	src:	url('./fonts/ItalianPlateNo2Expanded-Regular.eot?#iefix') format('embedded-opentype'),
-			url('./fonts/ItalianPlateNo2Expanded-Regular.woff2') format('woff2'),
-			url('./fonts/ItalianPlateNo2Expanded-Regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family:'Italian Plate No2 Expanded';
-	src:	url('./fonts/ItalianPlateNo2Expanded-Italic.eot');
-	src:	url('./fonts/ItalianPlateNo2Expanded-Italic.eot?#iefix') format('embedded-opentype'),
-			url('./fonts/ItalianPlateNo2Expanded-Italic.woff2') format('woff2'),
-			url('./fonts/ItalianPlateNo2Expanded-Italic.woff') format('woff');
-	font-weight: 400;
-	font-style: italic;
-}
-
-@font-face {
-	font-family:'Italian Plate No2 Expanded';
-	src:	url('./fonts/ItalianPlateNo2Expanded-Extrabold.eot');
-	src:	url('./fonts/ItalianPlateNo2Expanded-Extrabold.eot?#iefix') format('embedded-opentype'),
-			url('./fonts/ItalianPlateNo2Expanded-Extrabold.woff2') format('woff2'),
-			url('./fonts/ItalianPlateNo2Expanded-Extrabold.woff') format('woff');
-	font-weight: 800;
-	font-style: normal;
+	font-family:'Corbel';
+	src:	url('./fonts/Corbel Bold.eot');
+	src:	url('./fonts/Corbel Bold.eot?#iefix') format('embedded-opentype'),
+			url('./fonts/Corbel Bold.woff2') format('woff2'),
+			url('./fonts/Corbel Bold.woff') format('woff');
+	font-weight: bold;
 }

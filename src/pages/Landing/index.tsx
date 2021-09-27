@@ -1,10 +1,11 @@
 import React from "react";
 import './index.less';
-import { Header } from 'semantic-ui-react';
+import { Button, Header } from 'semantic-ui-react';
 import { PChainOption } from '../../interfaces/PChainOption'; 
 import PChainColumn from "../../components/PChainColumn"
 import { usePChainChoices } from "../../contexts/PChainChoicesContext";
 import ProgressBars from "../../components/ProgressBars";
+import lifeLogo from '../../images/life_logo.svg';
 
 export interface LandingProps {
   appData: any;
@@ -15,11 +16,14 @@ const Landing = ({
 }: LandingProps) => {
 
   const { activePChainChoice } = usePChainChoices();
+  console.log('activePChainChoice:' , activePChainChoice);
 
   return(
     <div className="landing">
       <div className="landing__content">
-        <Header size="large" className="landing__header">{appData?.chooseMaterialHeader}</Header>
+        <div className="landing__header">
+          <Header size="large" >{appData?.chooseMaterialHeader}</Header>
+        </div>
         <div className="landing__content__columns">
           { 
             appData?.materials.map( (option: PChainOption) => 
@@ -27,6 +31,7 @@ const Landing = ({
                 key={option.id}
                 PChainOptions={option.subMaterials || []} 
                 selected={activePChainChoice} 
+                id={option.id}
               />
             )
           }
@@ -40,6 +45,10 @@ const Landing = ({
         bioLabel={appData?.medatadataHeaders?.bio} 
         economyLabel={appData?.medatadataHeaders?.economy}
       />
+      <div className="landing__content__footer">
+        <img alt="text" src={lifeLogo} />
+        <Button primary>{appData?.chooseMaterialButton}</Button>
+      </div>
     </div>        
   )
 }
