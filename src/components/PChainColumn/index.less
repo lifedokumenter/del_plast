@@ -1,13 +1,44 @@
 @import '../../semantic-ui/site/globals/site.variables';
 
-.raw-material-column {
-  margin-right: 0.888rem;
+.p-chain-column {
+  /* margin-right: 0.888rem; */
+
+  &.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .ui.card {
+      margin-top: 0;
+      &:last-child {
+        margin-bottom: 0.611rem;
+      }
+    }
+  }
 
   &__option {
+
+    &__selected-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      z-index: 10;
+    }
 
     &.ui.card {
       width: 22.77rem;
       margin-bottom: 0.611rem;
+      position: relative;
+
+      &.small {
+        width: 15rem;
+        margin: 0;
+        
+        .p-chain-column__option__selected-icon {
+          width: 2.5rem;
+        }
+      }
 
       > .content {
         transition: background-color .2s ease;

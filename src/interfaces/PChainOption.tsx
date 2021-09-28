@@ -8,11 +8,11 @@ export interface PChainOptionMetadata {
 
 export interface PChainOption {
   id: string,
-  title: string,
-  description: string,
+  title?: string,
+  description?: string,
   imageUrl?: string,
-  subMaterials?: Array<PChainOption>,
+  subCategories?: Array<PChainOption>,
   metadata?: PChainOptionMetadata,
   chatMessages?: Array<ChatMessage>,
-  type: string,
+  type?: string,
 }

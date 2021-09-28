@@ -1,9 +1,13 @@
 import './App.less';
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Loader } from 'semantic-ui-react';
 import Navbar from './components/Navbar';
 import Landing from './pages/Landing';
-import Chat from './components/Chat';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
 
@@ -22,22 +26,25 @@ function App() {
   return (
     <div className="App">
       {
-        appData &&
+        !appData && 
+        <Loader />
+      }
+      {
+        appData && 
+        <Router>
           <>
-            <Navbar title={appData.pageTitle}/>
-            <Grid columns={2} stackable>
-              <Grid.Row>
-                <Grid.Column floated='left' width={12}>
-                  <Landing appData={appData} />
-                </Grid.Column>
-
-                <Grid.Column floated='right' width={4}>
-                  <Chat />
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
+            <Navbar title={appData?.pageTitle}/>
+            <Switch>
+              <Route exact={true} path="/">
+                <Landing appData={appData} /> 
+              </Route>
+              <Route path="/step/:stepNo">
+                <Landing appData={appData} /> 
+              </Route>
+            </Switch>
           </>
-        }
+        </Router>
+      }
     </div>
   ); 
 }

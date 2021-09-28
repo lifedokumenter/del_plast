@@ -1,8 +1,31 @@
 {
   "pageTitle": "LCA Pro Tool 3.5",
-  "chooseMaterialHeader": "Vælg et råstof til Produktion",
-  "chooseTypeHeader": "Vælg Type",
-  "chooseMaterialButton": "Vælg Råstof",
+  "steps": {
+    "1": {
+      "title": "Vælg et råstof til Produktion",
+      "buttonText":"Vælg Råstof"
+    },
+    "2": {
+      "title": "Vælg produktions lokation",
+      "buttonText":"Vælg lokation"
+    },
+    "3": {
+      "title": "Vælg transport ",
+      "buttonText":"Vælg transport"
+    },
+    "4": {
+      "title": "Vælg Brug",
+      "buttonText":"Vælg Brug"
+    },
+    "5": {
+      "title": "Vælg bortskaffelses metode",
+      "buttonText":"Vælg bortskaffelse"
+    },
+    "6": {
+      "title": "Udarbejd den bedste samlede LCA",
+      "buttonText":"Analyser valg"
+    }
+  },
   "medatadataHeaders": {
     "co2": "Co2 udledning",
     "bio": "Biodiversitet",
@@ -33,7 +56,7 @@
       "id":"olieplast",
       "title": "",
       "description": "",
-      "subMaterials": [
+      "subCategories": [
         {
           "id": "olieplast_bloedplast",
           "title": "Oliebaseret plast",
@@ -42,8 +65,7 @@
             "co2Score": 50,
             "bioScore": 25,
             "economyScore":65
-          }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
+          },
           "chatMessages": [
             {
               "isUser": true,
@@ -72,7 +94,6 @@
             "bioScore": 76,
             "economyScore":24
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
           "chatMessages": [
             {
               "isUser": true,
@@ -98,7 +119,7 @@
       "id":"planteplast",
       "title": "",
       "description": "",
-      "subMaterials": [
+      "subCategories": [
         {
           "id": "planteplast_corn",
           "title": "Bioplast af majs",
@@ -108,7 +129,6 @@
             "bioScore": 25,
             "economyScore":65
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
           "chatMessages": [
             {
               "isUser": true,
@@ -137,7 +157,6 @@
             "bioScore": 76,
             "economyScore":24
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
           "chatMessages": [
             {
               "isUser": true,
@@ -166,7 +185,6 @@
             "bioScore": 76,
             "economyScore":24
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
           "chatMessages": [
             {
               "isUser": true,
@@ -192,7 +210,7 @@
       "id":"genanvendt",
       "title": "",
       "description": "",
-      "subMaterials": [
+      "subCategories": [
         {
           "id": "genanvendt_plast",
           "title": "Genanvendt plast",
@@ -202,7 +220,602 @@
             "bioScore": 25,
             "economyScore":65
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "production": [
+    {
+      "id":"production",
+      "title": "",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "production_billund",
+          "title": "Fakbrik i Billund",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "production_hamburg",
+          "title": "Fakbrik i Hamborg",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "production_miami",
+          "title": "Fakbrik i Miami",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "production_dubai",
+          "title": "Fakbrik i Dubai",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transport": [
+    {
+      "id":"transport",
+      "title": "",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "transport_flight",
+          "title": "Fly",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_ship",
+          "title": "Skib",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_truck_diesel",
+          "title": "Lastbil, diesel",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_truck_el",
+          "title": "Lastbil, el",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_none",
+          "title": "Ingen transport",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "usage": [
+    {
+      "id":"usage",
+      "title": "",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "usage_ideal_of_sweden",
+          "title": "Ideal of Sweden, tykt, fash",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_transparent",
+          "title": "Gennemsigitg cover, tyndt, billigt",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_black",
+          "title": "Sort standard cover, kedeligt",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_cat",
+          "title": "CAT, tykt, standard",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_leather",
+          "title": "Læderbetrykket, holdbar",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_oil_plast",
+          "title": "Øliebaseret plast",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "disposal": [
+    {
+      "id":"disposal",
+      "title": "",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "disposal_deponi",
+          "title": "Deponi",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_burn",
+          "title": "Afbrænding",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_reuse",
+          "title": "Genanvendelse",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_recycle",
+          "title": "Genbrug",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_waste_prevention",
+          "title": "Affaldsforebyggelse",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
           "chatMessages": [
             {
               "isUser": true,

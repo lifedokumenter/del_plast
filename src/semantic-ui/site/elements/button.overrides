@@ -7,3 +7,12 @@
   border-radius: 25px;
   font-size: 1.14em;
 }
+
+.ui.button.huge {
+  font-weight: normal;
+  padding: 0.888rem 4.722rem;
+
+  .icon.right {
+    position: a
+  }
+}

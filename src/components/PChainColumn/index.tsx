@@ -9,6 +9,7 @@ import { usePChainChoices } from '../../contexts/PChainChoicesContext';
 import { ReactComponent as OilIcon } from '../../images/oil.svg';
 import { ReactComponent as BioIcon } from '../../images/bio.svg';
 import { ReactComponent as RecycleIcon } from '../../images/recycle.svg';
+import { ReactComponent as CheckmarkIcon } from '../../images/checkmark.svg';
 
 interface PChainColumnProps { 
   PChainOptions: Array<PChainOption>,
@@ -16,12 +17,16 @@ interface PChainColumnProps {
   id?: string,
   selected?: PChainOption | null,
   showDescription?: boolean;
+  wrap?: boolean;
+  size?: string;
 }
 
-const PChainColumn = ({PChainOptions, onSelect, selected, id}:PChainColumnProps) => {
+const PChainColumn = ({PChainOptions, onSelect, selected, id, wrap, showDescription, size}:PChainColumnProps) => {
 
   const { setPendingMessages } = useChat(); 
   const { setActivePChainChoice } = usePChainChoices();
+
+  console.log('size is: ', size);
 
   let icon: any = null;
 
@@ -43,18 +48,26 @@ const PChainColumn = ({PChainOptions, onSelect, selected, id}:PChainColumnProps)
   }
 
   return (
-    <div className="raw-material-column">
+    <div className={`p-chain-column ${wrap ? 'wrap' : ''}`}>
       {
         PChainOptions.map((option: PChainOption) => (
-          <Card className="raw-material-column__option" key={option.id} color={option.id === selected?.id ? 'green' : undefined} onClick={() => selectPChainOption(option)}>
+          <Card className={`p-chain-column__option ${size}`} key={option.id} color={option.id === selected?.id ? 'green' : undefined} onClick={() => selectPChainOption(option)}>
             <Card.Content>
-              <Card.Header content={option.title} />
-              <Card.Description content={
-                <>
-                  <p>{option.description}</p>
-                  {icon}
-                </>
-              } />
+              <Card.Header content={option.title} /> 
+              { 
+                option.id === selected?.id &&
+                <CheckmarkIcon className="p-chain-column__option__selected-icon" />
+              }
+              {
+                showDescription && 
+                <Card.Description content={
+                    <>
+                      <p>{option.description}</p>
+                      {icon}
+                    </>
+                  } 
+                />
+              }
             </Card.Content>
           </Card>
         ))
