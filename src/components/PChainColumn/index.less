@@ -1,8 +1,6 @@
 @import '../../semantic-ui/site/globals/site.variables';
 
 .p-chain-column {
-  /* margin-right: 0.888rem; */
-
   &.wrap {
     display: flex;
     flex-wrap: wrap;
@@ -14,80 +12,5 @@
         margin-bottom: 0.611rem;
       }
     }
-  }
-
-  &__option {
-
-    &__selected-icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(50%, -50%);
-      z-index: 10;
-    }
-
-    &.ui.card {
-      width: 22.77rem;
-      margin-bottom: 0.611rem;
-      position: relative;
-
-      &.small {
-        width: 15rem;
-        margin: 0;
-        
-        .p-chain-column__option__selected-icon {
-          width: 2.5rem;
-        }
-      }
-
-      > .content {
-        transition: background-color .2s ease;
-        svg {
-          width: 3.888rem;
-          .cls-1 {
-            transition: fill .2s ease;
-          } 
-        }
-
-        .header {
-          text-align: left;
-        }
-        .header,
-        .description {
-          transition: color .2s ease;
-        }
-
-        p {
-          text-align: left;
-          width: 100%;
-          margin-right: 2rem;
-          margin-bottom: 0;
-        }
-
-        .description {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-        }
-      }
-
-    }
-    
-    &.ui.card:hover {
-
-      .content {
-        background-color: @green;
-        
-        .header,
-        .description {
-          color: white;
-        }
-
-        svg .cls-1 {
-          fill: @darkGreen;
-        }
-      }
-    }
-    
   }
 }

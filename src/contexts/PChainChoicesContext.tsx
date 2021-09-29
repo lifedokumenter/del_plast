@@ -6,30 +6,54 @@ interface PChainChoicesProviderProps {
 }
 
 export interface PChainChoicesContextApi {
-  PChainChoices: Array<PChainOption>;
-  choosePChain: (choice: PChainOption) => void;
+  pChainChoices: Array<PChainOption>;
+  togglePChainChoice: (choice: PChainOption) => void;
   activePChainChoice: PChainOption | null;
   setActivePChainChoice: (choice: PChainOption) => void;
+  disabledPChainChoices: Array<string>;
+  setDisabledPChainChoices: (disabledChoices: Array<string>) => void;
 }
 
 const PChainChoiceContext = React.createContext({} as PChainChoicesContextApi)
 
 export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) => {
 
-  const [PChainChoices, setPChainChoices] = React.useState<Array<PChainOption>>([]);
+  const [pChainChoices, setPChainChoices] = React.useState<Array<PChainOption>>([]);
   const [activePChainChoice, setActivePChainChoice] = React.useState<PChainOption | null>(null);
+  const [disabledPChainChoices, setDisabledPChainChoices] = React.useState<Array<string>>([]);
 
-  const choosePChain = (choice: PChainOption) => {
-    setPChainChoices([...PChainChoices, choice])
+  const togglePChainChoice = (choice: PChainOption) => {
+    let idx = -1;
+    let arr = [...pChainChoices];
+    // !! for some reason findIndex doesn't work here. changes the array. using good ol' for loop instead
+    for (let i=0; i<arr.length; i++) {
+      if (arr[i].id === choice.id) {
+        idx = i;
+        break;
+      }
+    }
+    idx > -1 ? arr.splice(idx,1) : arr.push(choice);
+    setPChainChoices(arr);
+
+    // save disabled choices
+    let disabledOptions:Array<string> = [];
+    for (let j=0; j<arr.length; j++) {
+      if (arr[j].disablesOptions) {
+        disabledOptions = [...disabledOptions, ...arr[j].disablesOptions?.map(o => o.id) || []];
+      }
+    }
+    setDisabledPChainChoices(disabledOptions);
   }
 
   return (
     <PChainChoiceContext.Provider
       value={{
-        PChainChoices,
-        choosePChain,
+        pChainChoices,
+        togglePChainChoice,
         activePChainChoice,
-        setActivePChainChoice
+        setActivePChainChoice,
+        disabledPChainChoices,
+        setDisabledPChainChoices
       }}
     >
       {children}

@@ -1,18 +1,16 @@
 import React from 'react';
 import { Header } from 'semantic-ui-react';
-import { usePChainChoices } from '../../contexts/PChainChoicesContext';
 import { PChainOption } from '../../interfaces/PChainOption';
 import PChainColumn from '../PChainColumn';
 import './index.less';
 
 interface PChainStepProps { 
   step: number,
-  appData: any
+  appData: any,
+  multipleChoice: boolean
 }
 
-const PChainStep = ({step, appData}:PChainStepProps) => {
-  
-  const { activePChainChoice } = usePChainChoices();
+const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
 
   let pChainType = 'materials';
   if (step === 2) {
@@ -40,7 +38,6 @@ const PChainStep = ({step, appData}:PChainStepProps) => {
       { id: 'usage', subCategories: reduceSubCategories('usage') },
       { id: 'disposal', subCategories: reduceSubCategories('disposal') },
     ];
-    
   } else{
     pChainOptions = appData[pChainType];
   }
@@ -54,11 +51,10 @@ const PChainStep = ({step, appData}:PChainStepProps) => {
             <PChainColumn
               key={option.id}
               PChainOptions={option.subCategories || []} 
-              selected={activePChainChoice} 
-              id={option.id}
               wrap={pChainOptions.length === 1}
               showDescription={pChainType !== 'all'}
               size={pChainType === 'all' ? 'small' : ''}
+              multipleChoice={multipleChoice}
             />
           )
         }

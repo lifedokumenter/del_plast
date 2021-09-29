@@ -6,6 +6,12 @@ export interface PChainOptionMetadata {
   economyScore: number
 }
 
+export interface DisabledPChainOption {
+  id: string,
+  description: string
+}
+
+
 export interface PChainOption {
   id: string,
   title?: string,
@@ -15,4 +21,5 @@ export interface PChainOption {
   metadata?: PChainOptionMetadata,
   chatMessages?: Array<ChatMessage>,
   type?: string,
+  disablesOptions?: Array<DisabledPChainOption>;
 }

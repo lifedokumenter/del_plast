@@ -277,8 +277,8 @@
           ]
         },
         {
-          "id": "production_hamburg",
-          "title": "Fakbrik i Hamborg",
+          "id": "production_denmark",
+          "title": "Fakbrik i Danmark",
           "description": "Lorem ipsum dolor sit amet",
           "metadata":{
             "co2Score": 50,
@@ -305,8 +305,8 @@
           ]
         },
         {
-          "id": "production_miami",
-          "title": "Fakbrik i Miami",
+          "id": "production_france",
+          "title": "Fakbrik i Frankrig",
           "description": "Lorem ipsum dolor sit amet",
           "metadata":{
             "co2Score": 50,
@@ -422,6 +422,16 @@
             {
               "initials": "KT",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ],
+          "disablesOptions": [
+            {
+              "id": "production_denmark",
+              "description": "Du kan ikke vælge at producere i Danmark og transportere med skib"
+            },
+            {
+              "id": "production_france",
+              "description": "Du kan ikke vælge at producere i Frankrig og transportere med skib"
             }
           ]
         },
