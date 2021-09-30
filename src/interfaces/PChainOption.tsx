@@ -7,10 +7,10 @@ export interface PChainOptionMetadata {
 }
 
 export interface DisabledPChainOption {
-  id: string,
+  id1: string,
+  id2: string,
   description: string
 }
-
 
 export interface PChainOption {
   id: string,
@@ -20,6 +20,6 @@ export interface PChainOption {
   subCategories?: Array<PChainOption>,
   metadata?: PChainOptionMetadata,
   chatMessages?: Array<ChatMessage>,
-  type?: string,
-  disablesOptions?: Array<DisabledPChainOption>;
+  iconType?: string,
+  disablesOptions?: Array<DisabledPChainOption>
 }

@@ -7,7 +7,6 @@ import { ReactComponent as OilIcon } from '../../images/oil.svg';
 import { ReactComponent as BioIcon } from '../../images/bio.svg';
 import { ReactComponent as RecycleIcon } from '../../images/recycle.svg';
 import { ReactComponent as CheckmarkIcon } from '../../images/checkmark.svg';
-import { usePChainChoices } from '../../contexts/PChainChoicesContext';
 
 interface PChainOptionProps { 
   pChainOption: PChainOption,
@@ -22,11 +21,11 @@ const PChainOptionCard = ({pChainOption, isDisabled, isSelected, onSelect, showD
 
   let icon: any = null;
 
-  if (pChainOption.id === 'olieplast') {
+  if (pChainOption.iconType === 'oil') {
     icon = <OilIcon />;
-  } else if (pChainOption.id === 'planteplast'){
+  } else if (pChainOption.iconType === 'bio'){
     icon = <BioIcon />;
-  } else if (pChainOption.id === 'genanvendt'){
+  } else if (pChainOption.iconType === 'recycle'){
     icon = <RecycleIcon />;
   }
 

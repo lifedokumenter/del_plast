@@ -22,19 +22,22 @@
     box-shadow: none !important;
     border: 2px solid @green;
     border-radius: 7px !important;
-    padding: 0 1.111rem;
 
     .header:not(.ui) {
         line-height: 1;
-        vertical-align: middel;
-        margin: 0.555rem 0;
+        vertical-align: middle;
         word-break: break-word;
+        margin-top: 0;
     }
 }
 
 .ui.card.small {
     padding: 0.277rem;
     > .content {
+        height: 4.166rem;
+        display: flex;
+        align-items: center;
+        padding: 0 1.111rem;
         .header:not(.ui) {
             font-size: 1.333rem;
         }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { PChainOption } from '../interfaces/PChainOption';
+import { DisabledPChainOption, PChainOption } from '../interfaces/PChainOption';
 
 interface PChainChoicesProviderProps {
   children: React.ReactNode;
@@ -12,6 +12,7 @@ export interface PChainChoicesContextApi {
   setActivePChainChoice: (choice: PChainOption) => void;
   disabledPChainChoices: Array<string>;
   setDisabledPChainChoices: (disabledChoices: Array<string>) => void;
+  setMutuallyDisabledOptions: (disabledOptions: Array<DisabledPChainOption>) => void;
 }
 
 const PChainChoiceContext = React.createContext({} as PChainChoicesContextApi)
@@ -21,6 +22,7 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
   const [pChainChoices, setPChainChoices] = React.useState<Array<PChainOption>>([]);
   const [activePChainChoice, setActivePChainChoice] = React.useState<PChainOption | null>(null);
   const [disabledPChainChoices, setDisabledPChainChoices] = React.useState<Array<string>>([]);
+  const [mutuallyDisabledOptions, setMutuallyDisabledOptions] = React.useState<Array<DisabledPChainOption>>([]);
 
   const togglePChainChoice = (choice: PChainOption) => {
     let idx = -1;
@@ -38,8 +40,12 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
     // save disabled choices
     let disabledOptions:Array<string> = [];
     for (let j=0; j<arr.length; j++) {
-      if (arr[j].disablesOptions) {
-        disabledOptions = [...disabledOptions, ...arr[j].disablesOptions?.map(o => o.id) || []];
+      for (let k=0; k<mutuallyDisabledOptions.length; k++) {
+        if (arr[j].id === mutuallyDisabledOptions[k].id1 && disabledOptions.indexOf(mutuallyDisabledOptions[k].id2) === -1) {
+          disabledOptions.push(mutuallyDisabledOptions[k].id2);
+        } else if (arr[j].id === mutuallyDisabledOptions[k].id2 && disabledOptions.indexOf(mutuallyDisabledOptions[k].id1) === -1) {
+          disabledOptions.push(mutuallyDisabledOptions[k].id1);
+        }
       }
     }
     setDisabledPChainChoices(disabledOptions);
@@ -53,7 +59,8 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
         activePChainChoice,
         setActivePChainChoice,
         disabledPChainChoices,
-        setDisabledPChainChoices
+        setDisabledPChainChoices,
+        setMutuallyDisabledOptions
       }}
     >
       {children}

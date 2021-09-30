@@ -12,7 +12,7 @@ interface PChainStepProps {
 
 const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
 
-  let pChainType = 'materials';
+  let pChainType = 'material';
   if (step === 2) {
     pChainType = 'production';
   } else if(step === 3) {
@@ -32,7 +32,7 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
   let pChainOptions:Array<PChainOption> = [];
   if (pChainType === 'all') {
     pChainOptions = [
-      { id: 'materials', subCategories: reduceSubCategories('materials') },
+      { id: 'material', subCategories: reduceSubCategories('material') },
       { id: 'production', subCategories: reduceSubCategories('production') },
       { id: 'transport', subCategories: reduceSubCategories('transport') },
       { id: 'usage', subCategories: reduceSubCategories('usage') },

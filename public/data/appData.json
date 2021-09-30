@@ -35,30 +35,20 @@
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af ",
     "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!"
   },
-  "frontPageImage": "/images/Sannes udkast livscyklus.jpg",
-  "chatMessage": "Lorem ipsum dolor sit amet",
-  "chatAnswers": [
+  "feedbackText": {
+    "title":"LCA Analyse",
+    "description": "Analysen af denne LCA peget på følgende fordele og ulemper mellem valgene:",
+    "cancelBtnText": "Rediger valg",
+    "submitBtnText": "Godkend valg"
+  },
+  "material": [
     {
-      "initials": "AS",
-      "message": "Hvem er Lorem?"
-    },
-    {
-      "initials": "TH",
-      "message": "Og Ipsum?"
-    },
-    {
-      "initials": "KT",
-      "message": "Ahva?"
-    }
-  ],
-  "materials": [
-    {
-      "id":"olieplast",
+      "id":"material_olieplast",
       "title": "",
       "description": "",
       "subCategories": [
         {
-          "id": "olieplast_bloedplast",
+          "id": "material_olieplast_bloedplast",
           "title": "Oliebaseret plast",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
@@ -66,6 +56,7 @@
             "bioScore": 25,
             "economyScore":65
           },
+          "iconType": "oil",
           "chatMessages": [
             {
               "isUser": true,
@@ -86,7 +77,7 @@
           ]
         },
         {
-          "id": "olieplast_haardplast",
+          "id": "material_olieplast_haardplast",
           "title": "Bionedbrydelig plast",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
@@ -94,6 +85,7 @@
             "bioScore": 76,
             "economyScore":24
           }, 
+          "iconType": "oil",
           "chatMessages": [
             {
               "isUser": true,
@@ -116,12 +108,12 @@
       ]
     },
     {
-      "id":"planteplast",
+      "id":"material_planteplast",
       "title": "",
       "description": "",
       "subCategories": [
         {
-          "id": "planteplast_corn",
+          "id": "material_planteplast_corn",
           "title": "Bioplast af majs",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
@@ -129,6 +121,7 @@
             "bioScore": 25,
             "economyScore":65
           }, 
+          "iconType": "bio",
           "chatMessages": [
             {
               "isUser": true,
@@ -149,7 +142,7 @@
           ]
         },
         {
-          "id": "planteplast_sugar",
+          "id": "material_planteplast_sugar",
           "title": "Bioplast af sukkerrør",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
@@ -157,6 +150,7 @@
             "bioScore": 76,
             "economyScore":24
           }, 
+          "iconType": "bio",
           "chatMessages": [
             {
               "isUser": true,
@@ -177,7 +171,7 @@
           ]
         },
         {
-          "id": "planteplast_bio",
+          "id": "material_planteplast_bio",
           "title": "Bionedbrydelig plast",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
@@ -185,6 +179,7 @@
             "bioScore": 76,
             "economyScore":24
           }, 
+          "iconType": "bio",
           "chatMessages": [
             {
               "isUser": true,
@@ -207,12 +202,12 @@
       ]
     },
     {
-      "id":"genanvendt",
+      "id":"material_recycle",
       "title": "",
       "description": "",
       "subCategories": [
         {
-          "id": "genanvendt_plast",
+          "id": "material_recycle_plast",
           "title": "Genanvendt plast",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
@@ -220,6 +215,7 @@
             "bioScore": 25,
             "economyScore":65
           }, 
+          "iconType": "recycle",
           "chatMessages": [
             {
               "isUser": true,
@@ -359,6 +355,34 @@
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
             }
           ]
+        },
+        {
+          "id": "production_memphis",
+          "title": "Fakbrik i Memphis",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
         }
       ]
     }
@@ -422,16 +446,6 @@
             {
               "initials": "KT",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            }
-          ],
-          "disablesOptions": [
-            {
-              "id": "production_denmark",
-              "description": "Du kan ikke vælge at producere i Danmark og transportere med skib"
-            },
-            {
-              "id": "production_france",
-              "description": "Du kan ikke vælge at producere i Frankrig og transportere med skib"
             }
           ]
         },
@@ -846,6 +860,55 @@
           ]
         }
       ]
+    }
+  ],
+  "mutuallyDisabledOptions": [
+    {
+      "id1": "transport_ship",
+      "id2": "production_denmark",
+      "description": "Du kan ikke vælge at producere i Danmark og transportere med skib"
+    },
+    {
+      "id1": "transport_ship",
+      "id2": "production_france",
+      "description": "Du kan ikke vælge at producere i Frankrig og transportere med skib"
+    }
+  ],
+  "scoreWeights" : {
+    "co2": {
+      "material": 0.35,
+      "production": 0.20,
+      "transport": 0.05,
+      "usage": 0.30,
+      "disposal": 0.10
+    },
+    "bio": {
+      "material": 0.35,
+      "production": 0.20,
+      "transport": 0.05,
+      "usage": 0.30,
+      "disposal": 0.10
+    },
+    "economy": {
+      "material": 0.30,
+      "production": 0.45,
+      "transport": 0.10,
+      "usage": 0.05,
+      "disposal": 0.10
+    }
+  },
+  "feedback": [
+    {
+      "id1": "production_memphis",
+      "id2": "material_planteplast_corn",
+      "title": "Produktion i Memphis og råstof Majs",
+      "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO2-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "transport_flight",
+      "id2": "production_dubai",
+      "title": "Transport i fly og Produktion i Dubai",
+      "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO2-udledning, miljøbelastning og udgift."
     }
   ]
 }
