@@ -241,7 +241,7 @@
   "production": [
     {
       "id":"production",
-      "title": "",
+      "title": "Produktion",
       "description": "",
       "subCategories": [
         {
@@ -390,7 +390,7 @@
   "transport": [
     {
       "id":"transport",
-      "title": "",
+      "title": "Transport",
       "description": "",
       "subCategories": [
         {
@@ -539,7 +539,7 @@
   "usage": [
     {
       "id":"usage",
-      "title": "",
+      "title": "Brug",
       "description": "",
       "subCategories": [
         {
@@ -716,7 +716,7 @@
   "disposal": [
     {
       "id":"disposal",
-      "title": "",
+      "title": "Bortskaffelse",
       "description": "",
       "subCategories": [
         {
