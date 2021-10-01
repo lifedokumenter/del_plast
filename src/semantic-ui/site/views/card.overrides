@@ -22,6 +22,7 @@
     box-shadow: none !important;
     border: 2px solid @green;
     border-radius: 7px !important;
+    padding: 0.888rem;
 
     .header:not(.ui) {
         line-height: 1;

@@ -32,11 +32,11 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
   let pChainOptions:Array<PChainOption> = [];
   if (pChainType === 'all') {
     pChainOptions = [
-      { id: 'material', subCategories: reduceSubCategories('material') },
-      { id: 'production', subCategories: reduceSubCategories('production') },
-      { id: 'transport', subCategories: reduceSubCategories('transport') },
-      { id: 'usage', subCategories: reduceSubCategories('usage') },
-      { id: 'disposal', subCategories: reduceSubCategories('disposal') },
+      { id: 'material', subCategories: reduceSubCategories('material'), title: appData?.steps[step].columnTitles.material },
+      { id: 'production', subCategories: reduceSubCategories('production'), title: appData?.steps[step].columnTitles.production  },
+      { id: 'transport', subCategories: reduceSubCategories('transport'), title: appData?.steps[step].columnTitles.transport  },
+      { id: 'usage', subCategories: reduceSubCategories('usage'), title: appData?.steps[step].columnTitles.usage  },
+      { id: 'disposal', subCategories: reduceSubCategories('disposal'), title: appData?.steps[step].columnTitles.disposal  },
     ];
   } else{
     pChainOptions = appData[pChainType];
@@ -55,6 +55,7 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
               showDescription={pChainType !== 'all'}
               size={pChainType === 'all' ? 'small' : ''}
               multipleChoice={multipleChoice}
+              title={option.title}
             />
           )
         }

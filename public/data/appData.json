@@ -23,7 +23,14 @@
     },
     "6": {
       "title": "Udarbejd den bedste samlede LCA",
-      "buttonText":"Analyser valg"
+      "buttonText":"Analyser valg",
+      "columnTitles": {
+        "material": "Råstoff",
+        "production": "produktion",
+        "transport": "Transport",
+        "usage": "Brug",
+        "disposal": "Bortskaffelse"
+      }
     }
   },
   "medatadataHeaders": {
@@ -684,7 +691,7 @@
         },
         {
           "id": "usage_oil_plast",
-          "title": "Øliebaseret plast",
+          "title": "Oliebaseret plast",
           "description": "Lorem ipsum dolor sit amet",
           "metadata":{
             "co2Score": 50,

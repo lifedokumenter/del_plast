@@ -33,10 +33,6 @@ const PChainOptionCard = ({pChainOption, isDisabled, isSelected, onSelect, showD
     <Card className={`p-chain-option-card ${size} ${isDisabled ? 'disabled' : ''}`} key={pChainOption.id} color={isSelected ? 'green' : undefined} onClick={() => isDisabled ? null : onSelect(pChainOption)}>
       <Card.Content>
         <Card.Header content={pChainOption.title} /> 
-        { 
-          isSelected &&
-          <CheckmarkIcon className="p-chain-option-card__selected-icon" />
-        }
         {
           showDescription && 
           <Card.Description content={
@@ -48,6 +44,10 @@ const PChainOptionCard = ({pChainOption, isDisabled, isSelected, onSelect, showD
           />
         }
       </Card.Content>
+      { 
+        isSelected &&
+        <CheckmarkIcon className="p-chain-option-card__selected-icon" />
+      }
     </Card>
   )
 }

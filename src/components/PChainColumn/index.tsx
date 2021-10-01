@@ -5,8 +5,10 @@ import { PChainOption } from '../../interfaces/PChainOption';
 import { useChat } from '../../contexts/chatContext';
 import { usePChainChoices } from '../../contexts/PChainChoicesContext';
 import PChainOptionCard from '../PChainOptionCard';
+import { Header } from 'semantic-ui-react';
 
 interface PChainColumnProps { 
+  title: string;
   PChainOptions: Array<PChainOption>,
   showDescription?: boolean;
   wrap?: boolean;
@@ -14,7 +16,7 @@ interface PChainColumnProps {
   multipleChoice?: boolean;
 }
 
-const PChainColumn = ({PChainOptions, wrap, showDescription, size, multipleChoice}:PChainColumnProps) => {
+const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice}:PChainColumnProps) => {
 
   const { setPendingMessages } = useChat(); 
   const { activePChainChoice, setActivePChainChoice, togglePChainChoice, pChainChoices, disabledPChainChoices } = usePChainChoices();
@@ -38,6 +40,7 @@ const PChainColumn = ({PChainOptions, wrap, showDescription, size, multipleChoic
 
   return (
     <div className={`p-chain-column ${wrap ? 'wrap' : ''}`}>
+      <Header size="medium" >{title}</Header>
       {
         PChainOptions.map((option: PChainOption) => (
           <PChainOptionCard 
@@ -56,6 +59,7 @@ const PChainColumn = ({PChainOptions, wrap, showDescription, size, multipleChoic
 }
 
 PChainColumn.defaultProps = {
+  title: 'Insert title',
   PChainOptions: [],
   showDescription: true,
 }
