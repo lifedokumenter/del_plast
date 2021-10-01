@@ -7,7 +7,7 @@ interface PChainChoicesProviderProps {
 
 export interface PChainChoicesContextApi {
   pChainChoices: Array<PChainOption>;
-  togglePChainChoice: (choice: PChainOption) => void;
+  togglePChainChoice: (choice: PChainOption, enableMultipleChoice: boolean | undefined) => void;
   activePChainChoice: PChainOption | null;
   setActivePChainChoice: (choice: PChainOption) => void;
   disabledPChainChoices: Array<string>;
@@ -24,7 +24,7 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
   const [disabledPChainChoices, setDisabledPChainChoices] = React.useState<Array<string>>([]);
   const [mutuallyDisabledOptions, setMutuallyDisabledOptions] = React.useState<Array<DisabledPChainOption>>([]);
 
-  const togglePChainChoice = (choice: PChainOption) => {
+  const togglePChainChoice = (choice:PChainOption, enableMultipleChoice:boolean|undefined = false) => {
     let idx = -1;
     let arr = [...pChainChoices];
     // !! for some reason findIndex doesn't work here. changes the array. using good ol' for loop instead
@@ -35,6 +35,12 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
       }
     }
     idx > -1 ? arr.splice(idx,1) : arr.push(choice);
+
+    if (!enableMultipleChoice) {
+      // filter out others from same category
+      arr = arr.filter(o => o.id.split('_')[0] !== choice.id.split('_')[0] || o.id === choice.id);
+    }
+    
     setPChainChoices(arr);
 
     // save disabled choices

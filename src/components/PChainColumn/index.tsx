@@ -14,9 +14,10 @@ interface PChainColumnProps {
   wrap?: boolean;
   size?: string;
   multipleChoice?: boolean;
+  multipleChoicePerColumn?: boolean;
 }
 
-const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice}:PChainColumnProps) => {
+const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice, multipleChoicePerColumn}:PChainColumnProps) => {
 
   const { setPendingMessages } = useChat(); 
   const { activePChainChoice, setActivePChainChoice, togglePChainChoice, pChainChoices, disabledPChainChoices } = usePChainChoices();
@@ -24,7 +25,7 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
   const selectPChainOption = (option: PChainOption) => {
     setPendingMessages(option.chatMessages || []);
     if (multipleChoice) {
-      togglePChainChoice(option);
+      togglePChainChoice(option, multipleChoicePerColumn);
     } else {
       setActivePChainChoice(option);
     }
@@ -40,7 +41,10 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
 
   return (
     <div className={`p-chain-column ${wrap ? 'wrap' : ''}`}>
-      <Header size="medium" >{title}</Header>
+      {
+        title && 
+        <Header size="medium" >{title}</Header>
+      }
       {
         PChainOptions.map((option: PChainOption) => (
           <PChainOptionCard 
@@ -59,7 +63,7 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
 }
 
 PChainColumn.defaultProps = {
-  title: 'Insert title',
+  title: undefined,
   PChainOptions: [],
   showDescription: true,
 }

@@ -50,12 +50,13 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
           pChainOptions.map( (option: PChainOption) => 
             <PChainColumn
               key={option.id}
+              multipleChoicePerColumn={pChainType === 'all' && option.id === 'disposal'}
               PChainOptions={option.subCategories || []} 
               wrap={pChainOptions.length === 1}
               showDescription={pChainType !== 'all'}
               size={pChainType === 'all' ? 'small' : ''}
               multipleChoice={multipleChoice}
-              title={option.title}
+              title={pChainType === 'all' ? option.title : undefined}
             />
           )
         }
