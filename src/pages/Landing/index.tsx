@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import './index.less';
 import { Button, Grid, Icon } from 'semantic-ui-react';
 import { PChainOption, PChainOptionMetadata } from '../../interfaces/PChainOption'; 
@@ -26,7 +26,8 @@ const Landing = ({
   const { activePChainChoice, pChainChoices, setMutuallyDisabledOptions } = usePChainChoices();
   const { stepNo } = useParams<RouteParams>();
   const [ feecbackModalOpen, setFeedbackModalOpen ] = React.useState(false);
-  const [multipleChoice, setMultipleChoice] = useState<boolean>(parseInt(stepNo) === 6);
+  const [multipleChoice, setMultipleChoice] = React.useState<boolean>(parseInt(stepNo) === 6);
+  const [containsAllCategories, setContainsAllCategories] = React.useState<boolean>(false);
 
   useEffect(() => {
     setMultipleChoice(parseInt(stepNo) === 6);
@@ -36,7 +37,7 @@ const Landing = ({
     setMutuallyDisabledOptions(appData?.mutuallyDisabledOptions || []);
   }, [appData, setMutuallyDisabledOptions]);
 
-  const [scores, setScore] = useState<PChainOptionMetadata>(activePChainChoice?.metadata || {co2Score: 0, bioScore: 0, economyScore: 0});
+  const [scores, setScore] = React.useState<PChainOptionMetadata>(activePChainChoice?.metadata || {co2Score: 0, bioScore: 0, economyScore: 0});
 
   const submitStep = () => {
     if (multipleChoice) {
@@ -89,23 +90,28 @@ const Landing = ({
 
       // multiply each category with their weighting
       // if more than one option from a category is chosen, take avarage from that category
+      let hasAll = true;
       (Object.keys(categories) as Array<categoryNames>).forEach(cStr => {
         const cat = categories[cStr];
+        if (cat.length === 0) {
+          hasAll = false;
+        }
         cat.forEach( c => {
           currentScores.co2Score += ((c.metadata?.co2Score || 0) * appData.scoreWeights.co2[cStr]) / cat.length;
           currentScores.bioScore += ((c.metadata?.bioScore || 0) * appData.scoreWeights.bio[cStr]) / cat.length;
           currentScores.economyScore += ((c.metadata?.economyScore || 0) * appData.scoreWeights.economy[cStr]) / cat.length;
         });
-      })
+      });
+      setContainsAllCategories(hasAll);
     }
 
     setScore(currentScores);
-  }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights]);
+  }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights, appData.interactions]);
 
   return(
     <Grid columns={2} stackable>
       <Grid.Row>
-        <Grid.Column floated='left' width={12}>
+        <Grid.Column floated='left' width={multipleChoice ? 16 : 12}>
           <div className="landing">
             <div className="landing__content">
               <PChainStep key={stepNo} step={parseInt(stepNo)} appData={appData} multipleChoice={multipleChoice} /> 
@@ -115,6 +121,8 @@ const Landing = ({
                 description={appData.feedbackText.description}
                 cancelBtnText={appData.feedbackText.cancelBtnText}
                 submitBtnText={appData.feedbackText.submitBtnText}
+                approvedBtnText={appData.feedbackText.approvedBtnText}
+                approvedDescription={appData.feedbackText.approvedDescription}
                 open={feecbackModalOpen}
                 onSubmit={() => {
                   setFeedbackModalOpen(false); 
@@ -130,19 +138,23 @@ const Landing = ({
               co2Label={appData?.medatadataHeaders?.co2} 
               bioLabel={appData?.medatadataHeaders?.bio} 
               economyLabel={appData?.medatadataHeaders?.economy}
+              limits={appData.scoreLimits}
             />
             <div className="landing__content__footer">
               <img alt="text" src={lifeLogo} />
-              <Button size="huge" primary onClick={submitStep}>
+              <Button size="huge" primary onClick={submitStep} disabled={multipleChoice ? !containsAllCategories : !activePChainChoice}>
                 {appData.steps[stepNo || 1].buttonText}
                 <Icon name="chevron right" />
               </Button>
             </div>
           </div> 
         </Grid.Column>
-        <Grid.Column floated='right' width={4}>
-          <Chat />
-        </Grid.Column>
+        {
+          !multipleChoice && 
+          <Grid.Column floated='right' width={4}>
+            <Chat />
+          </Grid.Column>
+        }
       </Grid.Row>
     </Grid>
   )

@@ -10,6 +10,8 @@ export interface FeedbackModalProps {
   description: string;
   cancelBtnText: string;
   submitBtnText: string;
+  approvedBtnText: string;
+  approvedDescription: string;
   feedbackOptions?: Array<Feedback>;
   open: boolean;
   onSubmit: () => void;
@@ -17,10 +19,11 @@ export interface FeedbackModalProps {
   size: "small" | "mini" | "tiny" | "large" | "fullscreen" | undefined;
 }
 
-const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedbackOptions, open, onSubmit, onCancel, size}: FeedbackModalProps) => {
+const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedbackOptions, open, onSubmit, onCancel, size, approvedBtnText, approvedDescription}: FeedbackModalProps) => {
 
   const [feedback, setFeedback] = React.useState<Array<Feedback>>([]);
   const { pChainChoices } = usePChainChoices();
+  const [isApproved, setIsApproved] = React.useState(false);
 
   React.useEffect(() => {
     if (open) {
@@ -45,23 +48,38 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
       >
       <Modal.Header>{title}</Modal.Header>
       <Modal.Content>
-        <Header className="feedback-modal__description" size="medium"> {description}</Header>
-        {
-          feedback.map( (f, index) => 
-            <div key={f.id1 + '_' + f.id2} className="feedback-modal__feedback">
-              <Header size="medium">{index + 1}. {f.title}</Header>
-              <p>{f.description}</p>
-            </div>
-          )
+        <Header className="feedback-modal__description" size="medium"> {isApproved ? approvedDescription : description}</Header>
+          {
+            !isApproved &&
+            feedback.map( (f, index) => 
+              <div key={f.id1 + '_' + f.id2} className="feedback-modal__feedback">
+                <Header size="medium">{index + 1}. {f.title}</Header>
+                <p>{f.description}</p>
+              </div>
+            )
         }
       </Modal.Content>
       <Modal.Actions>
-        <Button secondary onClick={() => onCancel()}>
-          {cancelBtnText}
-        </Button>
-        <Button positive onClick={() => onSubmit() }>
-          {submitBtnText}
-        </Button>
+        {
+          !isApproved &&
+          <>
+            <Button secondary onClick={() => onCancel()}>
+              {cancelBtnText}
+            </Button>
+            <Button positive onClick={() => setIsApproved(true) }>
+              {submitBtnText}
+            </Button>
+          </>
+        }
+        {
+          isApproved &&
+          <Button positive onClick={() =>  {
+            setIsApproved(false);
+            onSubmit();
+          }}>
+            {approvedBtnText}
+          </Button>
+        }
       </Modal.Actions>
     </Modal>
   )

@@ -46,7 +46,9 @@
     "title":"LCA Analyse",
     "description": "Analysen af denne LCA peget på følgende fordele og ulemper mellem valgene:",
     "cancelBtnText": "Rediger valg",
-    "submitBtnText": "Godkend valg"
+    "submitBtnText": "Godkend valg",
+    "approvedDescription": "Tag et screenshot at dine valg",
+    "approvedBtnText": "OK"
   },
   "material": [
     {
@@ -928,5 +930,10 @@
         "economy": -2
       }
     }
-  ]
+  ],
+  "scoreLimits": {
+    "co2": 0.75,
+    "bio": 0.75,
+    "economy": 0.75
+  }
 }

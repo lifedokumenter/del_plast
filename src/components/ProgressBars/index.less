@@ -15,9 +15,10 @@
     display: flex;
     flex-direction: column;
     margin: 0 1.666rem 0 0;
+    position: relative;
 
     &:first-child {
-      margin-lefT: 1.666rem;
+      margin-left: 1.666rem;
     }
 
     .ui.header {
@@ -25,9 +26,24 @@
       color: white;
     }
 
-    .ui.progress:last-child {
-      margin-bottom: 0;
-    }
+    .ui.progress {
 
+      > .label {
+        margin-top: 0;
+        top: 0;
+        height: 100%;
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    } 
+
+    &__limit {
+      position: absolute;
+      border-right: 2px dashed @black;
+      height: 100%;
+      bottom: 0;
+    }
   }
 }
