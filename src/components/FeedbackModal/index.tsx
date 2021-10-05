@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal, Header } from 'semantic-ui-react';
 import { usePChainChoices } from '../../contexts/PChainChoicesContext';
-import { Feedback } from '../../interfaces/feedback';
+import { Feedback } from '../../interfaces/Feedback';
 
 import './index.less';
 
@@ -53,10 +53,6 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
               <p>{f.description}</p>
             </div>
           )
-        }
-        {
-          !feedback.length && 
-          <p>[indæst standard besked hvis når ingen feedback muligheder tilgængelige]</p>
         }
       </Modal.Content>
       <Modal.Actions>

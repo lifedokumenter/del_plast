@@ -917,5 +917,16 @@
       "title": "Transport i fly og Produktion i Dubai",
       "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO2-udledning, miljøbelastning og udgift."
     }
+  ],
+  "interactions": [
+    {
+      "id1": "production_billund",
+      "id2": "material_olieplast_bloedplast",
+      "scores": {
+        "co2": -2,
+        "bio": -1,
+        "economy": -2
+      }
+    }
   ]
 }

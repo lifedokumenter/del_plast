@@ -9,6 +9,7 @@ import Chat from "../../components/Chat";
 import { useParams } from "react-router";
 import PChainStep from "../../components/PChainStep";
 import FeedbackModal from "../../components/FeedbackModal";
+import { Interaction } from '../../interfaces/Interaction';
 
 interface RouteParams {
   stepNo: string;
@@ -64,7 +65,21 @@ const Landing = ({
         disposal: []
       };
 
+
       pChainChoices.forEach( c => {
+
+        // check for interactions
+        let filteredInteractions:Array<Interaction> = appData.interactions.filter((i:Interaction) => i.id1 === c.id || i.id2 === c.id);
+        filteredInteractions.forEach( i => {
+          const otherId:string = i.id1 === c.id ? i.id2 : i.id1;
+          if (pChainChoices.find(p => p.id === otherId)) {
+            // as interactions will occur twice on looping this way, we divide by 2
+            currentScores.co2Score += i.scores.co2 / 2;
+            currentScores.bioScore += i.scores.bio / 2;
+            currentScores.economyScore += i.scores.economy / 2;
+          }
+        });
+
         if (c.id.substring(0,8) === "material") { categories.material.push({...c}); }
         if (c.id.substring(0,10) === "production") { categories.production.push({...c});}
         if (c.id.substring(0,9) === "transport") { categories.transport.push({...c});}
