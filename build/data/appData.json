@@ -1,7 +1,38 @@
 {
-  "pageTitle": "Råstoffer",
-  "chooseMaterialHeader": "Vælg et råstof",
-  "chooseTypeHeader": "Vælg Type",
+  "pageTitle": "LCA Pro Tool 3.5",
+  "steps": {
+    "1": {
+      "title": "Vælg et råstof til Produktion",
+      "buttonText":"Vælg Råstof"
+    },
+    "2": {
+      "title": "Vælg produktions lokation",
+      "buttonText":"Vælg lokation"
+    },
+    "3": {
+      "title": "Vælg transport ",
+      "buttonText":"Vælg transport"
+    },
+    "4": {
+      "title": "Vælg Brug",
+      "buttonText":"Vælg Brug"
+    },
+    "5": {
+      "title": "Vælg bortskaffelses metode",
+      "buttonText":"Vælg bortskaffelse"
+    },
+    "6": {
+      "title": "Udarbejd den bedste samlede LCA",
+      "buttonText":"Analyser valg",
+      "columnTitles": {
+        "material": "Råstoff",
+        "production": "produktion",
+        "transport": "Transport",
+        "usage": "Brug",
+        "disposal": "Bortskaffelse"
+      }
+    }
+  },
   "medatadataHeaders": {
     "co2": "Co2 udledning",
     "bio": "Biodiversitet",
@@ -11,40 +42,33 @@
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af ",
     "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!"
   },
-  "frontPageImage": "/images/Sannes udkast livscyklus.jpg",
-  "chatMessage": "Lorem ipsum dolor sit amet",
-  "chatAnswers": [
+  "feedbackText": {
+    "title":"LCA Analyse",
+    "description": "Analysen af denne LCA peget på følgende fordele og ulemper mellem valgene:",
+    "cancelBtnText": "Rediger valg",
+    "submitBtnText": "Godkend valg"
+  },
+  "material": [
     {
-      "initials": "AS",
-      "message": "Hvem er Lorem?"
-    },
-    {
-      "initials": "TH",
-      "message": "Og Ipsum?"
-    },
-    {
-      "initials": "KT",
-      "message": "Ahva?"
-    }
-  ],
-  "materials": [
-    {
-      "id":"olieplast",
-      "title": "Olieplast",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "subMaterials": [
+      "id":"material_olieplast",
+      "title": "",
+      "description": "",
+      "subCategories": [
         {
-          "id": "olieplast_bloedplast",
-          "title": "Blød Plast",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "material_olieplast_bloedplast",
+          "title": "Oliebaseret plast",
+          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
             "co2Score": 50,
             "bioScore": 25,
             "economyScore":65
-          }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Vi tænker at bruge olieplast til vores covers. Hvad tænker i?",
-          "chatAnswers": [
+          },
+          "iconType": "oil",
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Vi tænker at bruge olieplast til vores covers. Hvad tænker i?"
+            },
             {
               "initials": "AS",
               "message": "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!"
@@ -60,17 +84,20 @@
           ]
         },
         {
-          "id": "olieplast_haardplast",
-          "title": "Hård Plast",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "material_olieplast_haardplast",
+          "title": "Bionedbrydelig plast",
+          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
             "co2Score": 34,
             "bioScore": 76,
             "economyScore":24
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "iconType": "oil",
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
@@ -88,22 +115,25 @@
       ]
     },
     {
-      "id":"planteplast",
-      "title": "Planteplast",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "subMaterials": [
+      "id":"material_planteplast",
+      "title": "",
+      "description": "",
+      "subCategories": [
         {
-          "id": "planteplast_corn",
-          "title": "Plast af majskolber",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "material_planteplast_corn",
+          "title": "Bioplast af majs",
+          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
             "co2Score": 50,
             "bioScore": 25,
             "economyScore":65
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "iconType": "bio",
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
@@ -119,17 +149,49 @@
           ]
         },
         {
-          "id": "planteplast_sugar",
-          "title": "Plast af rester fra sukkerrør",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "id": "material_planteplast_sugar",
+          "title": "Bioplast af sukkerrør",
+          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
             "co2Score": 34,
             "bioScore": 76,
             "economyScore":24
           }, 
-          "imageUrl": "/images/genanvendt-pvc-genbrug_1280.jpeg",
-          "chatMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-          "chatAnswers": [
+          "iconType": "bio",
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "material_planteplast_bio",
+          "title": "Bionedbrydelig plast",
+          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+          "metadata":{
+            "co2Score": 34,
+            "bioScore": 76,
+            "economyScore":24
+          }, 
+          "iconType": "bio",
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
             {
               "initials": "AS",
               "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
@@ -145,6 +207,726 @@
           ]
         }
       ]
+    },
+    {
+      "id":"material_recycle",
+      "title": "",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "material_recycle_plast",
+          "title": "Genanvendt plast",
+          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "iconType": "recycle",
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "production": [
+    {
+      "id":"production",
+      "title": "Produktion",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "production_billund",
+          "title": "Fakbrik i Billund",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "production_denmark",
+          "title": "Fakbrik i Danmark",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "production_france",
+          "title": "Fakbrik i Frankrig",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "production_dubai",
+          "title": "Fakbrik i Dubai",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "production_memphis",
+          "title": "Fakbrik i Memphis",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transport": [
+    {
+      "id":"transport",
+      "title": "Transport",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "transport_flight",
+          "title": "Fly",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_ship",
+          "title": "Skib",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_truck_diesel",
+          "title": "Lastbil, diesel",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_truck_el",
+          "title": "Lastbil, el",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "transport_none",
+          "title": "Ingen transport",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "usage": [
+    {
+      "id":"usage",
+      "title": "Brug",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "usage_ideal_of_sweden",
+          "title": "Ideal of Sweden, tykt, fash",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_transparent",
+          "title": "Gennemsigitg cover, tyndt, billigt",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_black",
+          "title": "Sort standard cover, kedeligt",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_cat",
+          "title": "CAT, tykt, standard",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_leather",
+          "title": "Læderbetrykket, holdbar",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "usage_oil_plast",
+          "title": "Oliebaseret plast",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "disposal": [
+    {
+      "id":"disposal",
+      "title": "Bortskaffelse",
+      "description": "",
+      "subCategories": [
+        {
+          "id": "disposal_deponi",
+          "title": "Deponi",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_burn",
+          "title": "Afbrænding",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_reuse",
+          "title": "Genanvendelse",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_recycle",
+          "title": "Genbrug",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        },
+        {
+          "id": "disposal_waste_prevention",
+          "title": "Affaldsforebyggelse",
+          "description": "Lorem ipsum dolor sit amet",
+          "metadata":{
+            "co2Score": 50,
+            "bioScore": 25,
+            "economyScore":65
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+              "initials": "AS",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "TH",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            },
+            {
+              "initials": "KT",
+              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mutuallyDisabledOptions": [
+    {
+      "id1": "transport_ship",
+      "id2": "production_denmark",
+      "description": "Du kan ikke vælge at producere i Danmark og transportere med skib"
+    },
+    {
+      "id1": "transport_ship",
+      "id2": "production_france",
+      "description": "Du kan ikke vælge at producere i Frankrig og transportere med skib"
+    }
+  ],
+  "scoreWeights" : {
+    "co2": {
+      "material": 0.35,
+      "production": 0.20,
+      "transport": 0.05,
+      "usage": 0.30,
+      "disposal": 0.10
+    },
+    "bio": {
+      "material": 0.35,
+      "production": 0.20,
+      "transport": 0.05,
+      "usage": 0.30,
+      "disposal": 0.10
+    },
+    "economy": {
+      "material": 0.30,
+      "production": 0.45,
+      "transport": 0.10,
+      "usage": 0.05,
+      "disposal": 0.10
+    }
+  },
+  "feedback": [
+    {
+      "id1": "production_memphis",
+      "id2": "material_planteplast_corn",
+      "title": "Produktion i Memphis og råstof Majs",
+      "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO2-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "transport_flight",
+      "id2": "production_dubai",
+      "title": "Transport i fly og Produktion i Dubai",
+      "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO2-udledning, miljøbelastning og udgift."
+    }
+  ],
+  "interactions": [
+    {
+      "id1": "production_billund",
+      "id2": "material_olieplast_bloedplast",
+      "scores": {
+        "co2": -2,
+        "bio": -1,
+        "economy": -2
+      }
     }
   ]
 }
