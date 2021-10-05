@@ -18,9 +18,7 @@ interface ProgressBarsProps {
   economyLabel?: string;
 }
 
-const ProgressBars = ({co2, bio, economy, limits, co2Label='', bioLabel='', economyLabel=''}: ProgressBarsProps) => {
-
-  console.log('co2: ', co2);
+const ProgressBars = ({co2, bio, economy, limits = {co2: 0.8, bio: 0.8, economy: 0.8}, co2Label='', bioLabel='', economyLabel=''}: ProgressBarsProps) => {
 
   const parseColor = (percentage: number | undefined, limit: number) => {
     limit = limit * 100;

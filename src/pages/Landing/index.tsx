@@ -111,43 +111,46 @@ const Landing = ({
   return(
     <Grid columns={2} stackable>
       <Grid.Row>
-        <Grid.Column floated='left' width={multipleChoice ? 16 : 12}>
-          <div className="landing">
-            <div className="landing__content">
-              <PChainStep key={stepNo} step={parseInt(stepNo)} appData={appData} multipleChoice={multipleChoice} /> 
-              <FeedbackModal 
-                feedbackOptions={appData.feedback}
-                title={appData.feedbackText.title}
-                description={appData.feedbackText.description}
-                cancelBtnText={appData.feedbackText.cancelBtnText}
-                submitBtnText={appData.feedbackText.submitBtnText}
-                approvedBtnText={appData.feedbackText.approvedBtnText}
-                approvedDescription={appData.feedbackText.approvedDescription}
-                open={feecbackModalOpen}
-                onSubmit={() => {
-                  setFeedbackModalOpen(false); 
-                  submit();
-                }}
-                onCancel={() => setFeedbackModalOpen(false)}
+        <Grid.Column floated='left' width={multipleChoice ? 16 : 12}> 
+          {
+            !!appData && 
+            <div className="landing">
+              <div className="landing__content">
+                <PChainStep key={stepNo} step={parseInt(stepNo)} appData={appData} multipleChoice={multipleChoice} /> 
+                <FeedbackModal 
+                  feedbackOptions={appData.feedback}
+                  title={appData.feedbackText.title}
+                  description={appData.feedbackText.description}
+                  cancelBtnText={appData.feedbackText.cancelBtnText}
+                  submitBtnText={appData.feedbackText.submitBtnText}
+                  approvedBtnText={appData.feedbackText.approvedBtnText}
+                  approvedDescription={appData.feedbackText.approvedDescription}
+                  open={feecbackModalOpen}
+                  onSubmit={() => {
+                    setFeedbackModalOpen(false); 
+                    submit();
+                  }}
+                  onCancel={() => setFeedbackModalOpen(false)}
+                />
+              </div>
+              <ProgressBars
+                co2={scores.co2Score} 
+                bio={scores.bioScore} 
+                economy={scores.economyScore}
+                co2Label={appData?.medatadataHeaders?.co2} 
+                bioLabel={appData?.medatadataHeaders?.bio} 
+                economyLabel={appData?.medatadataHeaders?.economy}
+                limits={appData?.scoreLimits}
               />
-            </div>
-            <ProgressBars
-              co2={scores.co2Score} 
-              bio={scores.bioScore} 
-              economy={scores.economyScore}
-              co2Label={appData?.medatadataHeaders?.co2} 
-              bioLabel={appData?.medatadataHeaders?.bio} 
-              economyLabel={appData?.medatadataHeaders?.economy}
-              limits={appData.scoreLimits}
-            />
-            <div className="landing__content__footer">
-              <img alt="text" src={lifeLogo} />
-              <Button size="huge" primary onClick={submitStep} disabled={multipleChoice ? !containsAllCategories : !activePChainChoice}>
-                {appData.steps[stepNo || 1].buttonText}
-                <Icon name="chevron right" />
-              </Button>
-            </div>
-          </div> 
+              <div className="landing__content__footer">
+                <img alt="text" src={lifeLogo} />
+                <Button size="huge" primary onClick={submitStep} disabled={multipleChoice ? !containsAllCategories : !activePChainChoice}>
+                  {appData.steps[stepNo || 1].buttonText}
+                  <Icon name="chevron right" />
+                </Button>
+              </div>
+            </div> 
+          }
         </Grid.Column>
         {
           !multipleChoice && 

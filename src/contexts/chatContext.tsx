@@ -20,7 +20,6 @@ export const ChatProvider = ({ children }: ChatProviderProps) => {
   const [pendingMessages, setPendingMessages] = React.useState<Array<ChatMessage>>([]);
 
   const addPendingMessages = () => {
-    console.log('setting messages', pendingMessages)
     setMessages([...messages, ...pendingMessages]);
   }
 
