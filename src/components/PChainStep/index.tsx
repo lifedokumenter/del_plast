@@ -7,7 +7,7 @@ import './index.less';
 interface PChainStepProps { 
   step: number,
   appData: any,
-  multipleChoice: boolean
+  multipleChoice?: boolean|undefined
 }
 
 const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
@@ -50,7 +50,7 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
           pChainOptions.map( (option: PChainOption) => 
             <PChainColumn
               key={option.id}
-              multipleChoicePerColumn={pChainType === 'all' && option.id === 'disposal'}
+              multipleChoicePerColumn={option.id === 'disposal'}
               PChainOptions={option.subCategories || []} 
               wrap={pChainOptions.length === 1}
               showDescription={pChainType !== 'all'}

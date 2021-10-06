@@ -50,6 +50,7 @@
     "approvedDescription": "Tag et screenshot at dine valg",
     "approvedBtnText": "OK"
   },
+  "aboveLimit": "Dit budget er overskrevet. Se om du ikke kan foretage nogle andre valg",
   "material": [
     {
       "id":"material_olieplast",

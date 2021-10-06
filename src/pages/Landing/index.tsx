@@ -23,15 +23,21 @@ const Landing = ({
   appData
 }: LandingProps) => {
 
-  const { activePChainChoice, pChainChoices, setMutuallyDisabledOptions } = usePChainChoices();
-  const { stepNo } = useParams<RouteParams>();
-  const [ feecbackModalOpen, setFeedbackModalOpen ] = React.useState(false);
-  const [multipleChoice, setMultipleChoice] = React.useState<boolean>(parseInt(stepNo) === 6);
+  const { activePChainChoice, pChainChoices, setMutuallyDisabledOptions, resetChoices } = usePChainChoices();
+  let { stepNo } = useParams<RouteParams>();
+  const [step, setStep] = React.useState<number>();
+  const [feecbackModalOpen, setFeedbackModalOpen ] = React.useState(false);
+  const [multipleChoice, setMultipleChoice] = React.useState<boolean | undefined>();
   const [containsAllCategories, setContainsAllCategories] = React.useState<boolean>(false);
 
   useEffect(() => {
-    setMultipleChoice(parseInt(stepNo) === 6);
-  }, [stepNo]);
+    const newStep = parseInt(stepNo);
+    if (newStep !== step) {
+      setStep(newStep);
+      setMultipleChoice(newStep === 6 || newStep === 5);
+      resetChoices();
+    } 
+  }, [stepNo, step, resetChoices]);
 
   useEffect(() => {
     setMutuallyDisabledOptions(appData?.mutuallyDisabledOptions || []);
@@ -45,10 +51,6 @@ const Landing = ({
     } else {
       console.log('submitted with activePChainChoice', activePChainChoice);
     }
-  }
-
-  const submit = () => {
-    console.log('submitting with choices: ', pChainChoices);
   }
 
   /* calculate scores on change */
@@ -65,7 +67,6 @@ const Landing = ({
         usage: [],
         disposal: []
       };
-
 
       pChainChoices.forEach( c => {
 
@@ -96,6 +97,7 @@ const Landing = ({
         if (cat.length === 0) {
           hasAll = false;
         }
+
         cat.forEach( c => {
           currentScores.co2Score += ((c.metadata?.co2Score || 0) * appData.scoreWeights.co2[cStr]) / cat.length;
           currentScores.bioScore += ((c.metadata?.bioScore || 0) * appData.scoreWeights.bio[cStr]) / cat.length;
@@ -116,7 +118,7 @@ const Landing = ({
             !!appData && 
             <div className="landing">
               <div className="landing__content">
-                <PChainStep key={stepNo} step={parseInt(stepNo)} appData={appData} multipleChoice={multipleChoice} /> 
+                <PChainStep key={step} step={step} appData={appData} multipleChoice={multipleChoice} /> 
                 <FeedbackModal 
                   feedbackOptions={appData.feedback}
                   title={appData.feedbackText.title}
@@ -127,8 +129,7 @@ const Landing = ({
                   approvedDescription={appData.feedbackText.approvedDescription}
                   open={feecbackModalOpen}
                   onSubmit={() => {
-                    setFeedbackModalOpen(false); 
-                    submit();
+                    setFeedbackModalOpen(false);
                   }}
                   onCancel={() => setFeedbackModalOpen(false)}
                 />
@@ -141,11 +142,13 @@ const Landing = ({
                 bioLabel={appData?.medatadataHeaders?.bio} 
                 economyLabel={appData?.medatadataHeaders?.economy}
                 limits={appData?.scoreLimits}
+                alertOnAboveLimit={step === 5 || step === 6}
+                alertMessage={appData?.aboveLimit}
               />
               <div className="landing__content__footer">
                 <img alt="text" src={lifeLogo} />
                 <Button size="huge" primary onClick={submitStep} disabled={multipleChoice ? !containsAllCategories : !activePChainChoice}>
-                  {appData.steps[stepNo || 1].buttonText}
+                  {appData.steps[step || 1].buttonText}
                   <Icon name="chevron right" />
                 </Button>
               </div>

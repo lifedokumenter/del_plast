@@ -13,6 +13,7 @@ export interface PChainChoicesContextApi {
   disabledPChainChoices: Array<string>;
   setDisabledPChainChoices: (disabledChoices: Array<string>) => void;
   setMutuallyDisabledOptions: (disabledOptions: Array<DisabledPChainOption>) => void;
+  resetChoices: () => void;
 }
 
 const PChainChoiceContext = React.createContext({} as PChainChoicesContextApi)
@@ -57,6 +58,11 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
     setDisabledPChainChoices(disabledOptions);
   }
 
+  const resetChoices = () => {
+    setPChainChoices([]);
+    setActivePChainChoice(null);
+  }
+
   return (
     <PChainChoiceContext.Provider
       value={{
@@ -66,7 +72,8 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
         setActivePChainChoice,
         disabledPChainChoices,
         setDisabledPChainChoices,
-        setMutuallyDisabledOptions
+        setMutuallyDisabledOptions,
+        resetChoices
       }}
     >
       {children}
