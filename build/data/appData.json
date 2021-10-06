@@ -2,8 +2,8 @@
   "pageTitle": "LCA Pro Tool 3.5",
   "steps": {
     "1": {
-      "title": "Vælg et råstof til Produktion",
-      "buttonText":"Vælg Råstof"
+      "title": "Vælg et råstof til jeres covers",
+      "buttonText":"Vælg råstof"
     },
     "2": {
       "title": "Vælg produktions lokation",
