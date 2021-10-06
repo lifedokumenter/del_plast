@@ -181,12 +181,12 @@
         },
         {
           "id": "material_planteplast_bio",
-          "title": "Bionedbrydelig plast slettes ",
-          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+          "title": "slettes ",
+          "description": "slettes",
           "metadata":{
-            "co2Score": 34,
-            "bioScore": 76,
-            "economyScore":24
+            "co2Score": 0,
+            "bioScore": 0,
+            "economyScore":0
           }, 
           "iconType": "bio",
           "chatMessages": [
@@ -255,141 +255,141 @@
       "subCategories": [
         {
           "id": "production_billund",
-          "title": "Fakbrik i Billund",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Billund",
+          "description": "Fabrikken har røggasrensning, så den forurener næsten ikke. Det er robotter der står for produktionen. Energien kommer hovedsageligt fra vindenergi",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 26,
+            "bioScore": 13,
+            "economyScore":98
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at vælge fabrikken i Billund?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "En fabrik i Danmark er en god idé. Vi slipper for transport og sparer en masse på CO2 udledningen."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Kunderne kan godt lide at købe varer der er lokalt producerede. Det er desuden en sikkert arbejdsmiljø, når det er robotter der står for produktionen"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jeg synes godt nok at den fabrik er dyr. Hvis vi skal have råd til den, er der måske andre ting vi ikke får råd til."
             }
           ]
         },
         {
           "id": "production_denmark",
-          "title": "Fakbrik i Danmark",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Paris",
+          "description": "Fabrikken har røggasrensning, så den forurener næsten ikke. Den er delvist automatiseret med robotter. Energien kommer hovedsageligt fra atomkraft. ",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 17,
+            "bioScore": 39,
+            "economyScore":79
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at vælge fabrikken i Paris?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "En fabrik i Europa vil stadig spare os for en del transport. Den har også lav forurening. Atomkraft er også CO2 neutral energi. Jeg synes det ser godt ud!"
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Kunderne kan godt lide at købe varer der er lokalt producerede og Europa er da lidt lokalt."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Fabrikken er godt nok dyr."
             }
           ]
         },
         {
           "id": "production_france",
-          "title": "Fakbrik i Frankrig",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Miami",
+          "description": "Fabrikken har røggasrensning, men de trænger til en udskiftning. Høj grad af automatisering fra robotter. Energien kommer delsvist fra solenergi og delvist fra olie og gas",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 54,
+            "bioScore": 35,
+            "economyScore":71
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at vælge fabrikken i Miami?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Hvis vi vælger den her, så skal vi investere i ny røggasrensning. Jeg er også ærgerlig over at en stor del af energien kommer fra olie og gas."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "En fabrik i USA er en god idé. Især hvis vi vil ind på det amerikanske marked."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det bliver svært for mig at forhandle en bedre pris, når fabrikken ligger så centralt i Miami. Er der mon en fabrik til en bedre pris?"
             }
           ]
         },
         {
           "id": "production_dubai",
-          "title": "Fakbrik i Dubai",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Memphis",
+          "description": "Fabrikken er gammel og den trænger til opdatering af både røggasrensning og maskiner. Energien kommer hovedsageligt fra olie og gas",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 61,
+            "bioScore": 65,
+            "economyScore":33
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at vælge fabrikken i Memphis?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jeg synes CO2 udledning og miljøbelastningen er for høj, det kan vi gøre bedre."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "En fabrik midt i USA er en god idé, hvis vi vil ind på det amerikanske marked."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Prisen er god for fabrikken. Men tror I vi skal bruge penge på nye maskiner og alt muligt? Det kan jo blive dyrt."
             }
           ]
         },
         {
           "id": "production_memphis",
-          "title": "Fakbrik i Memphis",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Dubai",
+          "description": "Fabrikken er ny, den har røggasrensning og det er robotter der klarer alt i produktionen. Energien kommer fra olie.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 37,
+            "bioScore": 16,
+            "economyScore":88
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at vælge fabrikken i Dubai?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Der er lav miljøbelastning, men den får sin energi fra olie... Det synes jeg ikke er godt nok."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Robotter der står for produktionen, det lyder godt!"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Den er meget dyr, har vi virkelig brug for en helt nybygget fabrik?"
             }
           ]
         }
