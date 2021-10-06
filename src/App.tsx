@@ -6,8 +6,7 @@ import Landing from './pages/Landing';
 import {
   HashRouter as Router,
   Switch,
-  Route,
-  HashRouter,
+  Route
 } from "react-router-dom";
 
 function App() {
