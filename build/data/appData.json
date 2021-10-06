@@ -405,118 +405,118 @@
         {
           "id": "transport_flight",
           "title": "Fly",
-          "description": "Lorem ipsum dolor sit amet",
+          "description": "Vi flyver dine varer, med branchens mest klimasikrede fly.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 69,
+            "bioScore": 54,
+            "economyScore":98
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at transportere vores covers med fly?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Selvom flyet har en lav CO2 udledning i forhold til andre fly, så er den stadig for høj."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det er godt at varerne er hurtigt fremme."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Selvom varerne er hurtigt fremme, er det en meget dyr løsning"
             }
           ]
         },
         {
           "id": "transport_ship",
           "title": "Skib",
-          "description": "Lorem ipsum dolor sit amet",
+          "description": "Vi sejler dine varer frem langsomt med sikkert. Vælg os hvis I vil have en prisvenlig løsning, og leveringstid er ligegyldig",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 30,
+            "bioScore": 43,
+            "economyScore":33
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at transportere vores covers med skib?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Containerskibe belaster miljøet meget, men der kan også være millioner af varer på et enkelt skib. Det er en rigtig god transportform, når varerne skal langt."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jeg er lidt nervøs for at vores varer er længe undervejs og sårbare for forsinkelser. Det kan give et dårligt ry blandt kunderne."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Varerne er længe undervejs, så selvom det er en meget billig transportform, så kræver det et større lager."
             }
           ]
         },
         {
           "id": "transport_truck_diesel",
-          "title": "Lastbil, diesel",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Tog",
+          "description": "Vi transporterer dine varer med den mest miljørigtige transportform, nemlig tog. ",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 28,
+            "bioScore": 24,
+            "economyScore":60
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at transportere vores covers med tog?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jeg synes det lyder som en god idé."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det kan vidst være en langsom transportform."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Prisen er lidt høj, men det er ikke det der vælter budgettet."
             }
           ]
         },
         {
           "id": "transport_truck_el",
-          "title": "Lastbil, el",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Lastbil",
+          "description": "Billig og fleksibel transport med lastbiler også mellem Europa og Asien.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 77,
+            "bioScore": 69,
+            "economyScore":15
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om at transportere vores covers med lastbil?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO2 udledning og miljøbelastning er så høj."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Lastbil fra Asien til Europa?? Det er godt nok en lang tur i lastbil. Især hvis chaufføren skal sove undervejs."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør. Måske koster det ekstra hvis vi skal have varene transporteret hele vejen fra Asien."
             }
           ]
         },
         {
           "id": "transport_none",
-          "title": "Ingen transport",
+          "title": "Ingen transport - slettes??",
           "description": "Lorem ipsum dolor sit amet",
           "metadata":{
             "co2Score": 50,
@@ -553,169 +553,169 @@
       "subCategories": [
         {
           "id": "usage_ideal_of_sweden",
-          "title": "Ideal of Sweden, tykt, fash",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Cover 1",
+          "description": "Hård plast med print. Forventet holdbarhed ca. 2 år",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 39,
+            "bioScore": 41,
+            "economyScore":14
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om dette cover?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Hård plast egner sig godt til genanvendelse, hvis vi altså kan få folk til at affaldssortere.. Men det er en anden sag, jeg siger GO!"
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Nogle foretrækker print, jeg vil helst selv undvære, men det skal nok sælge!"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det ser billigt ud, det lyder godt!"
             }
           ]
         },
         {
           "id": "usage_transparent",
-          "title": "Gennemsigitg cover, tyndt, billigt",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Cover 2",
+          "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 33,
+            "bioScore": 35,
+            "economyScore":7
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om dette cover?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Hård plast egner sig godt til genanvendelse, hvis vi altså kan få folk til at affaldssortere.. Men det er en anden sag, jeg siger GO!"
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Dette cover ville jeg selv foretrække. "
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det ser billigt ud, det lyder godt!"
             }
           ]
         },
         {
           "id": "usage_black",
-          "title": "Sort standard cover, kedeligt",
+          "title": "Cover 3",
           "description": "Lorem ipsum dolor sit amet",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 40,
+            "bioScore": 44,
+            "economyScore":15
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om dette cover?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "De her holder ikke så længe, fordi de bliver løse i plasten. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det. I det mindste flækker de ikke."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "De har det med at blive misfarvede og løse med tiden, men der er stadig mange som køber dem igen og igen. Der er bare lidt køb og smid væk over det.. "
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det ser billigt ud, jeg er tilfreds."
             }
           ]
         },
         {
           "id": "usage_cat",
-          "title": "CAT, tykt, standard",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Cover 4",
+          "description": "Bøjelig plast, gennemsigtigt. Forventet holdbarhed ca. 1 år.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 35,
+            "bioScore": 36,
+            "economyScore":9
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om dette cover?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "De her holder ikke så længe, fordi de bliver løse i plasten. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det. I det mindste flækker de ikke."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "De har det med at blive misfarvede og løse med tiden, men der er stadig mange som køber dem igen og igen. Der er bare lidt køb og smid væk over det.. "
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jeg har faktisk sådan et her, jeg kan nemlig godt lide at jeg kan se telefonen! Det er i øvrigt billigt at producere."
             }
           ]
         },
         {
           "id": "usage_leather",
-          "title": "Læderbetrykket, holdbar",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Cover 5",
+          "description": "Plast betrukket med læder. Forventet holdbarhed ca. 2,5 år",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 47,
+            "bioScore": 37,
+            "economyScore":37
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om dette cover?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Læder er et materiale der bliver pænere med tiden, men det kommer altså fra en ko, som belaster klimaet"
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Naturlige materialer som kun bliver pænere med tiden. Det er der helt sikkert kunder til. "
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Vi skal godt nok sælge coveret dyrt, hvis vi skal tjene penge på det. Er der kunder til det? "
             }
           ]
         },
         {
           "id": "usage_oil_plast",
-          "title": "Oliebaseret plast",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Cover 6",
+          "description": "Plast forstærket med metal. Forventet holdbarhed ca. 4 år",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 69,
+            "bioScore": 51,
+            "economyScore":29
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om dette cover?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Selvom coveret udleder meget CO2 i produktionen, så holder det længe! Det er dog svært at genanvende, når der både bruges plast og metal. "
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Et cover der holder til alt - det sælger!"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jeg synes det er lidt dyrt, vi skal jo også tjene penge på coveret. Hvad tror I folk vil give for sådan et cover?"
             }
           ]
         }
@@ -730,141 +730,141 @@
       "subCategories": [
         {
           "id": "disposal_deponi",
-          "title": "Deponi",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Design til genanvendelse",
+          "description": "Coveret må ikke være lavet af flere forskellige materialer eller plasttyper. Det skal være nemt for forbrugeren at affaldssortere.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": -7,
+            "bioScore": -5,
+            "economyScore":40
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Har I nogen kommentarer til denne?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Vi skal genanvende MEGET MERE. Jeg synes bestemt vi skal vælge denne!"
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det er meget in at genanvende, vi kan reklamere med at vi har cirkulær økonomi. Jeg synes det er en god ide!"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
             }
           ]
         },
         {
           "id": "disposal_burn",
-          "title": "Afbrænding",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Design til genbrug",
+          "description": "Hvis et cover skal kunne genbruges, skal det være meget holdbart og stadig være pænt efter længere tids brug.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": -11,
+            "bioScore": -9,
+            "economyScore":35
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Har I nogen kommentarer til denne?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Genbrug er altid at foretrække! Der er ingen miljøbelsatning og det har vi brug for hvis vi skal passe på vores jord."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Genbrug er at foretrække! MEN - der kommer hele tiden nye telefoner, som har en ny form. Vil det sælge covers, at reklamere med at de kan genbruges? "
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
             }
           ]
         },
         {
           "id": "disposal_reuse",
-          "title": "Genanvendelse",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Mærkning på produkt",
+          "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": -1,
+            "bioScore": -2,
+            "economyScore":25
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om mærkning?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det er altid en god idé at guide forbrugerne. "
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det hedder nudging når man påvirker forbrugerne på den måde, det virker altså!"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
             }
           ]
         },
         {
           "id": "disposal_recycle",
-          "title": "Genbrug",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Take-back ordning",
+          "description": "Kunderne kan aflevere deres gamle covers og få 10% rabat det næste",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": -7,
+            "bioScore": -5,
+            "economyScore":60
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "En rabatordning? Hvad tænker I?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det virker at give kunderne en økonomisk gevinst, når vi vil have dem til at være mere miljørigtige."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Der er rig mulighed for at reklamere og gøre sig synlige for kunderne med denne ordning."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jeg har alligevel lige noget her - sådan en ordning skaber loyale kunder, de kommer igen fordi de kan spare penge. Det her kan vi tjene på, på sigt. "
             }
           ]
         },
         {
           "id": "disposal_waste_prevention",
-          "title": "Affaldsforebyggelse",
-          "description": "Lorem ipsum dolor sit amet",
+          "title": "Mindre emballage",
+          "description": "Gør emballagen mindre om coveret, så der kan være flere når coversne skal fragtes. ",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": -3,
+            "bioScore": -2,
+            "economyScore":30
           }, 
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Hvad tænker I om denne?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Jo mindre luft der transporteres rundt i verden, des bedre! Og så slipper vi for unødvendig emballage. "
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Mon ikke det sælger at skrive 10% mindre emballage på? Det tror jeg nok det skal. "
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger.  "
             }
           ]
         }
