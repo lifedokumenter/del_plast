@@ -2,6 +2,8 @@ import React from 'react';
 import { Segment, Form, TextArea, Button, Icon } from 'semantic-ui-react';
 import { useChat } from '../../contexts/chatContext';
 import { ChatMessage } from '../../interfaces/ChatMessage';
+import { ReactComponent as PersonIcon } from '../../images/person.svg';
+
 
 import './index.less';
 
@@ -25,15 +27,14 @@ const Chat = ({ onSubmitted }: Props) => {
           <div className="chat-messages"> 
             {
               messages && messages.map( (message: ChatMessage, index: number) => (
-                <div key={index} className={message.isUser ? 'chat-messages-user' : 'chat-messages-message'}> 
-                  {
-                    message.isUser && <Icon name="user" size="large"></Icon>
-                  }
-                  {
-                    !message.isUser && 
-                    <div className="chat-messages-message-user-icon"><p>{message.initials}</p></div>
-                  }
-                  <p>{message.message}</p>
+                <div key={index} className={message.isUser ? 'chat-messages__user' : 'chat-messages__message'}> 
+                  <div className="chat-messages__user-icon">
+                    <PersonIcon />
+                  </div>
+                  <div className="chat-messages__bubble">
+                    <p>{message.initials}</p>
+                    <p>{message.message}</p>
+                  </div>
                 </div>
               ))
             }
