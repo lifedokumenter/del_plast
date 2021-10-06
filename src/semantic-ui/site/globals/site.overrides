@@ -22,3 +22,15 @@
 			url('./fonts/Corbel Bold.woff') format('woff');
 	font-weight: bold;
 }
+
+html {
+	@media only screen and (min-width:  @mobileBreakpoint) {
+		font-size: 11px;
+	}
+	@media only screen and (min-width:  @largeMonitorBreakpoint) {
+		font-size: 13px;
+	}
+	@media only screen and (min-width:  @widescreenMonitorBreakpoint) {
+		font-size: 18px;
+	}
+}
