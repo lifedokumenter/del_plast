@@ -6,27 +6,27 @@
       "buttonText":"Vælg råstof"
     },
     "2": {
-      "title": "Vælg produktions lokation",
+      "title": "Vælg en fabrik til produktion",
       "buttonText":"Vælg lokation"
     },
     "3": {
-      "title": "Vælg transport ",
+      "title": "Vælg transportsform",
       "buttonText":"Vælg transport"
     },
     "4": {
-      "title": "Vælg Brug",
+      "title": "Vælg en covertype",
       "buttonText":"Vælg Brug"
     },
     "5": {
-      "title": "Vælg bortskaffelses metode",
+      "title": "Lav en bortskaffelsesstrategi",
       "buttonText":"Vælg bortskaffelse"
     },
     "6": {
-      "title": "Udarbejd den bedste samlede LCA",
+      "title": "Udarbejd jeres samlede LCA",
       "buttonText":"Analyser valg",
       "columnTitles": {
-        "material": "Råstoff",
-        "production": "produktion",
+        "material": "Råstof",
+        "production": "Produktion",
         "transport": "Transport",
         "usage": "Brug",
         "disposal": "Bortskaffelse"
@@ -34,9 +34,9 @@
     }
   },
   "medatadataHeaders": {
-    "co2": "Co2 udledning",
-    "bio": "Biodiversitet",
-    "economy": "Økonomi"
+    "co2": "CO2 udledning",
+    "bio": "Miljøbelastning",
+    "economy": "Udgift"
   },
   "emailText": {
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af ",
@@ -44,7 +44,7 @@
   },
   "feedbackText": {
     "title":"LCA Analyse",
-    "description": "Analysen af denne LCA peget på følgende fordele og ulemper mellem valgene:",
+    "description": "Analysen af denne LCA peger på følgende fordele og ulemper mellem valgene:",
     "cancelBtnText": "Rediger valg",
     "submitBtnText": "Godkend valg",
     "approvedDescription": "Tag et screenshot at dine valg",
@@ -58,59 +58,59 @@
       "subCategories": [
         {
           "id": "material_olieplast_bloedplast",
-          "title": "Oliebaseret plast",
-          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+          "title": "Olie",
+          "description": "Olie er dannet af planter og andre organismer igennem millioner af år. Det pumpes op fra undergrunden og bruges bl.a. til at lave benzin, diesel og plast.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 92,
+            "bioScore": 48,
+            "economyScore":17
           },
           "iconType": "oil",
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Vi tænker at bruge olieplast til vores covers. Hvad tænker i?"
+              "message": "Vi tænker at bruge olie som råstof til vores covers. Hvad tænker i?"
             },
             {
               "initials": "AS",
-              "message": "Hmm, olieplast.. Er der god markedsføring i det? Vi skal i hvert fald sørge for at de bløde covers holder formen!"
+              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO2!"
             },
             {
               "initials": "TH",
-              "message": "Vi har et ansvar, når vi bruger olie til at lave plast af. Kan vi overveje om vi kan tænke genanvendelse ind i vores produktion?"
+              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren."
             },
             {
               "initials": "KT",
-              "message": "Olieplast er billigt og nemt at producere. Jeg har ingen indvendinger."
+              "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her."
             }
           ]
         },
         {
           "id": "material_olieplast_haardplast",
-          "title": "Bionedbrydelig plast",
-          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+          "title": "Sukkerrør",
+          "description": "Sukkerrør bruges hovedsageligt til fremstilling af rørsukker. Man kan bruge affaldet fra rørsukkerproduktionen, til at lave bioplast af.",
           "metadata":{
-            "co2Score": 34,
-            "bioScore": 76,
-            "economyScore":24
+            "co2Score": 19,
+            "bioScore": 88,
+            "economyScore":64
           }, 
-          "iconType": "oil",
+          "iconType": "bio",
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Vi tænker at bruge sukkerrør som råstof til vores covers. Hvad tænker i?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "CO2 udledningen er lav og det er godt, men der er nærmest ingen vild natur i en sukkerrørsmark og det er et problem."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det giver mening for mig, at vi bruger et affaldsprodukt som vores råstof. Det vil vores kunder kunne lide."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Prisen er lidt høj, jeg tror at det er fordi man også bruger affaldet fra sukkerrør i biobrændsel, så efterspørgslen er høj."
             }
           ]
         }
@@ -123,65 +123,65 @@
       "subCategories": [
         {
           "id": "material_planteplast_corn",
-          "title": "Bioplast af majs",
+          "title": "Majs",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 24,
+            "bioScore": 81,
+            "economyScore":50
           }, 
           "iconType": "bio",
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Vi tænker at bruge majs som råstof til vores covers. Hvad tænker i?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "CO2 er lav og det er godt, der er ikke særlig meget vild natur i en majsmark, men dog lidt mere end der er i en mark med sukkerrør"
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Majs er en af de vigtigste fødevarer for verdens fattigste, hvis vi bruger majs vil prisen stige og folk kan sulte."
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Prisen er god. Vi kan indkøbe majs billigt og teknologien til at lave plast af majs er til at betale."
             }
           ]
         },
         {
           "id": "material_planteplast_sugar",
-          "title": "Bioplast af sukkerrør",
-          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+          "title": "Halm",
+          "description": "Halm er et restprodukt fra kornproduktion. Det bruges som strøelse til dyr. Man kan også lave bioplast af halm.",
           "metadata":{
-            "co2Score": 34,
-            "bioScore": 76,
-            "economyScore":24
+            "co2Score": 14,
+            "bioScore": 71,
+            "economyScore":86
           }, 
           "iconType": "bio",
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Vi tænker at bruge majs som råstof til vores covers. Hvad tænker i?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "CO2 udledning er meget lav, hvilket er godt for klimaet. Og der er lidt vild natur i en kornmark."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Halm er hverken en fødevare eller et uundværligt produkt andre steder. Jeg synes det er en god ide!"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Selvom halm er meget billigt at købe, er teknologien stadig dyr, fordi den er helt ny. Jeg synes det er for risikabelt."
             }
           ]
         },
         {
           "id": "material_planteplast_bio",
-          "title": "Bionedbrydelig plast",
+          "title": "Bionedbrydelig plast slettes ",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
             "co2Score": 34,
@@ -217,30 +217,30 @@
       "subCategories": [
         {
           "id": "material_recycle_plast",
-          "title": "Genanvendt plast",
-          "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+          "title": "Plastaffald",
+          "description": "Plast som er smidt ud og sorteret, hakket i mindre stykker, kan bruges til at lave nye plastprodukter af. Det kaldes genanvendt plast.",
           "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
+            "co2Score": 39,
+            "bioScore": 12,
+            "economyScore":84
           }, 
           "iconType": "recycle",
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              "message": "Vi tænker at bruge plastaffald som råstof til vores covers. Hvad tænker i?"
             },
             {
               "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Genanvendelse er godt! Vi skal væk fra at brænde vores affald og frem mod at genanvende det."
             },
             {
               "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Genanvendt plast har et godt ry hos forbrugeren, men kan vi godt være sikre på kvaliteten?"
             },
             {
               "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+              "message": "Det kan være svært at indkøbe plasten i store nok mængder, så vi kan risikere at betale en meget høj pris."
             }
           ]
         }
