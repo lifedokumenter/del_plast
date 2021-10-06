@@ -14,6 +14,7 @@ function App() {
   const [appData, setAppData] = React.useState<any | null>();
 
   React.useEffect(()=> {
+    console.log(`${process.env.REACT_APP_ROOT_DIR || './'}data/appData.json`);
     fetch(`${process.env.REACT_APP_ROOT_DIR || './'}data/appData.json`)
       .then(res=>res.json())
       .then( data => {

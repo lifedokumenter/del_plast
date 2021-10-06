@@ -25,13 +25,10 @@
 
 html {
 	@media only screen and (min-width:  @mobileBreakpoint) {
-		font-size: 12px;
-	}
-	@media only screen and (min-width:  @computerBreakpoint) {
-	
+		font-size: 11px;
 	}
 	@media only screen and (min-width:  @largeMonitorBreakpoint) {
-		font-size: 16px;
+		font-size: 13px;
 	}
 	@media only screen and (min-width:  @widescreenMonitorBreakpoint) {
 		font-size: 18px;
