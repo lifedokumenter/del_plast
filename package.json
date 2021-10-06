@@ -52,5 +52,6 @@
     "less": "^4.1.1",
     "less-loader": "^9.0.0",
     "semantic-ui-less": "^2.4.1"
-  }
+  },
+  "homepage": "./"
 }
