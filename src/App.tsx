@@ -16,7 +16,7 @@ function App() {
 
 
   React.useEffect(()=> {
-    fetch('/data/appData.json')
+    fetch('./data/appData.json')
       .then(res=>res.json())
       .then( data => {
         setAppData(data);
