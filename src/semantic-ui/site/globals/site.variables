@@ -10,6 +10,7 @@
 @yellow         : #FBBF2E;
 @gray           : #DBDEDF;
 @darkGray       : #B3B2B3;
+@lightGray      : #F5F5F5;
 @back           : #000000;
 @red            : #FD535A;
 @teal           : #00C8FF;

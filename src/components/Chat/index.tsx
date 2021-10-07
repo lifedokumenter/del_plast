@@ -3,7 +3,9 @@ import { Segment, Form, TextArea, Button, Icon } from 'semantic-ui-react';
 import { useChat } from '../../contexts/chatContext';
 import { ChatMessage } from '../../interfaces/ChatMessage';
 import { ReactComponent as PersonIcon } from '../../images/person.svg';
-
+import { ReactComponent as CallIcon } from '../../images/call.svg';
+import { ReactComponent as VideoIcon } from '../../images/video.svg';
+import { ReactComponent as MoreIcon } from '../../images/more.svg';
 
 import './index.less';
 
@@ -22,16 +24,24 @@ const Chat = ({ onSubmitted }: Props) => {
 
   return (
     <div className="chat">
-      <Segment className="chat-wrapper">
+      <Segment className="chat__wrapper">
         <div>
-          <div className="chat-messages"> 
+          <div className="chat__navbar">
+            <p>#Chatname</p>
+            <div className="chat__navbar__icons">
+              <CallIcon />
+              <VideoIcon />
+              <MoreIcon />
+            </div>
+          </div>
+          <div className="chat__messages"> 
             {
               messages && messages.map( (message: ChatMessage, index: number) => (
-                <div key={index} className={message.isUser ? 'chat-messages__user' : 'chat-messages__message'}> 
-                  <div className="chat-messages__user-icon">
+                <div key={index} className={`chat__messages__message ${message.isUser ? 'chat__messages__message--user' : ''}`}> 
+                  <div className="chat__messages__message__user-icon">
                     <PersonIcon />
                   </div>
-                  <div className="chat-messages__bubble">
+                  <div className="chat__messages__message__bubble">
                     <p>{message.initials}</p>
                     <p>{message.message}</p>
                   </div>
