@@ -38,9 +38,21 @@
     "bio": "Biodiversitet",
     "economy": "Økonomi"
   },
-  "emailText": {
-    "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af ",
+  "bossEmailTexts": {
+    "sendBtnText": "Send",
+    "email": "chefen@skole.dk",
+    "subject": "Vores valg af",
+    "choices": {
+      "1": "Råstof",
+      "2": "Produktion",
+      "3": "Transport",
+      "4": "Brug",
+      "5": "Bortskaffelse"
+    },
     "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!"
+  },
+  "emailText": {
+    "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
   },
   "feedbackText": {
     "title":"LCA Analyse",

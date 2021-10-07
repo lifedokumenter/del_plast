@@ -10,6 +10,7 @@ import { useParams } from "react-router";
 import PChainStep from "../../components/PChainStep";
 import FeedbackModal from "../../components/FeedbackModal";
 import { Interaction } from '../../interfaces/Interaction';
+import ToDirectorModal from "../../components/ToDirectorModal";
 
 interface RouteParams {
   stepNo: string;
@@ -29,9 +30,10 @@ const Landing = ({
   const [feecbackModalOpen, setFeedbackModalOpen ] = React.useState(false);
   const [multipleChoice, setMultipleChoice] = React.useState<boolean | undefined>();
   const [containsAllCategories, setContainsAllCategories] = React.useState<boolean>(false);
+  const [showEmailModal, setShowEmailModal] = React.useState<boolean>(false);
 
   useEffect(() => {
-    const newStep = parseInt(stepNo);
+    const newStep = stepNo ? parseInt(stepNo) : 1;
     if (newStep !== step) {
       setStep(newStep);
       setMultipleChoice(newStep === 6 || newStep === 5);
@@ -50,6 +52,7 @@ const Landing = ({
       setFeedbackModalOpen(true);
     } else {
       console.log('submitted with activePChainChoice', activePChainChoice);
+      setShowEmailModal(true);
     }
   }
 
@@ -132,6 +135,15 @@ const Landing = ({
                     setFeedbackModalOpen(false);
                   }}
                   onCancel={() => setFeedbackModalOpen(false)}
+                />
+                <ToDirectorModal
+                  buttonText={appData.bossEmailTexts.sendBtnText}
+                  choice={appData.bossEmailTexts.choices[stepNo || "1"]}
+                  feedback={appData.bossEmailTexts.thanksForMessage}
+                  email={appData.bossEmailTexts.email}
+                  subject={appData.bossEmailTexts.subject}
+                  open={showEmailModal} 
+                  onClose={() => setShowEmailModal(false)}
                 />
               </div>
               <ProgressBars
