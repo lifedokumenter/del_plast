@@ -10,24 +10,35 @@ import { ReactComponent as MoreIcon } from '../../images/more.svg';
 import './index.less';
 
 interface Props {
+  title: string;
   onSubmitted?: ()=>void,
 }
 
-const Chat = ({ onSubmitted }: Props) => {
+const Chat = ({ title, onSubmitted }: Props) => {
 
   const { messages, addPendingMessages, pendingMessages } = useChat();
   const [userMessage, setUserMessage] = React.useState<ChatMessage | undefined>(pendingMessages?.find( m => m.isUser === true));
 
+  const messagesContainerRef = React.useRef<null|HTMLDivElement>(null);
+
+  const scrollToBottom = () => {
+    messagesContainerRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
+
   React.useEffect(() => {
     setUserMessage(pendingMessages?.find( m => m.isUser === true));
   }, [pendingMessages]);
+  
+  React.useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
 
   return (
     <div className="chat">
       <Segment className="chat__wrapper">
         <div>
           <div className="chat__navbar">
-            <p>#Chatname</p>
+            <p>{title}</p>
             <div className="chat__navbar__icons">
               <CallIcon />
               <VideoIcon />
@@ -37,7 +48,7 @@ const Chat = ({ onSubmitted }: Props) => {
           <div className="chat__messages"> 
             {
               messages && messages.map( (message: ChatMessage, index: number) => (
-                <div key={index} className={`chat__messages__message ${message.isUser ? 'chat__messages__message--user' : ''}`}> 
+                <div  ref={index === messages.length - 1 ? messagesContainerRef : null} key={index} className={`chat__messages__message ${message.isUser ? 'chat__messages__message--user' : ''}`}> 
                   <div className="chat__messages__message__user-icon">
                     <PersonIcon />
                   </div>

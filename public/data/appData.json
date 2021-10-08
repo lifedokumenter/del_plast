@@ -33,6 +33,9 @@
       }
     }
   },
+  "chat": {
+    "title": "Kollegachat"
+  },
   "medatadataHeaders": {
     "co2": "Co2 udledning",
     "bio": "Biodiversitet",
@@ -269,7 +272,7 @@
         {
           "id": "production_billund",
           "title": "Fakbrik i Billund",
-          "description": "Lorem ipsum dolor sit amet",
+          "description": "Lorem ipsum dolor sit amet CO <sub>2</sub>",
           "metadata":{
             "co2Score": 50,
             "bioScore": 25,

@@ -170,7 +170,7 @@ const Landing = ({
         {
           !multipleChoice && 
           <Grid.Column floated='right' width={4}>
-            <Chat />
+            <Chat title={appData.chat.title} />
           </Grid.Column>
         }
       </Grid.Row>
