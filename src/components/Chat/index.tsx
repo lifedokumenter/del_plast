@@ -48,13 +48,13 @@ const Chat = ({ title, onSubmitted }: Props) => {
           <div className="chat__messages"> 
             {
               messages && messages.map( (message: ChatMessage, index: number) => (
-                <div  ref={index === messages.length - 1 ? messagesContainerRef : null} key={index} className={`chat__messages__message ${message.isUser ? 'chat__messages__message--user' : ''}`}> 
+                <div  ref={index === messages.length - 1 ? messagesContainerRef : null} key={index} className={`chat__messages__message ${message?.isUser ? 'chat__messages__message--user' : ''}`}> 
                   <div className="chat__messages__message__user-icon">
                     <PersonIcon />
                   </div>
                   <div className="chat__messages__message__bubble">
-                    <p dangerouslySetInnerHTML={{__html: message.initials || ''}}/>
-                    <p dangerouslySetInnerHTML={{__html: message.message || ''}}/>
+                    <p dangerouslySetInnerHTML={{__html: message?.initials || ''}}/>
+                    <p dangerouslySetInnerHTML={{__html: message?.message || ''}}/>
                   </div>
                 </div>
               ))

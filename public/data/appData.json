@@ -3,23 +3,73 @@
   "steps": {
     "1": {
       "title": "Vælg et råstof til jeres covers",
-      "buttonText":"Vælg råstof"
+      "buttonText":"Vælg råstof",
+      "initialChatMessages": [
+        {
+          "initials": "AS",
+          "message": "Lorum Ipsum"
+        },
+        {
+          "initials": "TH",
+          "message": "Lorum Ipsum"
+        }
+      ]
     },
     "2": {
       "title": "Vælg en fabrik til produktion",
-      "buttonText":"Vælg lokation"
+      "buttonText":"Vælg lokation",
+      "initialChatMessages": [
+        {
+          "initials": "AS",
+          "message": "Lorum Ipsum"
+        },
+        {
+          "initials": "TH",
+          "message": "Lorum Ipsum"
+        }
+      ]
     },
     "3": {
       "title": "Vælg transportsform",
-      "buttonText":"Vælg transport"
+      "buttonText":"Vælg transport",
+      "initialChatMessages": [
+        {
+          "initials": "AS",
+          "message": "Lorum Ipsum"
+        },
+        {
+          "initials": "TH",
+          "message": "Lorum Ipsum"
+        }
+      ]
     },
     "4": {
       "title": "Vælg en covertype",
-      "buttonText":"Vælg Brug"
+      "buttonText":"Vælg Brug",
+      "initialChatMessages": [
+        {
+          "initials": "AS",
+          "message": "Lorum Ipsum"
+        },
+        {
+          "initials": "TH",
+          "message": "Lorum Ipsum"
+        }
+      ]
     },
     "5": {
       "title": "Lav en bortskaffelsesstrategi",
-      "buttonText":"Vælg bortskaffelse"
+      "buttonText":"Vælg bortskaffelse",
+      "initialChatMessages": [
+        {
+          "initials": "AS",
+          "message": "Lorum Ipsum"
+        },
+        {
+          "initials": "TH",
+          "message": "Lorum Ipsum"
+        }
+      ]
     },
     "6": {
       "title": "Udarbejd jeres samlede LCA",
@@ -30,7 +80,17 @@
         "transport": "Transport",
         "usage": "Brug",
         "disposal": "Bortskaffelse"
-      }
+      },
+      "initialChatMessages": [
+        {
+          "initials": "AS",
+          "message": "Lorum Ipsum"
+        },
+        {
+          "initials": "TH",
+          "message": "Lorum Ipsum"
+        }
+      ]
     }
   },
   "medatadataHeaders": {
