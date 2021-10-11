@@ -116,7 +116,7 @@ const Landing = ({
   return(
     <Grid columns={2} stackable>
       <Grid.Row>
-        <Grid.Column floated='left' width={multipleChoice ? 16 : 12}> 
+        <Grid.Column floated='left' width={step === 6 ? 16 : 12}> 
           {
             !!appData && 
             <div className="landing">
@@ -168,9 +168,9 @@ const Landing = ({
           }
         </Grid.Column>
         {
-          !multipleChoice && 
+          step !== 6 && 
           <Grid.Column floated='right' width={4}>
-            <Chat />
+            <Chat title={appData.chat.title} />
           </Grid.Column>
         }
       </Grid.Row>
