@@ -36,12 +36,17 @@ const ProgressBars = ({co2, bio, economy, limits = {co2: 0.8, bio: 0.8, economy:
   return (
     <div className="progress-bars">
       <div className="progress-bars__bar">
-        <Header size="medium">{co2Label}</Header>
+        <Header size="medium"> 
+          <span dangerouslySetInnerHTML={{__html: co2Label || ''}} />
+        </Header>
         <Progress percent={co2} color={parseColor(co2, limits.co2)}>
           <div className="progress-bars__bar__limit" style={{width: limits.co2 * 100 + '%'}} />
           {
             alertOnAboveLimit && ((co2 || 0) > limits.co2 * 100) &&
-            <Popup content={alertMessage} trigger={<Button color="red" icon='exclamation' />} />
+            <Popup 
+              content={ <span dangerouslySetInnerHTML={{__html: alertMessage || ''}} /> } 
+              trigger={<Button color="red" icon='exclamation' />} 
+            />
           }
         </Progress>
       </div>
@@ -51,7 +56,10 @@ const ProgressBars = ({co2, bio, economy, limits = {co2: 0.8, bio: 0.8, economy:
           <div className="progress-bars__bar__limit" style={{width: limits.bio * 100 + '%'}} />
           {
             alertOnAboveLimit && ((bio || 0) > limits.bio * 100) &&
-            <Popup content={alertMessage} trigger={<Button color="red" icon='exclamation' />} />
+            <Popup 
+              content={ <span dangerouslySetInnerHTML={{__html: alertMessage || ''}} /> } 
+              trigger={<Button color="red" icon='exclamation' />} 
+            />
           }
         </Progress>
       </div>
@@ -61,7 +69,10 @@ const ProgressBars = ({co2, bio, economy, limits = {co2: 0.8, bio: 0.8, economy:
           <div className="progress-bars__bar__limit" style={{width: limits.economy * 100 + '%'}} />
           {
             alertOnAboveLimit && ((economy || 0) > limits.economy * 100) &&
-            <Popup content={alertMessage} trigger={<Button color="red" icon='exclamation' />} />
+            <Popup 
+              content={ <span dangerouslySetInnerHTML={{__html: alertMessage || ''}} /> }  
+              trigger={<Button color="red" icon='exclamation' />} 
+            />
           }
         </Progress>
       </div>

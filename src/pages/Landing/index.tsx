@@ -144,6 +144,7 @@ const Landing = ({
                   subject={appData.bossEmailTexts.subject}
                   open={showEmailModal} 
                   onClose={() => setShowEmailModal(false)}
+                  closeButtonText={appData.bossEmailTexts.closeButtonText}
                 />
               </div>
               <ProgressBars
@@ -159,9 +160,13 @@ const Landing = ({
               />
               <div className="landing__content__footer">
                 <img alt="text" src={lifeLogo} />
-                <Button size="huge" primary onClick={submitStep} disabled={multipleChoice ? !containsAllCategories : !activePChainChoice}>
-                  {appData.steps[step || 1].buttonText}
-                  <Icon name="chevron right" />
+                <Button 
+                  size="huge" 
+                  primary 
+                  onClick={submitStep} 
+                  disabled={multipleChoice ? !containsAllCategories : !activePChainChoice}>
+                    <span dangerouslySetInnerHTML={{__html: (appData.steps[step || 1].buttonText) || ''}} />
+                    <Icon name="chevron right" />
                 </Button>
               </div>
             </div> 

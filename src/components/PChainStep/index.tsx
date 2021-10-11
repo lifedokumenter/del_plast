@@ -44,7 +44,9 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
 
   return (
     <div className={`p-chain-step p-chain-step__${step}`}>
-      <Header size="large" >{appData?.steps[step || 1].title}</Header>
+      <Header size="large">
+        <span dangerouslySetInnerHTML={{__html: appData?.steps[step || 1].title || ''}}/>
+      </Header>
       <div className="p-chain-step__columns">
         { 
           pChainOptions.map( (option: PChainOption) => 

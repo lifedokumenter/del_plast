@@ -46,39 +46,35 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
       open={open}
       onClose={onCancel}
       >
-      <Modal.Header>{title}</Modal.Header>
+      <Modal.Header dangerouslySetInnerHTML={{__html: title || ''}}/>
       <Modal.Content>
-        <Header className="feedback-modal__description" size="medium"> {isApproved ? approvedDescription : description}</Header>
-          {
-            !isApproved &&
-            feedback.map( (f, index) => 
-              <div key={f.id1 + '_' + f.id2} className="feedback-modal__feedback">
-                <Header size="medium">{index + 1}. {f.title}</Header>
-                <p>{f.description}</p>
-              </div>
-            )
+        <Header className="feedback-modal__description" size="medium"  dangerouslySetInnerHTML={{__html: (isApproved ? approvedDescription : description) || ''}}/>
+        {
+          !isApproved &&
+          feedback.map( (f, index) => 
+            <div key={f.id1 + '_' + f.id2} className="feedback-modal__feedback">
+              <Header size="medium" dangerouslySetInnerHTML={{__html: (`${index + 1}. ${f.title}`) || ''}}/>
+              <p dangerouslySetInnerHTML={{__html: f.description || ''}}/>
+            </div>
+          )
         }
       </Modal.Content>
       <Modal.Actions>
         {
           !isApproved &&
           <>
-            <Button secondary onClick={() => onCancel()}>
-              {cancelBtnText}
-            </Button>
-            <Button positive onClick={() => setIsApproved(true) }>
-              {submitBtnText}
-            </Button>
+            <Button secondary onClick={() => onCancel()} dangerouslySetInnerHTML={{__html: cancelBtnText || ''}}/>
+            <Button positive onClick={() => setIsApproved(true) } dangerouslySetInnerHTML={{__html: submitBtnText || ''}}/>
           </>
         }
         {
           isApproved &&
           <Button positive onClick={() =>  {
-            setIsApproved(false);
-            onSubmit();
-          }}>
-            {approvedBtnText}
-          </Button>
+              setIsApproved(false);
+              onSubmit();
+            }}
+            dangerouslySetInnerHTML={{__html: approvedBtnText || ''}}
+          />
         }
       </Modal.Actions>
     </Modal>
