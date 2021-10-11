@@ -32,12 +32,14 @@ const PChainOptionCard = ({pChainOption, isDisabled, isSelected, onSelect, showD
   return (
     <Card className={`p-chain-option-card ${size} ${isDisabled ? 'disabled' : ''}`} key={pChainOption.id} color={isSelected ? 'green' : undefined} onClick={() => isDisabled ? null : onSelect(pChainOption)}>
       <Card.Content>
-        <Card.Header content={pChainOption.title} /> 
+        <Card.Header content={
+          <span dangerouslySetInnerHTML={{__html: pChainOption.title || ''}}/>
+        }/> 
         {
           showDescription && 
           <Card.Description content={
               <>
-                <p dangerouslySetInnerHTML={{__html: pChainOption.description || ''}} ></p>
+                <p dangerouslySetInnerHTML={{__html: pChainOption.description || ''}}/>
                 {icon}
               </>
             } 

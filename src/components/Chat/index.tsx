@@ -38,7 +38,7 @@ const Chat = ({ title, onSubmitted }: Props) => {
       <Segment className="chat__wrapper">
         <div>
           <div className="chat__navbar">
-            <p>{title}</p>
+            <p dangerouslySetInnerHTML={{__html: title || ''}} />
             <div className="chat__navbar__icons">
               <CallIcon />
               <VideoIcon />
@@ -53,8 +53,8 @@ const Chat = ({ title, onSubmitted }: Props) => {
                     <PersonIcon />
                   </div>
                   <div className="chat__messages__message__bubble">
-                    <p>{message.initials}</p>
-                    <p>{message.message}</p>
+                    <p dangerouslySetInnerHTML={{__html: message.initials || ''}}/>
+                    <p dangerouslySetInnerHTML={{__html: message.message || ''}}/>
                   </div>
                 </div>
               ))
