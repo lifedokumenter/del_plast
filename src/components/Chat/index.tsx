@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Form, TextArea, Button, Icon } from 'semantic-ui-react';
+import { Segment, Form, TextArea, Button, Icon, Loader } from 'semantic-ui-react';
 import { useChat } from '../../contexts/chatContext';
 import { ChatMessage } from '../../interfaces/ChatMessage';
 import { ReactComponent as PersonIcon } from '../../images/person.svg';
@@ -16,7 +16,7 @@ interface Props {
 
 const Chat = ({ title, onSubmitted }: Props) => {
 
-  const { messages, addPendingMessages, pendingMessages } = useChat();
+  const { messages, addPendingMessages, pendingMessages, isChatLoading } = useChat();
   const [userMessage, setUserMessage] = React.useState<ChatMessage | undefined>(pendingMessages?.find( m => m.isUser === true));
 
   const messagesContainerRef = React.useRef<null|HTMLDivElement>(null);
@@ -58,7 +58,7 @@ const Chat = ({ title, onSubmitted }: Props) => {
                   </div>
                 </div>
               ))
-            }
+            } 
           </div>
         </div>
         <Form>

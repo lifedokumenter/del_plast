@@ -178,6 +178,7 @@ const Landing = ({
                 limits={appData?.scoreLimits}
                 alertOnAboveLimit={step === 5 || step === 6}
                 alertMessage={appData?.aboveLimit}
+                showLimits={step === 6}
               />
               <div className="landing__content__footer">
                 <img alt="text" src={lifeLogo} />
