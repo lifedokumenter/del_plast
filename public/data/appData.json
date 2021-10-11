@@ -2,44 +2,44 @@
   "pageTitle": "LCA Pro Tool 3.5",
   "steps": {
     "1": {
-      "title": "Vælg et råstof til Produktion",
-      "buttonText":"Vælg Råstof"
+      "title": "Vælg et råstof til jeres covers",
+      "buttonText":"Vælg råstof"
     },
     "2": {
-      "title": "Vælg produktions lokation",
+      "title": "Vælg en fabrik til produktion",
       "buttonText":"Vælg lokation"
     },
     "3": {
-      "title": "Vælg transport ",
+      "title": "Vælg transportsform",
       "buttonText":"Vælg transport"
     },
     "4": {
-      "title": "Vælg Brug",
+      "title": "Vælg en covertype",
       "buttonText":"Vælg Brug"
     },
     "5": {
-      "title": "Vælg bortskaffelses metode",
+      "title": "Lav en bortskaffelsesstrategi",
       "buttonText":"Vælg bortskaffelse"
     },
     "6": {
-      "title": "Udarbejd den bedste samlede LCA",
+      "title": "Udarbejd jeres samlede LCA",
       "buttonText":"Analyser valg",
       "columnTitles": {
-        "material": "Råstoff",
-        "production": "produktion",
+        "material": "Råstof",
+        "production": "Produktion",
         "transport": "Transport",
         "usage": "Brug",
         "disposal": "Bortskaffelse"
       }
     }
   },
+  "medatadataHeaders": {
+    "co2": "CO2 udledning",
+    "bio": "Miljøbelastning",
+    "economy": "Udgift"
+  },
   "chat": {
     "title": "Kollegachat"
-  },
-  "medatadataHeaders": {
-    "co2": "Co2 udledning",
-    "bio": "Biodiversitet",
-    "economy": "Økonomi"
   },
   "bossEmailTexts": {
     "sendBtnText": "Send",
@@ -59,7 +59,7 @@
   },
   "feedbackText": {
     "title":"LCA Analyse",
-    "description": "Analysen af denne LCA peget på følgende fordele og ulemper mellem valgene:",
+    "description": "Analysen af denne LCA peger på følgende fordele og ulemper mellem valgene:",
     "cancelBtnText": "Rediger valg",
     "submitBtnText": "Godkend valg",
     "approvedDescription": "Tag et screenshot at dine valg",
