@@ -21,7 +21,7 @@ export const ChatProvider = ({ children }: ChatProviderProps) => {
 
   const addPendingMessages = () => {
     const userMessage = pendingMessages[0];
-    const rand = (Math.floor(Math.random() * 4) + 1)*1000;
+    const rand = (Math.floor(Math.random() * 3) + 1)*1000;
     setMessages([...messages, userMessage]);
     const answers = pendingMessages.slice(1, pendingMessages.length);
     setTimeout(() => {
