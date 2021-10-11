@@ -15,7 +15,9 @@ const Navbar = ({title}: NavbarProps) => {
       <img alt="text" src={logo} />
       { 
         title && 
-        <Header size="medium" dangerouslySetInnerHTML={{__html: title || ''}}/>
+        <Header size="medium">
+          <span dangerouslySetInnerHTML={{__html: title || ''}} />
+        </Header>
       }
     </div>
   )

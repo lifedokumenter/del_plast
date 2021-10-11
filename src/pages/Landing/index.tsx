@@ -144,6 +144,7 @@ const Landing = ({
                   subject={appData.bossEmailTexts.subject}
                   open={showEmailModal} 
                   onClose={() => setShowEmailModal(false)}
+                  closeButtonText={appData.bossEmailTexts.closeButtonText}
                 />
               </div>
               <ProgressBars

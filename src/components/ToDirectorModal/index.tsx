@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Header, Modal, TextArea } from 'semantic-ui-react';
+import { Button, Form, Modal, TextArea } from 'semantic-ui-react';
 import { ReactComponent as EmailNavbar } from '../../images/email_top.svg';
 import { ReactComponent as EmailFooterIcons } from '../../images/email_footer_icons.svg';
 
@@ -10,13 +10,13 @@ interface Props {
   choice: string,
   onClose?: () => void,
   open?: boolean,
-  header?: string,
   feedback?: string,
   email?: string,
   subject?: string,
+  closeButtonText?: string,
 }
 
-function ToDirectorModal({buttonText, choice, header, feedback, open, email, subject, onClose = () => {}}: Props) {
+function ToDirectorModal({buttonText, choice, feedback, open, email, subject, onClose = () => {}, closeButtonText = ''}: Props) {
   const [sent, setSent] = React.useState(false)
 
   return (
@@ -40,7 +40,7 @@ function ToDirectorModal({buttonText, choice, header, feedback, open, email, sub
                 </div>
                 <div className="to-director-modal__fields__input">
                   <p>Emne</p>
-                  <p className="to-director-modal__fields__input__subject">{`${subject} ${choice}`}</p>
+                  <p className="to-director-modal__fields__input__subject" dangerouslySetInnerHTML={{__html: `${subject} ${choice}`}} />
                 </div>
               </div>
               <Form>
@@ -51,7 +51,7 @@ function ToDirectorModal({buttonText, choice, header, feedback, open, email, sub
           {
             sent && 
             <>
-              <p>"{feedback}"</p>
+              <p dangerouslySetInnerHTML={{__html: `"${feedback}"`}} />
             </>
           }
         </Modal.Description>
@@ -71,7 +71,8 @@ function ToDirectorModal({buttonText, choice, header, feedback, open, email, sub
           <Button
             onClick={() => {setSent(false); onClose(); }}
             color="blue"
-          >Luk</Button>
+            dangerouslySetInnerHTML={{__html: `"${closeButtonText}"`}}
+          />
         }
       </Modal.Actions>
     </Modal>
