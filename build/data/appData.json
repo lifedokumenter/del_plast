@@ -8,11 +8,11 @@
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Lorum Ipsum"
+          "message": "Fedt I har tid til at undersøge hvilke råstoffer vi skal bruge :-)"
         },
         {
           "initials": "TH",
-          "message": "Lorum Ipsum"
+          "message": "Jæs - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!"
         }
       ]
     },
@@ -99,7 +99,7 @@
       ]
     }
   },
-  "initialMessagesDelay": 30,
+  "initialMessagesDelay": 3,
   "medatadataHeaders": {
     "co2": "CO2 udledning",
     "bio": "Miljøbelastning",
@@ -110,7 +110,7 @@
   },
   "bossEmailTexts": {
     "sendBtnText": "Send",
-    "email": "chefen@skole.dk",
+    "email": "chefen@coverup.dk",
     "subject": "Vores valg af",
     "choices": {
       "1": "Råstof",
@@ -552,34 +552,6 @@
             {
               "initials": "KT",
               "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør. Måske koster det ekstra hvis vi skal have varene transporteret hele vejen fra Asien."
-            }
-          ]
-        },
-        {
-          "id": "transport_none",
-          "title": "Ingen transport - slettes??",
-          "description": "Lorem ipsum dolor sit amet",
-          "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
-          }, 
-          "chatMessages": [
-            {
-              "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-              "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            },
-            {
-              "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            },
-            {
-              "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
             }
           ]
         }
