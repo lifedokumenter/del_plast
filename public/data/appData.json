@@ -128,12 +128,12 @@
   "aboveLimit": "Dit budget er overskrevet. Se om du ikke kan foretage nogle andre valg",
   "material": [
     {
-      "id":"material_olieplast",
+      "id":"material",
       "title": "",
       "description": "",
       "subCategories": [
         {
-          "id": "material_olieplast_bloedplast",
+          "id": "material_olie",
           "title": "Olie",
           "description": "Olie er dannet af planter og andre organismer igennem millioner af år. Det pumpes op fra undergrunden og bruges bl.a. til at lave benzin, diesel og plast.",
           "metadata":{
@@ -162,7 +162,7 @@
           ]
         },
         {
-          "id": "material_olieplast_haardplast",
+          "id": "material_sugar",
           "title": "Sukkerrør",
           "description": "Sukkerrør bruges hovedsageligt til fremstilling af rørsukker. Man kan bruge affaldet fra rørsukkerproduktionen, til at lave bioplast af.",
           "metadata":{
@@ -189,16 +189,10 @@
               "message": "Prisen er lidt høj, jeg tror at det er fordi man også bruger affaldet fra sukkerrør i biobrændsel, så efterspørgslen er høj."
             }
           ]
-        }
-      ]
-    },
-    {
-      "id":"material_planteplast",
-      "title": "",
-      "description": "",
-      "subCategories": [
+        },
+
         {
-          "id": "material_planteplast_corn",
+          "id": "material_corn",
           "title": "Majs",
           "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
           "metadata":{
@@ -227,7 +221,7 @@
           ]
         },
         {
-          "id": "material_planteplast_sugar",
+          "id": "material_straw",
           "title": "Halm",
           "description": "Halm er et restprodukt fra kornproduktion. Det bruges som strøelse til dyr. Man kan også lave bioplast af halm.",
           "metadata":{
@@ -256,43 +250,7 @@
           ]
         },
         {
-          "id": "material_planteplast_bio",
-          "title": "slettes ",
-          "description": "slettes",
-          "metadata":{
-            "co2Score": 0,
-            "bioScore": 0,
-            "economyScore":0
-          }, 
-          "iconType": "bio",
-          "chatMessages": [
-            {
-              "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-              "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            },
-            {
-              "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            },
-            {
-              "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id":"material_recycle",
-      "title": "",
-      "description": "",
-      "subCategories": [
-        {
-          "id": "material_recycle_plast",
+          "id": "material_plast",
           "title": "Plastaffald",
           "description": "Plast som er smidt ud og sorteret, hakket i mindre stykker, kan bruges til at lave nye plastprodukter af. Det kaldes genanvendt plast.",
           "metadata":{
@@ -358,7 +316,7 @@
           ]
         },
         {
-          "id": "production_denmark",
+          "id": "production_paris",
           "title": "Paris",
           "description": "Fabrikken har røggasrensning, så den forurener næsten ikke. Den er delvist automatiseret med robotter. Energien kommer hovedsageligt fra atomkraft. ",
           "metadata":{
@@ -386,7 +344,7 @@
           ]
         },
         {
-          "id": "production_france",
+          "id": "production_miami",
           "title": "Miami",
           "description": "Fabrikken har røggasrensning, men de trænger til en udskiftning. Høj grad af automatisering fra robotter. Energien kommer delsvist fra solenergi og delvist fra olie og gas",
           "metadata":{
@@ -414,7 +372,7 @@
           ]
         },
         {
-          "id": "production_dubai",
+          "id": "production_memphis",
           "title": "Memphis",
           "description": "Fabrikken er gammel og den trænger til opdatering af både røggasrensning og maskiner. Energien kommer hovedsageligt fra olie og gas",
           "metadata":{
@@ -442,7 +400,7 @@
           ]
         },
         {
-          "id": "production_memphis",
+          "id": "production_dubai",
           "title": "Dubai",
           "description": "Fabrikken er ny, den har røggasrensning og det er robotter der klarer alt i produktionen. Energien kommer fra olie.",
           "metadata":{
@@ -535,7 +493,7 @@
           ]
         },
         {
-          "id": "transport_truck_diesel",
+          "id": "transport_train",
           "title": "Tog",
           "description": "Vi transporterer dine varer med den mest miljørigtige transportform, nemlig tog. ",
           "metadata":{
@@ -563,7 +521,7 @@
           ]
         },
         {
-          "id": "transport_truck_el",
+          "id": "transport_truck",
           "title": "Lastbil",
           "description": "Billig og fleksibel transport med lastbiler også mellem Europa og Asien.",
           "metadata":{
@@ -628,7 +586,7 @@
       "description": "",
       "subCategories": [
         {
-          "id": "usage_ideal_of_sweden",
+          "id": "usage_cover1",
           "title": "Cover 1",
           "description": "Hård plast med print. Forventet holdbarhed ca. 2 år",
           "metadata":{
@@ -656,7 +614,7 @@
           ]
         },
         {
-          "id": "usage_transparent",
+          "id": "usage_cover2",
           "title": "Cover 2",
           "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år",
           "metadata":{
@@ -684,7 +642,7 @@
           ]
         },
         {
-          "id": "usage_black",
+          "id": "usage_cover3",
           "title": "Cover 3",
           "description": "Lorem ipsum dolor sit amet",
           "metadata":{
@@ -712,7 +670,7 @@
           ]
         },
         {
-          "id": "usage_cat",
+          "id": "usage_cover4",
           "title": "Cover 4",
           "description": "Bøjelig plast, gennemsigtigt. Forventet holdbarhed ca. 1 år.",
           "metadata":{
@@ -740,7 +698,7 @@
           ]
         },
         {
-          "id": "usage_leather",
+          "id": "usage_cover5",
           "title": "Cover 5",
           "description": "Plast betrukket med læder. Forventet holdbarhed ca. 2,5 år",
           "metadata":{
@@ -768,7 +726,7 @@
           ]
         },
         {
-          "id": "usage_oil_plast",
+          "id": "usage_cover6",
           "title": "Cover 6",
           "description": "Plast forstærket med metal. Forventet holdbarhed ca. 4 år",
           "metadata":{
@@ -805,7 +763,7 @@
       "description": "",
       "subCategories": [
         {
-          "id": "disposal_deponi",
+          "id": "disposal_designrecycle",
           "title": "Design til genanvendelse",
           "description": "Coveret må ikke være lavet af flere forskellige materialer eller plasttyper. Det skal være nemt for forbrugeren at affaldssortere.",
           "metadata":{
@@ -833,7 +791,7 @@
           ]
         },
         {
-          "id": "disposal_burn",
+          "id": "disposal_recycle",
           "title": "Design til genbrug",
           "description": "Hvis et cover skal kunne genbruges, skal det være meget holdbart og stadig være pænt efter længere tids brug.",
           "metadata":{
@@ -861,7 +819,7 @@
           ]
         },
         {
-          "id": "disposal_reuse",
+          "id": "disposal_sticker",
           "title": "Mærkning på produkt",
           "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres",
           "metadata":{
@@ -889,7 +847,7 @@
           ]
         },
         {
-          "id": "disposal_recycle",
+          "id": "disposal_takeback",
           "title": "Take-back ordning",
           "description": "Kunderne kan aflevere deres gamle covers og få 10% rabat det næste",
           "metadata":{
@@ -917,7 +875,7 @@
           ]
         },
         {
-          "id": "disposal_waste_prevention",
+          "id": "disposal_wasteprevention",
           "title": "Mindre emballage",
           "description": "Gør emballagen mindre om coveret, så der kan være flere når coversne skal fragtes. ",
           "metadata":{
@@ -999,7 +957,7 @@
   "interactions": [
     {
       "id1": "production_billund",
-      "id2": "material_olieplast_bloedplast",
+      "id2": "material_bloedplast",
       "scores": {
         "co2": -2,
         "bio": -1,

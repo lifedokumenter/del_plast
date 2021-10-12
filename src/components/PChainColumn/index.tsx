@@ -15,9 +15,10 @@ interface PChainColumnProps {
   size?: string;
   multipleChoice?: boolean;
   multipleChoicePerColumn?: boolean;
+  striped?: boolean;
 }
 
-const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice, multipleChoicePerColumn}:PChainColumnProps) => {
+const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice, multipleChoicePerColumn, striped}:PChainColumnProps) => {
 
   const { setPendingMessages } = useChat(); 
   const { activePChainChoice, setActivePChainChoice, togglePChainChoice, pChainChoices, disabledPChainChoices } = usePChainChoices();
@@ -40,7 +41,7 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
   }
 
   return (
-    <div className={`p-chain-column ${wrap ? 'wrap' : ''}`}>
+    <div className={`p-chain-column ${wrap ? 'wrap' : ''} ${striped ? 'striped' : ''}`}>
       {
         title && 
         <Header size="medium" >

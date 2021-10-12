@@ -4,9 +4,11 @@
 
   padding: .5rem 0;
 
-  &:nth-child(even) {
-    background-color: @lightGray;
-    padding: 1 .5rem;
+  &.striped {
+    &:nth-child(even) {
+      background-color: @lightGray;
+      padding: 1 .5rem;
+    }
   }
 
   > .ui.medium.header {

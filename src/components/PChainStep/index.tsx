@@ -59,6 +59,7 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
               size={pChainType === 'all' ? 'small' : ''}
               multipleChoice={multipleChoice}
               title={pChainType === 'all' ? option.title : undefined}
+              striped={step === 6}
             />
           )
         }
