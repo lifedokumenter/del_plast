@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Form, TextArea, Button, Icon } from 'semantic-ui-react';
+import { Segment, Form, TextArea, Button, Icon, Loader } from 'semantic-ui-react';
 import { useChat } from '../../contexts/chatContext';
 import { ChatMessage } from '../../interfaces/ChatMessage';
 import { ReactComponent as PersonIcon } from '../../images/person.svg';
@@ -16,7 +16,7 @@ interface Props {
 
 const Chat = ({ title, onSubmitted }: Props) => {
 
-  const { messages, addPendingMessages, pendingMessages } = useChat();
+  const { messages, addPendingMessages, pendingMessages, isChatLoading } = useChat();
   const [userMessage, setUserMessage] = React.useState<ChatMessage | undefined>(pendingMessages?.find( m => m.isUser === true));
 
   const messagesContainerRef = React.useRef<null|HTMLDivElement>(null);
@@ -48,17 +48,17 @@ const Chat = ({ title, onSubmitted }: Props) => {
           <div className="chat__messages"> 
             {
               messages && messages.map( (message: ChatMessage, index: number) => (
-                <div  ref={index === messages.length - 1 ? messagesContainerRef : null} key={index} className={`chat__messages__message ${message.isUser ? 'chat__messages__message--user' : ''}`}> 
+                <div  ref={index === messages.length - 1 ? messagesContainerRef : null} key={index} className={`chat__messages__message ${message?.isUser ? 'chat__messages__message--user' : ''}`}> 
                   <div className="chat__messages__message__user-icon">
                     <PersonIcon />
                   </div>
                   <div className="chat__messages__message__bubble">
-                    <p dangerouslySetInnerHTML={{__html: message.initials || ''}}/>
-                    <p dangerouslySetInnerHTML={{__html: message.message || ''}}/>
+                    <p dangerouslySetInnerHTML={{__html: message?.initials || ''}}/>
+                    <p dangerouslySetInnerHTML={{__html: message?.message || ''}}/>
                   </div>
                 </div>
               ))
-            }
+            } 
           </div>
         </div>
         <Form>

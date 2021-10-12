@@ -46,14 +46,20 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
       open={open}
       onClose={onCancel}
       >
-      <Modal.Header dangerouslySetInnerHTML={{__html: title || ''}}/>
+      <Modal.Header>
+        <span  dangerouslySetInnerHTML={{__html: title || ''}}/>
+      </Modal.Header>
       <Modal.Content>
-        <Header className="feedback-modal__description" size="medium"  dangerouslySetInnerHTML={{__html: (isApproved ? approvedDescription : description) || ''}}/>
+        <Header className="feedback-modal__description" size="medium">
+          <span dangerouslySetInnerHTML={{__html: (isApproved ? approvedDescription : description) || ''}}/>
+        </Header>
         {
           !isApproved &&
           feedback.map( (f, index) => 
             <div key={f.id1 + '_' + f.id2} className="feedback-modal__feedback">
-              <Header size="medium" dangerouslySetInnerHTML={{__html: (`${index + 1}. ${f.title}`) || ''}}/>
+              <Header size="medium">
+                <span dangerouslySetInnerHTML={{__html: (`${index + 1}. ${f.title}`) || ''}}/>
+              </Header>
               <p dangerouslySetInnerHTML={{__html: f.description || ''}}/>
             </div>
           )
@@ -63,8 +69,12 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
         {
           !isApproved &&
           <>
-            <Button secondary onClick={() => onCancel()} dangerouslySetInnerHTML={{__html: cancelBtnText || ''}}/>
-            <Button positive onClick={() => setIsApproved(true) } dangerouslySetInnerHTML={{__html: submitBtnText || ''}}/>
+            <Button secondary onClick={() => onCancel()}>
+              <span  dangerouslySetInnerHTML={{__html: cancelBtnText || ''}} />
+            </Button>
+            <Button positive onClick={() => setIsApproved(true) }>
+              <span  dangerouslySetInnerHTML={{__html: submitBtnText || ''}} />
+            </Button>
           </>
         }
         {
@@ -73,8 +83,9 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
               setIsApproved(false);
               onSubmit();
             }}
-            dangerouslySetInnerHTML={{__html: approvedBtnText || ''}}
-          />
+          >
+            <span dangerouslySetInnerHTML={{__html: approvedBtnText || ''}} />
+          </Button>
         }
       </Modal.Actions>
     </Modal>

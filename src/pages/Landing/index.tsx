@@ -11,6 +11,7 @@ import PChainStep from "../../components/PChainStep";
 import FeedbackModal from "../../components/FeedbackModal";
 import { Interaction } from '../../interfaces/Interaction';
 import ToDirectorModal from "../../components/ToDirectorModal";
+import { useChat } from '../../contexts/chatContext';
 
 interface RouteParams {
   stepNo: string;
@@ -25,12 +26,15 @@ const Landing = ({
 }: LandingProps) => {
 
   const { activePChainChoice, pChainChoices, setMutuallyDisabledOptions, resetChoices } = usePChainChoices();
+  const { messages, addPendingMessages, setPendingMessages } = useChat();
   let { stepNo } = useParams<RouteParams>();
   const [step, setStep] = React.useState<number>();
   const [feecbackModalOpen, setFeedbackModalOpen ] = React.useState(false);
   const [multipleChoice, setMultipleChoice] = React.useState<boolean | undefined>();
   const [containsAllCategories, setContainsAllCategories] = React.useState<boolean>(false);
   const [showEmailModal, setShowEmailModal] = React.useState<boolean>(false);
+  const [hasInteracted, setHasInteracted] = React.useState<boolean>(false);
+  const [initialRender, setInitialRender] = React.useState<boolean>(true);
 
   useEffect(() => {
     const newStep = stepNo ? parseInt(stepNo) : 1;
@@ -38,6 +42,7 @@ const Landing = ({
       setStep(newStep);
       setMultipleChoice(newStep === 6 || newStep === 5);
       resetChoices();
+      setHasInteracted(false);
     } 
   }, [stepNo, step, resetChoices]);
 
@@ -45,9 +50,25 @@ const Landing = ({
     setMutuallyDisabledOptions(appData?.mutuallyDisabledOptions || []);
   }, [appData, setMutuallyDisabledOptions]);
 
+  useEffect(() => {
+    if (initialRender && appData && !hasInteracted) {
+      setTimeout(() => {
+        if (!hasInteracted && !messages.length && appData?.steps[step || 1].initialChatMessages.length) {
+          addPendingMessages(appData.steps[step || 1].initialChatMessages);
+          setHasInteracted(true);
+        }
+      }, 30000);
+    }
+  },[hasInteracted, messages, appData, setPendingMessages, addPendingMessages, step, initialRender])
+
+  useEffect(() => {
+    setInitialRender(false);
+  }, []);
+
   const [scores, setScore] = React.useState<PChainOptionMetadata>(activePChainChoice?.metadata || {co2Score: 0, bioScore: 0, economyScore: 0});
 
   const submitStep = () => {
+    setHasInteracted(true);
     if (multipleChoice) {
       setFeedbackModalOpen(true);
     } else {
@@ -157,6 +178,7 @@ const Landing = ({
                 limits={appData?.scoreLimits}
                 alertOnAboveLimit={step === 5 || step === 6}
                 alertMessage={appData?.aboveLimit}
+                showLimits={step === 6}
               />
               <div className="landing__content__footer">
                 <img alt="text" src={lifeLogo} />

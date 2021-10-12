@@ -43,7 +43,9 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
     <div className={`p-chain-column ${wrap ? 'wrap' : ''}`}>
       {
         title && 
-        <Header size="medium" dangerouslySetInnerHTML={{__html: title || ''}}/>
+        <Header size="medium" >
+          <span dangerouslySetInnerHTML={{__html: title || ''}} />
+        </Header>
       }
       {
         PChainOptions.map((option: PChainOption) => (
