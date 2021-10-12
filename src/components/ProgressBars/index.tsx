@@ -24,11 +24,16 @@ interface ProgressBarsProps {
 const ProgressBars = ({co2, bio, economy, limits = {co2: 0.8, bio: 0.8, economy: 0.8}, co2Label='', bioLabel='', economyLabel='', alertOnAboveLimit = false, alertMessage = '', showLimits}: ProgressBarsProps) => {
 
   const parseColor = (percentage: number | undefined, limit: number) => {
+
     limit = limit * 100;
-    if (percentage === undefined || (percentage <= limit && percentage < 33)) {
+    if (percentage === undefined || (percentage <= limit && percentage < 20)) {
+      return 'olive';
+    } else if (percentage < 40) {
       return 'green';
-    } else if (percentage < limit) {
+    } else if (percentage < 60) {
       return 'yellow';
+    } else if (percentage < 80) {
+      return 'orange';
     } else {
       return 'red';
     }

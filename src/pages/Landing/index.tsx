@@ -123,9 +123,9 @@ const Landing = ({
         }
 
         cat.forEach( c => {
-          currentScores.co2Score += ((c.metadata?.co2Score || 0) * appData.scoreWeights.co2[cStr]) / cat.length;
-          currentScores.bioScore += ((c.metadata?.bioScore || 0) * appData.scoreWeights.bio[cStr]) / cat.length;
-          currentScores.economyScore += ((c.metadata?.economyScore || 0) * appData.scoreWeights.economy[cStr]) / cat.length;
+          currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1)) / cat.length;
+          currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1)) / cat.length;
+          currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1)) / cat.length;
         });
       });
       setContainsAllCategories(hasAll);
