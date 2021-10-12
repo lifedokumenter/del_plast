@@ -3,6 +3,7 @@
   "steps": {
     "1": {
       "title": "Vælg et råstof til jeres covers",
+      "tagline": "Tagline",
       "buttonText":"Vælg råstof",
       "initialChatMessages": [
         {
@@ -17,6 +18,7 @@
     },
     "2": {
       "title": "Vælg en fabrik til produktion",
+      "tagline": "Tagline",
       "buttonText":"Vælg lokation",
       "initialChatMessages": [
         {
@@ -31,6 +33,7 @@
     },
     "3": {
       "title": "Vælg transportsform",
+      "tagline": "Tagline",
       "buttonText":"Vælg transport",
       "initialChatMessages": [
         {
@@ -45,6 +48,7 @@
     },
     "4": {
       "title": "Vælg en covertype",
+      "tagline": "Tagline",
       "buttonText":"Vælg Brug",
       "initialChatMessages": [
         {
@@ -59,6 +63,7 @@
     },
     "5": {
       "title": "Lav en bortskaffelsesstrategi",
+      "tagline": "Tagline",
       "buttonText":"Vælg bortskaffelse",
       "initialChatMessages": [
         {
@@ -73,6 +78,7 @@
     },
     "6": {
       "title": "Udarbejd jeres samlede LCA",
+      "tagline": "Tagline",
       "buttonText":"Analyser valg",
       "columnTitles": {
         "material": "Råstof",
@@ -93,6 +99,7 @@
       ]
     }
   },
+  "initialMessagesDelay": 30,
   "medatadataHeaders": {
     "co2": "CO2 udledning",
     "bio": "Miljøbelastning",

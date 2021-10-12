@@ -1,5 +1,5 @@
 import React from 'react';
-import { Segment, Form, TextArea, Button, Icon, Loader } from 'semantic-ui-react';
+import { Segment, Form, TextArea, Button, Icon } from 'semantic-ui-react';
 import { useChat } from '../../contexts/chatContext';
 import { ChatMessage } from '../../interfaces/ChatMessage';
 import { ReactComponent as PersonIcon } from '../../images/person.svg';
@@ -11,12 +11,12 @@ import './index.less';
 
 interface Props {
   title: string;
-  onSubmitted?: ()=>void,
+  onSubmitted: ()=>void,
 }
 
 const Chat = ({ title, onSubmitted }: Props) => {
 
-  const { messages, addPendingMessages, pendingMessages, isChatLoading } = useChat();
+  const { messages, addPendingMessages, pendingMessages } = useChat();
   const [userMessage, setUserMessage] = React.useState<ChatMessage | undefined>(pendingMessages?.find( m => m.isUser === true));
 
   const messagesContainerRef = React.useRef<null|HTMLDivElement>(null);
@@ -63,7 +63,10 @@ const Chat = ({ title, onSubmitted }: Props) => {
         </div>
         <Form>
           <TextArea value={userMessage?.message || ''} disabled placeholder="Besked..."></TextArea>     
-          <Button className={userMessage?.message?.length ? 'pulsate' : ''} primary icon onClick={() => { addPendingMessages() }}>
+          <Button className={userMessage?.message?.length ? 'pulsate' : ''} primary icon onClick={() => { 
+            addPendingMessages();
+            onSubmitted();
+          }}>
             <Icon name='angle right' />
           </Button>
         </Form>

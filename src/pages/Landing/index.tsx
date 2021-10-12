@@ -26,7 +26,7 @@ const Landing = ({
 }: LandingProps) => {
 
   const { activePChainChoice, pChainChoices, setMutuallyDisabledOptions, resetChoices } = usePChainChoices();
-  const { messages, addPendingMessages, setPendingMessages } = useChat();
+  const { messages, addPendingMessages } = useChat();
   let { stepNo } = useParams<RouteParams>();
   const [step, setStep] = React.useState<number>();
   const [feecbackModalOpen, setFeedbackModalOpen ] = React.useState(false);
@@ -34,7 +34,24 @@ const Landing = ({
   const [containsAllCategories, setContainsAllCategories] = React.useState<boolean>(false);
   const [showEmailModal, setShowEmailModal] = React.useState<boolean>(false);
   const [hasInteracted, setHasInteracted] = React.useState<boolean>(false);
-  const [initialRender, setInitialRender] = React.useState<boolean>(true);
+
+  const interval = React.useRef(setTimeout(() => {}, 0));
+
+  const setInitialMessages = React.useCallback(() => {
+    if (!hasInteracted && !messages.length && appData?.steps[step || 1].initialChatMessages.length) {
+      addPendingMessages(appData.steps[step || 1].initialChatMessages);
+      setHasInteracted(true);
+    }
+  }, [hasInteracted, addPendingMessages, setHasInteracted, appData, messages, step]);
+
+  useEffect(() => {
+    if (appData && !hasInteracted) {
+      interval.current = setTimeout(setInitialMessages, (appData.initialMessagesDelay || 30) * 1000);
+    }
+    return () => {
+      clearTimeout(interval.current); // cleanup
+    };
+  },[hasInteracted, appData, setInitialMessages])
 
   useEffect(() => {
     const newStep = stepNo ? parseInt(stepNo) : 1;
@@ -43,38 +60,25 @@ const Landing = ({
       setMultipleChoice(newStep === 6 || newStep === 5);
       resetChoices();
       setHasInteracted(false);
+      setContainsAllCategories(newStep === 6 ? false : true);
     } 
   }, [stepNo, step, resetChoices]);
+
+  useEffect(() => {
+    if (!hasInteracted && messages.length) {
+      setHasInteracted(true);
+    }
+  },[messages, hasInteracted])
 
   useEffect(() => {
     setMutuallyDisabledOptions(appData?.mutuallyDisabledOptions || []);
   }, [appData, setMutuallyDisabledOptions]);
 
-  useEffect(() => {
-    if (initialRender && appData && !hasInteracted) {
-      setTimeout(() => {
-        if (!hasInteracted && !messages.length && appData?.steps[step || 1].initialChatMessages.length) {
-          addPendingMessages(appData.steps[step || 1].initialChatMessages);
-          setHasInteracted(true);
-        }
-      }, 30000);
-    }
-  },[hasInteracted, messages, appData, setPendingMessages, addPendingMessages, step, initialRender])
-
-  useEffect(() => {
-    setInitialRender(false);
-  }, []);
-
   const [scores, setScore] = React.useState<PChainOptionMetadata>(activePChainChoice?.metadata || {co2Score: 0, bioScore: 0, economyScore: 0});
 
   const submitStep = () => {
     setHasInteracted(true);
-    if (multipleChoice) {
-      setFeedbackModalOpen(true);
-    } else {
-      console.log('submitted with activePChainChoice', activePChainChoice);
-      setShowEmailModal(true);
-    }
+    step === 6 ? setFeedbackModalOpen(true) : setShowEmailModal(true);
   }
 
   /* calculate scores on change */
@@ -128,11 +132,11 @@ const Landing = ({
           currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1)) / cat.length;
         });
       });
-      setContainsAllCategories(hasAll);
+      setContainsAllCategories(step !== 6 || hasAll);
     }
 
     setScore(currentScores);
-  }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights, appData.interactions]);
+  }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights, appData.interactions, step]);
 
   return(
     <Grid columns={2} stackable>

@@ -99,6 +99,7 @@
       ]
     }
   },
+  "initialMessagesDelay": 30,
   "medatadataHeaders": {
     "co2": "CO2 udledning",
     "bio": "Miljøbelastning",
