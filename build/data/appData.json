@@ -888,14 +888,64 @@
   "mutuallyDisabledOptions": [
     {
       "id1": "transport_ship",
-      "id2": "production_denmark",
-      "description": "Du kan ikke vælge at producere i Danmark og transportere med skib"
+      "id2": "production_billund",
+      "description": "Løsningen er ikke mulig, da du er i produktionslandet."
     },
     {
       "id1": "transport_ship",
-      "id2": "production_france",
-      "description": "Du kan ikke vælge at producere i Frankrig og transportere med skib"
-    }
+      "id2": "production_paris",
+      "description": "Løsningen er ikke mulig, da du ikke kan sejle containerskib herfra til Danmark."
+    },
+    {
+      "id1": "transport_train",
+      "id2": "production_billund",
+      "description": "Løsningen er ikke mulig, da du er i produktionslandet."
+    },
+    {
+      "id1": "transport_train",
+      "id2": "production_miami",
+      "description": "Løsningen er ikke mulig, da du ikke kan køre tog fra Miami til Danmark."
+    },
+    {
+      "id1": "transport_train",
+      "id2": "production_memphis",
+      "description": "Løsningen er ikke mulig, da du ikke kan køre tog fra Memphis til Danmark."
+    },
+    {
+      "id1": "transport_flight",
+      "id2": "production_billund",
+      "description": "Løsningen er ikke mulig, da du er i produktionslandet."
+    },
+    {
+      "id1": "transport_truck",
+      "id2": "production_miami",
+      "description": "Løsningen er ikke mulig, da du ikke kan køre lastbil fra Miami til Danmark."
+    },
+    {
+      "id1": "transport_truck",
+      "id2": "production_memphis",
+      "description": "Løsningen er ikke mulig, da du ikke kan køre lastbil fra Memphis til Danmark."
+    },
+    {
+      "id1": "material_plast",
+      "id2": "usage_cover4",
+      "description": "Løsningen er ikke mulig, da genanvendt plast ikke kan blive gennemsigtigt."
+    },
+    {
+      "id1": "usage_cover5",
+      "id2": "disposal_designrecycle",
+      "description": "Løsningen er ikke mulig, da design til genanvendelse kræver at der kun bruges et materiale."
+    },
+    {
+      "id1": "usage_cover6",
+      "id2": "disposal_designrecycle",
+      "description": "Løsningen er ikke mulig, da design til genanvendelse kræver at der kun bruges et materiale."
+    },
+    {
+      "id1": "usage_cover4",
+      "id2": "disposal_sticker",
+      "description": "Løsningen kan ikke vælges, da I ikke kan skjule mærkningen på et gennemsigtigt cover."
+    },
   ],
   "scoreWeights" : {
     "co2": {
@@ -946,8 +996,8 @@
     }
   ],
   "scoreLimits": {
-    "co2": 0.75,
-    "bio": 0.75,
-    "economy": 0.75
+    "co2": 0.70,
+    "bio": 0.70,
+    "economy": 0.70
   }
 }
