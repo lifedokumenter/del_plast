@@ -8,11 +8,11 @@
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Lorum Ipsum"
+          "message": "Fedt I har tid til at undersøge hvilke råstoffer vi skal bruge :-)"
         },
         {
           "initials": "TH",
-          "message": "Lorum Ipsum"
+          "message": "Jæs - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!"
         }
       ]
     },
@@ -99,9 +99,9 @@
       ]
     }
   },
-  "initialMessagesDelay": 30,
+  "initialMessagesDelay": 3,
   "medatadataHeaders": {
-    "co2": "CO2 udledning",
+    "co2": "CO<sub>2</sub> udledning",
     "bio": "Miljøbelastning",
     "economy": "Udgift"
   },
@@ -110,7 +110,7 @@
   },
   "bossEmailTexts": {
     "sendBtnText": "Send",
-    "email": "chefen@skole.dk",
+    "email": "chefen@coverup.dk",
     "subject": "Vores valg af",
     "choices": {
       "1": "Råstof",
@@ -157,7 +157,7 @@
             },
             {
               "initials": "AS",
-              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO2!"
+              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!"
             },
             {
               "initials": "TH",
@@ -186,7 +186,7 @@
             },
             {
               "initials": "AS",
-              "message": "CO2 udledningen er lav og det er godt, men der er nærmest ingen vild natur i en sukkerrørsmark og det er et problem."
+              "message": "CO<sub>2</sub></sub> udledningen er lav og det er godt, men der er nærmest ingen vild natur i en sukkerrørsmark og det er et problem."
             },
             {
               "initials": "TH",
@@ -216,7 +216,7 @@
             },
             {
               "initials": "AS",
-              "message": "CO2 er lav og det er godt, der er ikke særlig meget vild natur i en majsmark, men dog lidt mere end der er i en mark med sukkerrør"
+              "message": "CO<sub>2</sub> er lav og det er godt, der er ikke særlig meget vild natur i en majsmark, men dog lidt mere end der er i en mark med sukkerrør"
             },
             {
               "initials": "TH",
@@ -245,7 +245,7 @@
             },
             {
               "initials": "AS",
-              "message": "CO2 udledning er meget lav, hvilket er godt for klimaet. Og der er lidt vild natur i en kornmark."
+              "message": "CO<sub>2</sub> udledning er meget lav, hvilket er godt for klimaet. Og der er lidt vild natur i en kornmark."
             },
             {
               "initials": "TH",
@@ -311,7 +311,7 @@
             },
             {
               "initials": "AS",
-              "message": "En fabrik i Danmark er en god idé. Vi slipper for transport og sparer en masse på CO2 udledningen."
+              "message": "En fabrik i Danmark er en god idé. Vi slipper for transport og sparer en masse på CO<sub>2</sub> udledningen."
             },
             {
               "initials": "TH",
@@ -339,7 +339,7 @@
             },
             {
               "initials": "AS",
-              "message": "En fabrik i Europa vil stadig spare os for en del transport. Den har også lav forurening. Atomkraft er også CO2 neutral energi. Jeg synes det ser godt ud!"
+              "message": "En fabrik i Europa vil stadig spare os for en del transport. Den har også lav forurening. Atomkraft er også CO<sub>2</sub> neutral energi. Jeg synes det ser godt ud!"
             },
             {
               "initials": "TH",
@@ -395,7 +395,7 @@
             },
             {
               "initials": "AS",
-              "message": "Jeg synes CO2 udledning og miljøbelastningen er for høj, det kan vi gøre bedre."
+              "message": "Jeg synes CO<sub>2</sub> udledning og miljøbelastningen er for høj, det kan vi gøre bedre."
             },
             {
               "initials": "TH",
@@ -460,7 +460,7 @@
             },
             {
               "initials": "AS",
-              "message": "Selvom flyet har en lav CO2 udledning i forhold til andre fly, så er den stadig for høj."
+              "message": "Selvom flyet har en lav CO<sub>2</sub> udledning i forhold til andre fly, så er den stadig for høj."
             },
             {
               "initials": "TH",
@@ -544,7 +544,7 @@
             },
             {
               "initials": "AS",
-              "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO2 udledning og miljøbelastning er så høj."
+              "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO<sub>2</sub> udledning og miljøbelastning er så høj."
             },
             {
               "initials": "TH",
@@ -553,34 +553,6 @@
             {
               "initials": "KT",
               "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør. Måske koster det ekstra hvis vi skal have varene transporteret hele vejen fra Asien."
-            }
-          ]
-        },
-        {
-          "id": "transport_none",
-          "title": "Ingen transport - slettes??",
-          "description": "Lorem ipsum dolor sit amet",
-          "metadata":{
-            "co2Score": 50,
-            "bioScore": 25,
-            "economyScore":65
-          }, 
-          "chatMessages": [
-            {
-              "isUser": true,
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            },
-            {
-              "initials": "AS",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            },
-            {
-              "initials": "TH",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-            },
-            {
-              "initials": "KT",
-              "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
             }
           ]
         }
@@ -749,7 +721,7 @@
             },
             {
               "initials": "AS",
-              "message": "Selvom coveret udleder meget CO2 i produktionen, så holder det længe! Det er dog svært at genanvende, når der både bruges plast og metal. "
+              "message": "Selvom coveret udleder meget CO<sub>2</sub> i produktionen, så holder det længe! Det er dog svært at genanvende, når der både bruges plast og metal. "
             },
             {
               "initials": "TH",
@@ -953,13 +925,13 @@
       "id1": "production_memphis",
       "id2": "material_planteplast_corn",
       "title": "Produktion i Memphis og råstof Majs",
-      "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO2-udledning, miljøbelastning og udgift"
+      "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
       "id1": "transport_flight",
       "id2": "production_dubai",
       "title": "Transport i fly og Produktion i Dubai",
-      "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO2-udledning, miljøbelastning og udgift."
+      "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
     }
   ],
   "interactions": [
