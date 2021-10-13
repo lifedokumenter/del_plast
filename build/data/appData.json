@@ -119,7 +119,8 @@
       "4": "Brug",
       "5": "Bortskaffelse"
     },
-    "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!"
+    "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!",
+    "closeButtonText": "Luk"
   },
   "emailText": {
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
