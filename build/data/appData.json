@@ -945,7 +945,7 @@
       "id1": "usage_cover4",
       "id2": "disposal_sticker",
       "description": "Løsningen kan ikke vælges, da I ikke kan skjule mærkningen på et gennemsigtigt cover."
-    },
+    }
   ],
   "scoreWeights" : {
     "co2": {
