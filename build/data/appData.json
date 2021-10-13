@@ -680,7 +680,7 @@
         {
           "id": "usage_cover3",
           "title": "Cover 3",
-          "description": "Lorem ipsum dolor sit amet",
+          "description": "Bøjelig plast, farvet eller med print. Forventet holdbarhed ca. 1 år",
           "metadata":{
             "co2Score": 40,
             "bioScore": 44,
@@ -1154,11 +1154,138 @@
       "description": "Sukkerrørene kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
+      "id1": "production_billund",
+      "id2": "material_straw",
+      "title": "Råstof halm og produktion i Billund",
+      "description": "Halm kan købes lokalt i Billund og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_paris",
+      "id2": "material_straw",
+      "title": "Råstof halm og produktion i Paris",
+      "description": "Halm kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_mimai",
+      "id2": "material_straw",
+      "title": "Råstof halm og produktion i Miami",
+      "description": "Halm kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_memphis",
+      "id2": "material_straw",
+      "title": "Råstof halm og produktion i Memphis",
+      "description": "Halm kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_dubai",
+      "id2": "material_straw",
+      "title": "Råstof halm og produktion i Dubai",
+      "description": "Halmen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_shanghai",
+      "id2": "material_straw",
+      "title": "Råstof halm og produktion i Shanghai",
+      "description": "Halmen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_beijing",
+      "id2": "material_straw",
+      "title": "Råstof halm og produktion i Beijing",
+      "description": "Halmen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_billund",
+      "id2": "material_plast",
+      "title": "Råstof plastaffald og produktion i Billund",
+      "description": "Plastaffaldet skal købes og importeres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_paris",
+      "id2": "material_plast",
+      "title": "Råstof plastaffald og produktion i Paris",
+      "description": "Plastaffald kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_mimai",
+      "id2": "material_plast",
+      "title": "Råstof plastaffald og produktion i Miami",
+      "description": "Plastaffaldet skal købes og importeres til Miami, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_memphis",
+      "id2": "material_plast",
+      "title": "Råstof plastaffald og produktion i Memphis",
+      "description": "Plastaffaldet skal købes og importeres til Memphis, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_dubai",
+      "id2": "material_plast",
+      "title": "Råstof plastaffald og produktion i Dubai",
+      "description": "Plastaffald skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_shanghai",
+      "id2": "material_plast",
+      "title": "Råstof plastaffald og produktion i Shanghai",
+      "description": "Plastaffald kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_beijing",
+      "id2": "material_plast",
+      "title": "Råstof plastaffald og produktion i Beijing",
+      "description": "Plastaffaldet kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_billund",
+      "id2": "transport_truck",
+      "title": "Produktion i Billund og transport med lastbil",
+      "description": "Den korte transport sparer jer for CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_paris",
+      "id2": "transport_train",
+      "title": "Produktion i Paris og transport med tog",
+      "description": "Toget skal kun transportere varene fra Paris til Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_mimai",
+      "id2": "transport_ship",
+      "title": "Produktion i Miami og transport med skib",
+      "description": "Turen fra Miami til Danmark er kortere end gennemsnitsturen for et containerskib og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_mimai",
+      "id2": "transport_flight",
+      "title": "Produktion i Miami og transport med fly",
+      "description": "Det er en lang flyvetur til Miami og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_memphis",
+      "id2": "transport_ship",
+      "title": "Poduktion i Memphis og transport med skib",
+      "description": "Memphis ligger langt inde i USA og I skal derfor først transportere varene til en havn. Det koster ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_memphis",
+      "id2": "transport_flight",
+      "title": "Poduktion i Memphis og transport med fly",
+      "description": "Det er en lang flyvetur til Memphis og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "transport_flight",
+      "id2": "production_dubai",
+      "title": "Transport i fly og Produktion i Dubai",
+      "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
+    },
+    {
       "id1": "transport_flight",
       "id2": "production_dubai",
       "title": "Transport i fly og Produktion i Dubai",
       "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
     }
+    
   ],
   "interactions": [
     {
