@@ -72,7 +72,7 @@ function ToDirectorModal({buttonText, choice, feedback, open, email, subject, on
             onClick={() => {setSent(false); onClose(); }}
             color="blue"
           >
-            <span dangerouslySetInnerHTML={{__html: `"${closeButtonText}"`}} />
+            <span dangerouslySetInnerHTML={{__html: `${closeButtonText}`}} />
           </Button>
         }
       </Modal.Actions>
