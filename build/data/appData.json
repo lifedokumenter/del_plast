@@ -241,7 +241,7 @@
           "chatMessages": [
             {
               "isUser": true,
-              "message": "Vi tænker at bruge majs som råstof til vores covers. Hvad tænker i?"
+              "message": "Vi tænker at bruge halm som råstof til vores covers. Hvad tænker i?"
             },
             {
               "initials": "AS",
@@ -432,6 +432,62 @@
             {
               "initials": "KT",
               "message": "Den er meget dyr, har vi virkelig brug for en helt nybygget fabrik?"
+            }
+          ]
+        },
+        {
+          "id": "production_shanghai",
+          "title": "Shanghai",
+          "description": "Ældre fabrik, der trænger til opdatering af røggasrensning. Næsten ingen automatisering. Energi kommer hovedsageligt fra affaldsafbrænding og kul.",
+          "metadata":{
+            "co2Score": 82,
+            "bioScore": 46,
+            "economyScore":27
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Hvad tænker I om at vælge fabrikken i Shanghai?"
+            },
+            {
+              "initials": "AS",
+              "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
+            },
+            {
+              "initials": "TH",
+              "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
+            },
+            {
+              "initials": "KT",
+              "message": "Det er en meget god pris."
+            }
+          ]
+        },
+        {
+          "id": "production_beijing",
+          "title": "Beijing",
+          "description": "Ældre fabrik, der trænger til opdatering af røggasrensning. Næsten ingen automatisering. Energi kommer delvist fra vind- og vandkraft og delvist fra olie og kul.",
+          "metadata":{
+            "co2Score": 90,
+            "bioScore": 49,
+            "economyScore":19
+          }, 
+          "chatMessages": [
+            {
+              "isUser": true,
+              "message": "Hvad tænker I om at vælge fabrikken i Beijing?"
+            },
+            {
+              "initials": "AS",
+              "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
+            },
+            {
+              "initials": "TH",
+              "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
+            },
+            {
+              "initials": "KT",
+              "message": "Jeg tror ikke vi kan finde det billigere, så jeg er godt tilfreds."
             }
           ]
         }
@@ -972,9 +1028,51 @@
   },
   "feedback": [
     {
+      "id1": "production_billund",
+      "id2": "material_olie",
+      "title": "Råstof olie og produktion i Billund",
+      "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_paris",
+      "id2": "material_olie",
+      "title": "Råstof olie og produktion i Paris",
+      "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_mimai",
+      "id2": "material_olie",
+      "title": "Råstof olie og produktion i Miami",
+      "description": "Olien kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
       "id1": "production_memphis",
-      "id2": "material_planteplast_corn",
-      "title": "Produktion i Memphis og råstof Majs",
+      "id2": "material_olie",
+      "title": "Råstof olie og produktion i Memphis",
+      "description": "Olien kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_dubai",
+      "id2": "material_olie",
+      "title": "Råstof olie og produktion i Dubai",
+      "description": "Olien kan købes lokalt i Dubai og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_shanghai",
+      "id2": "material_olie",
+      "title": "Råstof olie og produktion i Shanghai",
+      "description": "Olien skal købes og transporteres til Shanghai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_beijing",
+      "id2": "material_olie",
+      "title": "Råstof olie og produktion i Beijing",
+      "description": "Olien skal købes og transporteres til Beijing, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_memphis",
+      "id2": "material_corn",
+      "title": "Råstof majs og produktion i Memphis",
       "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
