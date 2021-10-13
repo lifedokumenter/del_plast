@@ -25,7 +25,7 @@
 
 html {
 	@media only screen and (min-width:  @mobileBreakpoint) {
-		font-size: 11px;
+		font-size: 10px;
 	}
 	@media only screen and (min-width:  @largeMonitorBreakpoint) {
 		font-size: 13px;
