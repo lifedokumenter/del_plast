@@ -90,16 +90,16 @@
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Lorum Ipsum"
+          "message": ""
         },
         {
           "initials": "TH",
-          "message": "Lorum Ipsum"
+          "message": ""
         }
       ]
     }
   },
-  "initialMessagesDelay": 3,
+  "initialMessagesDelay": 2,
   "medatadataHeaders": {
     "co2": "CO<sub>2</sub> udledning",
     "bio": "Miljøbelastning",
