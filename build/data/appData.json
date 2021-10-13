@@ -78,7 +78,7 @@
     },
     "6": {
       "title": "Udarbejd jeres samlede LCA",
-      "tagline": "I kan løbende analysere jeres valg og vælge om indtil I er tilfredse med jeres LCA.",
+      "tagline": "I kan løbende analysere jeres valg og tage nye valg indtil I er tilfredse med jeres LCA",
       "buttonText":"Analyser valg",
       "columnTitles": {
         "material": "Råstof",
@@ -1172,8 +1172,8 @@
     }
   ],
   "scoreLimits": {
-    "co2": 0.70,
-    "bio": 0.70,
-    "economy": 0.70
+    "co2": 0.75,
+    "bio": 0.75,
+    "economy": 0.75
   }
 }
