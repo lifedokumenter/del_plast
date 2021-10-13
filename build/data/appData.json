@@ -1070,10 +1070,46 @@
       "description": "Olien skal købes og transporteres til Beijing, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
+      "id1": "production_billund",
+      "id2": "material_corn",
+      "title": "Råstof majs og produktion i Billund",
+      "description": "Majsen skal købes og transporteres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_paris",
+      "id2": "material_corn",
+      "title": "Råstof majs og produktion i Paris",
+      "description": "Majsen skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_mimai",
+      "id2": "material_corn",
+      "title": "Råstof majs og produktion i Miami",
+      "description": "Majsen kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
       "id1": "production_memphis",
       "id2": "material_corn",
       "title": "Råstof majs og produktion i Memphis",
       "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_dubai",
+      "id2": "material_corn",
+      "title": "Råstof majs og produktion i Dubai",
+      "description": "Majsen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_shanghai",
+      "id2": "material_corn",
+      "title": "Råstof majs og produktion i Shanghai",
+      "description": "Majsen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+    },
+    {
+      "id1": "production_beijing",
+      "id2": "material_corn",
+      "title": "Råstof majs og produktion i Beijing",
+      "description": "Majsen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
       "id1": "transport_flight",
