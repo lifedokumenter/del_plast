@@ -3,82 +3,82 @@
   "steps": {
     "1": {
       "title": "Vælg et råstof til jeres covers",
-      "tagline": "Tagline",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg råstof",
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Fedt I har tid til at undersøge hvilke råstoffer vi skal bruge :-)"
+          "message": "Det bliver spændende at komme i gang med vores LCA"
         },
         {
           "initials": "TH",
-          "message": "Jæs - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!"
+          "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!"
         }
       ]
     },
     "2": {
       "title": "Vælg en fabrik til produktion",
-      "tagline": "Tagline",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg lokation",
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Lorum Ipsum"
+          "message": "Nu skal vi vælge en fabrik til produktion, det har jeg mange holdninger til!"
         },
         {
           "initials": "TH",
-          "message": "Lorum Ipsum"
+          "message": "Ja, det kan ikke komme bag på nogen..."
         }
       ]
     },
     "3": {
       "title": "Vælg transportsform",
-      "tagline": "Tagline",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg transport",
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Lorum Ipsum"
+          "message": "I spørger bare løs!"
         },
         {
           "initials": "TH",
-          "message": "Lorum Ipsum"
+          "message": "Ja, så må vi se om vi kan blive enige denne gang."
         }
       ]
     },
     "4": {
       "title": "Vælg en covertype",
-      "tagline": "Tagline",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg Brug",
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Lorum Ipsum"
+          "message": "Designet, ja der er jo også miljømæssige fordele og ulemper hvis det."
         },
         {
           "initials": "TH",
-          "message": "Lorum Ipsum"
+          "message": "Ja, og det betyder meget for salget!"
         }
       ]
     },
     "5": {
       "title": "Lav en bortskaffelsesstrategi",
-      "tagline": "Tagline",
+      "tagline": "I kan vælge mere end én her",
       "buttonText":"Vælg bortskaffelse",
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Lorum Ipsum"
+          "message": "Her kan I jo vælge flere ting, så længe I holder budgettet."
         },
         {
           "initials": "TH",
-          "message": "Lorum Ipsum"
+          "message": "Ja, det er spændende at se hvad I vælger her."
         }
       ]
     },
     "6": {
       "title": "Udarbejd jeres samlede LCA",
-      "tagline": "Tagline",
+      "tagline": "I kan løbende analysere jeres valg og vælge om indtil I er tilfredse med jeres LCA.",
       "buttonText":"Analyser valg",
       "columnTitles": {
         "material": "Råstof",
