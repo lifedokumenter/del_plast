@@ -34,6 +34,7 @@ const Landing = ({
   const [containsAllCategories, setContainsAllCategories] = React.useState<boolean>(false);
   const [showEmailModal, setShowEmailModal] = React.useState<boolean>(false);
   const [hasInteracted, setHasInteracted] = React.useState<boolean>(false);
+  const [toDirectorMessage, setToDirectorMessage] = React.useState<string>('');
 
   const interval = React.useRef(setTimeout(() => {}, 0));
 
@@ -61,6 +62,7 @@ const Landing = ({
       resetChoices();
       setHasInteracted(false);
       setContainsAllCategories(newStep === 6 ? false : true);
+      setToDirectorMessage('');
     } 
   }, [stepNo, step, resetChoices]);
 
@@ -175,6 +177,8 @@ const Landing = ({
                   open={showEmailModal} 
                   onClose={() => setShowEmailModal(false)}
                   closeButtonText={appData.bossEmailTexts.closeButtonText}
+                  message={toDirectorMessage}
+                  setMessage={setToDirectorMessage}
                 />
               </div>
               <ProgressBars
