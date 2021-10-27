@@ -45,11 +45,11 @@ const ProgressBars = ({
     limit = limit * 100;
     if (percentage === undefined || (percentage <= limit && percentage < 20)) {
       return 'green';
-    } else if (percentage < 40) {
+    } else if (percentage < 35) {
       return 'olive';
     } else if (percentage < 60) {
       return 'yellow';
-    } else if (percentage < 80) {
+    } else if (percentage < 75) {
       return 'orange';
     } else {
       return 'red';
