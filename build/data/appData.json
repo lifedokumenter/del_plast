@@ -3,7 +3,7 @@
   "steps": {
     "1": {
       "title": "Vælg et råstof til jeres covers",
-      "tagline": "",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg råstof",
       "initialChatMessages": [
         {
@@ -12,14 +12,14 @@
         },
         {
           "initials": "TH",
-          "message": "Ja! Spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg."
+          "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!"
         }
       ]
     },
     "2": {
       "title": "Vælg en fabrik til produktion",
-      "tagline": "",
-      "buttonText":"Vælg produktion",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
+      "buttonText":"Vælg lokation",
       "initialChatMessages": [
         {
           "initials": "AS",
@@ -33,7 +33,7 @@
     },
     "3": {
       "title": "Vælg transportsform",
-      "tagline": "",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg transport",
       "initialChatMessages": [
         {
@@ -48,12 +48,12 @@
     },
     "4": {
       "title": "Vælg en covertype",
-      "tagline": "",
-      "buttonText":"Vælg cover",
+      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
+      "buttonText":"Vælg Brug",
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Der er faktisk også miljømæssige fordele og ulemper ved designet."
+          "message": "Designet, ja der er jo også miljømæssige fordele og ulemper hvis det."
         },
         {
           "initials": "TH",
@@ -110,7 +110,7 @@
   },
   "bossEmailTexts": {
     "sendBtnText": "Send",
-    "email": "direktør@coverup.dk",
+    "email": "chefen@coverup.dk",
     "subject": "Vores valg af",
     "choices": {
       "1": "Råstof",
@@ -133,7 +133,7 @@
     "approvedDescription": "Tag et screenshot at dine valg",
     "approvedBtnText": "OK"
   },
-  "aboveLimit": "Dit budget er overskrevet. Prøv en anden løsning.",
+  "aboveLimit": "Dit budget er overskrevet. Se om du ikke kan foretage nogle andre valg",
   "material": [
     {
       "id":"material",
@@ -157,15 +157,15 @@
             },
             {
               "initials": "AS",
-              "message": "Jeg synes at vi skal gå væk fra at bruge olie. Det udleder alt for meget CO<sub>2</sub></sub>!"
+              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!"
             },
             {
               "initials": "TH",
-              "message": "Hvis vi bruger olie, så skal vi gøre en indsats for at det bliver sendt til genanvendelse af forbrugeren."
+              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren."
             },
             {
               "initials": "KT",
-              "message": "Prisen på olie er lav og teknologien har vi styr på. Jeg synes det er en god idé."
+              "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her."
             }
           ]
         },
