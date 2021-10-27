@@ -34,6 +34,8 @@ const Landing = ({
   const [containsAllCategories, setContainsAllCategories] = React.useState<boolean>(false);
   const [showEmailModal, setShowEmailModal] = React.useState<boolean>(false);
   const [hasInteracted, setHasInteracted] = React.useState<boolean>(false);
+  const [toDirectorMessage, setToDirectorMessage] = React.useState<string>('');
+  const [overBudget, setOverBudget] = React.useState<boolean>(false);
 
   const interval = React.useRef(setTimeout(() => {}, 0));
 
@@ -61,6 +63,8 @@ const Landing = ({
       resetChoices();
       setHasInteracted(false);
       setContainsAllCategories(newStep === 6 ? false : true);
+      setToDirectorMessage('');
+      setOverBudget(false);
     } 
   }, [stepNo, step, resetChoices]);
 
@@ -125,18 +129,22 @@ const Landing = ({
         if (cat.length === 0) {
           hasAll = false;
         }
-
         cat.forEach( c => {
           currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1));
           currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1));
           currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1));
         });
       });
-      setContainsAllCategories(step !== 6 || hasAll);
+      setContainsAllCategories(step !== 6 || hasAll);   
+      
+      // check if is above limit
+      setOverBudget(currentScores.co2Score > appData?.scoreLimits.co2 * 100 ||
+        currentScores.bioScore > appData?.scoreLimits.bio * 100  ||
+        currentScores.economyScore > appData?.scoreLimits.economy * 100 )
     }
-
+   
     setScore(currentScores);
-  }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights, appData.interactions, step]);
+  }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights, appData.interactions, step, appData.scoreLimits]);
 
   return(
     <Grid columns={2} stackable>
@@ -175,6 +183,8 @@ const Landing = ({
                   open={showEmailModal} 
                   onClose={() => setShowEmailModal(false)}
                   closeButtonText={appData.bossEmailTexts.closeButtonText}
+                  message={toDirectorMessage}
+                  setMessage={setToDirectorMessage}
                 />
               </div>
               <ProgressBars
@@ -198,7 +208,7 @@ const Landing = ({
                   size="huge" 
                   primary 
                   onClick={submitStep} 
-                  disabled={multipleChoice ? !containsAllCategories : !activePChainChoice}>
+                  disabled={multipleChoice ? !containsAllCategories || overBudget : !activePChainChoice}>
                     <span dangerouslySetInnerHTML={{__html: (appData.steps[step || 1].buttonText) || ''}} />
                     <Icon name="chevron right" />
                 </Button>

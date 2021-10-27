@@ -14,14 +14,23 @@ interface Props {
   email?: string,
   subject?: string,
   closeButtonText?: string,
+  message?: string,
+  setMessage?: (message: string) => void,
 }
 
-function ToDirectorModal({buttonText, choice, feedback, open, email, subject, onClose = () => {}, closeButtonText = ''}: Props) {
-  const [sent, setSent] = React.useState(false)
+function ToDirectorModal({buttonText, choice, feedback, open, email, subject, onClose = () => '', closeButtonText = '', message='', setMessage = (message: string) => {}}: Props) {
+  const [sent, setSent] = React.useState(false);
+
+  const close = () => {
+    if (sent) {
+      setMessage('');
+    } 
+    onClose()
+  }
 
   return (
     <Modal
-      onClose={() => {setSent(false); onClose()}}
+      onClose={() => {setSent(false); close()}}
       open={open}
       className="to-director-modal"
     >
@@ -44,7 +53,7 @@ function ToDirectorModal({buttonText, choice, feedback, open, email, subject, on
                 </div>
               </div>
               <Form>
-                <TextArea placeholder='Besked...' />
+                <TextArea value={message} placeholder='Besked...' onChange={(ev) => setMessage(ev.target.value)} />
               </Form>
             </>
           }
@@ -69,7 +78,7 @@ function ToDirectorModal({buttonText, choice, feedback, open, email, subject, on
         {
           sent && 
           <Button
-            onClick={() => {setSent(false); onClose(); }}
+            onClick={() => {setSent(false); close(); }}
             color="blue"
           >
             <span dangerouslySetInnerHTML={{__html: `${closeButtonText}`}} />
