@@ -19,9 +19,26 @@ interface ProgressBarsProps {
   alertOnAboveLimit?: boolean;
   alertMessage?: string;
   showLimits?: boolean;
+  showCo2?: boolean;
+  showBio?: boolean;
+  showEconomy?: boolean;
 }
 
-const ProgressBars = ({co2, bio, economy, limits = {co2: 0.8, bio: 0.8, economy: 0.8}, co2Label='', bioLabel='', economyLabel='', alertOnAboveLimit = false, alertMessage = '', showLimits}: ProgressBarsProps) => {
+const ProgressBars = ({
+  co2, 
+  bio, 
+  economy, 
+  limits = {co2: 0.8, bio: 0.8, economy: 0.8}, 
+  co2Label='', 
+  bioLabel='', 
+  economyLabel='', 
+  alertOnAboveLimit = false, 
+  alertMessage = '', 
+  showLimits = false,
+  showCo2 = true,
+  showBio = true,
+  showEconomy = true
+}: ProgressBarsProps) => {
 
   const parseColor = (percentage: number | undefined, limit: number) => {
 
@@ -65,9 +82,9 @@ const ProgressBars = ({co2, bio, economy, limits = {co2: 0.8, bio: 0.8, economy:
 
   return (
     <div className="progress-bars">
-      { renderProgressBar(co2Label, co2, limits.co2) }
-      { renderProgressBar(bioLabel, bio, limits.bio) }
-      { renderProgressBar(economyLabel, economy, limits.economy) }
+      { showCo2 && renderProgressBar(co2Label, co2, limits.co2) }
+      { showBio && renderProgressBar(bioLabel, bio, limits.bio) }
+      { showEconomy && renderProgressBar(economyLabel, economy, limits.economy) }
     </div>
   )
 

@@ -7,7 +7,7 @@ interface PChainChoicesProviderProps {
 
 export interface PChainChoicesContextApi {
   pChainChoices: Array<PChainOption>;
-  togglePChainChoice: (choice: PChainOption, enableMultipleChoice: boolean | undefined) => void;
+  togglePChainChoice: (choice: PChainOption, enableMultipleChoice: boolean | undefined) => boolean;
   activePChainChoice: PChainOption | null;
   setActivePChainChoice: (choice: PChainOption) => void;
   disabledPChainChoices: Array<string>;
@@ -35,7 +35,9 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
         break;
       }
     }
-    idx > -1 ? arr.splice(idx,1) : arr.push(choice);
+
+    const toggleOn = idx === -1;
+    !toggleOn ? arr.splice(idx,1) : arr.push(choice);
 
     if (!enableMultipleChoice) {
       // filter out others from same category
@@ -56,6 +58,7 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
       }
     }
     setDisabledPChainChoices(disabledOptions);
+    return toggleOn;
   }
 
   const resetChoices = () => {

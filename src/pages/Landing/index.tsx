@@ -127,9 +127,9 @@ const Landing = ({
         }
 
         cat.forEach( c => {
-          currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1)) / cat.length;
-          currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1)) / cat.length;
-          currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1)) / cat.length;
+          currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1));
+          currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1));
+          currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1));
         });
       });
       setContainsAllCategories(step !== 6 || hasAll);
@@ -146,7 +146,12 @@ const Landing = ({
             !!appData && 
             <div className="landing">
               <div className="landing__content">
-                <PChainStep key={step} step={step} appData={appData} multipleChoice={multipleChoice} /> 
+                <PChainStep 
+                  key={step} 
+                  step={step} 
+                  appData={appData} 
+                  multipleChoice={multipleChoice}
+                /> 
                 <FeedbackModal 
                   feedbackOptions={appData.feedback}
                   title={appData.feedbackText.title}
@@ -183,6 +188,9 @@ const Landing = ({
                 alertOnAboveLimit={step === 5 || step === 6}
                 alertMessage={appData?.aboveLimit}
                 showLimits={step === 6}
+                showCo2={step !== 5}
+                showBio={step !== 5}
+                showEconomy={true}
               />
               <div className="landing__content__footer">
                 <img alt="text" src={lifeLogo} />

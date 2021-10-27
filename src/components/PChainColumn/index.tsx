@@ -16,18 +16,20 @@ interface PChainColumnProps {
   multipleChoice?: boolean;
   multipleChoicePerColumn?: boolean;
   striped?: boolean;
+  maxChoices?: number|undefined;
 }
 
-const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice, multipleChoicePerColumn, striped}:PChainColumnProps) => {
+const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice, multipleChoicePerColumn, striped, maxChoices}:PChainColumnProps) => {
 
   const { setPendingMessages } = useChat(); 
   const { activePChainChoice, setActivePChainChoice, togglePChainChoice, pChainChoices, disabledPChainChoices } = usePChainChoices();
 
   const selectPChainOption = (option: PChainOption) => {
-    setPendingMessages(option.chatMessages || []);
     if (multipleChoice) {
-      togglePChainChoice(option, multipleChoicePerColumn);
+      const wasToggledOn = togglePChainChoice(option, multipleChoicePerColumn);
+      setPendingMessages(wasToggledOn && option.chatMessages ? option.chatMessages : []);
     } else {
+      setPendingMessages(option.chatMessages || []);
       setActivePChainChoice(option);
     }
   }
@@ -37,6 +39,21 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
       return !!pChainChoices.find(c => c.id === option.id);
     } else {
       return option.id === activePChainChoice?.id;
+    }
+  }
+
+  const isOptionDisabled = (option:PChainOption) => {
+    if (!maxChoices) {
+      return disabledPChainChoices.indexOf(option.id) > -1;
+    } 
+
+    const selectedIds = pChainChoices.map(c => c.id);
+    const selectedOptions = PChainOptions.filter(c => selectedIds.indexOf(c.id) > -1 )
+
+    if (selectedOptions.length === maxChoices) {
+      return !pChainChoices.find(c => c.id === option.id);
+    } else {
+      return false;
     }
   }
 
@@ -57,7 +74,7 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
             showDescription={showDescription} 
             isSelected={isOptionSelected(option)} 
             size={size} 
-            isDisabled={disabledPChainChoices.indexOf(option.id) > -1}
+            isDisabled={isOptionDisabled(option)}
           />
         ))
       }
