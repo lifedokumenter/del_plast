@@ -14,7 +14,7 @@ function App() {
   const [appData, setAppData] = React.useState<any | null>();
 
   React.useEffect(()=> {
-    fetch(`${process.env.REACT_APP_ROOT_DIR || './'}data/appData.json`)
+    fetch(`${process.env.REACT_APP_ROOT_DIR || './'}data/appData.json?nocache='${(new Date()).getTime()}`)
       .then(res=>res.json())
       .then( data => {
         setAppData(data);
