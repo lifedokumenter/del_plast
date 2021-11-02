@@ -8,6 +8,7 @@ import { ReactComponent as VideoIcon } from '../../images/video.svg';
 import { ReactComponent as MoreIcon } from '../../images/more.svg';
 
 import './index.less';
+import ChatEllipsisLoader from './ChatEllipsisLoader';
 
 interface Props {
   title: string;
@@ -16,7 +17,7 @@ interface Props {
 
 const Chat = ({ title, onSubmitted }: Props) => {
 
-  const { messages, addPendingMessages, pendingMessages, setPendingMessages } = useChat();
+  const { messages, addPendingMessages, pendingMessages, setPendingMessages, isChatLoading } = useChat();
   const [userMessage, setUserMessage] = React.useState<ChatMessage | undefined>(pendingMessages?.find( m => m.isUser === true));
 
   const messagesContainerRef = React.useRef<null|HTMLDivElement>(null);
@@ -65,6 +66,14 @@ const Chat = ({ title, onSubmitted }: Props) => {
                 </div>
               ))
             } 
+            {
+              isChatLoading &&
+              <div className="chat__messages__message">
+                <div className="chat__messages__message__bubble">
+                  <ChatEllipsisLoader />
+                </div>
+              </div>
+            }
           </div>
         </div>
         <Form>
