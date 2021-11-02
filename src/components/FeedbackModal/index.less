@@ -1,9 +1,40 @@
+@import '../../semantic-ui/site/globals/site.variables';
+
 .feedback-modal {
-  &__description.ui.header {
-  }
-  
+
   &__feedback {
     margin-bottom: 2rem;
+
+    .ui.header {
+      display: flex;
+      align-items: center;
+    }
+
+    &__positive,
+    &__negative {
+      padding: 1rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: @red;
+      color: white;
+      margin: 0 1rem;
+      border-radius: 100%;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__positive {
+      background-color: @lightGreen;
+    }
 
     &:last-child {
       margin-bottom: 0;

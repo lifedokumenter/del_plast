@@ -59,6 +59,18 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
             <div key={f.id1 + '_' + f.id2} className="feedback-modal__feedback">
               <Header size="medium">
                 <span dangerouslySetInnerHTML={{__html: (`${index + 1}. ${f.title}`) || ''}}/>
+                {
+                  f.positive &&
+                  <div className="feedback-modal__feedback__positive">
+                    <div>+</div>
+                  </div>
+                }
+                {
+                  !f.positive &&
+                  <div className="feedback-modal__feedback__negative">
+                    <div>-</div>
+                  </div>
+                }
               </Header>
               <p dangerouslySetInnerHTML={{__html: f.description || ''}}/>
             </div>

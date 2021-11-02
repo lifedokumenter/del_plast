@@ -3,4 +3,5 @@ export interface Feedback {
   id2: string;
   title: string;
   description: string;
+  positive?: boolean;
 }

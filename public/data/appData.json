@@ -1039,13 +1039,15 @@
       "id1": "production_billund",
       "id2": "material_olie",
       "title": "Råstof olie og produktion i Billund",
-      "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+      "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+      "positive": true
     },
     {
       "id1": "production_paris",
       "id2": "material_olie",
       "title": "Råstof olie og produktion i Paris",
-      "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+      "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+      "positive": false
     },
     {
       "id1": "production_mimai",
@@ -1573,7 +1575,8 @@
       "id1": "usage_cover2",
       "id2": "disposal_recycle",
       "title": "Cover 2, med design til genbrug",
-      "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+      "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+      "positive": true
     },
     {
       "id1": "usage_cover3",
