@@ -112,6 +112,7 @@
     "sendBtnText": "Send",
     "email": "chefen@coverup.dk",
     "subject": "Vores valg af",
+    "closeButtonText": "Luk",
     "choices": {
       "1": "Råstof",
       "2": "Produktion",
@@ -119,8 +120,15 @@
       "4": "Brug",
       "5": "Bortskaffelse"
     },
-    "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!",
-    "closeButtonText": "Luk"
+    "thanksForMessage": {
+      "steps": {
+        "1": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "2": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "3": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "4": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "5": "Spændende valg af {{choice}} - lad os lige holde et møde om det!"
+      }
+    }
   },
   "emailText": {
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "

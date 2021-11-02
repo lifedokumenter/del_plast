@@ -177,7 +177,7 @@ const Landing = ({
                 <ToDirectorModal
                   buttonText={appData.bossEmailTexts.sendBtnText}
                   choice={appData.bossEmailTexts.choices[stepNo || "1"]}
-                  feedback={appData.bossEmailTexts.thanksForMessage}
+                  feedback={appData.bossEmailTexts.thanksForMessage.steps[stepNo || "1"]?.split('{{choice}}').join(activePChainChoice?.title || '')}
                   email={appData.bossEmailTexts.email}
                   subject={appData.bossEmailTexts.subject}
                   open={showEmailModal} 
