@@ -638,6 +638,7 @@
             "bioScore": 41,
             "economyScore":14
           }, 
+          "imageUrl": "./images/cover 1.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -666,6 +667,7 @@
             "bioScore": 35,
             "economyScore":7
           }, 
+          "imageUrl": "./images/cover 2.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -694,6 +696,7 @@
             "bioScore": 44,
             "economyScore":15
           }, 
+          "imageUrl": "./images/cover 3.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -722,6 +725,7 @@
             "bioScore": 36,
             "economyScore":9
           }, 
+          "imageUrl": "./images/cover 4.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -750,6 +754,7 @@
             "bioScore": 37,
             "economyScore":37
           }, 
+          "imageUrl": "./images/cover 5.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -778,6 +783,7 @@
             "bioScore": 51,
             "economyScore":29
           }, 
+          "imageUrl": "./images/cover 6.JPEG",
           "chatMessages": [
             {
               "isUser": true,

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from 'semantic-ui-react';
+import { usePChainChoices } from '../../contexts/PChainChoicesContext';
 import { PChainOption } from '../../interfaces/PChainOption';
 import PChainColumn from '../PChainColumn';
 import './index.less';
@@ -24,6 +25,8 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
   } else if(step === 6) {
     pChainType = 'all';
   }
+
+  const { activePChainChoice } =  usePChainChoices();
 
   const reduceSubCategories = (category: string) =>{
     return appData[category].reduce((options: Array<PChainOption>, option: PChainOption) => [...options, ...option.subCategories || []], [])
@@ -66,6 +69,12 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
               maxChoices={option.id === 'disposal' ? 2 : undefined}
             />
           )
+        }
+        {
+          step === 4 &&
+          <div className="p-chain-step__columns__image">
+            <img src={activePChainChoice?.imageUrl}></img>
+          </div>
         }
       </div>
     </div>
