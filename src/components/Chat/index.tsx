@@ -16,7 +16,7 @@ interface Props {
 
 const Chat = ({ title, onSubmitted }: Props) => {
 
-  const { messages, addPendingMessages, pendingMessages } = useChat();
+  const { messages, addPendingMessages, pendingMessages, setPendingMessages } = useChat();
   const [userMessage, setUserMessage] = React.useState<ChatMessage | undefined>(pendingMessages?.find( m => m.isUser === true));
 
   const messagesContainerRef = React.useRef<null|HTMLDivElement>(null);
@@ -32,6 +32,12 @@ const Chat = ({ title, onSubmitted }: Props) => {
   React.useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  const submit = () => {
+    addPendingMessages();
+    onSubmitted();
+    setPendingMessages([]);
+  }
 
   return (
     <div className="chat">
@@ -63,10 +69,7 @@ const Chat = ({ title, onSubmitted }: Props) => {
         </div>
         <Form>
           <TextArea value={userMessage?.message || ''} disabled placeholder="Besked..."></TextArea>     
-          <Button className={userMessage?.message?.length ? 'pulsate' : ''} primary icon onClick={() => { 
-            addPendingMessages();
-            onSubmitted();
-          }}>
+          <Button className={userMessage?.message?.length ? 'pulsate' : ''} primary icon onClick={submit}>
             <Icon name='angle right' />
           </Button>
         </Form>
