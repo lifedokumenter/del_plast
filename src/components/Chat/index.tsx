@@ -40,6 +40,24 @@ const Chat = ({ title, onSubmitted }: Props) => {
     setPendingMessages([]);
   }
 
+  const messageAvatar = (type: string | undefined) => {
+    let src:string | null = null;
+    if (type === 'communication') {
+      src = './images/plast_communication_user.jpg'
+    } else if (type === 'economy') {
+      src = './images/plast_economy_user.jpg'
+    } else if (type === 'environment') {
+      src = './images/plast_environment_user.jpg'
+    }
+    
+    console.log('type is: ', type, 'src is: ', src);
+    if (src) {
+      return <img src={src} width="100%" />
+    } 
+
+    return <PersonIcon />
+  }
+
   return (
     <div className="chat">
       <Segment className="chat__wrapper">
@@ -57,7 +75,9 @@ const Chat = ({ title, onSubmitted }: Props) => {
               messages && messages.map( (message: ChatMessage, index: number) => (
                 <div  ref={index === messages.length - 1 ? messagesContainerRef : null} key={index} className={`chat__messages__message ${message?.isUser ? 'chat__messages__message--user' : ''}`}> 
                   <div className="chat__messages__message__user-icon">
-                    <PersonIcon />
+                    {
+                      messageAvatar(message?.type)
+                    }
                   </div>
                   <div className="chat__messages__message__bubble">
                     <p dangerouslySetInnerHTML={{__html: message?.initials || ''}}/>

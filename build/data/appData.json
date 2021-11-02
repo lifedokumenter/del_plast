@@ -8,7 +8,8 @@
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Det bliver spændende at komme i gang med vores LCA"
+          "message": "Det bliver spændende at komme i gang med vores LCA",
+          "type": "communication"
         },
         {
           "initials": "TH",

@@ -8,11 +8,13 @@
       "initialChatMessages": [
         {
           "initials": "AS",
-          "message": "Det bliver spændende at komme i gang med vores LCA"
+          "message": "Det bliver spændende at komme i gang med vores LCA",
+          "type": "communication"
         },
         {
           "initials": "TH",
-          "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!"
+          "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!",
+          "type": "economy"
         }
       ]
     },
@@ -165,15 +167,18 @@
             },
             {
               "initials": "AS",
-              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!"
+              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!",
+              "type": "communication"
             },
             {
               "initials": "TH",
-              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren."
+              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren.",
+              "type": "environment"
             },
             {
               "initials": "KT",
-              "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her."
+              "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her.",
+              "type": "economy"
             }
           ]
         },
