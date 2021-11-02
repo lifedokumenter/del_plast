@@ -13,7 +13,8 @@
         },
         {
           "initials": "TH",
-          "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!"
+          "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!",
+          "type": "economy"
         }
       ]
     },
@@ -113,6 +114,7 @@
     "sendBtnText": "Send",
     "email": "chefen@coverup.dk",
     "subject": "Vores valg af",
+    "closeButtonText": "Luk",
     "choices": {
       "1": "Råstof",
       "2": "Produktion",
@@ -120,8 +122,15 @@
       "4": "Brug",
       "5": "Bortskaffelse"
     },
-    "thanksForMessage": "Tak for jeres mail - lad os lige holde et møde om det!",
-    "closeButtonText": "Luk"
+    "thanksForMessage": {
+      "steps": {
+        "1": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "2": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "3": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "4": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
+        "5": "Spændende valg af {{choice}} - lad os lige holde et møde om det!"
+      }
+    }
   },
   "emailText": {
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
@@ -158,15 +167,18 @@
             },
             {
               "initials": "AS",
-              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!"
+              "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!",
+              "type": "communication"
             },
             {
               "initials": "TH",
-              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren."
+              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren.",
+              "type": "environment"
             },
             {
               "initials": "KT",
-              "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her."
+              "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her.",
+              "type": "economy"
             }
           ]
         },
@@ -631,6 +643,7 @@
             "bioScore": 41,
             "economyScore":14
           }, 
+          "imageUrl": "./images/cover 1.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -659,6 +672,7 @@
             "bioScore": 35,
             "economyScore":7
           }, 
+          "imageUrl": "./images/cover 2.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -687,6 +701,7 @@
             "bioScore": 44,
             "economyScore":15
           }, 
+          "imageUrl": "./images/cover 3.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -715,6 +730,7 @@
             "bioScore": 36,
             "economyScore":9
           }, 
+          "imageUrl": "./images/cover 4.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -743,6 +759,7 @@
             "bioScore": 37,
             "economyScore":37
           }, 
+          "imageUrl": "./images/cover 5.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -771,6 +788,7 @@
             "bioScore": 51,
             "economyScore":29
           }, 
+          "imageUrl": "./images/cover 6.JPEG",
           "chatMessages": [
             {
               "isUser": true,
@@ -1032,13 +1050,15 @@
       "id1": "production_billund",
       "id2": "material_olie",
       "title": "Råstof olie og produktion i Billund",
-      "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+      "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+      "positive": true
     },
     {
       "id1": "production_paris",
       "id2": "material_olie",
       "title": "Råstof olie og produktion i Paris",
-      "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+      "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+      "positive": false
     },
     {
       "id1": "production_mimai",
@@ -1566,7 +1586,8 @@
       "id1": "usage_cover2",
       "id2": "disposal_recycle",
       "title": "Cover 2, med design til genbrug",
-      "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+      "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+      "positive": true
     },
     {
       "id1": "usage_cover3",
