@@ -6,12 +6,12 @@
       "buttonText":"Vælg råstof",
       "initialChatMessages": [
         {
-          "initials": "AS",
+          "initials": "Asger",
           "message": "Det bliver spændende at komme i gang med vores LCA",
-          "type": "communication"
+          "type": "enviroment"
         },
         {
-          "initials": "TH",
+          "initials": "Charlotte",
           "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!",
           "type": "economy"
         }
@@ -82,17 +82,7 @@
         "transport": "Transport",
         "usage": "Brug",
         "disposal": "Bortskaffelse"
-      },
-      "initialChatMessages": [
-        {
-          "initials": "AS",
-          "message": ""
-        },
-        {
-          "initials": "TH",
-          "message": ""
-        }
-      ]
+      }
     }
   },
   "initialMessagesDelay": 2,
@@ -106,7 +96,7 @@
   },
   "bossEmailTexts": {
     "sendBtnText": "Send",
-    "email": "chefen@coverup.dk",
+    "email": "Line@coverup.dk",
     "subject": "Vores valg af",
     "closeButtonText": "Luk",
     "choices": {
@@ -118,18 +108,18 @@
     },
     "thanksForMessage": {
       "steps": {
-        "1": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
-        "2": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
-        "3": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
-        "4": "Spændende valg af {{choice}} - lad os lige holde et møde om det!",
-        "5": "Spændende valg af {{choice}} - lad os lige holde et møde om det!"
+        "1": "Tak for jeres mail, det er spændende at høre jeres tanker bag at bruge {{choice}} som råstof. <br><br>Jeg glæder mig til at høre mere fra jer!",
+        "2": "Jeg ved at placeringen af fabrikken er et svært valg, men jeg synes at {{choice}} lyder som et godt valg. <br><br>Jeg glæder mig til at høre hvordan I løser transporten så.",
+        "3": "Det giver mening at transportere med {{choice}}, især når fabrikken ligger hvor den gør. <br><br>Tak for indsatsen.",
+        "4": "Det her cover synes jeg virkelig passer godt ind hos CoverUP. {{choice}} har også et kundemarked, det er jeg sikker på!",
+        "5": "Spændende kombination af valg her, jeg håber at I har tænk godt over hvordan de to kan valg kan spille sammen."
       }
     }
   },
   "finalBossMessage": {
-    "message": "Kære medarbejdere <br><br> tak for jeres valg! <br><br> Mvh <br>chefen for det hele",
+    "message": "Kære medarbejdere, <br><br> Tak for jeres indsats! Jeg glæder mig til at høre jeres præsentation, hvor I virkelig kan komme med alle jeres arguementer for jeres valg. <br><br> Med venlig hilsen <br>Line Ravn Sørensen",
     "closeButtonText": "Luk",
-    "messageDelay": 5
+    "messageDelay": 2
   },
   "emailText": {
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
@@ -139,7 +129,7 @@
     "description": "Analysen af denne LCA peger på følgende fordele og ulemper mellem valgene:",
     "cancelBtnText": "Rediger valg",
     "submitBtnText": "Godkend valg",
-    "approvedDescription": "Tag et screenshot at dine valg",
+    "approvedDescription": "Tag et billede at jeres valg, så I kan bruge det i jeres præsentation",
     "approvedBtnText": "OK"
   },
   "aboveLimit": "Dit budget er overskrevet. Se om du ikke kan foretage nogle andre valg",
@@ -152,7 +142,7 @@
         {
           "id": "material_olie",
           "title": "Olie",
-          "description": "Olie er dannet af planter og andre organismer igennem millioner af år. Det pumpes op fra undergrunden og bruges bl.a. til at lave benzin, diesel og plast.",
+          "description": "Olie kan bruges til benzin, diesel og til at lave plast.",
           "metadata":{
             "co2Score": 92,
             "bioScore": 48,
@@ -165,17 +155,17 @@
               "message": "Vi tænker at bruge olie som råstof til vores covers. Hvad tænker i?"
             },
             {
-              "initials": "AS",
+              "initials": "Asger",
               "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!",
-              "type": "communication"
-            },
-            {
-              "initials": "TH",
-              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren.",
               "type": "environment"
             },
             {
-              "initials": "KT",
+              "initials": "Sune",
+              "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren.",
+              "type": "communication"
+            },
+            {
+              "initials": "Charlotte",
               "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her.",
               "type": "economy"
             }
