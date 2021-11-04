@@ -1629,5 +1629,10 @@
     "co2": 0.75,
     "bio": 0.75,
     "economy": 0.75
+  },
+  "scoreMultiplicator": {
+    "co2": 1.2,
+    "bio": 1.2,
+    "economy": 1.2
   }
 }

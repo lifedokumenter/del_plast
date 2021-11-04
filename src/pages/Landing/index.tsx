@@ -130,12 +130,14 @@ const Landing = ({
           hasAll = false;
         }
         cat.forEach( c => {
-          currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1));
-          currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1));
-          currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1));
+          currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1) * (step === 6 ? appData.scoreMultiplicator.co2 : 1));
+          currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1) * (step === 6 ? appData.scoreMultiplicator.bio : 1));;
+          currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1) * (step === 6 ? appData.scoreMultiplicator.economy : 1));
         });
       });
       setContainsAllCategories(step !== 6 || hasAll);   
+
+      console.log('currentScores', currentScores);
       
       // check if is above limit
       setOverBudget(currentScores.co2Score > appData?.scoreLimits.co2 * 100 ||
