@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, Header } from 'semantic-ui-react';
+import { Button, Modal, Header, Icon } from 'semantic-ui-react';
 import { usePChainChoices } from '../../contexts/PChainChoicesContext';
 import { Feedback } from '../../interfaces/feedback';
 
@@ -62,13 +62,13 @@ const FeedbackModal = ({title, description, cancelBtnText, submitBtnText, feedba
                 {
                   f.positive &&
                   <div className="feedback-modal__feedback__positive">
-                    <div>+</div>
+                    <Icon name="thumbs up outline" />
                   </div>
                 }
                 {
                   !f.positive &&
                   <div className="feedback-modal__feedback__negative">
-                    <div>-</div>
+                    <Icon name="thumbs down outline" />
                   </div>
                 }
               </Header>

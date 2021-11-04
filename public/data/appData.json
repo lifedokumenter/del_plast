@@ -126,6 +126,11 @@
       }
     }
   },
+  "finalBossMessage": {
+    "message": "Kære medarbejdere <br><br> tak for jeres valg! <br><br> Mvh <br>chefen for det hele",
+    "closeButtonText": "Luk",
+    "messageDelay": 5
+  },
   "emailText": {
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
   },

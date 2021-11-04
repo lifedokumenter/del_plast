@@ -36,6 +36,7 @@ const Landing = ({
   const [hasInteracted, setHasInteracted] = React.useState<boolean>(false);
   const [toDirectorMessage, setToDirectorMessage] = React.useState<string>('');
   const [overBudget, setOverBudget] = React.useState<boolean>(false);
+  const [showFinalDirectorMessage, setShowFinalDirectorMessage] = React.useState<boolean>(false);
 
   const interval = React.useRef(setTimeout(() => {}, 0));
 
@@ -136,8 +137,6 @@ const Landing = ({
         });
       });
       setContainsAllCategories(step !== 6 || hasAll);   
-
-      console.log('currentScores', currentScores);
       
       // check if is above limit
       setOverBudget(currentScores.co2Score > appData?.scoreLimits.co2 * 100 ||
@@ -173,6 +172,9 @@ const Landing = ({
                   open={feecbackModalOpen}
                   onSubmit={() => {
                     setFeedbackModalOpen(false);
+                    setTimeout(() => {
+                      setShowFinalDirectorMessage(true);
+                    }, appData.finalBossMessage.messageDelay * 1000)
                   }}
                   onCancel={() => setFeedbackModalOpen(false)}
                 />
@@ -187,6 +189,13 @@ const Landing = ({
                   closeButtonText={appData.bossEmailTexts.closeButtonText}
                   message={toDirectorMessage}
                   setMessage={setToDirectorMessage}
+                />
+                <ToDirectorModal
+                  feedback={appData.finalBossMessage.message}
+                  open={showFinalDirectorMessage} 
+                  onClose={() => setShowFinalDirectorMessage(false)}
+                  closeButtonText={appData.finalBossMessage.closeButtonText}
+                  showAnswer={showFinalDirectorMessage}
                 />
               </div>
               <ProgressBars
