@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal, Header } from 'semantic-ui-react';
 import { usePChainChoices } from '../../contexts/PChainChoicesContext';
-import { Feedback } from '../../interfaces/Feedback';
+import { Feedback } from '../../interfaces/feedback';
 
 import './index.less';
 

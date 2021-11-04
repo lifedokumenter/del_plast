@@ -50,9 +50,8 @@ const Chat = ({ title, onSubmitted }: Props) => {
       src = './images/plast_environment_user.jpg'
     }
     
-    console.log('type is: ', type, 'src is: ', src);
     if (src) {
-      return <img src={src} width="100%" />
+      return <img src={src} width="100%" alt="avatar" />
     } 
 
     return <PersonIcon />

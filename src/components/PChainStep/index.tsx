@@ -50,9 +50,12 @@ const PChainStep = ({step, multipleChoice, appData}:PChainStepProps) => {
       <Header size="large">
         <span dangerouslySetInnerHTML={{__html: appData?.steps[step || 1].title || ''}}/>
       </Header>
-      <Header size="medium">
-        <span dangerouslySetInnerHTML={{__html: appData?.steps[step || 1].tagline || ''}}/>
-      </Header>
+      {
+        appData?.steps[step || 1].tagline && 
+        <Header size="medium">
+          <span dangerouslySetInnerHTML={{__html: appData?.steps[step || 1].tagline || ''}}/>
+        </Header>
+      }
       <div className="p-chain-step__columns">
         { 
           pChainOptions.map( (option: PChainOption) => 
