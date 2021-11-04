@@ -3,7 +3,6 @@
   "steps": {
     "1": {
       "title": "Vælg et råstof til jeres covers",
-      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg råstof",
       "initialChatMessages": [
         {
@@ -20,7 +19,6 @@
     },
     "2": {
       "title": "Vælg en fabrik til produktion",
-      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg lokation",
       "initialChatMessages": [
         {
@@ -35,7 +33,6 @@
     },
     "3": {
       "title": "Vælg transportsform",
-      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg transport",
       "initialChatMessages": [
         {
@@ -50,7 +47,6 @@
     },
     "4": {
       "title": "Vælg en covertype",
-      "tagline": "Husk at spørge jeres kollegaer til råds i chatten",
       "buttonText":"Vælg Brug",
       "initialChatMessages": [
         {
@@ -65,7 +61,6 @@
     },
     "5": {
       "title": "Lav en bortskaffelsesstrategi",
-      "tagline": "I kan vælge mere end én her",
       "buttonText":"Vælg bortskaffelse",
       "initialChatMessages": [
         {
@@ -80,7 +75,6 @@
     },
     "6": {
       "title": "Udarbejd jeres samlede LCA",
-      "tagline": "I kan løbende analysere jeres valg og tage nye valg indtil I er tilfredse med jeres LCA",
       "buttonText":"Analyser valg",
       "columnTitles": {
         "material": "Råstof",
@@ -131,6 +125,11 @@
         "5": "Spændende valg af {{choice}} - lad os lige holde et møde om det!"
       }
     }
+  },
+  "finalBossMessage": {
+    "message": "Kære medarbejdere <br><br> tak for jeres valg! <br><br> Mvh <br>chefen for det hele",
+    "closeButtonText": "Luk",
+    "messageDelay": 5
   },
   "emailText": {
     "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
@@ -1635,5 +1634,10 @@
     "co2": 0.75,
     "bio": 0.75,
     "economy": 0.75
+  },
+  "scoreMultiplicator": {
+    "co2": 1.2,
+    "bio": 1.2,
+    "economy": 1.2
   }
 }
