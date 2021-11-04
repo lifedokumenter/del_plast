@@ -30,7 +30,8 @@
                 "message": "Nu skal vi vælge en fabrik til produktion, det har jeg mange holdninger til!"
             },
             {
-                "initials": "Sune",  "type": "communication",
+                "initials": "Sune",  
+                "type": "communication",
                 "message": "Ja, det kan ikke komme bag på nogen..."
             }]
         },
@@ -152,7 +153,7 @@
         "approvedDescription": "Tag et billede at jeres valg, så I kan bruge det i jeres præsentation",
         "approvedBtnText": "OK"
     },
-    "aboveLimit": "Dit budget er overskrevet. Se om du ikke kan foretage nogle andre valg",
+    "aboveLimit": "Dit budget er overskredet. Se om du ikke kan foretage nogle andre valg",
     "material": [
     {
         "id": "material",
@@ -162,7 +163,7 @@
             {
                 "id": "material_olie",
                 "title": "Olie",
-                "description": "Olie kan bruges til benzin, diesel og til at lave plast.",
+                "description": "Olie bruges til mange ting, fx benzin, diesel og til at lave plast.",
                 "metadata":
                 {
                     "co2Score": 92,
@@ -187,14 +188,14 @@
                 },
                 {
                     "initials": "Charlotte",
-                    "message": "Prisen på olie er billig og teknologien har vi allerede styr på. Jeg har ingen indvendinger her.",
+                    "message": "Prisen på olie er billig og teknologien har vi allerede styr på. God idé.",
                     "type": "economy"
                 }]
             },
             {
                 "id": "material_sugar",
                 "title": "Sukkerrør",
-                "description": "Sukkerrør bruges hovedsageligt til fremstilling af rørsukker. Man kan bruge affaldet fra rørsukkerproduktionen, til at lave bioplast af.",
+                "description": "Sukkerrør bruges til at lave sukker af, det kan også bruges til at lave bioplast af.",
                 "metadata":
                 {
                     "co2Score": 19,
@@ -227,7 +228,7 @@
             {
                 "id": "material_corn",
                 "title": "Majs",
-                "description": "Majs er en madvare, som kan spises rå, kogt, grillet eller som cornflakes og popcorn. Majs bruges også som dyrefoder. Man kan producere bioplast af majs.",
+                "description": "Majs er en madvare, men man kan også producere bioplast af majs.",
                 "metadata":
                 {
                     "co2Score": 24,
@@ -259,7 +260,7 @@
             {
                 "id": "material_straw",
                 "title": "Halm",
-                "description": "Halm er et restprodukt fra kornproduktion. Det bruges som strøelse til dyr. Man kan også lave bioplast af halm.",
+                "description": "Halm er et restprodukt fra kornproduktion. Man kan også lave bioplast af halm.",
                 "metadata":
                 {
                     "co2Score": 14,
@@ -291,7 +292,7 @@
             {
                 "id": "material_plast",
                 "title": "Plastaffald",
-                "description": "Plast som er smidt ud og sorteret, hakket i mindre stykker, kan bruges til at lave nye plastprodukter af. Det kaldes genanvendt plast.",
+                "description": "Plastaffald kan bruges til at lave nye plastprodukter af. Det kaldes genanvendt plast.",
                 "metadata":
                 {
                     "co2Score": 39,
@@ -330,8 +331,8 @@
         "subCategories": [
         {
             "id": "production_billund",
-            "title": "Billund",
-            "description": "Fabrikken har røggasrensning, så den forurener næsten ikke. Det er robotter der står for produktionen. Energien kommer hovedsageligt fra vindenergi",
+            "title": "Fabrik i Billund",
+            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Vindmøller",
             "metadata":
             {
                 "co2Score": 26,
@@ -361,8 +362,8 @@
         },
         {
             "id": "production_paris",
-            "title": "Paris",
-            "description": "Fabrikken har røggasrensning, så den forurener næsten ikke. Den er delvist automatiseret med robotter. Energien kommer hovedsageligt fra atomkraft. ",
+            "title": "Fabrik i Paris",
+            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Atomkraft",
             "metadata":
             {
                 "co2Score": 17,
@@ -392,8 +393,8 @@
         },
         {
             "id": "production_miami",
-            "title": "Miami",
-            "description": "Fabrikken har røggasrensning, men de trænger til en udskiftning. Høj grad af automatisering fra robotter. Energien kommer delsvist fra solenergi og delvist fra olie og gas",
+            "title": "Fabrik i Miami",
+            "description": "Luftforurening: Middel <br> Sikkerhed: Høj <br> Energi: Solceller og gas",
             "metadata":
             {
                 "co2Score": 54,
@@ -423,8 +424,8 @@
         },
         {
             "id": "production_memphis",
-            "title": "Memphis",
-            "description": "Fabrikken er gammel og den trænger til opdatering af både røggasrensning og maskiner. Energien kommer hovedsageligt fra olie og gas",
+            "title": "Fabrik i Memphis",
+            "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Gas",
             "metadata":
             {
                 "co2Score": 61,
@@ -454,11 +455,11 @@
         },
         {
             "id": "production_dubai",
-            "title": "Dubai",
-            "description": "Fabrikken er ny, den har røggasrensning og det er robotter der klarer alt i produktionen. Energien kommer fra olie.",
+            "title": "Fabrik i Dubai",
+            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Olie",
             "metadata":
             {
-                "co2Score": 37,
+                "co2Score": 44,
                 "bioScore": 16,
                 "economyScore": 88
             },
@@ -485,8 +486,8 @@
         },
         {
             "id": "production_shanghai",
-            "title": "Shanghai",
-            "description": "Ældre fabrik, der trænger til opdatering af røggasrensning. Næsten ingen automatisering. Energi kommer hovedsageligt fra affaldsafbrænding og kul.",
+            "title": "Fabrik i Shanghai",
+            "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Affaldsafbrænding og kul.",
             "metadata":
             {
                 "co2Score": 82,
@@ -516,8 +517,8 @@
         },
         {
             "id": "production_beijing",
-            "title": "Beijing",
-            "description": "Ældre fabrik, der trænger til opdatering af røggasrensning. Næsten ingen automatisering. Energi kommer delvist fra vind- og vandkraft og delvist fra olie og kul.",
+            "title": "Fabrik i Beijing",
+            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Kul.",
             "metadata":
             {
                 "co2Score": 90,
@@ -555,7 +556,7 @@
         {
             "id": "transport_flight",
             "title": "Fly",
-            "description": "Vi flyver dine varer, med branchens mest klimasikrede fly.",
+            "description": "Transport af varer med branchens mest klimavenlige fly.",
             "metadata":
             {
                 "co2Score": 69,
@@ -586,11 +587,11 @@
         {
             "id": "transport_ship",
             "title": "Skib",
-            "description": "Vi sejler dine varer frem langsomt med sikkert. Vælg os hvis I vil have en prisvenlig løsning, og leveringstid er ligegyldig",
+            "description": "Dine varer sejles langsomt frem. En klimavenlig løsning, til en god pris",
             "metadata":
             {
-                "co2Score": 30,
-                "bioScore": 43,
+                "co2Score": 20,
+                "bioScore": 33,
                 "economyScore": 33
             },
             "chatMessages": [
@@ -617,12 +618,12 @@
         {
             "id": "transport_train",
             "title": "Tog",
-            "description": "Vi transporterer dine varer med den mest miljørigtige transportform, nemlig tog. ",
+            "description": "Dine varer transporteres med tog, som er en miljøvenlig transportform. ",
             "metadata":
             {
                 "co2Score": 28,
                 "bioScore": 24,
-                "economyScore": 60
+                "economyScore": 55
             },
             "chatMessages": [
             {
@@ -648,7 +649,7 @@
         {
             "id": "transport_truck",
             "title": "Lastbil",
-            "description": "Billig og fleksibel transport med lastbiler også mellem Europa og Asien.",
+            "description": "Billig og fleksibel transport med lastbiler, også mellem Europa og Asien.",
             "metadata":
             {
                 "co2Score": 77,
@@ -685,7 +686,7 @@
         "subCategories": [
         {
             "id": "usage_cover1",
-            "title": "Cover 1",
+            "title": "Hårdt cover med print",
             "description": "Hård plast med print. Forventet holdbarhed ca. 2 år",
             "metadata":
             {
@@ -717,7 +718,7 @@
         },
         {
             "id": "usage_cover2",
-            "title": "Cover 2",
+            "title": "Hårdt cover, sort",
             "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år",
             "metadata":
             {
@@ -749,7 +750,7 @@
         },
         {
             "id": "usage_cover3",
-            "title": "Cover 3",
+            "title": "Blødt cover med print",
             "description": "Bøjelig plast, farvet eller med print. Forventet holdbarhed ca. 1 år",
             "metadata":
             {
@@ -781,7 +782,7 @@
         },
         {
             "id": "usage_cover4",
-            "title": "Cover 4",
+            "title": "Blødt cover, gennemsigtigt",
             "description": "Bøjelig plast, gennemsigtigt. Forventet holdbarhed ca. 1 år.",
             "metadata":
             {
@@ -812,7 +813,7 @@
             }]
         },
         {
-            "id": "usage_cover5",
+            "id": "Hårdt cover med læder",
             "title": "Cover 5",
             "description": "Plast betrukket med læder. Forventet holdbarhed ca. 2,5 år",
             "metadata":
@@ -845,7 +846,7 @@
         },
         {
             "id": "usage_cover6",
-            "title": "Cover 6",
+            "title": "Hårdt cover med metal",
             "description": "Plast forstærket med metal. Forventet holdbarhed ca. 4 år",
             "metadata":
             {
@@ -885,7 +886,7 @@
         {
             "id": "disposal_designrecycle",
             "title": "Design til genanvendelse",
-            "description": "Coveret må ikke være lavet af flere forskellige materialer eller plasttyper. Det skal være nemt for forbrugeren at affaldssortere.",
+            "description": "Coveret må ikke være lavet af flere forskellige materialer eller plasttyper. Det skal være nemt at affaldssortere.",
             "metadata":
             {
                 "co2Score": -7,
@@ -947,7 +948,7 @@
         {
             "id": "disposal_sticker",
             "title": "Mærkning på produkt",
-            "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres",
+            "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres.",
             "metadata":
             {
                 "co2Score": -1,
@@ -978,7 +979,7 @@
         {
             "id": "disposal_takeback",
             "title": "Take-back ordning",
-            "description": "Kunderne kan aflevere deres gamle covers og få 10% rabat det næste",
+            "description": "Kunderne kan aflevere deres gamle covers og få 10% rabat det næste.",
             "metadata":
             {
                 "co2Score": -7,
@@ -1009,7 +1010,7 @@
         {
             "id": "disposal_wasteprevention",
             "title": "Mindre emballage",
-            "description": "Gør emballagen mindre om coveret, så der kan være flere når coversne skal fragtes. ",
+            "description": "Jo mindre emballage, jo flere covers kan fragtes ad gangen. ",
             "metadata":
             {
                 "co2Score": -3,
@@ -1130,21 +1131,21 @@
     {
         "id1": "production_billund",
         "id2": "material_olie",
-        "title": "Råstof olie og produktion i Billund",
+        "title": "Olie + Fabrik i Billund",
         "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift",
         "positive": true
     },
     {
         "id1": "production_paris",
         "id2": "material_olie",
-        "title": "Råstof olie og produktion i Paris",
+        "title": "Olie + Fabrik i Paris",
         "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift",
         "positive": false
     },
     {
         "id1": "production_mimai",
         "id2": "material_olie",
-        "title": "Råstof olie og produktion i Miami",
+        "title": "Olie + Fabrik i Miami",
         "description": "Olien kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
