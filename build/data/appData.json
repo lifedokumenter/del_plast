@@ -487,7 +487,7 @@
         {
             "id": "production_shanghai",
             "title": "Fabrik i Shanghai",
-            "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Affaldsafbrænding og kul.",
+            "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Affaldsafbrænding og kul",
             "metadata":
             {
                 "co2Score": 82,
@@ -518,7 +518,7 @@
         {
             "id": "production_beijing",
             "title": "Fabrik i Beijing",
-            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Kul.",
+            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Kul",
             "metadata":
             {
                 "co2Score": 90,
@@ -813,8 +813,8 @@
             }]
         },
         {
-            "id": "Hårdt cover med læder",
-            "title": "Cover 5",
+            "id": "usage_cover5",
+            "title": "Hårdt cover med læder",
             "description": "Plast betrukket med læder. Forventet holdbarhed ca. 2,5 år",
             "metadata":
             {
@@ -1131,465 +1131,465 @@
     {
         "id1": "production_billund",
         "id2": "material_olie",
-        "title": "Olie + Fabrik i Billund",
+        "title": "Olie + fabrik i Billund",
         "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift",
         "positive": true
     },
     {
         "id1": "production_paris",
         "id2": "material_olie",
-        "title": "Olie + Fabrik i Paris",
+        "title": "Olie + fabrik i Paris",
         "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift",
         "positive": false
     },
     {
         "id1": "production_mimai",
         "id2": "material_olie",
-        "title": "Olie + Fabrik i Miami",
+        "title": "Olie + fabrik i Miami",
         "description": "Olien kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "material_olie",
-        "title": "Råstof olie og produktion i Memphis",
+        "title": "Olie + fabrik i Memphis",
         "description": "Olien kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "material_olie",
-        "title": "Råstof olie og produktion i Dubai",
+        "title": "Olie + fabrik i Dubai",
         "description": "Olien kan købes lokalt i Dubai og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "material_olie",
-        "title": "Råstof olie og produktion i Shanghai",
+        "title": "Olie + fabrik i Shanghai",
         "description": "Olien skal købes og transporteres til Shanghai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "material_olie",
-        "title": "Råstof olie og produktion i Beijing",
+        "title": "Olie + fabrik i Beijing",
         "description": "Olien skal købes og transporteres til Beijing, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_billund",
         "id2": "material_corn",
-        "title": "Råstof majs og produktion i Billund",
+        "title": "Majs + fabrik i Billund",
         "description": "Majsen skal købes og transporteres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_paris",
         "id2": "material_corn",
-        "title": "Råstof majs og produktion i Paris",
+        "title": "Majs + fabrik i Paris",
         "description": "Majsen skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_mimai",
         "id2": "material_corn",
-        "title": "Råstof majs og produktion i Miami",
+        "title": "Majs + fabrik i Miami",
         "description": "Majsen kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "material_corn",
-        "title": "Råstof majs og produktion i Memphis",
+        "title": "Majs + fabrik i Memphis",
         "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "material_corn",
-        "title": "Råstof majs og produktion i Dubai",
+        "title": "Majs + fabrik i Dubai",
         "description": "Majsen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "material_corn",
-        "title": "Råstof majs og produktion i Shanghai",
+        "title": "Majs + fabrik i Shanghai",
         "description": "Majsen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "material_corn",
-        "title": "Råstof majs og produktion i Beijing",
+        "title": "Majs + fabrik i Beijing",
         "description": "Majsen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_billund",
         "id2": "material_sugar",
-        "title": "Råstof sukkerrør og produktion i Billund",
+        "title": "Sukkerrør + fabrik i Billund",
         "description": "Sukkerrørene skal købes og transporteres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_paris",
         "id2": "material_sugar",
-        "title": "Råstof sukkerrør og produktion i Paris",
+        "title": "Sukkerrør + fabrik i Paris",
         "description": "Sukkerrørene skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_mimai",
         "id2": "material_sugar",
-        "title": "Råstof sukkerrør og produktion i Miami",
+        "title": "Sukkerrør + fabrik i Miami",
         "description": "Sukkerrørene skal købes og transporteres til Miami, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "material_sugar",
-        "title": "Råstof sukkerrør og produktion i Memphis",
+        "title": "Sukkerrør + fabrik i Memphis",
         "description": "Sukkerrørene skal købes og transporteres til Memphis, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "material_sugar",
-        "title": "Råstof sukkerrør og produktion i Dubai",
+        "title": "Sukkerrør + fabrik i Dubai",
         "description": "Sukkerrørene skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "material_sugar",
-        "title": "Råstof sukkerrør og produktion i Shanghai",
+        "title": "Sukkerrør + fabrik i Shanghai",
         "description": "Sukkerrørene kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "material_sugar",
-        "title": "Råstof sukkerrør og produktion i Beijing",
+        "title": "Sukkerrør + fabrik i Beijing",
         "description": "Sukkerrørene kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_billund",
         "id2": "material_straw",
-        "title": "Råstof halm og produktion i Billund",
+        "title": "Halm + fabrik i Billund",
         "description": "Halm kan købes lokalt i Billund og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_paris",
         "id2": "material_straw",
-        "title": "Råstof halm og produktion i Paris",
+        "title": "Halm + fabrik i Paris",
         "description": "Halm kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_mimai",
         "id2": "material_straw",
-        "title": "Råstof halm og produktion i Miami",
+        "title": "Halm + fabrik i Miami",
         "description": "Halm kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "material_straw",
-        "title": "Råstof halm og produktion i Memphis",
+        "title": "Halm + fabrik i Memphis",
         "description": "Halm kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "material_straw",
-        "title": "Råstof halm og produktion i Dubai",
+        "title": "Halm + fabrik i Dubai",
         "description": "Halmen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "material_straw",
-        "title": "Råstof halm og produktion i Shanghai",
+        "title": "Halm + fabrik i Shanghai",
         "description": "Halmen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "material_straw",
-        "title": "Råstof halm og produktion i Beijing",
+        "title": "Halm + fabrik i Beijing",
         "description": "Halmen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_billund",
         "id2": "material_plast",
-        "title": "Råstof plastaffald og produktion i Billund",
+        "title": "Plastaffald + fabrik i Billund",
         "description": "Plastaffaldet skal købes og importeres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_paris",
         "id2": "material_plast",
-        "title": "Råstof plastaffald og produktion i Paris",
+        "title": "Plastaffald + fabrik i Paris",
         "description": "Plastaffald kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_mimai",
         "id2": "material_plast",
-        "title": "Råstof plastaffald og produktion i Miami",
+        "title": "Plastaffald + fabrik i Miami",
         "description": "Plastaffaldet skal købes og importeres til Miami, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "material_plast",
-        "title": "Råstof plastaffald og produktion i Memphis",
+        "title": "Plastaffald + fabrik i Memphis",
         "description": "Plastaffaldet skal købes og importeres til Memphis, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "material_plast",
-        "title": "Råstof plastaffald og produktion i Dubai",
+        "title": "Plastaffald + fabrik i Dubai",
         "description": "Plastaffald skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "material_plast",
-        "title": "Råstof plastaffald og produktion i Shanghai",
+        "title": "Plastaffald + fabrik i Shanghai",
         "description": "Plastaffald kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "material_plast",
-        "title": "Råstof plastaffald og produktion i Beijing",
+        "title": "Plastaffald + fabrik i Beijing",
         "description": "Plastaffaldet kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_billund",
         "id2": "transport_truck",
-        "title": "Produktion i Billund og transport med lastbil",
+        "title": "Fabrik i Billund + lastbil",
         "description": "Den korte transport sparer jer for CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_paris",
         "id2": "transport_train",
-        "title": "Produktion i Paris og transport med tog",
+        "title": "Fabrik i Paris + tog",
         "description": "Toget skal kun transportere varene fra Paris til Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_mimai",
         "id2": "transport_ship",
-        "title": "Produktion i Miami og transport med skib",
+        "title": "Fabrik i Miami + skib",
         "description": "Turen fra Miami til Danmark er kortere end gennemsnitsturen for et containerskib og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_mimai",
         "id2": "transport_flight",
-        "title": "Produktion i Miami og transport med fly",
+        "title": "Fabrik i Miami + fly",
         "description": "Det er en lang flyvetur til Miami og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "transport_ship",
-        "title": "Poduktion i Memphis og transport med skib",
+        "title": "Fabrik i Memphis + skib",
         "description": "Memphis ligger langt inde i USA og I skal derfor først transportere varene til en havn. Det koster ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "transport_flight",
-        "title": "Poduktion i Memphis og transport med fly",
+        "title": "Fabrik i Memphis + fly",
         "description": "Det er en lang flyvetur til Memphis og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "transport_flight",
-        "title": "Poduktion i Dubai og transport med fly",
+        "title": "Fabrik i Dubai + fly",
         "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "transport_truck",
-        "title": "Poduktion i Dubai og transport med lastbil",
+        "title": "Fabrik i Dubai + lastbil",
         "description": "Lastbilen skal transportere varene hele vejen fra Dubai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "transport_train",
-        "title": "Poduktion i Shanghai og transport med tog",
+        "title": "Fabrik i Shanghai + tog",
         "description": "Toget skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "transport_ship",
-        "title": "Poduktion i Shanghai og transport med skib",
+        "title": "Fabrik i Shanghai + skib",
         "description": "Containerskibet skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "transport_flight",
-        "title": "Poduktion i Shanghai og transport med fly",
+        "title": "Fabrik i Shanghai + fly",
         "description": "Det er en lang flyvetur fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "transport_truck",
-        "title": "Poduktion i Shanghai og transport med lastbil",
+        "title": "Fabrik i Shanghai + lastbil",
         "description": "Lastbilen skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "transport_train",
-        "title": "Poduktion i Beijing og transport med tog",
+        "title": "Fabrik i Beijing + tog",
         "description": "Toget skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "transport_ship",
-        "title": "Poduktion i Beijing og transport med skib",
+        "title": "Fabrik i Beijing + skib",
         "description": "Containerskibet skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "transport_flight",
-        "title": "Poduktion i Beijing og transport med fly",
+        "title": "Fabrik i Beijing + fly",
         "description": "Det er en lang flyvetur fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "transport_truck",
-        "title": "Poduktion i Beijing og transport med lastbil",
+        "title": "Fabrik i Beijing + lastbil",
         "description": "Lastbilen skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "material_olie",
         "id2": "disposal_designrecycle",
-        "title": "Råstof olie og design til genanvendelse",
+        "title": "Olie + design til genanvendelse",
         "description": "Design til genanvendelse kan betyde at flere ocvers genanvendes og færre nye skal produceres, det vil spare olie til plastproduktion og derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_corn",
         "id2": "disposal_designrecycle",
-        "title": "Råstof majs og design til genanvendelse",
+        "title": "Majs + design til genanvendelse",
         "description": "Design til genanvendelse kan betyde at der skal bruges færre majs til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_sugar",
         "id2": "disposal_designrecycle",
-        "title": "Råstof sukkerrør og design til genanvendelse",
+        "title": "Sukkerrør + design til genanvendelse",
         "description": "Design til genanvendelse kan betyde at der skal bruges færre sukkerrør til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_straw",
         "id2": "disposal_designrecycle",
-        "title": "Råstof halm og design til genanvendelse",
+        "title": "Halm + design til genanvendelse",
         "description": "Design til genanvendelse kan betyde at der skal bruges mindre halm til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_plast",
         "id2": "disposal_designrecycle",
-        "title": "Råstof plastaffald og design til genanvendelse",
+        "title": "Plastaffald + design til genanvendelse",
         "description": "Design til genanvendelse kan betyde at der er mere tilgængeligt plastaffald, som kan bruges i produktion af ny plast og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_olie",
         "id2": "disposal_recycle",
-        "title": "Råstof olie og design til genbrug",
+        "title": "Olie + design til genbrug",
         "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_corn",
         "id2": "disposal_recycle",
-        "title": "Råstof majs og design til genbrug",
+        "title": "Majs + design til genbrug",
         "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_sugar",
         "id2": "disposal_recycle",
-        "title": "Råstof sukkerrør og design til genbrug",
+        "title": "Sukkerrør + design til genbrug",
         "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_straw",
         "id2": "disposal_recycle",
-        "title": "Råstof halm og design til genbrug",
+        "title": "Halm + design til genbrug",
         "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_plast",
         "id2": "disposal_recycle",
-        "title": "Råstof plastaffald og design til genbrug",
+        "title": "Plastaffald + design til genbrug",
         "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
     },
     {
         "id1": "material_plast",
         "id2": "disposal_takeback",
-        "title": "Råstof plastaffald og take-back ordning",
+        "title": "Plastaffald + take-back ordning",
         "description": "De tilbagetagne covers kan bruges til produktion af nye covers. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_billund",
         "id2": "disposal_takeback",
-        "title": "produktion i Billund og take-back ordning",
+        "title": "Fabrik i Billund + take-back ordning",
         "description": "De tilbagetagne covers skal ikke transporteres langt. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_miami",
         "id2": "disposal_takeback",
-        "title": "produktion i Miami og take-back ordning",
+        "title": "Fabrik i Miami + take-back ordning",
         "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_memphis",
         "id2": "disposal_takeback",
-        "title": "produktion i Memphis og take-back ordning",
+        "title": "Fabrik i Memphis + take-back ordning",
         "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_dubai",
         "id2": "disposal_takeback",
-        "title": "produktion i Dubai og take-back ordning",
+        "title": "Fabrik i Dubai + take-back ordning",
         "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_shanghai",
         "id2": "disposal_takeback",
-        "title": "produktion i Shangai og take-back ordning",
+        "title": "Fabrik i Shangai + take-back ordning",
         "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "production_beijing",
         "id2": "disposal_takeback",
-        "title": "produktion i Beijing og take-back ordning",
+        "title": "Fabrik i Beijing + take-back ordning",
         "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_train",
         "id2": "usage_cover3",
-        "title": "Transport med tog af cover 3",
+        "title": "Tog + blødt cover",
         "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_ship",
         "id2": "usage_cover3",
-        "title": "Transport med skib af cover 3",
+        "title": "Skib + blødt cover",
         "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_flight",
         "id2": "usage_cover3",
-        "title": "Transport med fly af cover 3",
+        "title": "Fly + blødt cover",
         "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_truck",
         "id2": "usage_cover3",
-        "title": "Transport med lastbil af cover 3",
+        "title": "Lastbil + blødt cover",
         "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_train",
         "id2": "usage_cover4",
-        "title": "Transport med tog af cover 4",
+        "title": "Tog + blødt cover",
         "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_ship",
         "id2": "usage_cover4",
-        "title": "Transport med skib af cover 4",
+        "title": "Skib + blødt cover",
         "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_flight",
         "id2": "usage_cover4",
-        "title": "Transport med fly af cover 4",
+        "title": "Fly + blødt cover",
         "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_truck",
         "id2": "usage_cover4",
-        "title": "Transport med lastbil af cover 4",
+        "title": "Lastbil + blødt cover",
         "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
         "id1": "transport_train",
         "id2": "usage_cover6",
-        "title": "Transport med tog af cover 6",
+        "title": "Tog + cover med metal",
         "description": "Dette cover har en højere vægt, så toget har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
     },
     {
