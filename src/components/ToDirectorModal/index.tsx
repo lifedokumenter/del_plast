@@ -6,8 +6,8 @@ import { ReactComponent as EmailFooterIcons } from '../../images/email_footer_ic
 import './index.less';
 
 interface Props {
-  buttonText: string,
-  choice: string,
+  buttonText?: string,
+  choice?: string,
   onClose?: () => void,
   open?: boolean,
   feedback?: string,
@@ -16,9 +16,22 @@ interface Props {
   closeButtonText?: string,
   message?: string,
   setMessage?: (message: string) => void,
+  showAnswer?: boolean | undefined
 }
 
-function ToDirectorModal({buttonText, choice, feedback, open, email, subject, onClose = () => '', closeButtonText = '', message='', setMessage = (message: string) => {}}: Props) {
+function ToDirectorModal({
+  buttonText, 
+  choice, 
+  feedback, 
+  open, 
+  email, 
+  subject, 
+  showAnswer,
+  onClose = () => '', 
+  closeButtonText = '', 
+  message='', 
+  setMessage = () => {},
+}: Props) {
   const [sent, setSent] = React.useState(false);
 
   const close = () => {
@@ -27,6 +40,12 @@ function ToDirectorModal({buttonText, choice, feedback, open, email, subject, on
     } 
     onClose()
   }
+
+  React.useEffect(() => {
+    if (showAnswer) {
+      setSent(true);
+    }
+  }, [showAnswer])
 
   return (
     <Modal
@@ -60,7 +79,7 @@ function ToDirectorModal({buttonText, choice, feedback, open, email, subject, on
           {
             sent && 
             <>
-              <p dangerouslySetInnerHTML={{__html: `"${feedback}"`}} />
+              <p dangerouslySetInnerHTML={{__html: `${feedback}`}} />
             </>
           }
         </Modal.Description>

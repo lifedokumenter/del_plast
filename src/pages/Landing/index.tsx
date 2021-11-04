@@ -36,6 +36,7 @@ const Landing = ({
   const [hasInteracted, setHasInteracted] = React.useState<boolean>(false);
   const [toDirectorMessage, setToDirectorMessage] = React.useState<string>('');
   const [overBudget, setOverBudget] = React.useState<boolean>(false);
+  const [showFinalDirectorMessage, setShowFinalDirectorMessage] = React.useState<boolean>(false);
 
   const interval = React.useRef(setTimeout(() => {}, 0));
 
@@ -130,9 +131,9 @@ const Landing = ({
           hasAll = false;
         }
         cat.forEach( c => {
-          currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1));
-          currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1));
-          currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1));
+          currentScores.co2Score += ((c.metadata?.co2Score || 0) * (step === 6 ? appData.scoreWeights.co2[cStr] : 1) * (step === 6 ? appData.scoreMultiplicator.co2 : 1));
+          currentScores.bioScore += ((c.metadata?.bioScore || 0) * (step === 6 ? appData.scoreWeights.bio[cStr] : 1) * (step === 6 ? appData.scoreMultiplicator.bio : 1));;
+          currentScores.economyScore += ((c.metadata?.economyScore || 0) * (step === 6 ? appData.scoreWeights.economy[cStr] : 1) * (step === 6 ? appData.scoreMultiplicator.economy : 1));
         });
       });
       setContainsAllCategories(step !== 6 || hasAll);   
@@ -171,6 +172,9 @@ const Landing = ({
                   open={feecbackModalOpen}
                   onSubmit={() => {
                     setFeedbackModalOpen(false);
+                    setTimeout(() => {
+                      setShowFinalDirectorMessage(true);
+                    }, appData.finalBossMessage.messageDelay * 1000)
                   }}
                   onCancel={() => setFeedbackModalOpen(false)}
                 />
@@ -185,6 +189,13 @@ const Landing = ({
                   closeButtonText={appData.bossEmailTexts.closeButtonText}
                   message={toDirectorMessage}
                   setMessage={setToDirectorMessage}
+                />
+                <ToDirectorModal
+                  feedback={appData.finalBossMessage.message}
+                  open={showFinalDirectorMessage} 
+                  onClose={() => setShowFinalDirectorMessage(false)}
+                  closeButtonText={appData.finalBossMessage.closeButtonText}
+                  showAnswer={showFinalDirectorMessage}
                 />
               </div>
               <ProgressBars
