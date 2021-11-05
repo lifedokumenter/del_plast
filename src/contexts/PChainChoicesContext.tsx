@@ -48,6 +48,7 @@ export const PChainChoiceProvider = ({ children }: PChainChoicesProviderProps) =
 
     // save disabled choices
     let disabledOptions:Array<string> = [];
+
     for (let j=0; j<arr.length; j++) {
       for (let k=0; k<mutuallyDisabledOptions.length; k++) {
         if (arr[j].id === mutuallyDisabledOptions[k].id1 && disabledOptions.indexOf(mutuallyDisabledOptions[k].id2) === -1) {

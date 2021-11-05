@@ -53,8 +53,8 @@ const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multip
     if (selectedOptions.length === maxChoices) {
       return !pChainChoices.find(c => c.id === option.id);
     } else {
-      return false;
-    }
+      return disabledPChainChoices.indexOf(option.id) > -1;
+    } 
   }
 
   return (

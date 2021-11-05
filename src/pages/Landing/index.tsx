@@ -41,7 +41,7 @@ const Landing = ({
   const interval = React.useRef(setTimeout(() => {}, 0));
 
   const setInitialMessages = React.useCallback(() => {
-    if (!hasInteracted && !messages.length && appData?.steps[step || 1].initialChatMessages.length) {
+    if (!hasInteracted && !messages.length && appData?.steps[step || 1]?.initialChatMessages?.length) {
       addPendingMessages(appData.steps[step || 1].initialChatMessages);
       setHasInteracted(true);
     }
