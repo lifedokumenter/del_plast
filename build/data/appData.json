@@ -1,94 +1,90 @@
 {
     "pageTitle": "LCA Pro Tool 3.5",
-    "steps":
-    {
-        "1":
-        {
+    "steps": {
+        "1": {
             "title": "Vælg et råstof til jeres covers",
             "buttonText": "Vælg råstof",
             "initialChatMessages": [
-            {
-                "initials": "Asger",
-                "message": "Det bliver spændende at komme i gang med vores LCA",
-                "type": "environment"
-            },
-            {
-                "initials": "Charlotte",
-                "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!",
-                "type": "economy"
-            }]
+                {
+                    "initials": "Asger",
+                    "message": "Det bliver spændende at komme i gang med vores LCA",
+                    "type": "environment"
+                },
+                {
+                    "initials": "Charlotte",
+                    "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!",
+                    "type": "economy"
+                }
+            ]
         },
-        "2":
-        {
+        "2": {
             "title": "Vælg en fabrik til produktion",
             "buttonText": "Vælg lokation",
             "initialChatMessages": [
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Nu skal vi vælge en fabrik til produktion, det har jeg mange holdninger til!"
-            },
-            {
-                "initials": "Sune",  
-                "type": "communication",
-                "message": "Ja, det kan ikke komme bag på nogen..."
-            }]
+                {
+                    "initials": "Asger",
+                    "type": "environment",
+                    "message": "Nu skal vi vælge en fabrik til produktion, det har jeg mange holdninger til!"
+                },
+                {
+                    "initials": "Sune",
+                    "type": "communication",
+                    "message": "Ja, det kan ikke komme bag på nogen..."
+                }
+            ]
         },
-        "3":
-        {
+        "3": {
             "title": "Vælg transportsform",
             "buttonText": "Vælg transport",
             "initialChatMessages": [
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "I spørger bare løs!"
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Ja, så må vi se om vi kan blive enige denne gang."
-            }]
+                {
+                    "initials": "Asger",
+                    "type": "environment",
+                    "message": "I spørger bare løs!"
+                },
+                {
+                    "initials": "Sune",
+                    "type": "communication",
+                    "message": "Ja, så må vi se om vi kan blive enige denne gang."
+                }
+            ]
         },
-        "4":
-        {
+        "4": {
             "title": "Vælg en covertype",
             "buttonText": "Vælg Brug",
             "initialChatMessages": [
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Designet, ja der er jo også miljømæssige fordele og ulemper hvis det."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Ja, og det betyder meget for salget!"
-            }]
+                {
+                    "initials": "Asger",
+                    "type": "environment",
+                    "message": "Designet, ja der er jo også miljømæssige fordele og ulemper hvis det."
+                },
+                {
+                    "initials": "Sune",
+                    "type": "communication",
+                    "message": "Ja, og det betyder meget for salget!"
+                }
+            ]
         },
-        "5":
-        {
+        "5": {
             "title": "Lav en bortskaffelsesstrategi",
             "buttonText": "Vælg bortskaffelse",
             "initialChatMessages": [
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Her kan I jo vælge flere ting, så længe I holder budgettet."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Ja, det er spændende at se hvad I vælger her."
-            }]
+                {
+                    "initials": "Asger",
+                    "type": "environment",
+                    "message": "Her kan I jo vælge flere ting, så længe I holder budgettet."
+                },
+                {
+                    "initials": "Sune",
+                    "type": "communication",
+                    "message": "Ja, det er spændende at se hvad I vælger her."
+                }
+            ]
         },
-        "6":
-        {
+        "6": {
             "title": "Udarbejd jeres samlede LCA",
             "buttonText": "Analyser valg",
-            "columnTitles":
-            {
+            "columnTitles": {
                 "material": "Råstof",
                 "production": "Produktion",
                 "transport": "Transport",
@@ -98,34 +94,31 @@
         }
     },
     "initialMessagesDelay": 1,
-    "medatadataHeaders":
-    {
+    "medatadataHeaders": {
         "co2": "CO<sub>2</sub> udledning",
         "bio": "Miljøbelastning",
         "economy": "Udgift"
     },
-    "chat":
-    {
+    "chat": {
         "title": "Kollegachat"
     },
-    "bossEmailTexts":
-    {
+    "bossEmailTexts": {
         "sendBtnText": "Send",
         "email": "Line@coverup.dk",
         "subject": "Vores valg af",
         "closeButtonText": "Luk",
-        "choices":
-        {
+        "choices": {
             "1": "Råstof",
             "2": "Produktion",
             "3": "Transport",
             "4": "Brug",
             "5": "Bortskaffelse"
         },
-        "thanksForMessage":
-        {
-            "steps":
-            {
+        "directorName": "Line Ravn Sørensen",
+        "directorTitle": "Direktør, CoverUP ",
+        "toName": "CoverUP ansatte",
+        "thanksForMessage": {
+            "steps": {
                 "1": "Tak for jeres mail, det er spændende at høre jeres tanker bag at bruge {{choice}} som råstof. <br><br>Jeg glæder mig til at høre mere fra jer!",
                 "2": "Jeg ved at placeringen af fabrikken er et svært valg, men jeg synes at {{choice}} lyder som et godt valg. <br><br>Jeg glæder mig til at høre hvordan I løser transporten så.",
                 "3": "Det giver mening at transportere med {{choice}}, især når fabrikken ligger hvor den gør. <br><br>Tak for indsatsen.",
@@ -134,18 +127,15 @@
             }
         }
     },
-    "finalBossMessage":
-    {
-        "message": "Kære medarbejdere, <br><br> Tak for jeres indsats! Jeg glæder mig til at høre jeres præsentation, hvor I virkelig kan komme med alle jeres arguementer for jeres valg. <br><br> Med venlig hilsen <br>Line Ravn Sørensen",
+    "finalBossMessage": {
+        "message": "Kære medarbejdere, <br><br> Tak for jeres indsats! Jeg glæder mig til at høre jeres præsentation, hvor I virkelig kan komme med alle jeres argumenter for jeres valg. <br><br> Med venlig hilsen <br>Line Ravn Sørensen",
         "closeButtonText": "Luk",
         "messageDelay": 2
     },
-    "emailText":
-    {
+    "emailText": {
         "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
     },
-    "feedbackText":
-    {
+    "feedbackText": {
         "title": "LCA Analyse",
         "description": "Analysen af denne LCA peger på følgende fordele og ulemper mellem valgene:",
         "cancelBtnText": "Rediger valg",
@@ -155,971 +145,976 @@
     },
     "aboveLimit": "Dit budget er overskredet. Se om du ikke kan foretage nogle andre valg",
     "material": [
-    {
-        "id": "material",
-        "title": "",
-        "description": "",
-        "subCategories": [
-            {
-                "id": "material_olie",
-                "title": "Olie",
-                "description": "Olie bruges til mange ting, fx benzin, diesel og til at lave plast.",
-                "metadata":
+        {
+            "id": "material",
+            "title": "",
+            "description": "",
+            "subCategories": [
                 {
-                    "co2Score": 92,
-                    "bioScore": 48,
-                    "economyScore": 17
-                },
-                "iconType": "oil",
-                "chatMessages": [
-                {
-                    "isUser": true,
-                    "message": "Vi tænker at bruge olie som råstof til vores covers. Hvad tænker i?"
-                },
-                {
-                    "initials": "Asger",
-                    "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!",
-                    "type": "environment"
-                },
-                {
-                    "initials": "Sune",
-                    "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren.",
-                    "type": "communication"
-                },
-                {
-                    "initials": "Charlotte",
-                    "message": "Prisen på olie er billig og teknologien har vi allerede styr på. God idé.",
-                    "type": "economy"
-                }]
-            },
-            {
-                "id": "material_sugar",
-                "title": "Sukkerrør",
-                "description": "Sukkerrør bruges til at lave sukker af, det kan også bruges til at lave bioplast af.",
-                "metadata":
-                {
-                    "co2Score": 19,
-                    "bioScore": 88,
-                    "economyScore": 64
-                },
-                "iconType": "bio",
-                "chatMessages": [
-                {
-                    "isUser": true,
-                    "message": "Vi tænker at bruge sukkerrør som råstof til vores covers. Hvad tænker i?"
+                    "id": "material_olie",
+                    "title": "Olie",
+                    "description": "Olie bruges til mange ting, fx benzin, diesel og til at lave plast.",
+                    "metadata": {
+                        "co2Score": 92,
+                        "bioScore": 48,
+                        "economyScore": 17
+                    },
+                    "iconType": "oil",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Vi tænker at bruge olie som råstof til vores covers. Hvad tænker i?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!",
+                            "type": "environment"
+                        },
+                        {
+                            "initials": "Sune",
+                            "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren.",
+                            "type": "communication"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "message": "Prisen på olie er billig og teknologien har vi allerede styr på. God idé.",
+                            "type": "economy"
+                        }
+                    ]
                 },
                 {
-                    "initials": "Asger",
-                    "type": "environment",
-
-                    "message": "CO<sub>2</sub></sub> udledningen er lav og det er godt, men der er nærmest ingen vild natur i en sukkerrørsmark og det er et problem."
+                    "id": "material_sugar",
+                    "title": "Sukkerrør",
+                    "description": "Sukkerrør bruges til at lave sukker af, det kan også bruges til at lave bioplast af.",
+                    "metadata": {
+                        "co2Score": 19,
+                        "bioScore": 88,
+                        "economyScore": 64
+                    },
+                    "iconType": "bio",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Vi tænker at bruge sukkerrør som råstof til vores covers. Hvad tænker i?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "CO<sub>2</sub></sub> udledningen er lav og det er godt, men der er nærmest ingen vild natur i en sukkerrørsmark og det er et problem."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Det giver mening for mig, at vi bruger et affaldsprodukt som vores råstof. Det vil vores kunder kunne lide."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Prisen er lidt høj, jeg tror at det er fordi man også bruger affaldet fra sukkerrør i biobrændsel, så efterspørgslen er høj."
+                        }
+                    ]
                 },
                 {
-                    "initials": "Sune",  "type": "communication",
-                    "message": "Det giver mening for mig, at vi bruger et affaldsprodukt som vores råstof. Det vil vores kunder kunne lide."
+                    "id": "material_corn",
+                    "title": "Majs",
+                    "description": "Majs er en madvare, men man kan også producere bioplast af majs.",
+                    "metadata": {
+                        "co2Score": 24,
+                        "bioScore": 81,
+                        "economyScore": 50
+                    },
+                    "iconType": "bio",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Vi tænker at bruge majs som råstof til vores covers. Hvad tænker i?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "CO<sub>2</sub> er lav og det er godt, der er ikke særlig meget vild natur i en majsmark, men dog lidt mere end der er i en mark med sukkerrør"
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Majs er en af de vigtigste fødevarer for verdens fattigste, hvis vi bruger majs vil prisen stige og folk kan sulte."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Prisen er god. Vi kan indkøbe majs billigt og teknologien til at lave plast af majs er til at betale."
+                        }
+                    ]
                 },
                 {
-                    "initials": "Charlotte",
-                    "type": "economy",
-                    "message": "Prisen er lidt høj, jeg tror at det er fordi man også bruger affaldet fra sukkerrør i biobrændsel, så efterspørgslen er høj."
-                }]
-            },
-
-            {
-                "id": "material_corn",
-                "title": "Majs",
-                "description": "Majs er en madvare, men man kan også producere bioplast af majs.",
-                "metadata":
-                {
-                    "co2Score": 24,
-                    "bioScore": 81,
-                    "economyScore": 50
-                },
-                "iconType": "bio",
-                "chatMessages": [
-                {
-                    "isUser": true,
-                    "message": "Vi tænker at bruge majs som råstof til vores covers. Hvad tænker i?"
-                },
-                {
-                    "initials": "Asger",
-                    "type": "environment",
-
-                    "message": "CO<sub>2</sub> er lav og det er godt, der er ikke særlig meget vild natur i en majsmark, men dog lidt mere end der er i en mark med sukkerrør"
-                },
-                {
-                    "initials": "Sune",  "type": "communication",
-                    "message": "Majs er en af de vigtigste fødevarer for verdens fattigste, hvis vi bruger majs vil prisen stige og folk kan sulte."
-                },
-                {
-                    "initials": "Charlotte",
-                    "type": "economy",
-                    "message": "Prisen er god. Vi kan indkøbe majs billigt og teknologien til at lave plast af majs er til at betale."
-                }]
-            },
-            {
-                "id": "material_straw",
-                "title": "Halm",
-                "description": "Halm er et restprodukt fra kornproduktion. Man kan også lave bioplast af halm.",
-                "metadata":
-                {
-                    "co2Score": 14,
-                    "bioScore": 71,
-                    "economyScore": 86
-                },
-                "iconType": "bio",
-                "chatMessages": [
-                {
-                    "isUser": true,
-                    "message": "Vi tænker at bruge halm som råstof til vores covers. Hvad tænker i?"
+                    "id": "material_straw",
+                    "title": "Halm",
+                    "description": "Halm er et restprodukt fra kornproduktion. Man kan også lave bioplast af halm.",
+                    "metadata": {
+                        "co2Score": 14,
+                        "bioScore": 71,
+                        "economyScore": 86
+                    },
+                    "iconType": "bio",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Vi tænker at bruge halm som råstof til vores covers. Hvad tænker i?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "CO<sub>2</sub> udledning er meget lav, hvilket er godt for klimaet. Og der er lidt vild natur i en kornmark."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Halm er hverken en fødevare eller et uundværligt produkt andre steder. Jeg synes det er en god ide!"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Selvom halm er meget billigt at købe, er teknologien stadig dyr, fordi den er helt ny. Jeg synes det er for risikabelt."
+                        }
+                    ]
                 },
                 {
-                    "initials": "Asger",
-                    "type": "environment",
-
-                    "message": "CO<sub>2</sub> udledning er meget lav, hvilket er godt for klimaet. Og der er lidt vild natur i en kornmark."
-                },
-                {
-                    "initials": "Sune",  "type": "communication",
-                    "message": "Halm er hverken en fødevare eller et uundværligt produkt andre steder. Jeg synes det er en god ide!"
-                },
-                {
-                    "initials": "Charlotte",
-                    "type": "economy",
-                    "message": "Selvom halm er meget billigt at købe, er teknologien stadig dyr, fordi den er helt ny. Jeg synes det er for risikabelt."
-                }]
-            },
-            {
-                "id": "material_plast",
-                "title": "Plastaffald",
-                "description": "Plastaffald kan bruges til at lave nye plastprodukter af. Det kaldes genanvendt plast.",
-                "metadata":
-                {
-                    "co2Score": 39,
-                    "bioScore": 12,
-                    "economyScore": 84
-                },
-                "iconType": "recycle",
-                "chatMessages": [
-                {
-                    "isUser": true,
-                    "message": "Vi tænker at bruge plastaffald som råstof til vores covers. Hvad tænker i?"
-                },
-                {
-                    "initials": "Asger",
-                    "type": "environment",
-
-                    "message": "Genanvendelse er godt! Vi skal væk fra at brænde vores affald og frem mod at genanvende det."
-                },
-                {
-                    "initials": "Sune",  "type": "communication",
-                    "message": "Genanvendt plast har et godt ry hos forbrugeren, men kan vi godt være sikre på kvaliteten?"
-                },
-                {
-                    "initials": "Charlotte",
-                    "type": "economy",
-                    "message": "Det kan være svært at indkøbe plasten i store nok mængder, så vi kan risikere at betale en meget høj pris."
-                }]
-            }
-        ]
-    }],
+                    "id": "material_plast",
+                    "title": "Plastaffald",
+                    "description": "Plastaffald kan bruges til at lave nye plastprodukter af. Det kaldes genanvendt plast.",
+                    "metadata": {
+                        "co2Score": 39,
+                        "bioScore": 12,
+                        "economyScore": 84
+                    },
+                    "iconType": "recycle",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Vi tænker at bruge plastaffald som råstof til vores covers. Hvad tænker i?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Genanvendelse er godt! Vi skal væk fra at brænde vores affald og frem mod at genanvende det."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Genanvendt plast har et godt ry hos forbrugeren, men kan vi godt være sikre på kvaliteten?"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Det kan være svært at indkøbe plasten i store nok mængder, så vi kan risikere at betale en meget høj pris."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "production": [
-    {
-        "id": "production",
-        "title": "Produktion",
-        "description": "",
-        "subCategories": [
         {
-            "id": "production_billund",
-            "title": "Fabrik i Billund",
-            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Vindmøller",
-            "metadata":
-            {
-                "co2Score": 26,
-                "bioScore": 13,
-                "economyScore": 98
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at vælge fabrikken i Billund?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "En fabrik i Danmark er en god idé. Vi slipper for transport og sparer en masse på CO<sub>2</sub> udledningen."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Kunderne kan godt lide at købe varer der er lokalt producerede. Det er desuden en sikkert arbejdsmiljø, når det er robotter der står for produktionen"
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Jeg synes godt nok at den fabrik er dyr. Hvis vi skal have råd til den, er der måske andre ting vi ikke får råd til."
-            }]
-        },
-        {
-            "id": "production_paris",
-            "title": "Fabrik i Paris",
-            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Atomkraft",
-            "metadata":
-            {
-                "co2Score": 17,
-                "bioScore": 39,
-                "economyScore": 79
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at vælge fabrikken i Paris?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "En fabrik i Europa vil stadig spare os for en del transport. Den har også lav forurening. Atomkraft er også CO<sub>2</sub> neutral energi. Jeg synes det ser godt ud!"
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Kunderne kan godt lide at købe varer der er lokalt producerede og Europa er da lidt lokalt."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Fabrikken er godt nok dyr."
-            }]
-        },
-        {
-            "id": "production_miami",
-            "title": "Fabrik i Miami",
-            "description": "Luftforurening: Middel <br> Sikkerhed: Høj <br> Energi: Solceller og gas",
-            "metadata":
-            {
-                "co2Score": 54,
-                "bioScore": 35,
-                "economyScore": 71
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at vælge fabrikken i Miami?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Hvis vi vælger den her, så skal vi investere i ny røggasrensning. Jeg er også ærgerlig over at en stor del af energien kommer fra olie og gas."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "En fabrik i USA er en god idé. Især hvis vi vil ind på det amerikanske marked."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Det bliver svært for mig at forhandle en bedre pris, når fabrikken ligger så centralt i Miami. Er der mon en fabrik til en bedre pris?"
-            }]
-        },
-        {
-            "id": "production_memphis",
-            "title": "Fabrik i Memphis",
-            "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Gas",
-            "metadata":
-            {
-                "co2Score": 61,
-                "bioScore": 65,
-                "economyScore": 33
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at vælge fabrikken i Memphis?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Jeg synes CO<sub>2</sub> udledning og miljøbelastningen er for høj, det kan vi gøre bedre."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "En fabrik midt i USA er en god idé, hvis vi vil ind på det amerikanske marked."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Prisen er god for fabrikken. Men tror I vi skal bruge penge på nye maskiner og alt muligt? Det kan jo blive dyrt."
-            }]
-        },
-        {
-            "id": "production_dubai",
-            "title": "Fabrik i Dubai",
-            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Olie",
-            "metadata":
-            {
-                "co2Score": 44,
-                "bioScore": 16,
-                "economyScore": 88
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at vælge fabrikken i Dubai?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Der er lav miljøbelastning, men den får sin energi fra olie... Det synes jeg ikke er godt nok."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Robotter der står for produktionen, det lyder godt!"
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Den er meget dyr, har vi virkelig brug for en helt nybygget fabrik?"
-            }]
-        },
-        {
-            "id": "production_shanghai",
-            "title": "Fabrik i Shanghai",
-            "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Affaldsafbrænding og kul",
-            "metadata":
-            {
-                "co2Score": 82,
-                "bioScore": 46,
-                "economyScore": 27
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at vælge fabrikken i Shanghai?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Det er en meget god pris."
-            }]
-        },
-        {
-            "id": "production_beijing",
-            "title": "Fabrik i Beijing",
-            "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Kul",
-            "metadata":
-            {
-                "co2Score": 90,
-                "bioScore": 49,
-                "economyScore": 19
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at vælge fabrikken i Beijing?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Jeg tror ikke vi kan finde det billigere, så jeg er godt tilfreds."
-            }]
-        }]
-    }],
+            "id": "production",
+            "title": "Produktion",
+            "description": "",
+            "subCategories": [
+                {
+                    "id": "production_billund",
+                    "title": "Fabrik i Billund",
+                    "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Vindmøller",
+                    "metadata": {
+                        "co2Score": 26,
+                        "bioScore": 13,
+                        "economyScore": 98
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at vælge fabrikken i Billund?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "En fabrik i Danmark er en god idé. Vi slipper for transport og sparer en masse på CO<sub>2</sub> udledningen."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Kunderne kan godt lide at købe varer der er lokalt producerede. Det er desuden en sikkert arbejdsmiljø, når det er robotter der står for produktionen"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Jeg synes godt nok at den fabrik er dyr. Hvis vi skal have råd til den, er der måske andre ting vi ikke får råd til."
+                        }
+                    ]
+                },
+                {
+                    "id": "production_paris",
+                    "title": "Fabrik i Paris",
+                    "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Atomkraft",
+                    "metadata": {
+                        "co2Score": 17,
+                        "bioScore": 39,
+                        "economyScore": 79
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at vælge fabrikken i Paris?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "En fabrik i Europa vil stadig spare os for en del transport. Den har også lav forurening. Atomkraft er også CO<sub>2</sub> neutral energi. Jeg synes det ser godt ud!"
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Kunderne kan godt lide at købe varer der er lokalt producerede og Europa er da lidt lokalt."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Fabrikken er godt nok dyr."
+                        }
+                    ]
+                },
+                {
+                    "id": "production_miami",
+                    "title": "Fabrik i Miami",
+                    "description": "Luftforurening: Middel <br> Sikkerhed: Høj <br> Energi: Solceller og gas",
+                    "metadata": {
+                        "co2Score": 54,
+                        "bioScore": 35,
+                        "economyScore": 71
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at vælge fabrikken i Miami?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Hvis vi vælger den her, så skal vi investere i ny røggasrensning. Jeg er også ærgerlig over at en stor del af energien kommer fra olie og gas."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "En fabrik i USA er en god idé. Især hvis vi vil ind på det amerikanske marked."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Det bliver svært for mig at forhandle en bedre pris, når fabrikken ligger så centralt i Miami. Er der mon en fabrik til en bedre pris?"
+                        }
+                    ]
+                },
+                {
+                    "id": "production_memphis",
+                    "title": "Fabrik i Memphis",
+                    "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Gas",
+                    "metadata": {
+                        "co2Score": 61,
+                        "bioScore": 65,
+                        "economyScore": 33
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at vælge fabrikken i Memphis?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Jeg synes CO<sub>2</sub> udledning og miljøbelastningen er for høj, det kan vi gøre bedre."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "En fabrik midt i USA er en god idé, hvis vi vil ind på det amerikanske marked."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Prisen er god for fabrikken. Men tror I vi skal bruge penge på nye maskiner og alt muligt? Det kan jo blive dyrt."
+                        }
+                    ]
+                },
+                {
+                    "id": "production_dubai",
+                    "title": "Fabrik i Dubai",
+                    "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Olie",
+                    "metadata": {
+                        "co2Score": 44,
+                        "bioScore": 16,
+                        "economyScore": 88
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at vælge fabrikken i Dubai?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Der er lav miljøbelastning, men den får sin energi fra olie... Det synes jeg ikke er godt nok."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Robotter der står for produktionen, det lyder godt!"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Den er meget dyr, har vi virkelig brug for en helt nybygget fabrik?"
+                        }
+                    ]
+                },
+                {
+                    "id": "production_shanghai",
+                    "title": "Fabrik i Shanghai",
+                    "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Affaldsafbrænding og kul",
+                    "metadata": {
+                        "co2Score": 82,
+                        "bioScore": 46,
+                        "economyScore": 27
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at vælge fabrikken i Shanghai?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Det er en meget god pris."
+                        }
+                    ]
+                },
+                {
+                    "id": "production_beijing",
+                    "title": "Fabrik i Beijing",
+                    "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Kul",
+                    "metadata": {
+                        "co2Score": 90,
+                        "bioScore": 49,
+                        "economyScore": 19
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at vælge fabrikken i Beijing?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Jeg tror ikke vi kan finde det billigere, så jeg er godt tilfreds."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "transport": [
-    {
-        "id": "transport",
-        "title": "Transport",
-        "description": "",
-        "subCategories": [
         {
-            "id": "transport_flight",
-            "title": "Fly",
-            "description": "Transport af varer med branchens mest klimavenlige fly.",
-            "metadata":
-            {
-                "co2Score": 69,
-                "bioScore": 54,
-                "economyScore": 98
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at transportere vores covers med fly?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Selvom flyet har en lav CO<sub>2</sub> udledning i forhold til andre fly, så er den stadig for høj."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Det er godt at varerne er hurtigt fremme."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Selvom varerne er hurtigt fremme, er det en meget dyr løsning"
-            }]
-        },
-        {
-            "id": "transport_ship",
-            "title": "Skib",
-            "description": "Dine varer sejles langsomt frem. En klimavenlig løsning, til en god pris",
-            "metadata":
-            {
-                "co2Score": 20,
-                "bioScore": 33,
-                "economyScore": 33
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at transportere vores covers med skib?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Containerskibe belaster miljøet meget, men der kan også være millioner af varer på et enkelt skib. Det er en rigtig god transportform, når varerne skal langt."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Jeg er lidt nervøs for at vores varer er længe undervejs og sårbare for forsinkelser. Det kan give et dårligt ry blandt kunderne."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Varerne er længe undervejs, så selvom det er en meget billig transportform, så kræver det et større lager."
-            }]
-        },
-        {
-            "id": "transport_train",
-            "title": "Tog",
-            "description": "Dine varer transporteres med tog, som er en miljøvenlig transportform. ",
-            "metadata":
-            {
-                "co2Score": 28,
-                "bioScore": 24,
-                "economyScore": 55
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at transportere vores covers med tog?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Jeg synes det lyder som en god idé."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Det kan vidst være en langsom transportform."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Prisen er lidt høj, men det er ikke det der vælter budgettet."
-            }]
-        },
-        {
-            "id": "transport_truck",
-            "title": "Lastbil",
-            "description": "Billig og fleksibel transport med lastbiler, også mellem Europa og Asien.",
-            "metadata":
-            {
-                "co2Score": 77,
-                "bioScore": 69,
-                "economyScore": 15
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om at transportere vores covers med lastbil?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO<sub>2</sub> udledning og miljøbelastning er så høj."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Lastbil fra Asien til Europa?? Det er godt nok en lang tur i lastbil. Især hvis chaufføren skal sove undervejs."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør. Måske koster det ekstra hvis vi skal have varene transporteret hele vejen fra Asien."
-            }]
-        }]
-    }],
+            "id": "transport",
+            "title": "Transport",
+            "description": "",
+            "subCategories": [
+                {
+                    "id": "transport_flight",
+                    "title": "Fly",
+                    "description": "Transport af varer med branchens mest klimavenlige fly.",
+                    "metadata": {
+                        "co2Score": 69,
+                        "bioScore": 54,
+                        "economyScore": 98
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at transportere vores covers med fly?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Selvom flyet har en lav CO<sub>2</sub> udledning i forhold til andre fly, så er den stadig for høj."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Det er godt at varerne er hurtigt fremme."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Selvom varerne er hurtigt fremme, er det en meget dyr løsning"
+                        }
+                    ]
+                },
+                {
+                    "id": "transport_ship",
+                    "title": "Skib",
+                    "description": "Dine varer sejles langsomt frem. En klimavenlig løsning, til en god pris",
+                    "metadata": {
+                        "co2Score": 20,
+                        "bioScore": 33,
+                        "economyScore": 33
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at transportere vores covers med skib?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Containerskibe belaster miljøet meget, men der kan også være millioner af varer på et enkelt skib. Det er en rigtig god transportform, når varerne skal langt."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Jeg er lidt nervøs for at vores varer er længe undervejs og sårbare for forsinkelser. Det kan give et dårligt ry blandt kunderne."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Varerne er længe undervejs, så selvom det er en meget billig transportform, så kræver det et større lager."
+                        }
+                    ]
+                },
+                {
+                    "id": "transport_train",
+                    "title": "Tog",
+                    "description": "Dine varer transporteres med tog, som er en miljøvenlig transportform. ",
+                    "metadata": {
+                        "co2Score": 28,
+                        "bioScore": 24,
+                        "economyScore": 55
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at transportere vores covers med tog?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Jeg synes det lyder som en god idé."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Det kan vidst være en langsom transportform."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Prisen er lidt høj, men det er ikke det der vælter budgettet."
+                        }
+                    ]
+                },
+                {
+                    "id": "transport_truck",
+                    "title": "Lastbil",
+                    "description": "Billig og fleksibel transport med lastbiler, også mellem Europa og Asien.",
+                    "metadata": {
+                        "co2Score": 77,
+                        "bioScore": 69,
+                        "economyScore": 15
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om at transportere vores covers med lastbil?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO<sub>2</sub> udledning og miljøbelastning er så høj."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Lastbil fra Asien til Europa?? Det er godt nok en lang tur i lastbil. Især hvis chaufføren skal sove undervejs."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør. Måske koster det ekstra hvis vi skal have varene transporteret hele vejen fra Asien."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "usage": [
-    {
-        "id": "usage",
-        "title": "Brug",
-        "description": "",
-        "subCategories": [
         {
-            "id": "usage_cover1",
-            "title": "Hårdt cover med print",
-            "description": "Hård plast med print. Forventet holdbarhed ca. 2 år",
-            "metadata":
-            {
-                "co2Score": 39,
-                "bioScore": 41,
-                "economyScore": 14
-            },
-            "imageUrl": "./images/cover 1.JPEG",
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om dette cover?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Hård plast egner sig godt til genanvendelse, hvis vi altså kan få folk til at affaldssortere.. Men det er en anden sag, jeg siger GO!"
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Nogle foretrækker print, jeg vil helst selv undvære, men det skal nok sælge!"
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Det ser billigt ud, det lyder godt!"
-            }]
-        },
-        {
-            "id": "usage_cover2",
-            "title": "Hårdt cover, sort",
-            "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år",
-            "metadata":
-            {
-                "co2Score": 33,
-                "bioScore": 35,
-                "economyScore": 7
-            },
-            "imageUrl": "./images/cover 2.JPEG",
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om dette cover?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Hård plast egner sig godt til genanvendelse, hvis vi altså kan få folk til at affaldssortere.. Men det er en anden sag, jeg siger GO!"
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Dette cover ville jeg selv foretrække. "
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Det ser billigt ud, det lyder godt!"
-            }]
-        },
-        {
-            "id": "usage_cover3",
-            "title": "Blødt cover med print",
-            "description": "Bøjelig plast, farvet eller med print. Forventet holdbarhed ca. 1 år",
-            "metadata":
-            {
-                "co2Score": 40,
-                "bioScore": 44,
-                "economyScore": 15
-            },
-            "imageUrl": "./images/cover 3.JPEG",
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om dette cover?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "De her holder ikke så længe, fordi de bliver løse i plasten. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det. I det mindste flækker de ikke."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "De har det med at blive misfarvede og løse med tiden, men der er stadig mange som køber dem igen og igen. Der er bare lidt køb og smid væk over det.. "
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Det ser billigt ud, jeg er tilfreds."
-            }]
-        },
-        {
-            "id": "usage_cover4",
-            "title": "Blødt cover, gennemsigtigt",
-            "description": "Bøjelig plast, gennemsigtigt. Forventet holdbarhed ca. 1 år.",
-            "metadata":
-            {
-                "co2Score": 35,
-                "bioScore": 36,
-                "economyScore": 9
-            },
-            "imageUrl": "./images/cover 4.JPEG",
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om dette cover?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "De her holder ikke så længe, fordi de bliver løse i plasten. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det. I det mindste flækker de ikke."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "De har det med at blive misfarvede og løse med tiden, men der er stadig mange som køber dem igen og igen. Der er bare lidt køb og smid væk over det.. "
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Jeg har faktisk sådan et her, jeg kan nemlig godt lide at jeg kan se telefonen! Det er i øvrigt billigt at producere."
-            }]
-        },
-        {
-            "id": "usage_cover5",
-            "title": "Hårdt cover med læder",
-            "description": "Plast betrukket med læder. Forventet holdbarhed ca. 2,5 år",
-            "metadata":
-            {
-                "co2Score": 47,
-                "bioScore": 37,
-                "economyScore": 37
-            },
-            "imageUrl": "./images/cover 5.JPEG",
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om dette cover?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Læder er et materiale der bliver pænere med tiden, men det kommer altså fra en ko, som belaster klimaet"
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Naturlige materialer som kun bliver pænere med tiden. Det er der helt sikkert kunder til. "
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Vi skal godt nok sælge coveret dyrt, hvis vi skal tjene penge på det. Er der kunder til det? "
-            }]
-        },
-        {
-            "id": "usage_cover6",
-            "title": "Hårdt cover med metal",
-            "description": "Plast forstærket med metal. Forventet holdbarhed ca. 4 år",
-            "metadata":
-            {
-                "co2Score": 69,
-                "bioScore": 51,
-                "economyScore": 29
-            },
-            "imageUrl": "./images/cover 6.JPEG",
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om dette cover?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Selvom coveret udleder meget CO<sub>2</sub> i produktionen, så holder det længe! Det er dog svært at genanvende, når der både bruges plast og metal. "
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Et cover der holder til alt - det sælger!"
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Jeg synes det er lidt dyrt, vi skal jo også tjene penge på coveret. Hvad tror I folk vil give for sådan et cover?"
-            }]
-        }]
-    }],
+            "id": "usage",
+            "title": "Brug",
+            "description": "",
+            "subCategories": [
+                {
+                    "id": "usage_cover1",
+                    "title": "Hårdt cover med print",
+                    "description": "Hård plast med print. Forventet holdbarhed ca. 2 år",
+                    "metadata": {
+                        "co2Score": 39,
+                        "bioScore": 41,
+                        "economyScore": 14
+                    },
+                    "imageUrl": "./images/cover 1.JPEG",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om dette cover?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Hård plast egner sig godt til genanvendelse, hvis vi altså kan få folk til at affaldssortere.. Men det er en anden sag, jeg siger GO!"
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Nogle foretrækker print, jeg vil helst selv undvære, men det skal nok sælge!"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Det ser billigt ud, det lyder godt!"
+                        }
+                    ]
+                },
+                {
+                    "id": "usage_cover2",
+                    "title": "Hårdt cover, sort",
+                    "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år",
+                    "metadata": {
+                        "co2Score": 33,
+                        "bioScore": 35,
+                        "economyScore": 7
+                    },
+                    "imageUrl": "./images/cover 2.JPEG",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om dette cover?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Hård plast egner sig godt til genanvendelse, hvis vi altså kan få folk til at affaldssortere.. Men det er en anden sag, jeg siger GO!"
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Dette cover ville jeg selv foretrække. "
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Det ser billigt ud, det lyder godt!"
+                        }
+                    ]
+                },
+                {
+                    "id": "usage_cover3",
+                    "title": "Blødt cover med print",
+                    "description": "Bøjelig plast, farvet eller med print. Forventet holdbarhed ca. 1 år",
+                    "metadata": {
+                        "co2Score": 40,
+                        "bioScore": 44,
+                        "economyScore": 15
+                    },
+                    "imageUrl": "./images/cover 3.JPEG",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om dette cover?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "De her holder ikke så længe, fordi de bliver løse i plasten. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det. I det mindste flækker de ikke."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "De har det med at blive misfarvede og løse med tiden, men der er stadig mange som køber dem igen og igen. Der er bare lidt køb og smid væk over det.. "
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Det ser billigt ud, jeg er tilfreds."
+                        }
+                    ]
+                },
+                {
+                    "id": "usage_cover4",
+                    "title": "Blødt cover, gennemsigtigt",
+                    "description": "Bøjelig plast, gennemsigtigt. Forventet holdbarhed ca. 1 år.",
+                    "metadata": {
+                        "co2Score": 35,
+                        "bioScore": 36,
+                        "economyScore": 9
+                    },
+                    "imageUrl": "./images/cover 4.JPEG",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om dette cover?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "De her holder ikke så længe, fordi de bliver løse i plasten. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det. I det mindste flækker de ikke."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "De har det med at blive misfarvede og løse med tiden, men der er stadig mange som køber dem igen og igen. Der er bare lidt køb og smid væk over det.. "
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Jeg har faktisk sådan et her, jeg kan nemlig godt lide at jeg kan se telefonen! Det er i øvrigt billigt at producere."
+                        }
+                    ]
+                },
+                {
+                    "id": "usage_cover5",
+                    "title": "Hårdt cover med læder",
+                    "description": "Plast betrukket med læder. Forventet holdbarhed ca. 2,5 år",
+                    "metadata": {
+                        "co2Score": 47,
+                        "bioScore": 37,
+                        "economyScore": 37
+                    },
+                    "imageUrl": "./images/cover 5.JPEG",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om dette cover?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Læder er et materiale der bliver pænere med tiden, men det kommer altså fra en ko, som belaster klimaet"
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Naturlige materialer som kun bliver pænere med tiden. Det er der helt sikkert kunder til. "
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Vi skal godt nok sælge coveret dyrt, hvis vi skal tjene penge på det. Er der kunder til det? "
+                        }
+                    ]
+                },
+                {
+                    "id": "usage_cover6",
+                    "title": "Hårdt cover med metal",
+                    "description": "Plast forstærket med metal. Forventet holdbarhed ca. 4 år",
+                    "metadata": {
+                        "co2Score": 69,
+                        "bioScore": 51,
+                        "economyScore": 29
+                    },
+                    "imageUrl": "./images/cover 6.JPEG",
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om dette cover?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Selvom coveret udleder meget CO<sub>2</sub> i produktionen, så holder det længe! Det er dog svært at genanvende, når der både bruges plast og metal. "
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Et cover der holder til alt - det sælger!"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Jeg synes det er lidt dyrt, vi skal jo også tjene penge på coveret. Hvad tror I folk vil give for sådan et cover?"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "disposal": [
-    {
-        "id": "disposal",
-        "title": "Bortskaffelse",
-        "description": "",
-        "subCategories": [
         {
-            "id": "disposal_designrecycle",
-            "title": "Design til genanvendelse",
-            "description": "Coveret må ikke være lavet af flere forskellige materialer eller plasttyper. Det skal være nemt at affaldssortere.",
-            "metadata":
-            {
-                "co2Score": -7,
-                "bioScore": -5,
-                "economyScore": 40
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Har I nogen kommentarer til denne?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Vi skal genanvende MEGET MERE. Jeg synes bestemt vi skal vælge denne!"
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Det er meget in at genanvende, vi kan reklamere med at vi har cirkulær økonomi. Jeg synes det er en god ide!"
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
-            }]
-        },
-        {
-            "id": "disposal_recycle",
-            "title": "Design til genbrug",
-            "description": "Hvis et cover skal kunne genbruges, skal det være meget holdbart og stadig være pænt efter længere tids brug.",
-            "metadata":
-            {
-                "co2Score": -11,
-                "bioScore": -9,
-                "economyScore": 35
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Har I nogen kommentarer til denne?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Genbrug er altid at foretrække! Der er ingen miljøbelsatning og det har vi brug for hvis vi skal passe på vores jord."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Genbrug er at foretrække! MEN - der kommer hele tiden nye telefoner, som har en ny form. Vil det sælge covers, at reklamere med at de kan genbruges? "
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
-            }]
-        },
-        {
-            "id": "disposal_sticker",
-            "title": "Mærkning på produkt",
-            "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres.",
-            "metadata":
-            {
-                "co2Score": -1,
-                "bioScore": -2,
-                "economyScore": 25
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om mærkning?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Det er altid en god idé at guide forbrugerne. "
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Det hedder nudging når man påvirker forbrugerne på den måde, det virker altså!"
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
-            }]
-        },
-        {
-            "id": "disposal_takeback",
-            "title": "Take-back ordning",
-            "description": "Kunderne kan aflevere deres gamle covers og få 10% rabat det næste.",
-            "metadata":
-            {
-                "co2Score": -7,
-                "bioScore": -5,
-                "economyScore": 60
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "En rabatordning? Hvad tænker I?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Det virker at give kunderne en økonomisk gevinst, når vi vil have dem til at være mere miljørigtige."
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Der er rig mulighed for at reklamere og gøre sig synlige for kunderne med denne ordning."
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "Jeg har alligevel lige noget her - sådan en ordning skaber loyale kunder, de kommer igen fordi de kan spare penge. Det her kan vi tjene på, på sigt. "
-            }]
-        },
-        {
-            "id": "disposal_wasteprevention",
-            "title": "Mindre emballage",
-            "description": "Jo mindre emballage, jo flere covers kan fragtes ad gangen. ",
-            "metadata":
-            {
-                "co2Score": -3,
-                "bioScore": -2,
-                "economyScore": 30
-            },
-            "chatMessages": [
-            {
-                "isUser": true,
-                "message": "Hvad tænker I om denne?"
-            },
-            {
-                "initials": "Asger",
-                "type": "environment",
-
-                "message": "Jo mindre luft der transporteres rundt i verden, des bedre! Og så slipper vi for unødvendig emballage. "
-            },
-            {
-                "initials": "Sune",  "type": "communication",
-                "message": "Mon ikke det sælger at skrive 10% mindre emballage på? Det tror jeg nok det skal. "
-            },
-            {
-                "initials": "Charlotte",
-                "type": "economy",
-                "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger.  "
-            }]
-        }]
-    }],
+            "id": "disposal",
+            "title": "Bortskaffelse",
+            "description": "",
+            "subCategories": [
+                {
+                    "id": "disposal_designrecycle",
+                    "title": "Design til genanvendelse",
+                    "description": "Coveret må ikke være lavet af flere forskellige materialer eller plasttyper. Det skal være nemt at affaldssortere.",
+                    "metadata": {
+                        "co2Score": -7,
+                        "bioScore": -5,
+                        "economyScore": 40
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Har I nogen kommentarer til denne?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Vi skal genanvende MEGET MERE. Jeg synes bestemt vi skal vælge denne!"
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Det er meget in at genanvende, vi kan reklamere med at vi har cirkulær økonomi. Jeg synes det er en god ide!"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
+                        }
+                    ]
+                },
+                {
+                    "id": "disposal_recycle",
+                    "title": "Design til genbrug",
+                    "description": "Hvis et cover skal kunne genbruges, skal det være meget holdbart og stadig være pænt efter længere tids brug.",
+                    "metadata": {
+                        "co2Score": -11,
+                        "bioScore": -9,
+                        "economyScore": 35
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Har I nogen kommentarer til denne?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Genbrug er altid at foretrække! Der er ingen miljøbelsatning og det har vi brug for hvis vi skal passe på vores jord."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Genbrug er at foretrække! MEN - der kommer hele tiden nye telefoner, som har en ny form. Vil det sælge covers, at reklamere med at de kan genbruges? "
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
+                        }
+                    ]
+                },
+                {
+                    "id": "disposal_sticker",
+                    "title": "Mærkning på produkt",
+                    "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres.",
+                    "metadata": {
+                        "co2Score": -1,
+                        "bioScore": -2,
+                        "economyScore": 25
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om mærkning?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Det er altid en god idé at guide forbrugerne. "
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Det hedder nudging når man påvirker forbrugerne på den måde, det virker altså!"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger."
+                        }
+                    ]
+                },
+                {
+                    "id": "disposal_takeback",
+                    "title": "Take-back ordning",
+                    "description": "Kunderne kan aflevere deres gamle covers og få 10% rabat det næste.",
+                    "metadata": {
+                        "co2Score": -7,
+                        "bioScore": -5,
+                        "economyScore": 60
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "En rabatordning? Hvad tænker I?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Det virker at give kunderne en økonomisk gevinst, når vi vil have dem til at være mere miljørigtige."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Der er rig mulighed for at reklamere og gøre sig synlige for kunderne med denne ordning."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Jeg har alligevel lige noget her - sådan en ordning skaber loyale kunder, de kommer igen fordi de kan spare penge. Det her kan vi tjene på, på sigt. "
+                        }
+                    ]
+                },
+                {
+                    "id": "disposal_wasteprevention",
+                    "title": "Mindre emballage",
+                    "description": "Jo mindre emballage, jo flere covers kan fragtes ad gangen. ",
+                    "metadata": {
+                        "co2Score": -3,
+                        "bioScore": -2,
+                        "economyScore": 30
+                    },
+                    "chatMessages": [
+                        {
+                            "isUser": true,
+                            "message": "Hvad tænker I om denne?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Jo mindre luft der transporteres rundt i verden, des bedre! Og så slipper vi for unødvendig emballage. "
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Mon ikke det sælger at skrive 10% mindre emballage på? Det tror jeg nok det skal. "
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "I har det budget I har, så længe I overholder det, så har jeg ingen holdninger.  "
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "mutuallyDisabledOptions": [
-    {
-        "id1": "transport_ship",
-        "id2": "production_billund",
-        "description": "Løsningen er ikke mulig, da du er i produktionslandet."
-    },
-    {
-        "id1": "transport_ship",
-        "id2": "production_paris",
-        "description": "Løsningen er ikke mulig, da du ikke kan sejle containerskib herfra til Danmark."
-    },
-    {
-        "id1": "transport_train",
-        "id2": "production_billund",
-        "description": "Løsningen er ikke mulig, da du er i produktionslandet."
-    },
-    {
-        "id1": "transport_train",
-        "id2": "production_miami",
-        "description": "Løsningen er ikke mulig, da du ikke kan køre tog fra Miami til Danmark."
-    },
-    {
-        "id1": "transport_train",
-        "id2": "production_memphis",
-        "description": "Løsningen er ikke mulig, da du ikke kan køre tog fra Memphis til Danmark."
-    },
-    {
-        "id1": "transport_flight",
-        "id2": "production_billund",
-        "description": "Løsningen er ikke mulig, da du er i produktionslandet."
-    },
-    {
-        "id1": "transport_truck",
-        "id2": "production_miami",
-        "description": "Løsningen er ikke mulig, da du ikke kan køre lastbil fra Miami til Danmark."
-    },
-    {
-        "id1": "transport_truck",
-        "id2": "production_memphis",
-        "description": "Løsningen er ikke mulig, da du ikke kan køre lastbil fra Memphis til Danmark."
-    },
-    {
-        "id1": "material_plast",
-        "id2": "usage_cover4",
-        "description": "Løsningen er ikke mulig, da genanvendt plast ikke kan blive gennemsigtigt."
-    },
-    {
-        "id1": "usage_cover5",
-        "id2": "disposal_designrecycle",
-        "description": "Løsningen er ikke mulig, da design til genanvendelse kræver at der kun bruges et materiale."
-    },
-    {
-        "id1": "usage_cover6",
-        "id2": "disposal_designrecycle",
-        "description": "Løsningen er ikke mulig, da design til genanvendelse kræver at der kun bruges et materiale."
-    },
-    {
-        "id1": "usage_cover4",
-        "id2": "disposal_sticker",
-        "description": "Løsningen kan ikke vælges, da I ikke kan skjule mærkningen på et gennemsigtigt cover."
-    }],
-    "scoreWeights":
-    {
-        "co2":
         {
+            "id1": "transport_ship",
+            "id2": "production_billund",
+            "description": "Løsningen er ikke mulig, da du er i produktionslandet."
+        },
+        {
+            "id1": "transport_ship",
+            "id2": "production_paris",
+            "description": "Løsningen er ikke mulig, da du ikke kan sejle containerskib herfra til Danmark."
+        },
+        {
+            "id1": "transport_train",
+            "id2": "production_billund",
+            "description": "Løsningen er ikke mulig, da du er i produktionslandet."
+        },
+        {
+            "id1": "transport_train",
+            "id2": "production_miami",
+            "description": "Løsningen er ikke mulig, da du ikke kan køre tog fra Miami til Danmark."
+        },
+        {
+            "id1": "transport_train",
+            "id2": "production_memphis",
+            "description": "Løsningen er ikke mulig, da du ikke kan køre tog fra Memphis til Danmark."
+        },
+        {
+            "id1": "transport_flight",
+            "id2": "production_billund",
+            "description": "Løsningen er ikke mulig, da du er i produktionslandet."
+        },
+        {
+            "id1": "transport_truck",
+            "id2": "production_miami",
+            "description": "Løsningen er ikke mulig, da du ikke kan køre lastbil fra Miami til Danmark."
+        },
+        {
+            "id1": "transport_truck",
+            "id2": "production_memphis",
+            "description": "Løsningen er ikke mulig, da du ikke kan køre lastbil fra Memphis til Danmark."
+        },
+        {
+            "id1": "material_plast",
+            "id2": "usage_cover4",
+            "description": "Løsningen er ikke mulig, da genanvendt plast ikke kan blive gennemsigtigt."
+        },
+        {
+            "id1": "usage_cover5",
+            "id2": "disposal_designrecycle",
+            "description": "Løsningen er ikke mulig, da design til genanvendelse kræver at der kun bruges et materiale."
+        },
+        {
+            "id1": "usage_cover6",
+            "id2": "disposal_designrecycle",
+            "description": "Løsningen er ikke mulig, da design til genanvendelse kræver at der kun bruges et materiale."
+        },
+        {
+            "id1": "usage_cover4",
+            "id2": "disposal_sticker",
+            "description": "Løsningen kan ikke vælges, da I ikke kan skjule mærkningen på et gennemsigtigt cover."
+        }
+    ],
+    "scoreWeights": {
+        "co2": {
             "material": 0.35,
             "production": 0.20,
             "transport": 0.05,
             "usage": 0.30,
             "disposal": 0.10
         },
-        "bio":
-        {
+        "bio": {
             "material": 0.35,
             "production": 0.20,
             "transport": 0.05,
             "usage": 0.30,
             "disposal": 0.10
         },
-        "economy":
-        {
+        "economy": {
             "material": 0.30,
             "production": 0.45,
             "transport": 0.10,
@@ -1128,598 +1123,597 @@
         }
     },
     "feedback": [
-    {
-        "id1": "production_billund",
-        "id2": "material_olie",
-        "title": "Olie + fabrik i Billund",
-        "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift",
-        "positive": true
-    },
-    {
-        "id1": "production_paris",
-        "id2": "material_olie",
-        "title": "Olie + fabrik i Paris",
-        "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift",
-        "positive": false
-    },
-    {
-        "id1": "production_mimai",
-        "id2": "material_olie",
-        "title": "Olie + fabrik i Miami",
-        "description": "Olien kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "material_olie",
-        "title": "Olie + fabrik i Memphis",
-        "description": "Olien kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "material_olie",
-        "title": "Olie + fabrik i Dubai",
-        "description": "Olien kan købes lokalt i Dubai og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "material_olie",
-        "title": "Olie + fabrik i Shanghai",
-        "description": "Olien skal købes og transporteres til Shanghai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "material_olie",
-        "title": "Olie + fabrik i Beijing",
-        "description": "Olien skal købes og transporteres til Beijing, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_billund",
-        "id2": "material_corn",
-        "title": "Majs + fabrik i Billund",
-        "description": "Majsen skal købes og transporteres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_paris",
-        "id2": "material_corn",
-        "title": "Majs + fabrik i Paris",
-        "description": "Majsen skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_mimai",
-        "id2": "material_corn",
-        "title": "Majs + fabrik i Miami",
-        "description": "Majsen kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "material_corn",
-        "title": "Majs + fabrik i Memphis",
-        "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "material_corn",
-        "title": "Majs + fabrik i Dubai",
-        "description": "Majsen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "material_corn",
-        "title": "Majs + fabrik i Shanghai",
-        "description": "Majsen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "material_corn",
-        "title": "Majs + fabrik i Beijing",
-        "description": "Majsen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_billund",
-        "id2": "material_sugar",
-        "title": "Sukkerrør + fabrik i Billund",
-        "description": "Sukkerrørene skal købes og transporteres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_paris",
-        "id2": "material_sugar",
-        "title": "Sukkerrør + fabrik i Paris",
-        "description": "Sukkerrørene skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_mimai",
-        "id2": "material_sugar",
-        "title": "Sukkerrør + fabrik i Miami",
-        "description": "Sukkerrørene skal købes og transporteres til Miami, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "material_sugar",
-        "title": "Sukkerrør + fabrik i Memphis",
-        "description": "Sukkerrørene skal købes og transporteres til Memphis, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "material_sugar",
-        "title": "Sukkerrør + fabrik i Dubai",
-        "description": "Sukkerrørene skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "material_sugar",
-        "title": "Sukkerrør + fabrik i Shanghai",
-        "description": "Sukkerrørene kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "material_sugar",
-        "title": "Sukkerrør + fabrik i Beijing",
-        "description": "Sukkerrørene kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_billund",
-        "id2": "material_straw",
-        "title": "Halm + fabrik i Billund",
-        "description": "Halm kan købes lokalt i Billund og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_paris",
-        "id2": "material_straw",
-        "title": "Halm + fabrik i Paris",
-        "description": "Halm kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_mimai",
-        "id2": "material_straw",
-        "title": "Halm + fabrik i Miami",
-        "description": "Halm kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "material_straw",
-        "title": "Halm + fabrik i Memphis",
-        "description": "Halm kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "material_straw",
-        "title": "Halm + fabrik i Dubai",
-        "description": "Halmen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "material_straw",
-        "title": "Halm + fabrik i Shanghai",
-        "description": "Halmen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "material_straw",
-        "title": "Halm + fabrik i Beijing",
-        "description": "Halmen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_billund",
-        "id2": "material_plast",
-        "title": "Plastaffald + fabrik i Billund",
-        "description": "Plastaffaldet skal købes og importeres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_paris",
-        "id2": "material_plast",
-        "title": "Plastaffald + fabrik i Paris",
-        "description": "Plastaffald kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_mimai",
-        "id2": "material_plast",
-        "title": "Plastaffald + fabrik i Miami",
-        "description": "Plastaffaldet skal købes og importeres til Miami, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "material_plast",
-        "title": "Plastaffald + fabrik i Memphis",
-        "description": "Plastaffaldet skal købes og importeres til Memphis, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "material_plast",
-        "title": "Plastaffald + fabrik i Dubai",
-        "description": "Plastaffald skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "material_plast",
-        "title": "Plastaffald + fabrik i Shanghai",
-        "description": "Plastaffald kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "material_plast",
-        "title": "Plastaffald + fabrik i Beijing",
-        "description": "Plastaffaldet kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_billund",
-        "id2": "transport_truck",
-        "title": "Fabrik i Billund + lastbil",
-        "description": "Den korte transport sparer jer for CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_paris",
-        "id2": "transport_train",
-        "title": "Fabrik i Paris + tog",
-        "description": "Toget skal kun transportere varene fra Paris til Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_mimai",
-        "id2": "transport_ship",
-        "title": "Fabrik i Miami + skib",
-        "description": "Turen fra Miami til Danmark er kortere end gennemsnitsturen for et containerskib og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_mimai",
-        "id2": "transport_flight",
-        "title": "Fabrik i Miami + fly",
-        "description": "Det er en lang flyvetur til Miami og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "transport_ship",
-        "title": "Fabrik i Memphis + skib",
-        "description": "Memphis ligger langt inde i USA og I skal derfor først transportere varene til en havn. Det koster ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "transport_flight",
-        "title": "Fabrik i Memphis + fly",
-        "description": "Det er en lang flyvetur til Memphis og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "transport_flight",
-        "title": "Fabrik i Dubai + fly",
-        "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "transport_truck",
-        "title": "Fabrik i Dubai + lastbil",
-        "description": "Lastbilen skal transportere varene hele vejen fra Dubai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "transport_train",
-        "title": "Fabrik i Shanghai + tog",
-        "description": "Toget skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "transport_ship",
-        "title": "Fabrik i Shanghai + skib",
-        "description": "Containerskibet skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "transport_flight",
-        "title": "Fabrik i Shanghai + fly",
-        "description": "Det er en lang flyvetur fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "transport_truck",
-        "title": "Fabrik i Shanghai + lastbil",
-        "description": "Lastbilen skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "transport_train",
-        "title": "Fabrik i Beijing + tog",
-        "description": "Toget skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "transport_ship",
-        "title": "Fabrik i Beijing + skib",
-        "description": "Containerskibet skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "transport_flight",
-        "title": "Fabrik i Beijing + fly",
-        "description": "Det er en lang flyvetur fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "transport_truck",
-        "title": "Fabrik i Beijing + lastbil",
-        "description": "Lastbilen skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "material_olie",
-        "id2": "disposal_designrecycle",
-        "title": "Olie + design til genanvendelse",
-        "description": "Design til genanvendelse kan betyde at flere ocvers genanvendes og færre nye skal produceres, det vil spare olie til plastproduktion og derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_corn",
-        "id2": "disposal_designrecycle",
-        "title": "Majs + design til genanvendelse",
-        "description": "Design til genanvendelse kan betyde at der skal bruges færre majs til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_sugar",
-        "id2": "disposal_designrecycle",
-        "title": "Sukkerrør + design til genanvendelse",
-        "description": "Design til genanvendelse kan betyde at der skal bruges færre sukkerrør til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_straw",
-        "id2": "disposal_designrecycle",
-        "title": "Halm + design til genanvendelse",
-        "description": "Design til genanvendelse kan betyde at der skal bruges mindre halm til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_plast",
-        "id2": "disposal_designrecycle",
-        "title": "Plastaffald + design til genanvendelse",
-        "description": "Design til genanvendelse kan betyde at der er mere tilgængeligt plastaffald, som kan bruges i produktion af ny plast og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_olie",
-        "id2": "disposal_recycle",
-        "title": "Olie + design til genbrug",
-        "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_corn",
-        "id2": "disposal_recycle",
-        "title": "Majs + design til genbrug",
-        "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_sugar",
-        "id2": "disposal_recycle",
-        "title": "Sukkerrør + design til genbrug",
-        "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_straw",
-        "id2": "disposal_recycle",
-        "title": "Halm + design til genbrug",
-        "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_plast",
-        "id2": "disposal_recycle",
-        "title": "Plastaffald + design til genbrug",
-        "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "material_plast",
-        "id2": "disposal_takeback",
-        "title": "Plastaffald + take-back ordning",
-        "description": "De tilbagetagne covers kan bruges til produktion af nye covers. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_billund",
-        "id2": "disposal_takeback",
-        "title": "Fabrik i Billund + take-back ordning",
-        "description": "De tilbagetagne covers skal ikke transporteres langt. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_miami",
-        "id2": "disposal_takeback",
-        "title": "Fabrik i Miami + take-back ordning",
-        "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_memphis",
-        "id2": "disposal_takeback",
-        "title": "Fabrik i Memphis + take-back ordning",
-        "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_dubai",
-        "id2": "disposal_takeback",
-        "title": "Fabrik i Dubai + take-back ordning",
-        "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_shanghai",
-        "id2": "disposal_takeback",
-        "title": "Fabrik i Shangai + take-back ordning",
-        "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "production_beijing",
-        "id2": "disposal_takeback",
-        "title": "Fabrik i Beijing + take-back ordning",
-        "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_train",
-        "id2": "usage_cover3",
-        "title": "Tog + blødt cover",
-        "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_ship",
-        "id2": "usage_cover3",
-        "title": "Skib + blødt cover",
-        "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_flight",
-        "id2": "usage_cover3",
-        "title": "Fly + blødt cover",
-        "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_truck",
-        "id2": "usage_cover3",
-        "title": "Lastbil + blødt cover",
-        "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_train",
-        "id2": "usage_cover4",
-        "title": "Tog + blødt cover",
-        "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_ship",
-        "id2": "usage_cover4",
-        "title": "Skib + blødt cover",
-        "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_flight",
-        "id2": "usage_cover4",
-        "title": "Fly + blødt cover",
-        "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_truck",
-        "id2": "usage_cover4",
-        "title": "Lastbil + blødt cover",
-        "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_train",
-        "id2": "usage_cover6",
-        "title": "Tog + cover med metal",
-        "description": "Dette cover har en højere vægt, så toget har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_ship",
-        "id2": "usage_cover6",
-        "title": "Transport med skib af cover 6",
-        "description": "Dette cover har en højere vægt, så containerskibet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_flight",
-        "id2": "usage_cover6",
-        "title": "Transport med fly af cover 6",
-        "description": "Dette cover har en højere vægt, så flyet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_truck",
-        "id2": "usage_cover6",
-        "title": "Transport med lastbil af cover 6",
-        "description": "Dette cover har en højere vægt, så lastbilen har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_train",
-        "id2": "disposal_wasteprevention",
-        "title": "Transport med tog, med mindre emballage",
-        "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_ship",
-        "id2": "disposal_wasteprevention",
-        "title": "Transport med skib, med mindre emballage",
-        "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_flight",
-        "id2": "disposal_wasteprevention",
-        "title": "Transport med fly, med mindre emballage",
-        "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "transport_truck",
-        "id2": "disposal_wasteprevention",
-        "title": "Transport med lastbil, med mindre emballage",
-        "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "usage_cover1",
-        "id2": "disposal_designrecycle",
-        "title": "Cover 1, med design til genanvendelse",
-        "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "usage_cover2",
-        "id2": "disposal_designrecycle",
-        "title": "Cover 2, med design til genanvendelse",
-        "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "usage_cover3",
-        "id2": "disposal_designrecycle",
-        "title": "Cover 3, med design til genanvendelse",
-        "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "usage_cover4",
-        "id2": "disposal_designrecycle",
-        "title": "Cover 4, med design til genanvendelse",
-        "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "usage_cover1",
-        "id2": "disposal_recycle",
-        "title": "Cover 1, med design til genbrug",
-        "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-    },
-    {
-        "id1": "usage_cover2",
-        "id2": "disposal_recycle",
-        "title": "Cover 2, med design til genbrug",
-        "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
-        "positive": true
-    },
-    {
-        "id1": "usage_cover3",
-        "id2": "disposal_recycle",
-        "title": "Cover 3, med design til genbrug",
-        "description": "Denne covertype kan sjældent genbruges, da det bliver løst"
-    },
-    {
-        "id1": "usage_cover4",
-        "id2": "disposal_recycle",
-        "title": "Cover 4, med design til genbrug",
-        "description": "Denne covertype kan sjældent genbruges, da det bliver løst og misfarvet"
-    },
-    {
-        "id1": "usage_cover5",
-        "id2": "disposal_recycle",
-        "title": "Cover 5, med design til genbrug",
-        "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "usage_cover6",
-        "id2": "disposal_recycle",
-        "title": "Cover 6, med design til genbrug",
-        "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    },
-    {
-        "id1": "usage_cover6",
-        "id2": "disposal_takeback",
-        "title": "Cover 6, med take-back ordning",
-        "description": "I kan genanvende den indsamlede metal og I sparer CO<sub>2</sub>-udledning og miljøbelastning"
-    }],
-    "interactions": [
-    {
-        "id1": "production_billund",
-        "id2": "material_bloedplast",
-        "scores":
         {
-            "co2": -2,
-            "bio": -1,
-            "economy": -2
+            "id1": "production_billund",
+            "id2": "material_olie",
+            "title": "Olie + fabrik i Billund",
+            "description": "Olien kan købes lokalt i Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "positive": true
+        },
+        {
+            "id1": "production_paris",
+            "id2": "material_olie",
+            "title": "Olie + fabrik i Paris",
+            "description": "Olien skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "positive": false
+        },
+        {
+            "id1": "production_mimai",
+            "id2": "material_olie",
+            "title": "Olie + fabrik i Miami",
+            "description": "Olien kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "material_olie",
+            "title": "Olie + fabrik i Memphis",
+            "description": "Olien kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "material_olie",
+            "title": "Olie + fabrik i Dubai",
+            "description": "Olien kan købes lokalt i Dubai og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "material_olie",
+            "title": "Olie + fabrik i Shanghai",
+            "description": "Olien skal købes og transporteres til Shanghai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "material_olie",
+            "title": "Olie + fabrik i Beijing",
+            "description": "Olien skal købes og transporteres til Beijing, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_billund",
+            "id2": "material_corn",
+            "title": "Majs + fabrik i Billund",
+            "description": "Majsen skal købes og transporteres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_paris",
+            "id2": "material_corn",
+            "title": "Majs + fabrik i Paris",
+            "description": "Majsen skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_mimai",
+            "id2": "material_corn",
+            "title": "Majs + fabrik i Miami",
+            "description": "Majsen kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "material_corn",
+            "title": "Majs + fabrik i Memphis",
+            "description": "Majsen kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "material_corn",
+            "title": "Majs + fabrik i Dubai",
+            "description": "Majsen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "material_corn",
+            "title": "Majs + fabrik i Shanghai",
+            "description": "Majsen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "material_corn",
+            "title": "Majs + fabrik i Beijing",
+            "description": "Majsen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_billund",
+            "id2": "material_sugar",
+            "title": "Sukkerrør + fabrik i Billund",
+            "description": "Sukkerrørene skal købes og transporteres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_paris",
+            "id2": "material_sugar",
+            "title": "Sukkerrør + fabrik i Paris",
+            "description": "Sukkerrørene skal købes og transporteres til Paris, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_mimai",
+            "id2": "material_sugar",
+            "title": "Sukkerrør + fabrik i Miami",
+            "description": "Sukkerrørene skal købes og transporteres til Miami, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "material_sugar",
+            "title": "Sukkerrør + fabrik i Memphis",
+            "description": "Sukkerrørene skal købes og transporteres til Memphis, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "material_sugar",
+            "title": "Sukkerrør + fabrik i Dubai",
+            "description": "Sukkerrørene skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "material_sugar",
+            "title": "Sukkerrør + fabrik i Shanghai",
+            "description": "Sukkerrørene kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "material_sugar",
+            "title": "Sukkerrør + fabrik i Beijing",
+            "description": "Sukkerrørene kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_billund",
+            "id2": "material_straw",
+            "title": "Halm + fabrik i Billund",
+            "description": "Halm kan købes lokalt i Billund og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_paris",
+            "id2": "material_straw",
+            "title": "Halm + fabrik i Paris",
+            "description": "Halm kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_mimai",
+            "id2": "material_straw",
+            "title": "Halm + fabrik i Miami",
+            "description": "Halm kan købes lokalt i Miami og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "material_straw",
+            "title": "Halm + fabrik i Memphis",
+            "description": "Halm kan købes lokalt i Memphis og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "material_straw",
+            "title": "Halm + fabrik i Dubai",
+            "description": "Halmen skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "material_straw",
+            "title": "Halm + fabrik i Shanghai",
+            "description": "Halmen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "material_straw",
+            "title": "Halm + fabrik i Beijing",
+            "description": "Halmen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_billund",
+            "id2": "material_plast",
+            "title": "Plastaffald + fabrik i Billund",
+            "description": "Plastaffaldet skal købes og importeres til Billund, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_paris",
+            "id2": "material_plast",
+            "title": "Plastaffald + fabrik i Paris",
+            "description": "Plastaffald kan købes lokalt i Paris og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_mimai",
+            "id2": "material_plast",
+            "title": "Plastaffald + fabrik i Miami",
+            "description": "Plastaffaldet skal købes og importeres til Miami, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "material_plast",
+            "title": "Plastaffald + fabrik i Memphis",
+            "description": "Plastaffaldet skal købes og importeres til Memphis, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "material_plast",
+            "title": "Plastaffald + fabrik i Dubai",
+            "description": "Plastaffald skal købes og transporteres til Dubai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "material_plast",
+            "title": "Plastaffald + fabrik i Shanghai",
+            "description": "Plastaffald kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "material_plast",
+            "title": "Plastaffald + fabrik i Beijing",
+            "description": "Plastaffaldet kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_billund",
+            "id2": "transport_truck",
+            "title": "Fabrik i Billund + lastbil",
+            "description": "Den korte transport sparer jer for CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_paris",
+            "id2": "transport_train",
+            "title": "Fabrik i Paris + tog",
+            "description": "Toget skal kun transportere varene fra Paris til Danmark og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_mimai",
+            "id2": "transport_ship",
+            "title": "Fabrik i Miami + skib",
+            "description": "Turen fra Miami til Danmark er kortere end gennemsnitsturen for et containerskib og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_mimai",
+            "id2": "transport_flight",
+            "title": "Fabrik i Miami + fly",
+            "description": "Det er en lang flyvetur til Miami og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "transport_ship",
+            "title": "Fabrik i Memphis + skib",
+            "description": "Memphis ligger langt inde i USA og I skal derfor først transportere varene til en havn. Det koster ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "transport_flight",
+            "title": "Fabrik i Memphis + fly",
+            "description": "Det er en lang flyvetur til Memphis og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "transport_flight",
+            "title": "Fabrik i Dubai + fly",
+            "description": "Det er en lang flyvetur til Dubai og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "transport_truck",
+            "title": "Fabrik i Dubai + lastbil",
+            "description": "Lastbilen skal transportere varene hele vejen fra Dubai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "transport_train",
+            "title": "Fabrik i Shanghai + tog",
+            "description": "Toget skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "transport_ship",
+            "title": "Fabrik i Shanghai + skib",
+            "description": "Containerskibet skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "transport_flight",
+            "title": "Fabrik i Shanghai + fly",
+            "description": "Det er en lang flyvetur fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "transport_truck",
+            "title": "Fabrik i Shanghai + lastbil",
+            "description": "Lastbilen skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "transport_train",
+            "title": "Fabrik i Beijing + tog",
+            "description": "Toget skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "transport_ship",
+            "title": "Fabrik i Beijing + skib",
+            "description": "Containerskibet skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "transport_flight",
+            "title": "Fabrik i Beijing + fly",
+            "description": "Det er en lang flyvetur fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "transport_truck",
+            "title": "Fabrik i Beijing + lastbil",
+            "description": "Lastbilen skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "material_olie",
+            "id2": "disposal_designrecycle",
+            "title": "Olie + design til genanvendelse",
+            "description": "Design til genanvendelse kan betyde at flere ocvers genanvendes og færre nye skal produceres, det vil spare olie til plastproduktion og derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_corn",
+            "id2": "disposal_designrecycle",
+            "title": "Majs + design til genanvendelse",
+            "description": "Design til genanvendelse kan betyde at der skal bruges færre majs til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_sugar",
+            "id2": "disposal_designrecycle",
+            "title": "Sukkerrør + design til genanvendelse",
+            "description": "Design til genanvendelse kan betyde at der skal bruges færre sukkerrør til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_straw",
+            "id2": "disposal_designrecycle",
+            "title": "Halm + design til genanvendelse",
+            "description": "Design til genanvendelse kan betyde at der skal bruges mindre halm til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_plast",
+            "id2": "disposal_designrecycle",
+            "title": "Plastaffald + design til genanvendelse",
+            "description": "Design til genanvendelse kan betyde at der er mere tilgængeligt plastaffald, som kan bruges i produktion af ny plast og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_olie",
+            "id2": "disposal_recycle",
+            "title": "Olie + design til genbrug",
+            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_corn",
+            "id2": "disposal_recycle",
+            "title": "Majs + design til genbrug",
+            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_sugar",
+            "id2": "disposal_recycle",
+            "title": "Sukkerrør + design til genbrug",
+            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_straw",
+            "id2": "disposal_recycle",
+            "title": "Halm + design til genbrug",
+            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_plast",
+            "id2": "disposal_recycle",
+            "title": "Plastaffald + design til genbrug",
+            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "material_plast",
+            "id2": "disposal_takeback",
+            "title": "Plastaffald + take-back ordning",
+            "description": "De tilbagetagne covers kan bruges til produktion af nye covers. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_billund",
+            "id2": "disposal_takeback",
+            "title": "Fabrik i Billund + take-back ordning",
+            "description": "De tilbagetagne covers skal ikke transporteres langt. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_miami",
+            "id2": "disposal_takeback",
+            "title": "Fabrik i Miami + take-back ordning",
+            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_memphis",
+            "id2": "disposal_takeback",
+            "title": "Fabrik i Memphis + take-back ordning",
+            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_dubai",
+            "id2": "disposal_takeback",
+            "title": "Fabrik i Dubai + take-back ordning",
+            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_shanghai",
+            "id2": "disposal_takeback",
+            "title": "Fabrik i Shangai + take-back ordning",
+            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "production_beijing",
+            "id2": "disposal_takeback",
+            "title": "Fabrik i Beijing + take-back ordning",
+            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_train",
+            "id2": "usage_cover3",
+            "title": "Tog + blødt cover",
+            "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_ship",
+            "id2": "usage_cover3",
+            "title": "Skib + blødt cover",
+            "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_flight",
+            "id2": "usage_cover3",
+            "title": "Fly + blødt cover",
+            "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_truck",
+            "id2": "usage_cover3",
+            "title": "Lastbil + blødt cover",
+            "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_train",
+            "id2": "usage_cover4",
+            "title": "Tog + blødt cover",
+            "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_ship",
+            "id2": "usage_cover4",
+            "title": "Skib + blødt cover",
+            "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_flight",
+            "id2": "usage_cover4",
+            "title": "Fly + blødt cover",
+            "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_truck",
+            "id2": "usage_cover4",
+            "title": "Lastbil + blødt cover",
+            "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_train",
+            "id2": "usage_cover6",
+            "title": "Tog + cover med metal",
+            "description": "Dette cover har en højere vægt, så toget har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_ship",
+            "id2": "usage_cover6",
+            "title": "Transport med skib af cover 6",
+            "description": "Dette cover har en højere vægt, så containerskibet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_flight",
+            "id2": "usage_cover6",
+            "title": "Transport med fly af cover 6",
+            "description": "Dette cover har en højere vægt, så flyet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_truck",
+            "id2": "usage_cover6",
+            "title": "Transport med lastbil af cover 6",
+            "description": "Dette cover har en højere vægt, så lastbilen har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_train",
+            "id2": "disposal_wasteprevention",
+            "title": "Transport med tog, med mindre emballage",
+            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_ship",
+            "id2": "disposal_wasteprevention",
+            "title": "Transport med skib, med mindre emballage",
+            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_flight",
+            "id2": "disposal_wasteprevention",
+            "title": "Transport med fly, med mindre emballage",
+            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "transport_truck",
+            "id2": "disposal_wasteprevention",
+            "title": "Transport med lastbil, med mindre emballage",
+            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "usage_cover1",
+            "id2": "disposal_designrecycle",
+            "title": "Cover 1, med design til genanvendelse",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "usage_cover2",
+            "id2": "disposal_designrecycle",
+            "title": "Cover 2, med design til genanvendelse",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "usage_cover3",
+            "id2": "disposal_designrecycle",
+            "title": "Cover 3, med design til genanvendelse",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "usage_cover4",
+            "id2": "disposal_designrecycle",
+            "title": "Cover 4, med design til genanvendelse",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "usage_cover1",
+            "id2": "disposal_recycle",
+            "title": "Cover 1, med design til genbrug",
+            "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+        },
+        {
+            "id1": "usage_cover2",
+            "id2": "disposal_recycle",
+            "title": "Cover 2, med design til genbrug",
+            "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "positive": true
+        },
+        {
+            "id1": "usage_cover3",
+            "id2": "disposal_recycle",
+            "title": "Cover 3, med design til genbrug",
+            "description": "Denne covertype kan sjældent genbruges, da det bliver løst"
+        },
+        {
+            "id1": "usage_cover4",
+            "id2": "disposal_recycle",
+            "title": "Cover 4, med design til genbrug",
+            "description": "Denne covertype kan sjældent genbruges, da det bliver løst og misfarvet"
+        },
+        {
+            "id1": "usage_cover5",
+            "id2": "disposal_recycle",
+            "title": "Cover 5, med design til genbrug",
+            "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "usage_cover6",
+            "id2": "disposal_recycle",
+            "title": "Cover 6, med design til genbrug",
+            "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning"
+        },
+        {
+            "id1": "usage_cover6",
+            "id2": "disposal_takeback",
+            "title": "Cover 6, med take-back ordning",
+            "description": "I kan genanvende den indsamlede metal og I sparer CO<sub>2</sub>-udledning og miljøbelastning"
         }
-    }],
-    "scoreLimits":
-    {
+    ],
+    "interactions": [
+        {
+            "id1": "production_billund",
+            "id2": "material_bloedplast",
+            "scores": {
+                "co2": -2,
+                "bio": -1,
+                "economy": -2
+            }
+        }
+    ],
+    "scoreLimits": {
         "co2": 0.75,
         "bio": 0.75,
         "economy": 0.75
     },
-    "scoreMultiplicator":
-    {
+    "scoreMultiplicator": {
         "co2": 1.2,
         "bio": 1.2,
         "economy": 1.2

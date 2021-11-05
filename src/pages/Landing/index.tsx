@@ -189,6 +189,9 @@ const Landing = ({
                   closeButtonText={appData.bossEmailTexts.closeButtonText}
                   message={toDirectorMessage}
                   setMessage={setToDirectorMessage}
+                  directorName={appData.bossEmailTexts.directorName}
+                  directorTitle={appData.bossEmailTexts.directorTitle}
+                  toName={appData.bossEmailTexts.toName}
                 />
                 <ToDirectorModal
                   feedback={appData.finalBossMessage.message}
@@ -196,6 +199,9 @@ const Landing = ({
                   onClose={() => setShowFinalDirectorMessage(false)}
                   closeButtonText={appData.finalBossMessage.closeButtonText}
                   showAnswer={showFinalDirectorMessage}
+                  directorName={appData.bossEmailTexts.directorName}
+                  directorTitle={appData.bossEmailTexts.directorTitle}
+                  toName={appData.bossEmailTexts.toName}
                 />
               </div>
               <ProgressBars

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.ac3340ba.chunk.css",
-    "main.js": "./static/js/main.8ef3b224.chunk.js",
-    "main.js.map": "./static/js/main.8ef3b224.chunk.js.map",
+    "main.css": "./static/css/main.34ea7820.chunk.css",
+    "main.js": "./static/js/main.0ee46385.chunk.js",
+    "main.js.map": "./static/js/main.0ee46385.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.0cbc695e.js",
     "runtime-main.js.map": "./static/js/runtime-main.0cbc695e.js.map",
     "static/css/2.36e235c2.chunk.css": "./static/css/2.36e235c2.chunk.css",
@@ -12,14 +12,16 @@
     "static/js/3.6d1c23fb.chunk.js.map": "./static/js/3.6d1c23fb.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.36e235c2.chunk.css.map": "./static/css/2.36e235c2.chunk.css.map",
-    "static/css/main.ac3340ba.chunk.css.map": "./static/css/main.ac3340ba.chunk.css.map",
+    "static/css/main.34ea7820.chunk.css.map": "./static/css/main.34ea7820.chunk.css.map",
     "static/js/2.4afd807c.chunk.js.LICENSE.txt": "./static/js/2.4afd807c.chunk.js.LICENSE.txt",
     "static/media/semantic.less": "./static/media/outline-icons.ddae9b1b.woff",
     "static/media/bio.25179185.svg": "./static/media/bio.25179185.svg",
     "static/media/call.6200a1c7.svg": "./static/media/call.6200a1c7.svg",
     "static/media/checkmark.7d63c5d9.svg": "./static/media/checkmark.7d63c5d9.svg",
-    "static/media/email_footer_icons.f5dbd01f.svg": "./static/media/email_footer_icons.f5dbd01f.svg",
-    "static/media/email_top.1d221483.svg": "./static/media/email_top.1d221483.svg",
+    "static/media/checkmark_full.68fd8d4f.svg": "./static/media/checkmark_full.68fd8d4f.svg",
+    "static/media/coverup_logo.f7c77d94.svg": "./static/media/coverup_logo.f7c77d94.svg",
+    "static/media/email_footer_icons.c0a2553b.svg": "./static/media/email_footer_icons.c0a2553b.svg",
+    "static/media/email_top.661d8759.svg": "./static/media/email_top.661d8759.svg",
     "static/media/life_logo.d3ceb2a9.svg": "./static/media/life_logo.d3ceb2a9.svg",
     "static/media/logo.0e9c2ec8.svg": "./static/media/logo.0e9c2ec8.svg",
     "static/media/more.8e2f6ab3.svg": "./static/media/more.8e2f6ab3.svg",
@@ -32,7 +34,7 @@
     "static/js/runtime-main.0cbc695e.js",
     "static/css/2.36e235c2.chunk.css",
     "static/js/2.4afd807c.chunk.js",
-    "static/css/main.ac3340ba.chunk.css",
-    "static/js/main.8ef3b224.chunk.js"
+    "static/css/main.34ea7820.chunk.css",
+    "static/js/main.0ee46385.chunk.js"
   ]
 }

@@ -1,7 +1,10 @@
 import React from 'react'
-import { Button, Form, Modal, TextArea } from 'semantic-ui-react';
+import { Button, Form, Header, Modal, TextArea } from 'semantic-ui-react';
 import { ReactComponent as EmailNavbar } from '../../images/email_top.svg';
 import { ReactComponent as EmailFooterIcons } from '../../images/email_footer_icons.svg';
+import { ReactComponent as CheckmarkFull } from '../../images/checkmark_full.svg';
+import { ReactComponent as CoverupLogo } from '../../images/coverup_logo.svg';
+
 
 import './index.less';
 
@@ -16,7 +19,10 @@ interface Props {
   closeButtonText?: string,
   message?: string,
   setMessage?: (message: string) => void,
-  showAnswer?: boolean | undefined
+  showAnswer?: boolean | undefined;
+  directorName?: string;
+  directorTitle?: string;
+  toName?: string;
 }
 
 function ToDirectorModal({
@@ -31,6 +37,9 @@ function ToDirectorModal({
   closeButtonText = '', 
   message='', 
   setMessage = () => {},
+  directorName = '',
+  directorTitle = '',
+  toName = '',
 }: Props) {
   const [sent, setSent] = React.useState(false);
 
@@ -78,9 +87,30 @@ function ToDirectorModal({
           }
           {
             sent && 
-            <>
+            <div className="to-director-modal__answer">
+              <div className="to-director-modal__answer__from-card">
+                <img src="./images/director_avatar.jpg" alt="director" />
+                <div className="to-director-modal__answer__from-card__content">
+                  <Header className="to-director-modal__answer__from-card__content__name" size="medium">
+                    <span dangerouslySetInnerHTML={{__html: directorName}}></span>
+                  </Header>  
+                  <div className="to-director-modal__answer__from-card__content__to">
+                    <p>Til:</p>
+                    <CheckmarkFull />
+                    <p dangerouslySetInnerHTML={{__html: toName}}></p>
+                  </div>
+                </div>
+              </div>
               <p dangerouslySetInnerHTML={{__html: `${feedback}`}} />
-            </>
+
+              <div className="to-director-modal__answer__logo">
+                <CoverupLogo />
+                <div className="to-director-modal__answer__logo__title">
+                  <p dangerouslySetInnerHTML={{__html: directorName}}></p>
+                  <p dangerouslySetInnerHTML={{__html: directorTitle}}></p>
+                </div>
+              </div>
+            </div>
           }
         </Modal.Description>
       </Modal.Content>
