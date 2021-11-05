@@ -100,7 +100,7 @@ const Chat = ({ title, onSubmitted }: Props) => {
         </div>
         <Form>
           <TextArea value={userMessage?.message || ''} disabled placeholder="Besked..."></TextArea>     
-          <Button className={userMessage?.message?.length ? 'pulsate' : ''} primary icon onClick={submit}>
+          <Button className={userMessage?.message?.length ? 'pulsate' : ''} primary icon disabled={isChatLoading} onClick={submit}>
             <Icon name='angle right' />
           </Button>
         </Form>

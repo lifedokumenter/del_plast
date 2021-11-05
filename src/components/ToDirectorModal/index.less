@@ -8,18 +8,25 @@
     border-radius: @toDirectorBorderRadius;
   
     .header, 
-    .actions,
     &:first-child{
       border-radius: @toDirectorBorderRadius;
     }
-  
-    .content {
-      padding: 0;
-      border-radius: @toDirectorBorderRadius !important;
-    }
 
-    .description {
-      padding: 1rem 2.222rem;
+    .actions {
+      border-top: 0;
+      border-bottom-left-radius: @toDirectorBorderRadius;
+      border-bottom-right-radius: @toDirectorBorderRadius;
+    }
+  
+    > .content {
+      padding: 0 !important;
+      border-radius: @toDirectorBorderRadius !important;
+
+      .description {
+        padding: 1rem 2.222rem;
+
+        
+      }
     }
   }
 
@@ -57,8 +64,70 @@
   }
 
   &__email-footer-icons {
-    width: 15.5555rem;
+    width: 80%;
     float: left;
     margin-left: 10px;
+  }
+
+  &__answer {
+
+    > p {
+      padding: 3rem 0 2rem 2rem;
+      font-size: 1.5rem;
+    }
+
+    &__from-card {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 7rem;
+        border-radius: 100%;
+        margin-right: 2rem;
+      }
+
+      &__content {
+        
+        &__name {
+          span {
+            font-size: 1.6rem;
+          }
+        }
+
+        &__to {
+          display: flex;
+          align-items: center;
+          p {
+            margin: 0;
+            font-size: 1.2rem;
+          }
+          svg {
+            width: 1.2rem;
+            margin: 0 0.5rem;
+            margin-bottom: 0.2rem;
+          }
+        }
+      }
+
+    }
+
+    &__logo {
+      width: 40%;
+      margin-left: 2rem;
+      display: flex;
+      align-items: flex-end;
+      border-top: 1px solid @mediumGray;
+      padding: 1rem 0;
+
+      p {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+
+      svg {
+        width: 3.888rem;
+        margin: 0 1rem 0 0;
+      }
+    }
   }
 }
