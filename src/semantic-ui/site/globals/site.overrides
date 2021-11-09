@@ -23,9 +23,9 @@
 	font-weight: bold;
 }
 
-html {
+html, body {
 	@media only screen and (min-width:  @mobileBreakpoint) {
-		font-size: 10px;
+		font-size: 10px; 
 	}
 	@media only screen and (min-width:  @largeMonitorBreakpoint) {
 		font-size: 13px;
