@@ -37,6 +37,23 @@ const Landing = ({
   const [toDirectorMessage, setToDirectorMessage] = React.useState<string>('');
   const [overBudget, setOverBudget] = React.useState<boolean>(false);
   const [showFinalDirectorMessage, setShowFinalDirectorMessage] = React.useState<boolean>(false);
+  const [viewDimensions, setViewDimensions] = React.useState({ 
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+
+  React.useEffect(() => {
+    function handleResize() {
+      setViewDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  });
 
   const interval = React.useRef(setTimeout(() => {}, 0));
 
@@ -46,6 +63,10 @@ const Landing = ({
       setHasInteracted(true);
     }
   }, [hasInteracted, addPendingMessages, setHasInteracted, appData, messages, step]);
+
+  useEffect(() => {
+
+  }, []);
 
   useEffect(() => {
     if (appData && !hasInteracted) {
@@ -147,13 +168,14 @@ const Landing = ({
     setScore(currentScores);
   }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights, appData.interactions, step, appData.scoreLimits]);
 
+
   return(
     <Grid columns={2} stackable>
       <Grid.Row>
         <Grid.Column floated='left' width={step === 6 ? 16 : 12}> 
           {
             !!appData && 
-            <div className="landing">
+            <div className="landing" style={{height:`calc(${viewDimensions.height}px - 17rem)`}}>
               <div className="landing__content">
                 <PChainStep 
                   key={step} 

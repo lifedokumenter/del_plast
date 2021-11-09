@@ -19,6 +19,23 @@ const Chat = ({ title, onSubmitted }: Props) => {
 
   const { messages, addPendingMessages, pendingMessages, setPendingMessages, isChatLoading } = useChat();
   const [userMessage, setUserMessage] = React.useState<ChatMessage | undefined>(pendingMessages?.find( m => m.isUser === true));
+  const [viewDimensions, setViewDimensions] = React.useState({ 
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+
+  React.useEffect(() => {
+    function handleResize() {
+      setViewDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+  });
 
   const messagesContainerRef = React.useRef<null|HTMLDivElement>(null);
 
@@ -69,7 +86,7 @@ const Chat = ({ title, onSubmitted }: Props) => {
               <MoreIcon />
             </div>
           </div>
-          <div className="chat__messages"> 
+          <div className="chat__messages" style={{height:`calc(${viewDimensions.height}px - 13rem)`}}> 
             {
               messages && messages.map( (message: ChatMessage, index: number) => (
                 <div  ref={index === messages.length - 1 ? messagesContainerRef : null} key={index} className={`chat__messages__message ${message?.isUser ? 'chat__messages__message--user' : ''}`}> 

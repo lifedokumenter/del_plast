@@ -1102,24 +1102,24 @@
     "scoreWeights": {
         "co2": {
             "material": 0.35,
-            "production": 0.20,
+            "production": 0.2,
             "transport": 0.05,
-            "usage": 0.30,
-            "disposal": 0.10
+            "usage": 0.3,
+            "disposal": 0.1
         },
         "bio": {
             "material": 0.35,
-            "production": 0.20,
+            "production": 0.2,
             "transport": 0.05,
-            "usage": 0.30,
-            "disposal": 0.10
+            "usage": 0.3,
+            "disposal": 0.1
         },
         "economy": {
-            "material": 0.30,
+            "material": 0.3,
             "production": 0.45,
-            "transport": 0.10,
+            "transport": 0.1,
             "usage": 0.05,
-            "disposal": 0.10
+            "disposal": 0.1
         }
     },
     "feedback": [
