@@ -2,7 +2,7 @@
     "pageTitle": "LCA Pro Tool 3.5",
     "steps": {
         "1": {
-            "title": "Vælg et råstof til jeres covers",
+            "title": "Vælg et råstof til jeres mobilcovers",
             "buttonText": "Vælg råstof",
             "initialChatMessages": [
                 {
@@ -12,7 +12,7 @@
                 },
                 {
                     "initials": "Charlotte",
-                    "message": "Ja - spørg løs her i chatten, hvis vi skal give noget feedback på jeres valg!",
+                    "message": "Ja, prøv at klikke rundt i valgene, vi sidder klar til at give feedback her i chatten.",
                     "type": "economy"
                 }
             ]
@@ -119,7 +119,7 @@
         "toName": "CoverUP ansatte",
         "thanksForMessage": {
             "steps": {
-                "1": "Tak for jeres mail, det er spændende at høre jeres tanker bag at bruge {{choice}} som råstof. <br><br>Jeg glæder mig til at høre mere fra jer!",
+                "1": "Kære udvikliere <br><br>Tak for jeres mail. Det er nogle gode overvejelser I har gjort jer. {{choice}} er helt klart en mulighed jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <b>Line",
                 "2": "Jeg ved at placeringen af fabrikken er et svært valg, men jeg synes at {{choice}} lyder som et godt valg. <br><br>Jeg glæder mig til at høre hvordan I løser transporten så.",
                 "3": "Det giver mening at transportere med {{choice}}, især når fabrikken ligger hvor den gør. <br><br>Tak for indsatsen.",
                 "4": "Det her cover synes jeg virkelig passer godt ind hos CoverUP. {{choice}} har også et kundemarked, det er jeg sikker på!",
@@ -163,22 +163,22 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Vi tænker at bruge olie som råstof til vores covers. Hvad tænker i?"
+                            "message": "Hvad tænker I om at bruge olie som råstof?"
                         },
                         {
                             "initials": "Asger",
-                            "message": "Jeg synes at vi skal gå væk fra at bruge olie - Det udleder alt for meget CO<sub>2</sub></sub>!",
+                            "message": "Jeg synes at vi skal gå væk fra at bruge olie. Det udleder alt for meget CO<sub>2</sub></sub>!",
                             "type": "environment"
-                        },
-                        {
-                            "initials": "Sune",
-                            "message": "Hvis vi bruger olie til vores plast, så skal vi gøre en indsats for at det bliver genanvendt af forbrugeren.",
-                            "type": "communication"
                         },
                         {
                             "initials": "Charlotte",
                             "message": "Prisen på olie er billig og teknologien har vi allerede styr på. God idé.",
                             "type": "economy"
+                        },
+                        {
+                            "initials": "Sune",
+                            "message": "Jeg er enig med Asger, men det er vigtigt at overveje prisen, så coveret ikke bliver for dyrt.",
+                            "type": "communication"
                         }
                     ]
                 },
@@ -188,29 +188,34 @@
                     "description": "Sukkerrør bruges til at lave sukker af, det kan også bruges til at lave bioplast af.",
                     "metadata": {
                         "co2Score": 19,
-                        "bioScore": 88,
+                        "bioScore": 83,
                         "economyScore": 64
                     },
                     "iconType": "bio",
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Vi tænker at bruge sukkerrør som råstof til vores covers. Hvad tænker i?"
+                            "message": "Hvad tænker I om at bruge sukkerrør som råstof?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "CO<sub>2</sub></sub> udledningen er lav og det er godt, men der er nærmest ingen vild natur i en sukkerrørsmark og det er et problem."
+                            "message": "Miljøbelastningne er høj, fordi der ikke er nogen vild natur i en sukkerrørsmark og det synes jeg er et problem."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Det giver mening for mig, at vi bruger et affaldsprodukt som vores råstof. Det vil vores kunder kunne lide."
+                            "message": "Kunderne kan godt lide bioplast!."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Prisen er lidt høj, jeg tror at det er fordi man også bruger affaldet fra sukkerrør i biobrændsel, så efterspørgslen er høj."
+                            "message": "Prisen er lidt høj. Jeg tror at det er fordi sukkerrør bruges til mange forskellige ting."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Ja og vi vil helst ikke have at de fælder regnskov for at få plads til flere marker med sukkerør."
                         }
                     ]
                 },
@@ -219,30 +224,30 @@
                     "title": "Majs",
                     "description": "Majs er en madvare, men man kan også producere bioplast af majs.",
                     "metadata": {
-                        "co2Score": 24,
+                        "co2Score": 25,
                         "bioScore": 81,
-                        "economyScore": 50
+                        "economyScore": 40
                     },
                     "iconType": "bio",
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Vi tænker at bruge majs som råstof til vores covers. Hvad tænker i?"
+                            "message": "Hvad tænker I om at bruge majs som råstof?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "CO<sub>2</sub> er lav og det er godt, der er ikke særlig meget vild natur i en majsmark, men dog lidt mere end der er i en mark med sukkerrør"
+                            "message": "Miljøbelastningne er høj, fordi der ikke er nogen vild natur i en majsmark og det synes jeg er et problem."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Majs er en af de vigtigste fødevarer for verdens fattigste, hvis vi bruger majs vil prisen stige og folk kan sulte."
+                            "message": "Majs er en vigtig fødevare for verdens fattigste. Er det en god idé at bruge majs til at lave plast, når der er folk der sulter?"
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Prisen er god. Vi kan indkøbe majs billigt og teknologien til at lave plast af majs er til at betale."
+                            "message": "Altså prisen er fin, men jeg synes at Sune stiller et vigtigt spørgsmål!"
                         }
                     ]
                 },
@@ -252,30 +257,35 @@
                     "description": "Halm er et restprodukt fra kornproduktion. Man kan også lave bioplast af halm.",
                     "metadata": {
                         "co2Score": 14,
-                        "bioScore": 71,
+                        "bioScore": 55,
                         "economyScore": 86
                     },
                     "iconType": "bio",
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Vi tænker at bruge halm som råstof til vores covers. Hvad tænker i?"
-                        },
-                        {
-                            "initials": "Asger",
-                            "type": "environment",
-                            "message": "CO<sub>2</sub> udledning er meget lav, hvilket er godt for klimaet. Og der er lidt vild natur i en kornmark."
-                        },
-                        {
-                            "initials": "Sune",
-                            "type": "communication",
-                            "message": "Halm er hverken en fødevare eller et uundværligt produkt andre steder. Jeg synes det er en god ide!"
+                            "message": "Hvad tænker I om at bruge halm som råstof?"
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Selvom halm er meget billigt at købe, er teknologien stadig dyr, fordi den er helt ny. Jeg synes det er for risikabelt."
+                            "message": "Det er billigt at købe halm, men teknologien er helt ny og meget dyr. Jeg synes det er for risikabelt."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Halm er ikke en fødevarer, som majs og sukker. Jeg synes det er en god idé!"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Halm er affald fra kornproduktion. Det er smart hvis vi kan bruge det."
                         }
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Ja Asger, for korn vil man altid dyrke, der skal jo brød på bordet."
+                        },
                     ]
                 },
                 {
@@ -291,22 +301,27 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Vi tænker at bruge plastaffald som råstof til vores covers. Hvad tænker i?"
+                            "message": "Hvad tænker I om at bruge plastaffald?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Genanvendelse er godt! Vi skal væk fra at brænde vores affald og frem mod at genanvende det."
-                        },
-                        {
-                            "initials": "Sune",
-                            "type": "communication",
-                            "message": "Genanvendt plast har et godt ry hos forbrugeren, men kan vi godt være sikre på kvaliteten?"
+                            "message": "JA! Lad os da bruge vores plastaffald, i stedet for at brænde det af."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Det kan være svært at indkøbe plasten i store nok mængder, så vi kan risikere at betale en meget høj pris."
+                            "message": "Det er dyrt at indkøbe plastaffald, som er i god kvalitet. Vil kunderne betale prisen?"
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Jeg tror godt kunderne vil betale for et miljøvenligt cover, hvis kvaliteten er god."
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Ja, men der er altså grænser for hvor meget folk vil betale for et mobilcover."
                         }
                     ]
                 }
@@ -336,17 +351,17 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "En fabrik i Danmark er en god idé. Vi slipper for transport og sparer en masse på CO<sub>2</sub> udledningen."
-                        },
-                        {
-                            "initials": "Sune",
-                            "type": "communication",
-                            "message": "Kunderne kan godt lide at købe varer der er lokalt producerede. Det er desuden en sikkert arbejdsmiljø, når det er robotter der står for produktionen"
+                            "message": "En fabrik i Danmark er en god idé. Vi slipper for transport og sparer en masse CO<sub>2</sub> udledning."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Jeg synes godt nok at den fabrik er dyr. Hvis vi skal have råd til den, er der måske andre ting vi ikke får råd til."
+                            "message": "Jeg synes godt nok at den fabrik er dyr! Hvis vi skal have råd til den, er der måske andre ting vi ikke får råd til."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Jeg kan ikke understrege det nok: Høj sikkerhed betyder at medarbejderne kan føle sig sikre på fabrikken. Det er vigtigt!"
                         }
                     ]
                 },
@@ -367,12 +382,12 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "En fabrik i Europa vil stadig spare os for en del transport. Den har også lav forurening. Atomkraft er også CO<sub>2</sub> neutral energi. Jeg synes det ser godt ud!"
+                            "message": "Atomkraft er en CO<sub>2</sub> neutral energi, men det er ikke den mest miljøvenlige."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Kunderne kan godt lide at købe varer der er lokalt producerede og Europa er da lidt lokalt."
+                            "message": "Jeg kan ikke understrege det nok: Høj sikkerhed betyder at medarbejderne kan føle sig sikre på fabrikken. Det er vigtigt!"
                         },
                         {
                             "initials": "Charlotte",
@@ -398,17 +413,17 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Hvis vi vælger den her, så skal vi investere i ny røggasrensning. Jeg er også ærgerlig over at en stor del af energien kommer fra olie og gas."
+                            "message": "Hmm, den her er hverken rigtig god eller rigtig dårlig."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "En fabrik i USA er en god idé. Især hvis vi vil ind på det amerikanske marked."
+                            "message": "Jeg kan ikke understrege det nok: Høj sikkerhed betyder at medarbejderne kan føle sig sikre på fabrikken. Det er vigtigt!"
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Det bliver svært for mig at forhandle en bedre pris, når fabrikken ligger så centralt i Miami. Er der mon en fabrik til en bedre pris?"
+                            "message": "Den ligger i den dyre ende, men det kunne være værre."
                         }
                     ]
                 },
