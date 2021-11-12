@@ -19,7 +19,7 @@
         },
         "2": {
             "title": "Vælg en fabrik til produktion",
-            "buttonText": "Vælg lokation",
+            "buttonText": "Vælg produktion",
             "initialChatMessages": [
                 {
                     "initials": "Asger",
@@ -38,8 +38,8 @@
             "buttonText": "Vælg transport",
             "initialChatMessages": [
                 {
-                    "initials": "Asger",
-                    "type": "environment",
+                    "initials": "Charlotte",
+                    "type": "economy",
                     "message": "I spørger bare løs!"
                 },
                 {
@@ -119,8 +119,8 @@
         "toName": "CoverUP ansatte",
         "thanksForMessage": {
             "steps": {
-                "1": "Kære udvikliere <br><br>Tak for jeres mail. Det er nogle gode overvejelser I har gjort jer. {{choice}} er helt klart en mulighed jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <b>Line",
-                "2": "Jeg ved at placeringen af fabrikken er et svært valg, men jeg synes at {{choice}} lyder som et godt valg. <br><br>Jeg glæder mig til at høre hvordan I løser transporten så.",
+                "1": "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser I har gjort jer. {{choice}} er helt klart en mulighed jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line",
+                "2": "Kære udvilkere <br><br>Tak for jeres mail. Jeg ved at placeringen af fabrikken er et svært valg. {{choice}} er et godt bud. <br><br>Jeg glæder mig til at modtage jeres bud på transport. <br><br>Med venlig hilsen <br>Line",
                 "3": "Det giver mening at transportere med {{choice}}, især når fabrikken ligger hvor den gør. <br><br>Tak for indsatsen.",
                 "4": "Det her cover synes jeg virkelig passer godt ind hos CoverUP. {{choice}} har også et kundemarked, det er jeg sikker på!",
                 "5": "Spændende kombination af valg her, jeg håber at I har tænk godt over hvordan de to kan valg kan spille sammen."
@@ -430,11 +430,11 @@
                 {
                     "id": "production_memphis",
                     "title": "Fabrik i Memphis",
-                    "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Gas",
+                    "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Naturgas",
                     "metadata": {
                         "co2Score": 61,
-                        "bioScore": 65,
-                        "economyScore": 33
+                        "bioScore": 71,
+                        "economyScore": 25
                     },
                     "chatMessages": [
                         {
@@ -442,19 +442,24 @@
                             "message": "Hvad tænker I om at vælge fabrikken i Memphis?"
                         },
                         {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Fabrikken er billig, den kan vi sagtens købe."
+                        },
+                        {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Jeg synes CO<sub>2</sub> udledning og miljøbelastningen er for høj, det kan vi gøre bedre."
+                            "message": "Naturgas lyder jo godt, men det skader natur og miljø meget, når man henter det op fra jorden."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "En fabrik midt i USA er en god idé, hvis vi vil ind på det amerikanske marked."
+                            "message": "Sikkerheden er lav, det kan vi ikke byde vores medarbejdere."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Prisen er god for fabrikken. Men tror I vi skal bruge penge på nye maskiner og alt muligt? Det kan jo blive dyrt."
+                            "message": "Gode pointer, men det kan blive dyrt at fikse de problemer."
                         }
                     ]
                 },
@@ -463,9 +468,9 @@
                     "title": "Fabrik i Dubai",
                     "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Olie",
                     "metadata": {
-                        "co2Score": 44,
+                        "co2Score": 54,
                         "bioScore": 16,
-                        "economyScore": 88
+                        "economyScore": 83
                     },
                     "chatMessages": [
                         {
@@ -475,17 +480,22 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Der er lav miljøbelastning, men den får sin energi fra olie... Det synes jeg ikke er godt nok."
+                            "message": "Miljøbelastningen er lav her, det er godt!"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Robotter der står for produktionen, det lyder godt!"
+                            "message": "Har du ikke noget at sige til at energien kommer fra olie, Asger?"
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Nå ja, men CO<sub>2</sub> udledningen er også ret høj, det må være derfor."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Den er meget dyr, har vi virkelig brug for en helt nybygget fabrik?"
+                            "message": "Den er meget dyr. Har vi virkelig brug for en helt nybygget fabrik?"
                         }
                     ]
                 },
@@ -494,9 +504,9 @@
                     "title": "Fabrik i Shanghai",
                     "description": "Luftforurening: Høj <br> Sikkerhed: Lav <br> Energi: Affaldsafbrænding og kul",
                     "metadata": {
-                        "co2Score": 82,
-                        "bioScore": 46,
-                        "economyScore": 27
+                        "co2Score": 80,
+                        "bioScore": 61,
+                        "economyScore": 15
                     },
                     "chatMessages": [
                         {
@@ -504,50 +514,29 @@
                             "message": "Hvad tænker I om at vælge fabrikken i Shanghai?"
                         },
                         {
-                            "initials": "Asger",
-                            "type": "environment",
-                            "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
-                        },
-                        {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
-                        },
-                        {
-                            "initials": "Charlotte",
-                            "type": "economy",
-                            "message": "Det er en meget god pris."
-                        }
-                    ]
-                },
-                {
-                    "id": "production_beijing",
-                    "title": "Fabrik i Beijing",
-                    "description": "Luftforurening: Lav <br> Sikkerhed: Høj <br> Energi: Kul",
-                    "metadata": {
-                        "co2Score": 90,
-                        "bioScore": 49,
-                        "economyScore": 19
-                    },
-                    "chatMessages": [
-                        {
-                            "isUser": true,
-                            "message": "Hvad tænker I om at vælge fabrikken i Beijing?"
+                            "message": "Sikkerheden er lav, det kan vi ikke byde vores medarbejdere."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Jeg kan ikke stå inde for at vi udleder så meget CO<sub>2</sub>."
-                        },
-                        {
-                            "initials": "Sune",
-                            "type": "communication",
-                            "message": "Jeg vil gerne sikre mig at de mennesker der arbejder på fabrikken har gode forhold, inden jeg kan stå inde for denne fabrik."
+                            "message": "Den udleder virkelig meget CO<sub>2</sub>. Det må skyldes at de bruger kul."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Jeg tror ikke vi kan finde det billigere, så jeg er godt tilfreds."
+                            "message": "Det er en rigtig god pris."
+                        },
+                        {
+                            "initials": "Asger",
+                            "type": "environment",
+                            "message": "Ja, det er klart når den er i så dårlig stand!"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Nå nå ;-)"
                         }
                     ]
                 }
@@ -563,11 +552,11 @@
                 {
                     "id": "transport_flight",
                     "title": "Fly",
-                    "description": "Transport af varer med branchens mest klimavenlige fly.",
+                    "description": "Fly har plads til få varer. Transporttiden er hurtig.",
                     "metadata": {
-                        "co2Score": 69,
-                        "bioScore": 54,
-                        "economyScore": 98
+                        "co2Score": 95,
+                        "bioScore": 60,
+                        "economyScore": 74
                     },
                     "chatMessages": [
                         {
@@ -577,28 +566,38 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Selvom flyet har en lav CO<sub>2</sub> udledning i forhold til andre fly, så er den stadig for høj."
-                        },
-                        {
-                            "initials": "Sune",
-                            "type": "communication",
-                            "message": "Det er godt at varerne er hurtigt fremme."
+                            "message": "Jeg synes det siger sig selv, at det her er et dårligt valg."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Selvom varerne er hurtigt fremme, er det en meget dyr løsning"
+                            "message": "Ah, Asger. Varere er hurtigt fremme, så vi kan undvære et stort lager. Det er en kæmpe fordel."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Men synes du ikke at det er dyrt, Charlotte?"
+                        },
+                        {
+                            "initials": "Charlotte",
+                            "type": "economy",
+                            "message": "Jo, men med en hurtig transport kan vi altid få de varer hjem, som folk vil købe."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Ja, det nytter selvfølgelig ikke noget at have en masse covers liggende på et lager, som ingen gider at købe."
                         }
                     ]
                 },
                 {
                     "id": "transport_ship",
                     "title": "Skib",
-                    "description": "Dine varer sejles langsomt frem. En klimavenlig løsning, til en god pris",
+                    "description": "Containerskibe har plads til mange varer. Transporttiden er langsom",
                     "metadata": {
-                        "co2Score": 20,
+                        "co2Score": 14,
                         "bioScore": 33,
-                        "economyScore": 33
+                        "economyScore": 50
                     },
                     "chatMessages": [
                         {
@@ -608,24 +607,29 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Containerskibe belaster miljøet meget, men der kan også være millioner af varer på et enkelt skib. Det er en rigtig god transportform, når varerne skal langt."
+                            "message": "Der kan være millioner af varer på et enkelt skib. Det er en rigtig god transportform, når varerne skal langt."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg er lidt nervøs for at vores varer er længe undervejs og sårbare for forsinkelser. Det kan give et dårligt ry blandt kunderne."
+                            "message": "Jeg er nervøs for, at vores covers er længe undervejs. Der kan også komme forsinkelser."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Varerne er længe undervejs, så selvom det er en meget billig transportform, så kræver det et større lager."
+                            "message": "Ja, og det betyder at vi skal betale for et stort lager."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Det har du ret i, der er ingen der giver vente 3 uger på at få et mobilcover."
                         }
                     ]
                 },
                 {
                     "id": "transport_train",
                     "title": "Tog",
-                    "description": "Dine varer transporteres med tog, som er en miljøvenlig transportform. ",
+                    "description": "Togtransport har plads til mange covers. Transporthastigheden er langsom.",
                     "metadata": {
                         "co2Score": 28,
                         "bioScore": 24,
@@ -1177,12 +1181,6 @@
             "description": "Olien skal købes og transporteres til Shanghai, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
         },
         {
-            "id1": "production_beijing",
-            "id2": "material_olie",
-            "title": "Olie + fabrik i Beijing",
-            "description": "Olien skal købes og transporteres til Beijing, derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
             "id1": "production_billund",
             "id2": "material_corn",
             "title": "Majs + fabrik i Billund",
@@ -1217,12 +1215,6 @@
             "id2": "material_corn",
             "title": "Majs + fabrik i Shanghai",
             "description": "Majsen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
-            "id1": "production_beijing",
-            "id2": "material_corn",
-            "title": "Majs + fabrik i Beijing",
-            "description": "Majsen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
         },
         {
             "id1": "production_billund",
@@ -1261,12 +1253,6 @@
             "description": "Sukkerrørene kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
         },
         {
-            "id1": "production_beijing",
-            "id2": "material_sugar",
-            "title": "Sukkerrør + fabrik i Beijing",
-            "description": "Sukkerrørene kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
             "id1": "production_billund",
             "id2": "material_straw",
             "title": "Halm + fabrik i Billund",
@@ -1303,12 +1289,6 @@
             "description": "Halmen kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
         },
         {
-            "id1": "production_beijing",
-            "id2": "material_straw",
-            "title": "Halm + fabrik i Beijing",
-            "description": "Halmen kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
             "id1": "production_billund",
             "id2": "material_plast",
             "title": "Plastaffald + fabrik i Billund",
@@ -1343,12 +1323,6 @@
             "id2": "material_plast",
             "title": "Plastaffald + fabrik i Shanghai",
             "description": "Plastaffald kan købes lokalt i Shanghai og derfor sparer I  CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
-            "id1": "production_beijing",
-            "id2": "material_plast",
-            "title": "Plastaffald + fabrik i Beijing",
-            "description": "Plastaffaldet kan købes lokalt i Beijing og derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift"
         },
         {
             "id1": "production_billund",
@@ -1421,30 +1395,6 @@
             "id2": "transport_truck",
             "title": "Fabrik i Shanghai + lastbil",
             "description": "Lastbilen skal transportere varene hele vejen fra Shanghai til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
-            "id1": "production_beijing",
-            "id2": "transport_train",
-            "title": "Fabrik i Beijing + tog",
-            "description": "Toget skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
-            "id1": "production_beijing",
-            "id2": "transport_ship",
-            "title": "Fabrik i Beijing + skib",
-            "description": "Containerskibet skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
-            "id1": "production_beijing",
-            "id2": "transport_flight",
-            "title": "Fabrik i Beijing + fly",
-            "description": "Det er en lang flyvetur fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
-            "id1": "production_beijing",
-            "id2": "transport_truck",
-            "title": "Fabrik i Beijing + lastbil",
-            "description": "Lastbilen skal transportere varene hele vejen fra Beijing til Danmark og I har derfor ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift"
         },
         {
             "id1": "material_olie",
@@ -1540,12 +1490,6 @@
             "id1": "production_shanghai",
             "id2": "disposal_takeback",
             "title": "Fabrik i Shangai + take-back ordning",
-            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
-        },
-        {
-            "id1": "production_beijing",
-            "id2": "disposal_takeback",
-            "title": "Fabrik i Beijing + take-back ordning",
             "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
         },
         {
