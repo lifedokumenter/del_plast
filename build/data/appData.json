@@ -552,7 +552,7 @@
                 {
                     "id": "transport_flight",
                     "title": "Fly",
-                    "description": "Fly har plads til få varer. Transporttiden er hurtig.",
+                    "description": "Mængde af varer: Lav <br>transporttid: Hurtig <br>Krav: Ingen",
                     "metadata": {
                         "co2Score": 95,
                         "bioScore": 60,
@@ -593,7 +593,7 @@
                 {
                     "id": "transport_ship",
                     "title": "Skib",
-                    "description": "Containerskibe har plads til mange varer. Transporttiden er langsom",
+                    "description": "Mængde af varer: Meget høj <br>transporttid: Langsom <br>Krav: Hav",
                     "metadata": {
                         "co2Score": 14,
                         "bioScore": 33,
@@ -629,7 +629,7 @@
                 {
                     "id": "transport_train",
                     "title": "Tog",
-                    "description": "Togtransport har plads til mange covers. Transporthastigheden er langsom.",
+                    "description": "Mængde af varer: Høj <br>transporttid: Middel <br>Krav: Togskinner",
                     "metadata": {
                         "co2Score": 28,
                         "bioScore": 24,
@@ -643,24 +643,24 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Jeg synes det lyder som en god idé."
+                            "message": "Det ser meget godt ud."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Det kan vidst være en langsom transportform."
+                            "message": "Ja, jeg synes I skal overveje om transporttiden kan blive et problem."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Prisen er lidt høj, men det er ikke det der vælter budgettet."
+                            "message": "Prisen er fin nok. Det kræver et lager hvis transporttiden bliver for lang."
                         }
                     ]
                 },
                 {
                     "id": "transport_truck",
                     "title": "Lastbil",
-                    "description": "Billig og fleksibel transport med lastbiler, også mellem Europa og Asien.",
+                    "description": "Mængde af varer: Lav <br>transporttid: Middel <br>Krav: Vej",
                     "metadata": {
                         "co2Score": 77,
                         "bioScore": 69,
@@ -679,12 +679,17 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Lastbil fra Asien til Europa?? Det er godt nok en lang tur i lastbil. Især hvis chaufføren skal sove undervejs."
+                            "message": "Hvis lastbilen skal køre langt, så skal vi sikre os at chaufføren har gode arbejdsforhold."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør. Måske koster det ekstra hvis vi skal have varene transporteret hele vejen fra Asien."
+                            "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør."
+                        },
+                        {
+                            "initials": "Sune",
+                            "type": "communication",
+                            "message": "Nej, jeg synes man hører så meget om dårlige forhold til chauffører. Det synes jeg ikke vi skal støtte."
                         }
                     ]
                 }
