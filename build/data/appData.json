@@ -51,17 +51,22 @@
         },
         "4": {
             "title": "Vælg en covertype",
-            "buttonText": "Vælg Brug",
+            "buttonText": "Vælg brug",
             "initialChatMessages": [
                 {
                     "initials": "Asger",
                     "type": "environment",
-                    "message": "Designet, ja der er jo også miljømæssige fordele og ulemper hvis det."
+                    "message": "Man kan faktisk sige meget om en perosn, ud fra deres cover."
                 },
                 {
                     "initials": "Sune",
                     "type": "communication",
-                    "message": "Ja, og det betyder meget for salget!"
+                    "message": "Har du ikke et cover med et billede af din hund på, Asger?"
+                },
+                {
+                    "initials": "Asger",
+                    "type": "environment",
+                    "message": "Hov hov, nu skal vi ikke blande Snuske ind i det her."
                 }
             ]
         },
@@ -622,7 +627,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Det har du ret i, der er ingen der giver vente 3 uger på at få et mobilcover."
+                            "message": "Det har du ret i, der er ingen der gider vente 3 uger på at få et mobilcover."
                         }
                     ]
                 },
@@ -707,8 +712,8 @@
                     "title": "Hårdt cover med print",
                     "description": "Hård plast med print. Forventet holdbarhed ca. 2 år",
                     "metadata": {
-                        "co2Score": 39,
-                        "bioScore": 41,
+                        "co2Score": 28,
+                        "bioScore": 30,
                         "economyScore": 14
                     },
                     "imageUrl": "./images/cover 1.JPEG",
@@ -736,28 +741,28 @@
                 },
                 {
                     "id": "usage_cover2",
-                    "title": "Hårdt cover, sort",
+                    "title": "Hårdt sort cover",
                     "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år",
                     "metadata": {
-                        "co2Score": 33,
-                        "bioScore": 35,
+                        "co2Score": 26,
+                        "bioScore": 28,
                         "economyScore": 7
                     },
                     "imageUrl": "./images/cover 2.JPEG",
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om dette cover?"
+                            "message": "Hvad tænker I om det sorte cover?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Hård plast egner sig godt til genanvendelse, hvis vi altså kan få folk til at affaldssortere.. Men det er en anden sag, jeg siger GO!"
+                            "message": "Det vigtigste ved brug er hvor længe det kan bruges. 2 år lyder rimeligt for et cover."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Dette cover ville jeg selv foretrække. "
+                            "message": "Ja, efter 2 år har det nok fået de slag det kan klare. "
                         },
                         {
                             "initials": "Charlotte",
@@ -771,9 +776,9 @@
                     "title": "Blødt cover med print",
                     "description": "Bøjelig plast, farvet eller med print. Forventet holdbarhed ca. 1 år",
                     "metadata": {
-                        "co2Score": 40,
-                        "bioScore": 44,
-                        "economyScore": 15
+                        "co2Score": 48,
+                        "bioScore": 51,
+                        "economyScore": 19
                     },
                     "imageUrl": "./images/cover 3.JPEG",
                     "chatMessages": [
@@ -800,12 +805,12 @@
                 },
                 {
                     "id": "usage_cover4",
-                    "title": "Blødt cover, gennemsigtigt",
+                    "title": "Blødt gennemsigtigt cover",
                     "description": "Bøjelig plast, gennemsigtigt. Forventet holdbarhed ca. 1 år.",
                     "metadata": {
-                        "co2Score": 35,
-                        "bioScore": 36,
-                        "economyScore": 9
+                        "co2Score": 45,
+                        "bioScore": 47,
+                        "economyScore": 15
                     },
                     "imageUrl": "./images/cover 4.JPEG",
                     "chatMessages": [
@@ -835,9 +840,9 @@
                     "title": "Hårdt cover med læder",
                     "description": "Plast betrukket med læder. Forventet holdbarhed ca. 2,5 år",
                     "metadata": {
-                        "co2Score": 47,
-                        "bioScore": 37,
-                        "economyScore": 37
+                        "co2Score": 66,
+                        "bioScore": 50,
+                        "economyScore": 33
                     },
                     "imageUrl": "./images/cover 5.JPEG",
                     "chatMessages": [
@@ -869,7 +874,7 @@
                     "metadata": {
                         "co2Score": 69,
                         "bioScore": 51,
-                        "economyScore": 29
+                        "economyScore": 37
                     },
                     "imageUrl": "./images/cover 6.JPEG",
                     "chatMessages": [
