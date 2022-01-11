@@ -1,124 +1,78 @@
 import './App.less';
 import React from 'react';
-import { Grid, Image, Header } from 'semantic-ui-react';
-import Chat from './components/Chat';
+import { Button, Loader, Modal } from 'semantic-ui-react';
 import Navbar from './components/Navbar';
-import ProgressBars from './components/ProgressBars';
-import RawMaterialDetails from './components/RawMaterialDetails';
-import RawMaterialsSelector from './components/RawMaterialSelector';
-
-import { RawMaterial } from './interfaces/RawMaterial'; 
+import Landing from './pages/Landing';
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
-  
-  const [selectedMaterial, setSeletedMaterial] = React.useState<RawMaterial | undefined>();
-  const [selectedSubMaterial, setSeletedSubMaterial] = React.useState<RawMaterial | undefined>();
-  const [enableMaterialSelect, setEnableMaterialSelect] = React.useState<boolean>(false);
-  const [appData, setAppData] = React.useState<any | undefined>();
-  const [chatMessage, setChatMessage] =  React.useState<string>();
-  const [chatAnswers, setChatAnswers] =  React.useState<any[] | undefined>([]);
-  
 
-  const onMaterialSelect = (material: RawMaterial | undefined) => {
-    setSeletedSubMaterial(undefined);
-    setSeletedMaterial(material);
-    setEnableMaterialSelect(false);
-    setDefaultChatMessage(appData);
-  }
-
-  const onSubMaterialSelect = (material: RawMaterial | undefined) => {
-    setSeletedSubMaterial(material);
-    setEnableMaterialSelect(false);
-    setChatMessage(material?.chatMessage);
-    setChatAnswers(material?.chatAnswers);
-  }
+  const [appData, setAppData] = React.useState<any | null>();
+  const [showTurnTablet, setShowTurnTablet] = React.useState<boolean>(false);
 
   React.useEffect(()=> {
-    fetch('/data/appData.json')
+    fetch(`${process.env.REACT_APP_ROOT_DIR || './'}data/appData.json?nocache='${(new Date()).getTime()}`)
       .then(res=>res.json())
       .then( data => {
         setAppData(data);
-        setDefaultChatMessage(data);
       }
     );
   }, []);
 
-  const setDefaultChatMessage = (data: any) => {
-    setChatMessage(data?.chatMessage);
-    setChatAnswers(data?.chatAnswers);
-  }
+  React.useEffect(() => {
+    const listener = window.addEventListener('resize', e => {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+      setShowTurnTablet(isTablet && window.innerWidth < window.innerHeight); // is in tablet portrait mode if true
+    });
+    return listener;
+  },[])
 
   return (
     <div className="App">
       {
-        appData &&
-        <>
-          <Navbar title={appData?.pageTitle} />
-          <Grid columns={2} stackable>
-            <Grid.Row>
-              <Grid.Column floated='left' width={12}>
-                <div className="App-materials">
-                  <RawMaterialsSelector 
-                    materials={appData?.materials} 
-                    selected={selectedMaterial} 
-                    onSelect={onMaterialSelect}
-                  />
-                  {
-                    !!selectedMaterial &&
-                    <>
-                      <RawMaterialsSelector 
-                        materials={selectedMaterial?.subMaterials || []} 
-                        selected={selectedSubMaterial} 
-                        onSelect={onSubMaterialSelect} 
-                        vertical={true}
-                      />
-                      {
-                        !selectedSubMaterial &&
-                        <Header className="App-materials-header-type" size='large'>{appData?.chooseTypeHeader}</Header>
-                      }
-                    </>
-                  }
-                  {
-                    !!selectedSubMaterial &&
-                    <ProgressBars 
-                      co2={selectedSubMaterial?.metadata?.co2Score} 
-                      bio={selectedSubMaterial?.metadata?.bioScore} 
-                      economy={selectedSubMaterial?.metadata?.economyScore}
-                      co2Label={appData?.medatadataHeaders?.co2} 
-                      bioLabel={appData?.medatadataHeaders?.bio} 
-                      economyLabel={appData?.medatadataHeaders?.economy}
-                    />
-                  }
-                  {
-                    !selectedMaterial &&
-                    <>
-                      <Header className="App-materials-header" size='large'>{appData?.chooseMaterialHeader}</Header>
-                      <Image className="App-materials-frontpage-img" src={appData?.frontPageImage} />
-                    </>
-                  }
-                  {
-                    !!selectedSubMaterial && 
-                    <RawMaterialDetails 
-                      id={selectedSubMaterial.id}
-                      title={selectedSubMaterial.title}
-                      description={selectedSubMaterial.description}
-                      imageUrl={selectedSubMaterial.imageUrl}
-                      selectedHeader={appData?.emailText.writeEmail}
-                      feedback={appData?.emailText.thanksForMessage}
-                      enableSelect={enableMaterialSelect}
-                    />
-                  }
-                </div>        
-              </Grid.Column>
-              <Grid.Column floated='right' width={4}>
-                <Chat message={chatMessage} answers={chatAnswers} onSubmitted={() => {setEnableMaterialSelect(true)}} ></Chat>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </>
+        !appData && 
+        <Loader />
       }
+      {
+        appData && 
+        <Router>
+          <>
+            <Navbar title={appData?.pageTitle}/>
+            <Switch>
+              <Route exact={true} path="/">
+                <Landing appData={appData} /> 
+              </Route>
+              <Route path="/step/:stepNo">
+                <Landing appData={appData} /> 
+              </Route>
+            </Switch>
+          </>
+        </Router>
+      }
+      <Modal
+        onClose={() => setShowTurnTablet(false)}
+        onOpen={() => setShowTurnTablet(true)}
+        open={showTurnTablet}
+      >
+        <Modal.Header>
+        {appData?.tabletFeedback?.title}
+        </Modal.Header>
+        <Modal.Content>
+          <p>{appData?.tabletFeedback?.message}</p>
+        </Modal.Content>
+        <Modal.Actions>
+          <Button positive onClick={() => setShowTurnTablet(false)}>
+            {appData?.tabletFeedback?.btnText}
+          </Button>
+        </Modal.Actions>
+      </Modal>
     </div>
-  );
+  ); 
 }
 
 export default App;

@@ -1,0 +1,36 @@
+@import '../../semantic-ui/site/globals/site.variables';
+
+.feedback-modal {
+
+  &__feedback {
+    margin-bottom: 2rem;
+
+    .ui.header {
+      display: flex;
+      align-items: center;
+    }
+
+    &__positive,
+    &__negative {
+      padding: 0 .7rem;
+      color: @red;
+    }
+
+    &__positive {
+      color: @lightGreen;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .ui.header {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+  }
+}

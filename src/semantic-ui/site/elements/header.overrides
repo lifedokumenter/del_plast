@@ -3,13 +3,16 @@
 *******************************/
 
 .ui.header {
-  font-family: 'Italian Plate No2';
-  font-weight: 800;
-  font-style: italic;
+  font-weight: normal;
 }
 
 .ui.header.large {
   font-size: 3em;
+  font-weight: bold;
+}
+
+.ui.header.medium {
+  font-size: 1.22rem;
 }
 
 .ui.header.huge {

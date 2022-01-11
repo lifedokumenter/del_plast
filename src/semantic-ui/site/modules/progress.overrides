@@ -2,8 +2,17 @@
          Site Overrides
 *******************************/
 
+@uiProgressBarRadius: 20px;
+@uiProgressBarHeight: 1.444rem;
+
 .ui.progress {
+  background: @gray;
+  border-radius: @uiProgressBarRadius;
+  height: @uiProgressBarHeight;
+
   .bar {
-    transition: all .3s;
+    transition: width .3s;
+    border-radius: @uiProgressBarRadius;
+    height: @uiProgressBarHeight;
   }
 }

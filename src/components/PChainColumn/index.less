@@ -1,0 +1,31 @@
+@import '../../semantic-ui/site/globals/site.variables';
+
+.p-chain-column {
+
+  padding: .5rem 0;
+  width: 100%;
+
+  &.striped {
+    &:nth-child(even) {
+      background-color: @mediumGray;
+      padding: 1 .5rem;
+    }
+  }
+
+  > .ui.medium.header {
+    color: black;
+    font-size: 1.5rem;
+  }
+  &.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .ui.card {
+      margin-top: 0;
+      &:last-child {
+        margin-bottom: 0.611rem;
+      }
+    }
+  }
+}

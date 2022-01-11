@@ -3,16 +3,28 @@
 *******************************/
 
 /* colors (from LIFE Designguide) */
-@blue: #003877;
-@green: #00AA78;
-@yellow: #FFF47C;
-@gray: #DCDCDC;
-@back: #000000;
-@red: #EE404A;
-@teal: #00C8FF;
+@blue           : #00C0F3;
+@green          : #046961;
+@darkGreen     : #033030;
+@lightGreen     : #16C774;
+@yellow         : #FBBF2E;
+@gray           : #DBDEDF;
+@darkGray       : #B3B2B3;
+@mediumDarkGray : #ADADAD;
+@mediumGray     : #EEEEEE;
+@lightGray      : #F5F5F5;
+@back           : #000000;
+@red            : #FD535A;
+@teal           : #00C8FF;
+@orange         : #FF9B45;
+@olive          : #32CD32;
+@violet         : #EE82EE;
+@pink           : #FF1493;
+@brown          : #A52A2A;
+@black          : #000000;
 
-@primaryColor: #003877;
-@secondaryColor: @teal;
+@primaryColor: @lightGreen;
+@secondaryColor: @darkGreen;
 
 @pageBackground: #ffffff;
 
@@ -23,4 +35,6 @@
 
 /* fonts */
 @importGoogleFonts: false;
-@fontName: 'Italian Plate No2 Expanded', 'Arial Regular';
+@fontName: 'Corbel', 'Arial Regular';
+@emSize: 18px;
+@relativeBig: 1.5rem;

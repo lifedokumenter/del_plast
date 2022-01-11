@@ -1,3 +1,54 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+.ui.card {
+    box-shadow: none !important;
+    border: 4px solid transparent;
+    border-radius: 7px;
+    padding: 0.555rem;
+    transition: border-color .3s ease-in;
+}
+
+.ui.card.green {
+    border-color: @lightGreen;
+}
+
+.ui.card > :first-child {
+    border-top: 2px solid @green !important;
+}
+
+.ui.card > .content {
+    box-shadow: none !important;
+    border: 2px solid @green;
+    border-radius: 7px !important;
+    padding: 0.888rem;
+
+    .header:not(.ui) {
+        line-height: 1;
+        vertical-align: middle;
+        word-break: break-word;
+        margin-top: 0;
+    }
+}
+
+.ui.card.small {
+    padding: 0.277rem;
+    > .content {
+        height: 4.166rem;
+        display: flex;
+        align-items: center;
+        padding: 0 1.111rem;
+        .header:not(.ui) {
+            font-size: 1.333rem;
+        }
+    }
+}
+
+.ui.cards a.card:hover, 
+.ui.link.cards .card:hover,
+a.ui.card:hover, 
+.ui.link.card:hover {
+    transform: none;
+    border: 4px solid @lightGreen;
+}
