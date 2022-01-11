@@ -40,7 +40,7 @@ const PChainOptionCard = ({pChainOption, isDisabled, isSelected, onSelect, showD
           <Card.Description content={
               <>
                 <p dangerouslySetInnerHTML={{__html: pChainOption.description || ''}}/>
-                {icon}
+                {/* {icon} */}
               </>
             } 
           />
