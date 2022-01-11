@@ -130,7 +130,9 @@
                 "4": "Kære udvilkere <br><br>Tak for jeres mail. Det cover synes jeg virkelig passer godt ind hos CoverIt. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line",
                 "5": "Kære udvilkere <br><br>Tak for jeres mail. Spændende kombination af valg her, jeg håber at I har tænk godt over hvordan de to kan valg kan spille sammen. <br><br>Med venlig hilsen <br>Line"
             }
-        }
+        },
+        "messagePlaceholder": "Skriv en email til chefen hvor i argumenterer for jeres valg {{choice}}",
+        "finalMessagePlaceholder": "Besked..."
     },
     "finalBossMessage": {
         "message": "Kære udviklere, <br><br> Tak for jeres store indsats! Jeg glæder mig til at høre jeres præsentation, hvor I virkelig kan komme med alle jeres argumenter for jeres valg. <br><br> Med venlig hilsen <br>Line",
@@ -2476,5 +2478,22 @@
         "co2": 1.2,
         "bio": 1.2,
         "economy": 1.2
-    }
+    },
+    "alreadyAnsweredMessages": [
+        {
+            "initials": "Sune",
+            "type": "communication",
+            "message": "Vi har ikke tid til at svare på de samme spørgsmål"
+        },
+        {
+            "initials": "Charlotte",
+            "type": "economy",
+            "message": "Come on - det har vi svaret på"
+        }
+    ],
+    "tabletFeedback": {
+        "title":"Ved din skærm",
+        "message": "Din tablet er i portrait mode. Ved din tablet for at få den bedste oplevelse",
+        "btnText": "Ok"
+    } 
 }

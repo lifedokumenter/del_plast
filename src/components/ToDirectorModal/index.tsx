@@ -3,8 +3,6 @@ import { Button, Form, Header, Modal, TextArea } from 'semantic-ui-react';
 import { ReactComponent as EmailNavbar } from '../../images/email_top.svg';
 import { ReactComponent as EmailFooterIcons } from '../../images/email_footer_icons.svg';
 import { ReactComponent as CheckmarkFull } from '../../images/checkmark_full.svg';
-import { ReactComponent as CoverupLogo } from '../../images/coverup_logo.svg';
-
 
 import './index.less';
 
@@ -23,6 +21,7 @@ interface Props {
   directorName?: string;
   directorTitle?: string;
   toName?: string;
+  placeholder?: string;
 }
 
 function ToDirectorModal({
@@ -40,6 +39,7 @@ function ToDirectorModal({
   directorName = '',
   directorTitle = '',
   toName = '',
+  placeholder = '',
 }: Props) {
   const [sent, setSent] = React.useState(false);
 
@@ -81,7 +81,7 @@ function ToDirectorModal({
                 </div>
               </div>
               <Form>
-                <TextArea value={message} placeholder='Besked...' onChange={(ev) => setMessage(ev.target.value)} />
+                <TextArea value={message} placeholder={placeholder || 'Besked...'} onChange={(ev) => setMessage(ev.target.value)} />
               </Form>
             </>
           }
@@ -104,7 +104,8 @@ function ToDirectorModal({
               <p dangerouslySetInnerHTML={{__html: `${feedback}`}} />
 
               <div className="to-director-modal__answer__logo">
-                <CoverupLogo />
+                {/* <CoverupLogo /> */}
+                <img className="to-director-modal__answer__logo__img" src="./images/coverup_logo.svg" alt="logo" />
                 <div className="to-director-modal__answer__logo__title">
                   <p dangerouslySetInnerHTML={{__html: directorName}}></p>
                   <p dangerouslySetInnerHTML={{__html: directorTitle}}></p>
