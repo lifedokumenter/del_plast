@@ -6,6 +6,7 @@ import { useChat } from '../../contexts/chatContext';
 import { usePChainChoices } from '../../contexts/PChainChoicesContext';
 import PChainOptionCard from '../PChainOptionCard';
 import { Header } from 'semantic-ui-react';
+import { ChatMessage } from '../../interfaces/ChatMessage';
 
 interface PChainColumnProps { 
   title: string;
@@ -17,19 +18,41 @@ interface PChainColumnProps {
   multipleChoicePerColumn?: boolean;
   striped?: boolean;
   maxChoices?: number|undefined;
+  appData: any,
 }
 
-const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice, multipleChoicePerColumn, striped, maxChoices}:PChainColumnProps) => {
+const PChainColumn = ({title, PChainOptions, wrap, showDescription, size, multipleChoice, multipleChoicePerColumn, striped, maxChoices, appData}:PChainColumnProps) => {
 
-  const { setPendingMessages } = useChat(); 
+  const { setPendingMessages, messages } = useChat(); 
   const { activePChainChoice, setActivePChainChoice, togglePChainChoice, pChainChoices, disabledPChainChoices } = usePChainChoices();
 
+  const hasAlreadyAsked = (mArr:ChatMessage[]) => {
+    const uMsg:ChatMessage|undefined = mArr.find((m:ChatMessage) => m?.isUser);
+    if (uMsg) {
+      const msg:ChatMessage[] = messages.filter((m:ChatMessage) => m?.message === uMsg?.message);
+      if (msg?.length) {
+        return uMsg;
+      }
+    }
+  }
+
   const selectPChainOption = (option: PChainOption) => {
+    let alreadyAnweredMsg;
+    let msgs = option.chatMessages || [];
+    if (msgs) {
+      alreadyAnweredMsg = hasAlreadyAsked(msgs);
+      if (alreadyAnweredMsg) {
+        const answers = appData.alreadyAnsweredMessages || [];
+        const randAnswer = answers[Math.floor(Math.random()*answers.length)];
+        msgs = [alreadyAnweredMsg, randAnswer];
+      }
+    }
+
     if (multipleChoice) {
       const wasToggledOn = togglePChainChoice(option, multipleChoicePerColumn);
-      setPendingMessages(wasToggledOn && option.chatMessages ? option.chatMessages : []);
+      setPendingMessages(wasToggledOn && msgs ? msgs : []);
     } else {
-      setPendingMessages(option.chatMessages || []);
+      setPendingMessages(msgs);
       setActivePChainChoice(option);
     }
   }

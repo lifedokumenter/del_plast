@@ -1,6 +1,6 @@
 import './App.less';
 import React from 'react';
-import { Loader } from 'semantic-ui-react';
+import { Button, Loader, Modal } from 'semantic-ui-react';
 import Navbar from './components/Navbar';
 import Landing from './pages/Landing';
 import {
@@ -12,6 +12,7 @@ import {
 function App() {
 
   const [appData, setAppData] = React.useState<any | null>();
+  const [showTurnTablet, setShowTurnTablet] = React.useState<boolean>(false);
 
   React.useEffect(()=> {
     fetch(`${process.env.REACT_APP_ROOT_DIR || './'}data/appData.json?nocache='${(new Date()).getTime()}`)
@@ -21,6 +22,15 @@ function App() {
       }
     );
   }, []);
+
+  React.useEffect(() => {
+    const listener = window.addEventListener('resize', e => {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isTablet = /(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(userAgent);
+      setShowTurnTablet(isTablet && window.innerWidth < window.innerHeight); // is in tablet portrait mode if true
+    });
+    return listener;
+  },[])
 
   return (
     <div className="App">
@@ -44,6 +54,23 @@ function App() {
           </>
         </Router>
       }
+      <Modal
+        onClose={() => setShowTurnTablet(false)}
+        onOpen={() => setShowTurnTablet(true)}
+        open={showTurnTablet}
+      >
+        <Modal.Header>
+        {appData?.tabletFeedback?.title}
+        </Modal.Header>
+        <Modal.Content>
+          <p>{appData?.tabletFeedback?.message}</p>
+        </Modal.Content>
+        <Modal.Actions>
+          <Button positive onClick={() => setShowTurnTablet(false)}>
+            {appData?.tabletFeedback?.btnText}
+          </Button>
+        </Modal.Actions>
+      </Modal>
     </div>
   ); 
 }

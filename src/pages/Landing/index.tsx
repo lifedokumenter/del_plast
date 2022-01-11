@@ -214,6 +214,7 @@ const Landing = ({
                   directorName={appData.bossEmailTexts.directorName}
                   directorTitle={appData.bossEmailTexts.directorTitle}
                   toName={appData.bossEmailTexts.toName}
+                  placeholder={appData.bossEmailTexts.messagePlaceholder?.split('{{choice}}').join('af ' + activePChainChoice?.title || '')}
                 />
                 <ToDirectorModal
                   feedback={appData.finalBossMessage.message}
@@ -224,6 +225,7 @@ const Landing = ({
                   directorName={appData.bossEmailTexts.directorName}
                   directorTitle={appData.bossEmailTexts.directorTitle}
                   toName={appData.bossEmailTexts.toName}
+                  placeholder={appData.bossEmailTexts.finalMessagePlaceholder}
                 />
               </div>
               <ProgressBars
