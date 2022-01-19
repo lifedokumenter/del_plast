@@ -1032,8 +1032,8 @@
                     "title": "Mærkning på produkt",
                     "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres.",
                     "metadata": {
-                        "co2Score": -1,
-                        "bioScore": -2,
+                        "co2Score": -2,
+                        "bioScore": -4,
                         "economyScore": 25
                     },
                     "chatMessages": [
@@ -1202,16 +1202,16 @@
     ],
     "scoreWeights": {
         "co2": {
-            "material": 0.35,
+            "material": 0.30,
             "production": 0.2,
-            "transport": 0.05,
+            "transport": 0.1,
             "usage": 0.3,
             "disposal": 0.1
         },
         "bio": {
-            "material": 0.35,
+            "material": 0.30,
             "production": 0.2,
-            "transport": 0.05,
+            "transport": 0.1,
             "usage": 0.3,
             "disposal": 0.1
         },
@@ -2056,9 +2056,9 @@
             "id1": "production_miami",
             "id2": "transport_flight",
             "scores": {
-                "co2": 3,
-                "bio": 2,
-                "economy": 1}
+                "co2": 6,
+                "bio": 5,
+                "economy": 2}
             },
             {
             "id1": "production_memphis",
@@ -2072,17 +2072,17 @@
             "id1": "production_memphis",
             "id2": "transport_flight",
             "scores": {
-                "co2": 3,
-                "bio": 2,
-                "economy": 1}
+                "co2": 7,
+                "bio": 6,
+                "economy": 2}
             },
             {
             "id1": "production_dubai",
             "id2": "transport_flight",
             "scores": {
-                "co2": 1,
-                "bio": 1,
-                "economy": 0}
+                "co2": 4,
+                "bio": 3,
+                "economy": 1}
             },
             {
             "id1": "production_dubai",
@@ -2112,9 +2112,9 @@
             "id1": "production_shanghai",
             "id2": "transport_flight",
             "scores": {
-                "co2": 3,
-                "bio": 2,
-                "economy": 1}
+                "co2": 6,
+                "bio": 5,
+                "economy": 2}
             },
             {
             "id1": "production_shanghai",
@@ -2467,7 +2467,39 @@
                 "co2": -3,
                 "bio": -3,
                 "economy": -3}
-            }
+            },
+            {
+            "id1": "disposal_designrecycle",
+            "id2": "disposal_sticker",
+            "scores": {
+                "co2": -2,
+                "bio": -2,
+                "economy": 0}
+            },
+            {
+            "id1": "disposal_designrecycle",
+            "id2": "disposal_takeback",
+            "scores": {
+                "co2": -2,
+                "bio": -2,
+                "economy": 0}
+            },
+        {
+            "id1": "disposal_recycle",
+            "id2": "disposal_takeback",
+            "scores": {
+                "co2": -3,
+                "bio": -3,
+                "economy": 0}
+            },
+            {
+            "id1": "disposal_sticker",
+            "id2": "disposal_takeback",
+            "scores": {
+                "co2": -1,
+                "bio": -1,
+                "economy": 0}
+            }        
     ],
     "scoreLimits": {
         "co2": 0.75,
