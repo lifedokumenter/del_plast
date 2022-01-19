@@ -1,5 +1,5 @@
 {
-    "pageTitle": "LCA Pro Tool 3.5",
+    "pageTitle": "LCA Pro Tool",
     "steps": {
         "1": {
             "title": "Vælg et råstof til jeres mobilcovers",
@@ -7,12 +7,12 @@
             "initialChatMessages": [
                 {
                     "initials": "Asger",
-                    "message": "Det bliver spændende at komme i gang med vores LCA",
+                    "message": "Hej alle sammen! Det bliver spændende at komme i gang med vores LCA.",
                     "type": "environment"
                 },
                 {
                     "initials": "Charlotte",
-                    "message": "Ja, prøv at klikke rundt i valgene, vi sidder klar til at give feedback her i chatten.",
+                    "message": "Ja, prøv at klikke rundt i de forskellige råstoffer. Vi sidder klar til at give feedback her i chatten.",
                     "type": "economy"
                 }
             ]
@@ -24,7 +24,7 @@
                 {
                     "initials": "Asger",
                     "type": "environment",
-                    "message": "Nu skal vi vælge en fabrik til produktion, det har jeg mange holdninger til!"
+                    "message": "Nu skal vi vælge en fabrik til produktionen. Det har jeg mange holdninger til!"
                 },
                 {
                     "initials": "Sune",
@@ -45,7 +45,7 @@
                 {
                     "initials": "Sune",
                     "type": "communication",
-                    "message": "Ja, så må vi se om vi kan blive enige denne gang."
+                    "message": "Ja, så må vi se, om vi kan blive enige denne gang."
                 }
             ]
         },
@@ -61,7 +61,7 @@
                 {
                     "initials": "Sune",
                     "type": "communication",
-                    "message": "Har du ikke et cover med et billede af din hund på, Asger?"
+                    "message": "Har du ikke et billede af din hund på dit cover, Asger?"
                 },
                 {
                     "initials": "Asger",
@@ -77,12 +77,12 @@
                 {
                     "initials": "Charlotte",
                     "type": "economy",
-                    "message": "Her kan I vælge to, men husk nu økonomien!"
+                    "message": "I kan vælge to strategier, men pas på det ikke bliver for dyrt!"
                 },
                 {
                     "initials": "Sune",
                     "type": "communication",
-                    "message": "Ja, og tænk over hvordan jeres valg spiller sammen!"
+                    "message": "Ja, og tænk over hvordan jeres valg spiller sammen."
                 }
             ]
         },
@@ -100,7 +100,7 @@
     },
     "initialMessagesDelay": 1,
     "medatadataHeaders": {
-        "co2": "CO<sub>2</sub> udledning",
+        "co2": "CO<sub>2</sub>-udledning",
         "bio": "Miljøbelastning",
         "economy": "Udgift"
     },
@@ -113,29 +113,29 @@
         "subject": "Vores valg af",
         "closeButtonText": "Luk",
         "choices": {
-            "1": "Råstof",
-            "2": "Produktion",
-            "3": "Transport",
-            "4": "Brug",
-            "5": "Bortskaffelse"
+            "1": "råstof",
+            "2": "produktion",
+            "3": "transport",
+            "4": "brug",
+            "5": "bortskaffelse"
         },
         "directorName": "Line Ravn Sørensen",
         "directorTitle": "Direktør, CoverUP ",
         "toName": "CoverUP ansatte",
         "thanksForMessage": {
             "steps": {
-                "1": "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser I har gjort jer. {{choice}} er helt klart en mulighed jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line",
+                "1": "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser, I har gjort jer. {{choice}} er helt klart en mulighed, jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line",
                 "2": "Kære udvilkere <br><br>Tak for jeres mail. Jeg ved at placeringen af fabrikken er et svært valg. {{choice}} er et godt bud. <br><br>Jeg glæder mig til at modtage jeres bud på transport. <br><br>Med venlig hilsen <br>Line",
                 "3": "Kære udvilkere <br><br>Tak for jeres mail. {{choice}} lyder godt. Jeg stoler på at I har haft leveringstid med i jeres overvejelser. <br><br>Tak for indsatsen. <br><br>Med venlig hilsen <br>Line",
                 "4": "Kære udvilkere <br><br>Tak for jeres mail. Det cover synes jeg virkelig passer godt ind hos CoverUP. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line",
                 "5": "Kære udvilkere <br><br>Tak for jeres mail. Spændende kombination af valg her, jeg håber at I har tænk godt over hvordan de to kan valg kan spille sammen. <br><br>Med venlig hilsen <br>Line"
             }
         },
-        "messagePlaceholder": "Skriv en email til chefen hvor i argumenterer for jeres valg {{choice}}",
+        "messagePlaceholder": "Skriv en email til chefen, hvor I argumenterer for jeres valg {{choice}}",
         "finalMessagePlaceholder": "Besked..."
     },
     "finalBossMessage": {
-        "message": "Kære udviklere, <br><br> Tak for jeres store indsats! Jeg glæder mig til at høre jeres præsentation, hvor I virkelig kan komme med alle jeres argumenter for jeres valg. <br><br> Med venlig hilsen <br>Line",
+        "message": "Kære udviklere, <br><br> Tak for jeres store indsats! Jeg glæder mig til at høre jeres præsentation, hvor I kan komme med alle jeres gode argumenter for jeres valg. <br><br> Med venlig hilsen <br>Line",
         "closeButtonText": "Luk",
         "messageDelay": 2
     },
@@ -143,14 +143,14 @@
         "writeEmail": "Skriv en mail til chefen hvor i argumenterer for jeres valg af "
     },
     "feedbackText": {
-        "title": "LCA Analyse",
-        "description": "Analysen af denne LCA peger på følgende fordele og ulemper mellem valgene:",
+        "title": "",
+        "description": "Analysen af denne LCA peger på følgende fordele og ulemper:",
         "cancelBtnText": "Rediger valg",
         "submitBtnText": "Godkend valg",
-        "approvedDescription": "Tag et billede at jeres valg, så I kan bruge det i jeres præsentation",
+        "approvedDescription": "Tag et billede at jeres valg, så I kan bruge det i jeres præsentation.",
         "approvedBtnText": "OK"
     },
-    "aboveLimit": "Dit budget er overskredet. Se om du ikke kan foretage nogle andre valg",
+    "aboveLimit": "Dit budget er overskredet. Træf nye valg for at sænke udgifterne.",
     "material": [
         {
             "id": "material",
