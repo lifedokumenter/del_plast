@@ -712,7 +712,7 @@
                 {
                     "id": "usage_cover1",
                     "title": "Hårdt cover med print",
-                    "description": "Hård plast med print. Forventet holdbarhed ca. 2 år",
+                    "description": "Hård plast med print. Forventet holdbarhed ca. 2 år.",
                     "metadata": {
                         "co2Score": 28,
                         "bioScore": 30,
@@ -722,12 +722,12 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om dette cover?"
+                            "message": "Hvad tænker I om et hårdt cover med print?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "2 år er en fornuftig holdbarhed for et cover."
+                            "message": "Jeg tænker, at 2 år er en fornuftig holdbarhed for et cover."
                         },
                         {
                             "initials": "Sune",
@@ -744,7 +744,7 @@
                 {
                     "id": "usage_cover2",
                     "title": "Hårdt sort cover",
-                    "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år",
+                    "description": "Hård plast, ensfarvet. Forventet holdbarhed ca. 2 år.",
                     "metadata": {
                         "co2Score": 26,
                         "bioScore": 28,
@@ -754,7 +754,7 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om det sorte cover?"
+                            "message": "Hvad tænker I om et hårdt sort cover?"
                         },
                         {
                             "initials": "Asger",
@@ -764,24 +764,24 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg er mest til det sorte cover, hvad siger det så om mig Asger?"
+                            "message": "Jeg er mest til et sort cover. Hvad siger det om mig, Asger?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Jamen så er du som de fleste andre Sune, basic :-)"
+                            "message": "At du som de fleste andre, Sune. Helt almindelig :-)"
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ja, det er for kedeligt for mig! Men vores kunder skal nok købe det."
+                            "message": "Ja, det er for kedeligt til mig! Men vores kunder skal nok købe det."
                         }
                     ]
                 },
                 {
                     "id": "usage_cover3",
                     "title": "Blødt cover med print",
-                    "description": "Bøjelig plast, farvet eller med print. Forventet holdbarhed ca. 1 år",
+                    "description": "Bøjelig plast, farvet eller med print. Forventet holdbarhed ca. 1 år.",
                     "metadata": {
                         "co2Score": 48,
                         "bioScore": 51,
@@ -791,27 +791,27 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om dette cover?"
+                            "message": "Hvad tænker I om det bløde cover med print?"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Hvorfor er CO<sub>2</sub> udledning og miljøbelastning så høj her Asger? "
+                            "message": "Hvorfor er CO<sub>2</sub>-udledning og miljøbelastning så høj her, Asger?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Coveret har en kort holdbarhed, fordi det bliver løst. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det."
+                            "message": "Coveret har en kort holdbarhed, fordi det bliver løst. Jo længere holdbarhed et produkt har, jo mere bæredygtigt er det."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Hvorfor det?"
+                            "message": "Jeg forstår det ikke. Hvorfor det?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Fordi LCA'en regner med at et cover skal holde 2 år, så med det her cover skal man jo bruge to - hvis man altså skal have coveret i 2 år."
+                            "message": "Fordi LCA'en regner med, at et cover skal holde i 2 år. Et blødt cover holder kun i 1 år, så man skal bruge to covers, hvis det skal holde i 2 år."
                         },
                         {
                             "initials": "Charlotte",
@@ -821,7 +821,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Ja, det giver god mening. Godt den opgave ikke ligger på mig Charlotte!"
+                            "message": "Ja, det kunne være fedt! Godt den opgave ikke ligger hos mig, Charlotte!"
                         }
                     ]
                 },
@@ -838,44 +838,44 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om dette cover?"
+                            "message": "Hvad tænker I om et blødt, gennemsigtigt cover?"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Hvorfor er CO<sub>2</sub> udledning og miljøbelastning så høj her Asger?"
+                            "message": "Hvorfor belaster et gennemsigtigt cover klima og miljø så meget, Asger? Det har jo ingen farve..."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Coveret har en kort holdbarhed, fordi det bliver løst og misfarvet. Jo længere holdbarhed et produkt har, des mere bæredygtigt er det."
+                            "message": "Coveret har en kort holdbarhed, fordi det bliver løst og misfarvet. Folk gider ikke have et gulligt cover."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Hvorfor det?"
+                            "message": "Ja okay, og så smider de coveret ud. Det havde jeg også gjort."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Fordi LCA'en regner med at et cover skal holde 2 år, så med det her cover skal man jo bruge to - hvis man altså skal have coveret i 2 år."
+                            "message": "Nemlig. Det er dobbelt op på klima- og miljøbelastning. LCA'en regner med at et cover skal holde i 2 år, og det her holder kun i 1 år. Så man skal have to covers, hvis det skal holde i 2 år."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Det giver faktisk god mening. Kan vores udviklere ikke udvikle et blødt cover med en lang holdbarhed?"
+                            "message": "Prisen er god. Og vi sælger vel flere, hvis de har en kort holdbarhed, ikke?"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Ja, det giver god mening. Godt den opgave ikke ligger på mig Charlotte!"
+                            "message": "Det er vist ikke helt i CoverIt’s ånd, Charlotte ;-)"
                         }
                     ]
                 },
                 {
                     "id": "usage_cover5",
                     "title": "Hårdt cover med læder",
-                    "description": "Plast betrukket med læder. Forventet holdbarhed ca. 3 år",
+                    "description": "Plast betrukket med læder. Forventet holdbarhed ca. 3 år.",
                     "metadata": {
                         "co2Score": 60,
                         "bioScore": 50,
@@ -885,34 +885,34 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om dette cover?"
+                            "message": "Hvad tænker I om et hårdt cover med læder?"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Hvorfor er CO<sub>2</sub> udledning og miljøbelastning så høj her, selvom holdbarheden er lang Asger? "
+                            "message": "Flot cover! Men jeg forstår ikke, hvorfor CO<sub>2</sub>-udledning og miljøbelastning er så høj, når det har en lang holdbarhed?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Læder kommer jo fra køer."
+                            "message": "Læder kommer jo fra køer, og de belaster også klima og miljø."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Nå ja, og de har jo en CO<sub>2</sub> udledning og miljøbelastning."
+                            "message": "Selvfølgelig! Det giver mening. Det er også lidt dyrere."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ja, det bliver jo et lidt dyrere cover, men læder bliver også kun pænere med tiden!"
+                            "message": "Ja, prisen er måske lidt høj, men læder bliver kun pænere med tiden!"
                         }
                     ]
                 },
                 {
                     "id": "usage_cover6",
                     "title": "Hårdt cover med metal",
-                    "description": "Plast forstærket med metal. Forventet holdbarhed ca. 4 år",
+                    "description": "Plast forstærket med metal. Forventet holdbarhed ca. 4 år.",
                     "metadata": {
                         "co2Score": 69,
                         "bioScore": 51,
@@ -922,12 +922,12 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om dette cover?"
+                            "message": "Hvad tænker I om et hårdt cover med metal?"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "4 år er længe for et cover, holder en smartphone overhovedet så længe?"
+                            "message": "What?! En holdbarhed på 4 år. Så længe er der ingen, der har en telefon."
                         },
                         {
                             "initials": "Asger",
@@ -937,22 +937,22 @@
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ja, det kan lade sig gøre med et cover fra CoverUP."
+                            "message": "Sådan Asger! Det kan man nemlig med et cover fra CoverIt."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Sandt, Charlotte! Men mon ikke de færreste har 4-5 år gamle mobiler?"
+                            "message": "Sandt, Charlotte ;-) Men de færreste har da en telefon, der er 4-5 år gammel."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Jo, det tror jeg at du har ret i. "
+                            "message": "Ja, det tror jeg, at du har ret i."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Og så er CO<sub>2</sub> udledningen og miljøbelsatningen forresten stadig høj her, fordi metal er mere energikrævende at producere end plast."
+                            "message": "Og så er CO<sub>2</sub>-udledningen og miljøbelsatningen stadig høj her, fordi metal er mere energikrævende at producere end plast."
                         }
                     ]
                 }
@@ -982,24 +982,24 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Jeg synes det er meget vigtigt at vi tænker på muligheden for genanvendelse når vi designer produkter!"
+                            "message": "Det er super vigtigt, at vi tænker på genanvendelse, når vi designer produkter. Det skal med fra starten."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Enig, hvis alle virksomheder gjorde det, så ville det være nemmere for forbrugeren at affaldssortere."
+                            "message": "Enig, hvis alle virksomheder gjorde det, så ville det være nemmere for forbrugerne at affaldssortere."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ja, det er fx ikke nemt at sortere en mælkekarton der både består af pap, metal og plast!."
+                            "message": "Ja, det er fx ikke nemt at sortere en mælkekarton, der både består af pap, metal og plast!"
                         }
                     ]
                 },
                 {
                     "id": "disposal_recycle",
                     "title": "Design til genbrug",
-                    "description": "Hvis et cover skal kunne genbruges, skal det være meget holdbart og stadig være pænt efter længere tids brug.",
+                    "description": "Hvis et cover skal kunne genbruges, skal det have en høj holdbarhed og stadig se pænt ud efter længere tids brug.",
                     "metadata": {
                         "co2Score": -11,
                         "bioScore": -9,
@@ -1013,24 +1013,24 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Genbrug er normalt bedre end genanvendelse, men spørgsmålet er om der er et marked for genbrugte covers?."
+                            "message": "Genbrug er normalt bedre end genanvendelse, men er der et marked for genbrugte covers?"
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Jeg tror ikke der er så mange der vil købe covers genbrugt."
+                            "message": "Jeg tror ikke, at der er mange, der vil købe et genbrugt cover."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "I har nok ret, jeg ville gerne, men jeg køber jo også alt genbrugt"
+                            "message": "Jeg bruger min datters gamle cover, men jeg er også vild med genbrug. I har nok ret."
                         }
                     ]
                 },
                 {
                     "id": "disposal_sticker",
                     "title": "Mærkning på produkt",
-                    "description": "Mærkning på indersiden af coveret og på emballagen om hvordan de skal affaldssorteres.",
+                    "description": "Et mærke på indersiden af coveret og på emballagen, der fortæller, hvordan coveret skal affaldssorteres.",
                     "metadata": {
                         "co2Score": -1,
                         "bioScore": -2,
@@ -1039,29 +1039,29 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Hvad tænker I om en mærkning på vores covers?"
+                            "message": "Skal vi have en mærkning på vores covers?"
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Det er altid en god idé at hjælpe forbrugerne med at affaldssortere."
+                            "message": "Det er altid en god ide at hjælpe forbrugerne med at affaldssortere."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ja, så kan alle finde ud af det og så er der flere der gør det."
+                            "message": "Helt enig. Det er både billigt og effektivt."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg er helt enig, det er både effektivt og billigt at lave."
+                            "message": "Ja, hvis vi fortæller forbrugerne, hvordan de skal affaldssortere, så er der flere, der gør det."
                         }
                     ]
                 },
                 {
                     "id": "disposal_takeback",
                     "title": "Take-back ordning",
-                    "description": "Kunderne kan aflevere deres gamle covers og få 10% rabat det næste.",
+                    "description": "Kunderne kan aflevere deres gamle cover tilbage og få 10 procent i rabat på det næste cover, de køber.",
                     "metadata": {
                         "co2Score": -7,
                         "bioScore": -5,
@@ -1075,24 +1075,24 @@
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Det virker at give lidt rabat og så kommer kunderne til os når de skal købe covers. Det er smart!"
+                            "message": "Rabat virker altid. Og vi vil meget gerne have kunderne tilbage, når de skal købe nyt cover. Det er smart!"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Du har helt ret Charlotte. Jeg tror også Asger har en idé til hvad vi skal med de covers vi får tilbage."
+                            "message": "Du har ret, Charlotte. Og Asger har sikkert en ide til, hvad vi skal gøre med de gamle covers."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Selvfølgelig har jeg det, de skal genanvendes og laves til nye covers!"
+                            "message": "Selvfølgelig har jeg det! De skal genanvendes og laves til nye covers."
                         }
                     ]
                 },
                 {
                     "id": "disposal_wasteprevention",
                     "title": "Mindre emballage",
-                    "description": "Jo mindre emballage, jo flere covers kan fragtes ad gangen. ",
+                    "description": "Hvis man bruger mindre emballage til at pakke et cover, kan man fragte flere covers ad gangen.",
                     "metadata": {
                         "co2Score": -3,
                         "bioScore": -2,
@@ -1106,17 +1106,17 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Hvis emballagen er for stor så transporterer vi jo bare luft rundt."
+                            "message": "Hvis emballagen er meget stor, så transporterer vi bare luft rundt i verden."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Altså ligesom chips og guldkorn."
+                            "message": "Altså, ligesom chips og guldkorn."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Ja og meget andet. Jeg mener jeg læste at 25% af alt der transporteres i verden er luft!!"
+                            "message": "Præcis. Jeg læste, at 25 procent af alle de ting, der transporteres rundt i verden, er luft!"
                         },
                         {
                             "initials": "Sune",
@@ -1126,7 +1126,7 @@
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ja, og hvis vi pakker coveret ind i en masse plast og pap så laver vi bare en masse der skal smides ud med det samme."
+                            "message": "Ja, og hvis vi pakker coveret ind i en masse plast og pap, så skaber vi bare en masse affald, der skal smides ud med det samme."
                         },
                         {
                             "initials": "Sune",
