@@ -87,7 +87,7 @@
             ]
         },
         "6": {
-            "title": "Udarbejd jeres samlede LCA",
+            "title": "Lav en samlet LCA",
             "buttonText": "Analyser valg",
             "columnTitles": {
                 "material": "Råstof",
@@ -559,7 +559,7 @@
                 {
                     "id": "transport_flight",
                     "title": "Fly",
-                    "description": "Mængde af varer: Lav <br>transporttid: Hurtig <br>Krav: Ingen",
+                    "description": "Mængde af varer: Lav <br>Transporttid: Hurtig <br>Krav: Ingen",
                     "metadata": {
                         "co2Score": 95,
                         "bioScore": 60,
@@ -573,17 +573,17 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Jeg synes det siger sig selv, at det her er et dårligt valg."
+                            "message": "Jeg synes, det siger sig selv, at fly er et dårligt valg. CO<sub>2</sub>-udledningen er tårnhøj."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ah, Asger. Varere er hurtigt fremme, så vi kan undvære et stort lager. Det er en kæmpe fordel."
+                            "message": "Ja ja, Asger. Men varerne er hurtigt fremme, så vi kan undvære et stort lager. Det er en kæmpe fordel."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Men synes du ikke at det er dyrt, Charlotte?"
+                            "message": "Men synes du ikke, at det er dyrt, Charlotte?"
                         },
                         {
                             "initials": "Charlotte",
@@ -593,14 +593,14 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Ja, det nytter selvfølgelig ikke noget at have en masse covers liggende på et lager, som ingen gider at købe."
+                            "message": "Ja, jeg forstår. Det nytter ikke noget at have en masse covers liggende på et lager, som ingen gider at købe."
                         }
                     ]
                 },
                 {
                     "id": "transport_ship",
                     "title": "Skib",
-                    "description": "Mængde af varer: Meget høj <br>transporttid: Langsom <br>Krav: Hav",
+                    "description": "Mængde af varer: Meget høj <br>Transporttid: Langsom <br>Krav: Hav",
                     "metadata": {
                         "co2Score": 14,
                         "bioScore": 33,
@@ -619,24 +619,24 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg er nervøs for, at vores covers er længe undervejs. Der kan også komme forsinkelser."
+                            "message": "Jeg er nervøs for, at vores covers er for længe undervejs. Og der kan også komme forsinkelser."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Ja, og det betyder at vi skal betale for et stort lager."
+                            "message": "Ja, og det betyder, at vi skal betale for et stort lager."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Det har du ret i, der er ingen der gider vente 3 uger på at få et mobilcover."
+                            "message": "Præcis! Og der er ingen, der gider vente tre uger på et mobilcover."
                         }
                     ]
                 },
                 {
                     "id": "transport_train",
                     "title": "Tog",
-                    "description": "Mængde af varer: Høj <br>transporttid: Middel <br>Krav: Togskinner",
+                    "description": "Mængde af varer: Høj <br>Transporttid: Middel <br>Krav: Togskinner",
                     "metadata": {
                         "co2Score": 28,
                         "bioScore": 24,
@@ -650,24 +650,24 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Det ser meget godt ud."
+                            "message": "Det ser godt ud. Tog belaster ikke klima og miljø så meget."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Ja, jeg synes I skal overveje om transporttiden kan blive et problem."
+                            "message": "Enig, men jeg synes, vi skal overveje om transporttiden bliver et problem."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Prisen er fin nok. Det kræver et lager hvis transporttiden bliver for lang."
+                            "message": "Prisen er fin nok. Men det kræver et lager, hvis transporttiden bliver for lang."
                         }
                     ]
                 },
                 {
                     "id": "transport_truck",
                     "title": "Lastbil",
-                    "description": "Mængde af varer: Lav <br>transporttid: Middel <br>Krav: Vej",
+                    "description": "Mængde af varer: Lav <br>Transporttid: Middel <br>Krav: Vej",
                     "metadata": {
                         "co2Score": 77,
                         "bioScore": 69,
@@ -681,22 +681,22 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO<sub>2</sub> udledning og miljøbelastning er så høj."
+                            "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO<sub>2</sub>-udledning og miljøbelastning er så høj."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Hvis lastbilen skal køre langt, så skal vi sikre os at chaufføren har gode arbejdsforhold."
+                            "message": "Hvis lastbilerne skal køre langt, skal vi sikre at chaufførerne har gode arbejdsforhold."
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "God pris! Men det kan ikke være en god løn til den lastbilchauffør."
+                            "message": "God pris! Men lastbilchaufførerne må få en lav løn, når det er så billigt."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Nej, jeg synes man hører så meget om dårlige forhold til chauffører. Det synes jeg ikke vi skal støtte."
+                            "message": "Ja, man hører så meget om dårlige forhold for chauffører. Det skal vi ikke støtte."
                         }
                     ]
                 }
