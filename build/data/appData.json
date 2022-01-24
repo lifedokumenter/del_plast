@@ -1023,14 +1023,14 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Jeg bruger min datters gamle cover, men jeg er også vild med genbrug. I har nok ret."
+                            "message": "Altså, jeg bruger min datters gamle cover, men jeg er også ret vild med genbrug. I har nok ret."
                         }
                     ]
                 },
                 {
                     "id": "disposal_sticker",
                     "title": "Mærkning på produkt",
-                    "description": "Et mærke på indersiden af coveret og på emballagen, der fortæller, hvordan coveret skal affaldssorteres.",
+                    "description": "Coveret får et mærke på indersiden og på emballagen, der fortæller, hvordan coveret skal affaldssorteres.",
                     "metadata": {
                         "co2Score": -1,
                         "bioScore": -2,
@@ -1075,17 +1075,17 @@
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Rabat virker altid. Og vi vil meget gerne have kunderne tilbage, når de skal købe nyt cover. Det er smart!"
+                            "message": "Rabat virker altid. Og vi vil meget gerne have kunderne tilbage, når de skal købe et nyt cover. Det er smart!"
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Du har ret, Charlotte. Og Asger har sikkert en ide til, hvad vi skal gøre med de gamle covers."
+                            "message": "Du har ret, Charlotte. Og Asger har sikkert en ide til, hvad vi kan bruge de gamle covers til."
                         },
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Selvfølgelig har jeg det! De skal genanvendes og laves til nye covers."
+                            "message": "Selvfølgelig har jeg det. De skal genanvendes og laves til nye covers!"
                         }
                     ]
                 },
@@ -1499,291 +1499,291 @@
             "id1": "material_olie",
             "id2": "disposal_designrecycle",
             "title": "Olie + design til genanvendelse",
-            "description": "Design til genanvendelse kan betyde at flere ocvers genanvendes og færre nye skal produceres, det vil spare olie til plastproduktion og derfor spare CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genanvendelse kan betyde at flere covers genanvendes, og at færre nye covers skal produceres. Det vil spare olie til plastproduktion og dermed CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_corn",
             "id2": "disposal_designrecycle",
             "title": "Majs + design til genanvendelse",
-            "description": "Design til genanvendelse kan betyde at der skal bruges færre majs til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genanvendelse kan betyde, at der skal bruges færre majs til plastproduktion. Det vil reducere CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_sugar",
             "id2": "disposal_designrecycle",
             "title": "Sukkerrør + design til genanvendelse",
-            "description": "Design til genanvendelse kan betyde at der skal bruges færre sukkerrør til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genanvendelse kan betyde, at der skal bruges færre sukkerrør til plastproduktion. Det vil reducere CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_straw",
             "id2": "disposal_designrecycle",
             "title": "Halm + design til genanvendelse",
-            "description": "Design til genanvendelse kan betyde at der skal bruges mindre halm til plastproduktion og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genanvendelse kan betyde, at der skal bruges mindre halm til plastproduktion. Det vil reducere CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_plast",
             "id2": "disposal_designrecycle",
             "title": "Plastaffald + design til genanvendelse",
-            "description": "Design til genanvendelse kan betyde at der er mere tilgængeligt plastaffald, som kan bruges i produktion af ny plast og kan derfor spare CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genanvendelse kan betyde, at der er mere tilgængeligt plastaffald, som kan bruges i produktion af ny plast. Det vil reducere CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_olie",
             "id2": "disposal_recycle",
             "title": "Olie + design til genbrug",
-            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genbrug kan betyde, at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_corn",
             "id2": "disposal_recycle",
             "title": "Majs + design til genbrug",
-            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genbrug kan betyde, at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_sugar",
             "id2": "disposal_recycle",
             "title": "Sukkerrør + design til genbrug",
-            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genbrug kan betyde, at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_straw",
             "id2": "disposal_recycle",
             "title": "Halm + design til genbrug",
-            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genbrug kan betyde, at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_plast",
             "id2": "disposal_recycle",
             "title": "Plastaffald + design til genbrug",
-            "description": "Design til genbrug kan betyde at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Design til genbrug kan betyde, at der skal produceres færre produkter og dermed bruges færre råstoffer. I sparer CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "material_plast",
             "id2": "disposal_takeback",
             "title": "Plastaffald + take-back ordning",
-            "description": "De tilbagetagne covers kan bruges til produktion af nye covers. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "De indsamlede covers kan bruges til produktion af nye covers. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "production_billund",
             "id2": "disposal_takeback",
             "title": "Fabrik i Billund + take-back ordning",
-            "description": "De tilbagetagne covers skal ikke transporteres langt. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "De indsamlede covers skal ikke transporteres langt. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "production_miami",
             "id2": "disposal_takeback",
             "title": "Fabrik i Miami + take-back ordning",
-            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "De indsamlede covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_memphis",
             "id2": "disposal_takeback",
             "title": "Fabrik i Memphis + take-back ordning",
-            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "De indsamlede covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_dubai",
             "id2": "disposal_takeback",
             "title": "Fabrik i Dubai + take-back ordning",
-            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "De indsamlede covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_shanghai",
             "id2": "disposal_takeback",
             "title": "Fabrik i Shangai + take-back ordning",
-            "description": "De tilbagetagne covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "De indsamlede covers skal transporteres langt. Det koster CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "transport_train",
             "id2": "usage_cover3",
             "title": "Tog + blødt cover",
-            "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_ship",
             "id2": "usage_cover3",
             "title": "Skib + blødt cover",
-            "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_flight",
             "id2": "usage_cover3",
             "title": "Fly + blødt cover",
-            "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_truck",
             "id2": "usage_cover3",
             "title": "Lastbil + blødt cover",
-            "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_train",
             "id2": "usage_cover4",
             "title": "Tog + blødt cover",
-            "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så toget sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_ship",
             "id2": "usage_cover4",
             "title": "Skib + blødt cover",
-            "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så containerskibet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_flight",
             "id2": "usage_cover4",
             "title": "Fly + blødt cover",
-            "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så flyet sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_truck",
             "id2": "usage_cover4",
             "title": "Lastbil + blødt cover",
-            "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Dette cover har en lavere vægt, så lastbilen sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_train",
             "id2": "usage_cover6",
             "title": "Tog + cover med metal",
-            "description": "Dette cover har en højere vægt, så toget har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "Dette cover har en højere vægt, så toget har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "transport_ship",
             "id2": "usage_cover6",
             "title": "Skib + cover med metal",
-            "description": "Dette cover har en højere vægt, så containerskibet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "Dette cover har en højere vægt, så containerskibet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "transport_flight",
             "id2": "usage_cover6",
             "title": "Fly + cover med metal",
-            "description": "Dette cover har en højere vægt, så flyet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "Dette cover har en højere vægt, så flyet har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "transport_truck",
             "id2": "usage_cover6",
             "title": "Lastbil + cover med metal",
-            "description": "Dette cover har en højere vægt, så lastbilen har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift"
+            "description": "Dette cover har en højere vægt, så lastbilen har en højere CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "transport_train",
             "id2": "disposal_wasteprevention",
             "title": "Tog + mindre emballage",
-            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Mindre emballage gør, at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_ship",
             "id2": "disposal_wasteprevention",
             "title": "Skib + mindre emballage",
-            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Mindre emballage gør, at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_flight",
             "id2": "disposal_wasteprevention",
             "title": "Fly + mindre emballage",
-            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Mindre emballage gør, at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "transport_truck",
             "id2": "disposal_wasteprevention",
             "title": "Lastbil + med mindre emballage",
-            "description": "Mindre emballage gør at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Mindre emballage gør, at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "usage_cover1",
             "id2": "disposal_designrecycle",
             "title": "Hårdt cover med print + design til genanvendelse",
-            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "usage_cover2",
             "id2": "disposal_designrecycle",
             "title": "Hårdt cover, sort + design til genanvendelse",
-            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "usage_cover3",
             "id2": "disposal_designrecycle",
             "title": "Blødt cover med print + design til genanvendelse",
-            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "usage_cover4",
             "id2": "disposal_designrecycle",
             "title": "Blødt cover, gennemsigtigt + design til genanvendelse",
-            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "Der bruges kun et materiale, som nemt kan genanvendes. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "usage_cover1",
             "id2": "disposal_recycle",
             "title": "Hårdt cover med print + design til genbrug",
-            "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "usage_cover2",
             "id2": "disposal_recycle",
             "title": "Hårdt cover, sort + design til genbrug",
-            "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift",
+            "description": "I sparer CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
             "id1": "usage_cover3",
             "id2": "disposal_recycle",
             "title": "Blødt cover med print + design til genbrug",
-            "description": "Denne covertype kan sjældent genbruges, da det bliver løst"
+            "description": "Denne covertype kan sjældent genbruges, da det bliver løst."
         },
         {
             "id1": "usage_cover4",
             "id2": "disposal_recycle",
             "title": "Blødt cover, gennemsigtigt + design til genbrug",
-            "description": "Denne covertype kan sjældent genbruges, da det bliver løst og misfarvet"
+            "description": "Denne covertype kan sjældent genbruges, da det bliver løst og misfarvet."
         },
         {
             "id1": "usage_cover5",
             "id2": "disposal_recycle",
             "title": "Hårdt cover med læder + design til genbrug",
-            "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "usage_cover6",
             "id2": "disposal_recycle",
             "title": "Hårdt cover med metal + design til genbrug",
-            "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "Et holdbart cover, der er oplagt til genbrug. I sparer CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
             "id1": "usage_cover6",
             "id2": "disposal_takeback",
             "title": "Hårdt cover med metal + take-back ordning",
-            "description": "I kan genanvende den indsamlede metal og I sparer CO<sub>2</sub>-udledning og miljøbelastning",
+            "description": "I kan genanvende den indsamlede metal og sparer derfor CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         }
     ],
