@@ -298,7 +298,7 @@
                 {
                     "id": "material_plast",
                     "title": "Plastaffald",
-                    "description": "Plastaffald kan bruges til at lave nye plastprodukter. Det kaldes genanvendt plast.",
+                    "description": "Plastaffald kan bruges til at lave nye plastprodukter. Det kaldes 'genanvendt plast'.",
                     "metadata": {
                         "co2Score": 39,
                         "bioScore": 12,
@@ -619,7 +619,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg er nervøs for, at vores covers er for længe undervejs. Og der kan også komme forsinkelser."
+                            "message": "Jeg er nervøs for, at vores covers vil være for længe undervejs. Og der kan også komme forsinkelser."
                         },
                         {
                             "initials": "Charlotte",
@@ -655,7 +655,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Enig, men jeg synes, vi skal overveje om transporttiden bliver et problem."
+                            "message": "Enig, men jeg synes, vi skal overveje, om transporttiden bliver et problem."
                         },
                         {
                             "initials": "Charlotte",
@@ -681,12 +681,12 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Ja, I kan vel gætte at jeg ikke er tilfreds, når CO<sub>2</sub>-udledning og miljøbelastning er så høj."
+                            "message": "Ja, I kan vel gætte, at jeg ikke er tilfreds, når CO<sub>2</sub>-udledning og miljøbelastning er så høj."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Hvis lastbilerne skal køre langt, skal vi sikre at chaufførerne har gode arbejdsforhold."
+                            "message": "Hvis lastbilerne skal køre langt, skal vi sikre, at chaufførerne har gode arbejdsforhold."
                         },
                         {
                             "initials": "Charlotte",
@@ -732,12 +732,12 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Ja, og printet er rimelig neutralt. Det skal man jo kigge på de næste par år!"
+                            "message": "Ja, og printet er rimelig neutralt. Man skal jo kigge på det i et par år!"
                         },
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Prisen er fin og dejligt med et cover, der ikke bare er sort."
+                            "message": "Prisen er fin, og det er dejligt med et cover, der ikke bare er sort."
                         }
                     ]
                 },
@@ -769,7 +769,7 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "At du som de fleste andre, Sune. Helt almindelig :-)"
+                            "message": "At du er som de fleste andre, Sune. Helt almindelig :-)"
                         },
                         {
                             "initials": "Charlotte",
@@ -858,7 +858,7 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Nemlig. Det er dobbelt op på klima- og miljøbelastning. LCA'en regner med at et cover skal holde i 2 år, og det her holder kun i 1 år. Så man skal have to covers, hvis det skal holde i 2 år."
+                            "message": "Nemlig. Det er dobbelt op på klima- og miljøbelastning. LCA'en regner med, at et cover skal holde i 2 år, og det her holder kun i 1 år. Så man skal have to covers, hvis det skal holde i 2 år."
                         },
                         {
                             "initials": "Charlotte",
@@ -952,7 +952,7 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Og så er CO<sub>2</sub>-udledningen og miljøbelsatningen stadig høj her, fordi metal er mere energikrævende at producere end plast."
+                            "message": "Og så er CO<sub>2</sub>-udledningen og miljøbelastningen stadig høj her, fordi metal er mere energikrævende at producere end plast."
                         }
                     ]
                 }
@@ -987,7 +987,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Enig, hvis alle virksomheder gjorde det, så ville det være nemmere for forbrugerne at affaldssortere."
+                            "message": "Enig. Hvis alle virksomheder gjorde det, ville det være nemmere for forbrugerne at affaldssortere."
                         },
                         {
                             "initials": "Charlotte",
@@ -999,7 +999,7 @@
                 {
                     "id": "disposal_recycle",
                     "title": "Design til genbrug",
-                    "description": "Hvis et cover skal kunne genbruges, skal det have en høj holdbarhed og stadig se pænt ud efter længere tids brug.",
+                    "description": "Hvis et cover skal kunne genbruges, skal det have en høj holdbarhed og stadig se pænt ud, selvom man har haft det i lang tid.",
                     "metadata": {
                         "co2Score": -11,
                         "bioScore": -9,
@@ -1054,13 +1054,13 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Ja, hvis vi fortæller forbrugerne, hvordan de skal affaldssortere, så er der flere, der gør det."
+                            "message": "Ja, hvis vi fortæller forbrugerne, hvordan de skal affaldssortere, er der flere, der gør det."
                         }
                     ]
                 },
                 {
                     "id": "disposal_takeback",
-                    "title": "Take-back ordning",
+                    "title": "Take back-ordning",
                     "description": "Kunderne kan aflevere deres gamle cover tilbage og få 10 procent i rabat på det næste cover, de køber.",
                     "metadata": {
                         "co2Score": -7,
@@ -1070,7 +1070,7 @@
                     "chatMessages": [
                         {
                             "isUser": true,
-                            "message": "Er en take-back ordning en god idé?"
+                            "message": "Er en take back-ordning en god ide?"
                         },
                         {
                             "initials": "Charlotte",
@@ -1106,7 +1106,7 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Hvis emballagen er meget stor, så transporterer vi bare luft rundt i verden."
+                            "message": "Hvis emballagen er meget stor, transporterer vi bare luft rundt i verden."
                         },
                         {
                             "initials": "Sune",
