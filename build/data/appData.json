@@ -1192,7 +1192,7 @@
         {
             "id1": "usage_cover6",
             "id2": "disposal_designrecycle",
-            "description": "Løsningen er ikke mulig, da design til genanvendelse kræver at der kun bruges et materiale."
+            "description": "Løsningen er ikke mulig, da design til genanvendelse kræver, at der kun bruges et materiale."
         },
         {
             "id1": "usage_cover4",
@@ -1332,7 +1332,7 @@
             "id1": "production_dubai",
             "id2": "material_sugar",
             "title": "Sukkerrør + fabrik i Dubai",
-            "description": "Sukkerrørene skal købes og transporteres til Dubai. derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
+            "description": "Sukkerrørene skal købes og transporteres til Dubai. Derfor koster det ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_shanghai",
@@ -1431,7 +1431,7 @@
             "id1": "production_paris",
             "id2": "transport_train",
             "title": "Fabrik i Paris + tog",
-            "description": "Toget skal kun transportere varene fra Paris til Danmark. Derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
+            "description": "Toget skal kun transportere varerne fra Paris til Danmark. Derfor sparer I CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
         {
@@ -1451,7 +1451,7 @@
             "id1": "production_memphis",
             "id2": "transport_ship",
             "title": "Fabrik i Memphis + skib",
-            "description": "Memphis ligger langt inde i USA, og I skal derfor først transportere varene til en havn. Det koster ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
+            "description": "Memphis ligger langt inde i USA, og I skal derfor først transportere varerne til en havn. Det koster ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_memphis",
@@ -1469,19 +1469,19 @@
             "id1": "production_dubai",
             "id2": "transport_truck",
             "title": "Fabrik i Dubai + lastbil",
-            "description": "Lastbilen skal transportere varene hele vejen fra Dubai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
+            "description": "Lastbilen skal transportere varerne hele vejen fra Dubai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_shanghai",
             "id2": "transport_train",
             "title": "Fabrik i Shanghai + tog",
-            "description": "Toget skal transportere varene hele vejen fra Shanghai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
+            "description": "Toget skal transportere varerne hele vejen fra Shanghai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_shanghai",
             "id2": "transport_ship",
             "title": "Fabrik i Shanghai + skib",
-            "description": "Containerskibet skal transportere varene hele vejen fra Shanghai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
+            "description": "Containerskibet skal transportere varerne hele vejen fra Shanghai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "production_shanghai",
@@ -1493,13 +1493,13 @@
             "id1": "production_shanghai",
             "id2": "transport_truck",
             "title": "Fabrik i Shanghai + lastbil",
-            "description": "Lastbilen skal transportere varene hele vejen fra Shanghai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
+            "description": "Lastbilen skal transportere varerne hele vejen fra Shanghai til Danmark. Derfor har I ekstra CO<sub>2</sub>-udledning, miljøbelastning og udgift."
         },
         {
             "id1": "material_olie",
             "id2": "disposal_designrecycle",
             "title": "Olie + design til genanvendelse",
-            "description": "Design til genanvendelse kan betyde at flere covers genanvendes, og at færre nye covers skal produceres. Det vil spare olie til plastproduktion og dermed CO<sub>2</sub>-udledning og miljøbelastning.",
+            "description": "Design til genanvendelse kan betyde, at flere covers genanvendes, og at færre nye covers skal produceres. Det vil spare olie til plastproduktion og dermed CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         },
         {
@@ -1707,7 +1707,7 @@
         {
             "id1": "transport_truck",
             "id2": "disposal_wasteprevention",
-            "title": "Lastbil + med mindre emballage",
+            "title": "Lastbil + mindre emballage",
             "description": "Mindre emballage gør, at I kan transportere flere varer på mindre plads. I sparer derfor CO<sub>2</sub>-udledning, miljøbelastning og udgift.",
             "positive": true
         },
@@ -1782,7 +1782,7 @@
         {
             "id1": "usage_cover6",
             "id2": "disposal_takeback",
-            "title": "Hårdt cover med metal + take-back ordning",
+            "title": "Hårdt cover med metal + take back-ordning",
             "description": "I kan genanvende den indsamlede metal og sparer derfor CO<sub>2</sub>-udledning og miljøbelastning.",
             "positive": true
         }
