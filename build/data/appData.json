@@ -7,7 +7,7 @@
             "initialChatMessages": [
                 {
                     "initials": "Asger",
-                    "message": "Hej allesammen! Det bliver spændende at komme i gang med vores LCA.",
+                    "message": "Hej alle sammen! Det bliver spændende at komme i gang med vores LCA.",
                     "type": "environment"
                 },
                 {
@@ -34,7 +34,7 @@
             ]
         },
         "3": {
-            "title": "Vælg transportsform",
+            "title": "Vælg transportform",
             "buttonText": "Vælg transport",
             "initialChatMessages": [
                 {
@@ -82,7 +82,7 @@
                 {
                     "initials": "Sune",
                     "type": "communication",
-                    "message": "Ja, og tænk over hvordan jeres valg spiller sammen."
+                    "message": "Ja, og tænk over, hvordan jeres valg spiller sammen."
                 }
             ]
         },
@@ -127,11 +127,11 @@
                 "1": "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser, I har gjort jer. {{choice}} er helt klart en mulighed, jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line",
                 "2": "Kære udviklere <br><br>Tak for jeres mail. Jeg ved, at placeringen af fabrikken er et svært valg. {{choice}} er et godt bud. <br><br>Jeg glæder mig til at modtage jeres bud på transport. <br><br>Med venlig hilsen <br>Line",
                 "3": "Kære udviklere <br><br>Tak for jeres mail. {{choice}} lyder godt. Jeg stoler på, at I har haft leveringstid med i jeres overvejelser. <br><br>Tak for indsatsen. <br><br>Med venlig hilsen <br>Line",
-                "4": "Kære udviklere <br><br>Tak for jeres mail. Det cover synes jeg virkelig passer godt ind hos CoverIt. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line",
+                "4": "Kære udviklere <br><br>Tak for jeres mail. Det cover passer virkelig godt ind hos CoverIt, synes jeg. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line",
                 "5": "Kære udviklere <br><br>Tak for jeres mail. Spændende kombination af valg! Jeg håber, at I har tænk godt over, hvordan de to valg spiller sammen. <br><br>Med venlig hilsen <br>Line"
             }
         },
-        "messagePlaceholder": "Skriv en email til chefen, hvor I argumenterer for jeres valg {{choice}}",
+        "messagePlaceholder": "Skriv en mail til chefen, hvor I argumenterer for jeres valg {{choice}}",
         "finalMessagePlaceholder": "Besked..."
     },
     "finalBossMessage": {
@@ -147,7 +147,7 @@
         "description": "Analysen af denne LCA peger på følgende fordele og ulemper:",
         "cancelBtnText": "Rediger valg",
         "submitBtnText": "Godkend valg",
-        "approvedDescription": "Tag et billede at jeres valg, så I kan bruge det i jeres præsentation.",
+        "approvedDescription": "Tag et billede af jeres valg, så I kan bruge det i jeres præsentation.",
         "approvedBtnText": "OK"
     },
     "aboveLimit": "Dit budget er overskredet. Træf nye valg for at sænke udgifterne.",
@@ -207,7 +207,7 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Miljøbelastningen omkring sukkermarker er høj, fordi der ikke er vild natur i en sukkerrørsmark. Det synes jeg er et problem."
+                            "message": "Miljøbelastningen omkring sukkermarker er høj, fordi der ikke er vild natur i en sukkerrørsmark. Det synes jeg, er et problem."
                         },
                         {
                             "initials": "Sune",
@@ -217,7 +217,7 @@
                         {
                             "initials": "Charlotte",
                             "type": "economy",
-                            "message": "Prisen er lidt høj. Jeg tror, at det er fordi sukkerrør bruges til mange forskellige ting."
+                            "message": "Prisen er lidt høj. Jeg tror, det er, fordi sukkerrør bruges til mange forskellige ting."
                         },
                         {
                             "initials": "Sune",
@@ -249,7 +249,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Majs er en vigtig fødevare for verdens fattigste. Er det en god idé, at bruge majs til at lave plast, når der er folk der sulter?"
+                            "message": "Majs er en vigtig fødevare for verdens fattigste. Er det en god ide at bruge majs til at lave plast, når der er folk, der sulter?"
                         },
                         {
                             "initials": "Charlotte",
@@ -281,7 +281,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Halm er ikke en fødevarer som majs og sukker. Jeg synes, det er en god idé!"
+                            "message": "Halm er ikke en fødevare som majs og sukker. Jeg synes, det er en god ide!"
                         },
                         {
                             "initials": "Asger",
@@ -323,7 +323,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg tror godt, kunderne vil betale for et miljøvenligt cover, hvis kvaliteten er god."
+                            "message": "Jeg tror, kunderne gerne vil betale for et miljøvenligt cover, hvis kvaliteten er god."
                         },
                         {
                             "initials": "Charlotte",
@@ -368,7 +368,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg kan ikke understrege det nok: Høj sikkerhed på fabrikken er vigtig! Ellers kan medarbejderne ikke føle sig sikre."
+                            "message": "Jeg kan ikke understrege det nok: Høj sikkerhed på fabrikken er vigtigt! Ellers kan medarbejderne ikke føle sig sikre."
                         }
                     ]
                 },
@@ -389,12 +389,12 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Atomkraft er en CO<sub>2</sub>-neutral energi, men det er ikke det mest miljøvenlige valg."
+                            "message": "Atomkraft er en CO<sub>2</sub>-neutral energikilde, men det er ikke det mest miljøvenlige valg."
                         },
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Jeg må bare sige, at høj sikkerhed er virkelig vigtig for medarbejderne på fabrikken."
+                            "message": "Jeg må bare sige, at høj sikkerhed er virkelig vigtigt for medarbejderne på fabrikken."
                         },
                         {
                             "initials": "Charlotte",
@@ -497,7 +497,7 @@
                         {
                             "initials": "Asger",
                             "type": "environment",
-                            "message": "Nåh ja, men CO<sub>2</sub>-udledningen er også ret høj. Det må være derfor."
+                            "message": "Nåh ja, CO<sub>2</sub>-udledningen er ret høj. Det må være derfor."
                         },
                         {
                             "initials": "Charlotte",
@@ -696,7 +696,7 @@
                         {
                             "initials": "Sune",
                             "type": "communication",
-                            "message": "Ja, man hører så meget om dårlige forhold for chauffører. Det skal vi ikke støtte."
+                            "message": "Vi skal bare sørge for, at vi ikke støtter dårlige arbejdsforhold for chaufførerne."
                         }
                     ]
                 }
