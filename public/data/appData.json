@@ -1,5 +1,5 @@
 {
-    "pageTitle": "LCA Pro Tool",
+    "pageTitle": "LCA Pro Tools 3.0",
     "steps": {
         "1": {
             "title": "Vælg et råstof til jeres mobilcovers",
@@ -124,18 +124,31 @@
         "toName": "CoverIt ansatte",
         "thanksForMessage": {
             "steps": {
-                "1": "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser, I har gjort jer. {{choice}} er helt klart en mulighed, jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line",
-                "2": "Kære udviklere <br><br>Tak for jeres mail. Jeg ved, at placeringen af fabrikken er et svært valg. {{choice}} er et godt bud. <br><br>Jeg glæder mig til at modtage jeres bud på transport. <br><br>Med venlig hilsen <br>Line",
-                "3": "Kære udviklere <br><br>Tak for jeres mail. {{choice}} lyder godt. Jeg stoler på, at I har haft leveringstid med i jeres overvejelser. <br><br>Tak for indsatsen. <br><br>Med venlig hilsen <br>Line",
-                "4": "Kære udviklere <br><br>Tak for jeres mail. Det cover passer virkelig godt ind hos CoverIt, synes jeg. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line",
-                "5": "Kære udviklere <br><br>Tak for jeres mail. Spændende kombination af valg! Jeg håber, at I har tænk godt over, hvordan de to valg spiller sammen. <br><br>Med venlig hilsen <br>Line"
+                "1": [
+                    "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser, I har gjort jer. {{choice}} er helt klart en mulighed, jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line"
+                ],
+                "2": [
+                    "Kære udviklere <br><br>Tak for jeres mail. Jeg ved, at placeringen af fabrikken er et svært valg. {{choice}} er et godt bud. <br><br>Jeg glæder mig til at modtage jeres bud på transport. <br><br>Med venlig hilsen <br>Line"
+                ],
+                "3": [
+                    "Kære udviklere <br><br>Tak for jeres mail. {{choice}} lyder godt. Jeg stoler på, at I har haft leveringstid med i jeres overvejelser. <br><br>Tak for indsatsen. <br><br>Med venlig hilsen <br>Line"
+                ],
+                "4": [
+                    "Kære udviklere <br><br>Tak for jeres mail. Det cover passer virkelig godt ind hos CoverIt, synes jeg. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line"
+                ],
+                "5": [ 
+                    "Kære udviklere <br><br>Tak for jeres mail. Spændende kombination af valg! Jeg håber, at I har tænk godt over, hvordan de to valg spiller sammen. <br><br>Med venlig hilsen <br>Line"
+                ]
             }
         },
         "messagePlaceholder": "Skriv en mail til chefen, hvor I argumenterer for jeres valg {{choice}}",
         "finalMessagePlaceholder": "Besked..."
     },
     "finalBossMessage": {
-        "message": "Kære udviklere, <br><br> Tak for jeres store indsats! Jeg glæder mig til at høre jeres præsentation, hvor I kan komme med gode argumenter for jeres valg. <br><br> Med venlig hilsen <br>Line",
+        "message": [
+            "Kære udviklere, <br><br> Tak for jeres store indsats! Jeg glæder mig til at høre jeres præsentation, hvor I kan komme med gode argumenter for jeres valg."
+        ],
+        "regardsMessage": "<br><br> Med venlig hilsen <br>Line",
         "closeButtonText": "Luk",
         "messageDelay": 2
     },
