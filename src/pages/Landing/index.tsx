@@ -176,13 +176,20 @@ const Landing = ({
     }
   }
 
+  const getContentHeight = () => {
+    if (viewDimensions.width < 1200 || viewDimensions.height < 700 ){
+      return `calc(${viewDimensions.height}px - 13.666rem)`;
+    }
+    return `calc(${viewDimensions.height}px - 17rem)`;
+  }
+
   return(
     <Grid columns={2} stackable>
       <Grid.Row>
         <Grid.Column floated='left' width={step === 6 ? 16 : 12}> 
           {
             !!appData && 
-            <div className="landing" style={{height:`calc(${viewDimensions.height}px - 17rem)`}}>
+            <div className="landing" style={{height:getContentHeight()}}>
               <div className="landing__content">
                 <PChainStep 
                   key={step} 

@@ -32,6 +32,9 @@
 
 @tabletBreakpoint: 768px;
 @smallMonitorBreakpoint: 992px;
+@smallMonitorHeightBreakpoint: 700px;
+@mediumMonitorBreakpoint: 1200px;
+
 
 /* fonts */
 @importGoogleFonts: false;
