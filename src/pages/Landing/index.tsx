@@ -168,6 +168,13 @@ const Landing = ({
     setScore(currentScores);
   }, [multipleChoice, activePChainChoice, pChainChoices, appData.scoreWeights, appData.interactions, step, appData.scoreLimits]);
 
+  const getRandomFromArray = (arr: any[]) => {
+    if (arr && arr.length){
+      return arr[Math.floor(Math.random()*arr.length)];
+    } else {
+      return ''
+    }
+  }
 
   return(
     <Grid columns={2} stackable>
@@ -203,7 +210,7 @@ const Landing = ({
                 <ToDirectorModal
                   buttonText={appData.bossEmailTexts.sendBtnText}
                   choice={appData.bossEmailTexts.choices[stepNo || "1"]}
-                  feedback={appData.bossEmailTexts.thanksForMessage.steps[stepNo || "1"]?.split('{{choice}}').join(activePChainChoice?.title || '')}
+                  feedback={activePChainChoice ? getRandomFromArray(appData.bossEmailTexts.thanksForMessage.steps[stepNo || "1"])?.split('{{choice}}').join(activePChainChoice?.title || '') : getRandomFromArray(appData.bossEmailTexts.thanksForMessage.steps[stepNo || "1"])?.split('{{choice}}').join("") }
                   email={appData.bossEmailTexts.email}
                   subject={appData.bossEmailTexts.subject}
                   open={showEmailModal} 
@@ -214,10 +221,10 @@ const Landing = ({
                   directorName={appData.bossEmailTexts.directorName}
                   directorTitle={appData.bossEmailTexts.directorTitle}
                   toName={appData.bossEmailTexts.toName}
-                  placeholder={appData.bossEmailTexts.messagePlaceholder?.split('{{choice}}').join('af ' + activePChainChoice?.title || '')}
+                  placeholder={activePChainChoice ? appData.bossEmailTexts.messagePlaceholder?.split('{{choice}}').join('af ' + activePChainChoice?.title || '') : appData.bossEmailTexts.messagePlaceholder?.split('{{choice}}').join("") }
                 />
                 <ToDirectorModal
-                  feedback={appData.finalBossMessage.message}
+                  feedback={getRandomFromArray(appData.finalBossMessage.message) + appData.finalBossMessage?.regardsMessage}
                   open={showFinalDirectorMessage} 
                   onClose={() => setShowFinalDirectorMessage(false)}
                   closeButtonText={appData.finalBossMessage.closeButtonText}
@@ -249,7 +256,7 @@ const Landing = ({
                   size="huge" 
                   primary 
                   onClick={submitStep} 
-                  disabled={multipleChoice ? !containsAllCategories || overBudget : !activePChainChoice}>
+                  disabled={multipleChoice ? !containsAllCategories || (step === 6 && overBudget) : !activePChainChoice}>
                     <span dangerouslySetInnerHTML={{__html: (appData.steps[step || 1].buttonText) || ''}} />
                     <Icon name="chevron right" />
                 </Button>
