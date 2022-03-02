@@ -1,5 +1,5 @@
 {
-    "pageTitle": "LCA Pro Tool",
+    "pageTitle": "LCA Pro Tools 3.0",
     "steps": {
         "1": {
             "title": "Vælg et råstof til jeres mobilcovers",
@@ -124,18 +124,31 @@
         "toName": "CoverIt ansatte",
         "thanksForMessage": {
             "steps": {
-                "1": "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser, I har gjort jer. {{choice}} er helt klart en mulighed, jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line",
-                "2": "Kære udviklere <br><br>Tak for jeres mail. Jeg ved, at placeringen af fabrikken er et svært valg. {{choice}} er et godt bud. <br><br>Jeg glæder mig til at modtage jeres bud på transport. <br><br>Med venlig hilsen <br>Line",
-                "3": "Kære udviklere <br><br>Tak for jeres mail. {{choice}} lyder godt. Jeg stoler på, at I har haft leveringstid med i jeres overvejelser. <br><br>Tak for indsatsen. <br><br>Med venlig hilsen <br>Line",
-                "4": "Kære udviklere <br><br>Tak for jeres mail. Det cover passer virkelig godt ind hos CoverIt, synes jeg. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line",
-                "5": "Kære udviklere <br><br>Tak for jeres mail. Spændende kombination af valg! Jeg håber, at I har tænk godt over, hvordan de to valg spiller sammen. <br><br>Med venlig hilsen <br>Line"
+                "1": [
+                    "Kære udviklere <br><br>Tak for jeres mail. Det er nogle gode overvejelser, I har gjort jer. {{choice}} er helt klart en mulighed, jeg vil se nærmere på. <br><br>Jeg glæder mig til at høre mere fra jer! <br><br>Med venlig hilsen <br>Line"
+                ],
+                "2": [
+                    "Kære udviklere <br><br>Tak for jeres mail. Jeg ved, at placeringen af fabrikken er et svært valg. {{choice}} er et godt bud. <br><br>Jeg glæder mig til at modtage jeres bud på transport. <br><br>Med venlig hilsen <br>Line"
+                ],
+                "3": [
+                    "Kære udviklere <br><br>Tak for jeres mail. {{choice}} lyder godt. Jeg stoler på, at I har haft leveringstid med i jeres overvejelser. <br><br>Tak for indsatsen. <br><br>Med venlig hilsen <br>Line"
+                ],
+                "4": [
+                    "Kære udviklere <br><br>Tak for jeres mail. Det cover passer virkelig godt ind hos CoverIt, synes jeg. {{choice}} har også et kundemarked, det er jeg sikker på! Jeg glæder mig til at få det hjem. <br><br>Med venlig hilsen <br>Line"
+                ],
+                "5": [ 
+                    "Kære udviklere <br><br>Tak for jeres mail. Spændende kombination af valg! Jeg håber, at I har tænk godt over, hvordan de to valg spiller sammen. <br><br>Med venlig hilsen <br>Line"
+                ]
             }
         },
         "messagePlaceholder": "Skriv en mail til chefen, hvor I argumenterer for jeres valg {{choice}}",
         "finalMessagePlaceholder": "Besked..."
     },
     "finalBossMessage": {
-        "message": "Kære udviklere, <br><br> Tak for jeres store indsats! Jeg glæder mig til at høre jeres præsentation, hvor I kan komme med gode argumenter for jeres valg. <br><br> Med venlig hilsen <br>Line",
+        "message": [
+            "Kære udviklere, <br><br> Tak for jeres store indsats! Jeg glæder mig til at høre jeres præsentation, hvor I kan komme med gode argumenter for jeres valg."
+        ],
+        "regardsMessage": "<br><br> Med venlig hilsen <br>Line",
         "closeButtonText": "Luk",
         "messageDelay": 2
     },
@@ -1794,680 +1807,765 @@
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_billund",
             "id2": "material_corn",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "production_billund",
             "id2": "material_sugar",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "production_billund",
             "id2": "material_straw",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "production_billund",
             "id2": "material_plast",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_paris",
             "id2": "material_olie",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_paris",
             "id2": "material_corn",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "production_paris",
             "id2": "material_sugar",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "production_paris",
             "id2": "material_straw",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "production_paris",
             "id2": "material_plast",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_miami",
             "id2": "material_olie",
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_miami",
             "id2": "material_corn",
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_miami",
             "id2": "material_sugar",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_miami",
             "id2": "material_straw",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "production_miami",
             "id2": "material_plast",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 3}
-            },
-            {
+                "economy": 3
+            }
+        },
+        {
             "id1": "production_memphis",
             "id2": "material_olie",
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_memphis",
             "id2": "material_corn",
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_memphis",
             "id2": "material_sugar",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_memphis",
             "id2": "material_straw",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "production_memphis",
             "id2": "material_plast",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 3}
-            },
-            {
+                "economy": 3
+            }
+        },
+        {
             "id1": "production_dubai",
             "id2": "material_olie",
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_dubai",
             "id2": "material_corn",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "production_dubai",
             "id2": "material_sugar",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "production_dubai",
             "id2": "material_straw",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_dubai",
             "id2": "material_plast",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "material_olie",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "material_corn",
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "material_sugar",
             "scores": {
                 "co2": -2,
                 "bio": -1,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "material_straw",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "material_plast",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_billund",
             "id2": "transport_truck",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "production_paris",
             "id2": "transport_train",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "production_miami",
             "id2": "transport_ship",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "production_miami",
             "id2": "transport_flight",
             "scores": {
                 "co2": 3,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_memphis",
             "id2": "transport_ship",
             "scores": {
                 "co2": 0,
                 "bio": 0,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_memphis",
             "id2": "transport_flight",
             "scores": {
                 "co2": 3,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_dubai",
             "id2": "transport_flight",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "production_dubai",
             "id2": "transport_truck",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "transport_train",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "transport_ship",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "transport_flight",
             "scores": {
                 "co2": 3,
                 "bio": 2,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "production_shanghai",
             "id2": "transport_truck",
             "scores": {
                 "co2": 5,
                 "bio": 5,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "usage_cover3",
             "id2": "transport_train",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover4",
             "id2": "transport_train",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover6",
             "id2": "transport_train",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "usage_cover3",
             "id2": "transport_ship",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover4",
             "id2": "transport_ship",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover6",
             "id2": "transport_ship",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "usage_cover3",
             "id2": "transport_flight",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover4",
             "id2": "transport_flight",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover6",
             "id2": "transport_flight",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "usage_cover3",
             "id2": "transport_truck",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover4",
             "id2": "transport_truck",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "usage_cover6",
             "id2": "transport_truck",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "material_olie",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "material_olie",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "material_corn",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "material_corn",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "material_sugar",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "material_sugar",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "material_straw",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "material_straw",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "material_plast",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "material_plast",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_takeback",
             "id2": "material_plast",
             "scores": {
                 "co2": -3,
                 "bio": -3,
-                "economy": -3}
-            },
-            {
+                "economy": -3
+            }
+        },
+        {
             "id1": "disposal_takeback",
             "id2": "production_billund",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": -2}
-            },
-            {
+                "economy": -2
+            }
+        },
+        {
             "id1": "disposal_takeback",
             "id2": "production_paris",
             "scores": {
                 "co2": 3,
                 "bio": 3,
-                "economy": 3}
-            },
-            {
+                "economy": 3
+            }
+        },
+        {
             "id1": "disposal_takeback",
             "id2": "production_memphis",
             "scores": {
                 "co2": 4,
                 "bio": 3,
-                "economy": 4}
-            },
-            {
+                "economy": 4
+            }
+        },
+        {
             "id1": "disposal_takeback",
             "id2": "production_dubai",
             "scores": {
                 "co2": 2,
                 "bio": 2,
-                "economy": 2}
-            },
-            {
+                "economy": 2
+            }
+        },
+        {
             "id1": "disposal_takeback",
             "id2": "production_shanghai",
             "scores": {
                 "co2": 4,
                 "bio": 4,
-                "economy": 4}
-            },
-            {
+                "economy": 4
+            }
+        },
+        {
             "id1": "disposal_wasteprevention",
             "id2": "transport_train",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_wasteprevention",
             "id2": "transport_ship",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_wasteprevention",
             "id2": "transport_flight",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_wasteprevention",
             "id2": "transport_truck",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": -1}
-            },
-            {
+                "economy": -1
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "usage_cover1",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "usage_cover2",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "usage_cover3",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_designrecycle",
             "id2": "usage_cover4",
             "scores": {
                 "co2": -1,
                 "bio": -1,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "usage_cover1",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "usage_cover2",
             "scores": {
                 "co2": -2,
                 "bio": -2,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "usage_cover3",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "usage_cover4",
             "scores": {
                 "co2": 1,
                 "bio": 1,
-                "economy": 1}
-            },
-            {
+                "economy": 1
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "usage_cover5",
             "scores": {
                 "co2": -3,
                 "bio": -3,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_recycle",
             "id2": "usage_cover6",
             "scores": {
                 "co2": -3,
                 "bio": -3,
-                "economy": 0}
-            },
-            {
+                "economy": 0
+            }
+        },
+        {
             "id1": "disposal_takeback",
             "id2": "usage_cover6",
             "scores": {
                 "co2": -3,
                 "bio": -3,
-                "economy": -3}
+                "economy": -3
             }
+        }
     ],
     "scoreLimits": {
         "co2": 0.75,
@@ -2492,8 +2590,8 @@
         }
     ],
     "tabletFeedback": {
-        "title":"Vend din skærm",
+        "title": "Vend din skærm",
         "message": "Din tablet er i portrait mode. Vend din skærm for at få den bedste oplevelse.",
         "btnText": "Ok"
-    } 
+    }
 }
