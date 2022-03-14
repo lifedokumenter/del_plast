@@ -5,13 +5,15 @@ import { ReactComponent as EmailFooterIcons } from '../../images/email_footer_ic
 import { ReactComponent as CheckmarkFull } from '../../images/checkmark_full.svg';
 
 import './index.less';
+import { PChainOption } from '../../interfaces/PChainOption';
 
 interface Props {
   buttonText?: string,
-  choice?: string,
+  choices?: PChainOption[],
   onClose?: () => void,
   open?: boolean,
   feedback?: string,
+  category?: string;
   email?: string,
   subject?: string,
   closeButtonText?: string,
@@ -22,16 +24,20 @@ interface Props {
   directorTitle?: string;
   toName?: string;
   placeholder?: string;
+  step: number|undefined;
+  hasAnsweredMessages?: string[];
 }
 
 function ToDirectorModal({
   buttonText, 
-  choice, 
+  choices, 
   feedback, 
+  category,
   open, 
   email, 
   subject, 
   showAnswer,
+  hasAnsweredMessages,
   onClose = () => '', 
   closeButtonText = '', 
   message='', 
@@ -54,7 +60,38 @@ function ToDirectorModal({
     if (showAnswer) {
       setSent(true);
     }
-  }, [showAnswer])
+  }, [showAnswer]);
+
+  const [answers, setAnswers] = React.useState<Array<PChainOption[]>>([]);
+  const [hasAnswered, setHasAnswered] = React.useState<boolean>(false);
+
+  const checkHasAnswered = () => {
+    for (let i=0; i<answers.length; i++) {
+      if (JSON.stringify(answers[i])===JSON.stringify(choices)) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  const saveAnswer = () => {
+    if (choices?.length) {
+      const _hasAnswered = checkHasAnswered();
+      if (!_hasAnswered) {
+        setAnswers([...answers, choices]);
+      }
+      setHasAnswered(_hasAnswered);
+    }
+  }
+
+  const getHasAnsweredMsg = () => {
+    if (hasAnsweredMessages?.length){
+      return hasAnsweredMessages[Math.floor(Math.random()*hasAnsweredMessages.length)];
+    } else {
+      return feedback;
+    }
+  }
 
   return (
     <Modal
@@ -77,7 +114,7 @@ function ToDirectorModal({
                 </div>
                 <div className="to-director-modal__fields__input">
                   <p>Emne</p>
-                  <p className="to-director-modal__fields__input__subject" dangerouslySetInnerHTML={{__html: `${subject} ${choice}`}} />
+                  <p className="to-director-modal__fields__input__subject" dangerouslySetInnerHTML={{__html: `${subject} ${category}`}} />
                 </div>
               </div>
               <Form>
@@ -101,7 +138,7 @@ function ToDirectorModal({
                   </div>
                 </div>
               </div>
-              <p dangerouslySetInnerHTML={{__html: `${feedback}`}} />
+              <p dangerouslySetInnerHTML={{__html: `${hasAnswered ? getHasAnsweredMsg() : feedback}`}} />
 
               <div className="to-director-modal__answer__logo">
                 {/* <CoverupLogo /> */}
@@ -121,7 +158,10 @@ function ToDirectorModal({
           sent === false && 
           <Button
             content={buttonText}
-            onClick={() => setSent(true)}
+            onClick={() => {
+              setSent(true);       
+              saveAnswer();
+            }}
             color='blue'
           />
         }

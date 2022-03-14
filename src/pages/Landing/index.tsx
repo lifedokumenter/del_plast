@@ -40,7 +40,7 @@ const Landing = ({
   const [viewDimensions, setViewDimensions] = React.useState({ 
     height: window.innerHeight,
     width: window.innerWidth
-  })
+  });
 
   React.useEffect(() => {
     function handleResize() {
@@ -216,7 +216,8 @@ const Landing = ({
                 />
                 <ToDirectorModal
                   buttonText={appData.bossEmailTexts.sendBtnText}
-                  choice={appData.bossEmailTexts.choices[stepNo || "1"]}
+                  choices={activePChainChoice ? [activePChainChoice] : pChainChoices}
+                  category={appData.bossEmailTexts.choices[stepNo || "1"]}
                   feedback={activePChainChoice ? getRandomFromArray(appData.bossEmailTexts.thanksForMessage.steps[stepNo || "1"])?.split('{{choice}}').join(activePChainChoice?.title || '') : getRandomFromArray(appData.bossEmailTexts.thanksForMessage.steps[stepNo || "1"])?.split('{{choice}}').join("") }
                   email={appData.bossEmailTexts.email}
                   subject={appData.bossEmailTexts.subject}
@@ -229,6 +230,8 @@ const Landing = ({
                   directorTitle={appData.bossEmailTexts.directorTitle}
                   toName={appData.bossEmailTexts.toName}
                   placeholder={activePChainChoice ? appData.bossEmailTexts.messagePlaceholder?.split('{{choice}}').join('af ' + activePChainChoice?.title || '') : appData.bossEmailTexts.messagePlaceholder?.split('{{choice}}').join("") }
+                  step={step}
+                  hasAnsweredMessages={appData.bossEmailTexts.alreadyAnsweredMessages.steps[step||1]}
                 />
                 <ToDirectorModal
                   feedback={getRandomFromArray(appData.finalBossMessage.message) + appData.finalBossMessage?.regardsMessage}
@@ -240,6 +243,7 @@ const Landing = ({
                   directorTitle={appData.bossEmailTexts.directorTitle}
                   toName={appData.bossEmailTexts.toName}
                   placeholder={appData.bossEmailTexts.finalMessagePlaceholder}
+                  step={step}
                 />
               </div>
               <ProgressBars

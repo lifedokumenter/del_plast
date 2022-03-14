@@ -141,6 +141,28 @@
                 ]
             }
         },
+        "alreadyAnsweredMessages": {
+            "steps": {
+                "1": [
+                    "Det har jeg allerede svaret på <br><br>Med venlig hilsen <br>Line"
+                ],
+                "2": [
+                    "Det har jeg allerede svaret på <br><br>Med venlig hilsen <br>Line"
+                ],
+                "3": [
+                    "Det har jeg allerede svaret på <br><br>Med venlig hilsen <br>Line"
+                ],
+                "4": [
+                    "Det har jeg allerede svaret på <br><br>Med venlig hilsen <br>Line"
+                ],
+                "5": [
+                    "Det har jeg allerede svaret på <br><br>Med venlig hilsen <br>Line"
+                ],
+                "6": [
+                    "Det har jeg allerede svaret på <br><br>Med venlig hilsen <br>Line"
+                ]
+            }
+        },
         "messagePlaceholder": "Skriv en mail til chefen, hvor I argumenterer for jeres valg {{choice}}",
         "finalMessagePlaceholder": "Besked..."
     },
